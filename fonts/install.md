@@ -1,4 +1,4 @@
-/*paste on custom stylesheet*/
+paste on custom stylesheet
 
 ```
 
