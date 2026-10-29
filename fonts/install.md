@@ -17,3 +17,20 @@ paste on custom stylesheet
     
 }
 
+```
+
+Clases base obligatorias para que funcionen los iconos localmente 
+```
+.bi {
+    display: inline-block;
+    font-family: 'bootstrap-icons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+```
