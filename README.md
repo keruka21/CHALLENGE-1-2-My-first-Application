@@ -3,6 +3,7 @@
 ## Paginas de referencia
 
 - https://floranacional.es/
+- https://fundacion-biodiversidad.es/
 - https://floradecanarias.com/
 - https://www.ingurumena.ejgv.euskadi.eus/ac84aBuscadorWar/
 - https://www.faunaiberica.org/
