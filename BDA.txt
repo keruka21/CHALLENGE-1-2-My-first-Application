@@ -1,0 +1,59 @@
+Entity-Relationship Model – Natural Spaces and Tourism Website
+From the following statement, the entity-relationship model is desired to be created:
+
+A tourism organization has decided to develop a website to provide information about natural spaces, their flora and fauna, hiking routes, places of interest and tourist accommodations. The aim is to create a database to store and manage all the information related to these natural areas.
+
+First, we want to store information about the flora found in the natural spaces. For each plant, the plant species, name and description must be recorded. Each plant will have an ID that uniquely identifies it.
+
+We also want to store information about the fauna. For each animal, its animal species, name, description, reproduction type and number of specimens must be recorded. Each animal will have a unique code to identify it.
+
+The website must also include information about the relationship between flora and fauna. We want to record which animals eat which plants. In addition, some animals may hunt other animals, so we also want to store information about predator and prey relationships.
+
+For each natural space, we want to store its ID, name and total area. Each natural space will have a unique ID. We also want to record the percentage of land occupied by the flora and the percentage of fauna present in each natural space.
+
+Regarding hiking routes, we want to store the name, number, length and difficulty level of each route. Each route belongs to a natural space, and a natural space can contain several routes.
+
+We also want to include places of interest within the natural spaces. For each place of interest, its name and a brief description must be recorded. A natural space can contain several places of interest.
+
+The website will also organize natural spaces by geographical regions. For each region, we want to store its code, name, number of inhabitants and the total area it occupies. Each region will have a unique code. A region can contain several natural spaces, and natural spaces may be distributed across different regions.
+
+Furthermore, the website will provide information about tourist accommodations located in these regions. For each accommodation, we want to store its code, name, number of beds, classification, address and phone number. Each accommodation will have a unique code. A region can have several accommodations.
+
+Finally, we want to store information about the owners of the accommodations. For each owner, we want to record their ID and name. An owner can be either a company or an individual.
+
+If the owner is a company, we want to store its VAT number. If the owner is an individual, we want to store their phone number and address.
+
+An owner can have several accommodations, but each accommodation can only belong to one owner.
+
+The website will use this database to allow visitors to explore natural spaces, discover local flora and fauna, consult hiking routes, find places of interest and search for available tourist accommodations.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Modelo entidad-relación: sitio web sobre espacios naturales y turismo
+A partir del siguiente planteamiento, se desea crear un modelo entidad-relación:
+
+Una organización turística ha decidido desarrollar un sitio web para ofrecer información sobre espacios naturales, su flora y fauna, rutas de senderismo, lugares de interés y alojamientos turísticos. El objetivo es crear una base de datos para almacenar y gestionar toda la información relacionada con estas áreas naturales.
+
+En primer lugar, se desea almacenar información sobre la flora presente en los espacios naturales. Para cada planta, es necesario registrar su especie, nombre y descripción. Cada planta contará con un identificador (ID) único.
+
+También se desea almacenar información sobre la fauna. Para cada animal, se debe registrar su especie, nombre, descripción, tipo de reproducción y número de ejemplares. Cada animal tendrá un código único que lo identifique.
+
+El sitio web debe incluir, además, información sobre la relación entre la flora y la fauna; concretamente, se desea registrar qué animales consumen qué plantas. Asimismo, dado que algunos animales pueden cazar a otros, se requiere almacenar información sobre las relaciones entre depredadores y presas.
+
+Para cada espacio natural, se desea almacenar su identificador (ID), nombre y superficie total. Cada espacio natural contará con un ID único. También se debe registrar el porcentaje de terreno ocupado por la flora y el porcentaje de fauna presente en cada espacio natural.
+
+En cuanto a las rutas de senderismo, se desea almacenar el nombre, número, longitud y nivel de dificultad de cada una. Cada ruta pertenece a un espacio natural, y un espacio natural puede albergar varias rutas.
+
+También se desea incluir lugares de interés dentro de los espacios naturales. Para cada lugar de interés, es necesario registrar su nombre y una breve descripción. Un espacio natural puede contener varios lugares de interés.
+
+El sitio web organizará los espacios naturales por regiones geográficas. Para cada región, se desea almacenar su código, nombre, número de habitantes y superficie total. Cada región tendrá un código único. Una región puede contener varios espacios naturales, y estos pueden estar distribuidos en distintas regiones.
+
+Por último, el sitio web proporcionará información sobre los alojamientos turísticos situados en dichas regiones. Para cada alojamiento, queremos almacenar su código, nombre, número de plazas, categoría, dirección y número de teléfono. Cada alojamiento tendrá un código único. Una región puede contar con varios alojamientos.
+
+Por último, queremos almacenar información sobre los propietarios de los alojamientos. De cada propietario, debemos registrar su identificador y su nombre. Un propietario puede ser una empresa o un particular.
+
+Si el propietario es una empresa, almacenaremos su número de identificación fiscal (NIF/IVA). Si el propietario es un particular, almacenaremos su número de teléfono y su dirección.
+
+Un propietario puede tener varios alojamientos, pero cada alojamiento solo puede pertenecer a un único propietario.
+
+El sitio web utilizará esta base de datos para permitir a los visitantes explorar espacios naturales, descubrir la flora y fauna local, consultar rutas de senderismo, encontrar lugares de interés y buscar alojamientos turísticos disponibles.
