@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html data-bs-theme="light" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Hábitats y espacios naturales de Bizkaia." name="description"/>
+<title>
+   Hábitats | Flora y Fauna de Bizkaia
+  </title>
+<link href="img/logo-web.svg" rel="icon"/>
+<link href="bootstrap-5.3.8/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/bootstrap-icons.css" rel="stylesheet"/>
+<link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<div class="user-bar">
+<div class="container d-flex justify-content-between align-items-center gap-2">
+<div aria-label="Seleccionar idioma" class="language-switch d-flex align-items-center gap-1">
+<button aria-pressed="true" class="btn btn-sm language-button active" data-language="es" type="button">ES</button>
+<span aria-hidden="true">|</span>
+<button aria-pressed="false" class="btn btn-sm language-button" data-language="eus" type="button">EUS</button>
+</div>
+<div class="position-relative">
+<button aria-controls="userPanel" aria-expanded="false" aria-label="Área de usuario" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" type="button">
+<i class="bi bi-person-circle fs-5"></i><span class="d-none d-sm-inline ms-1">Área de usuario</span>
+</button>
+<div class="collapse user-panel-collapse" id="userPanel">
+<div class="user-dropdown p-3">
+<div id="guestPanel"><p class="fw-semibold">Bienvenido/a</p><a class="btn btn-primary btn-sm w-100 mb-2" href="login.html">Iniciar sesión</a><a class="btn btn-outline-primary btn-sm w-100" href="register.html">Solicitar cuenta</a></div>
+<div class="d-none" id="memberPanel"><strong id="memberName">Usuario</strong><p class="small text-secondary" id="memberEmail"></p><a class="dropdown-item" href="user-area.html">Mi perfil y registros</a><a class="dropdown-item" href="user-area.html#privacySettingsForm">Ajustes y privacidad</a><a class="dropdown-item d-none" href="admin.html" id="adminPanelLink">Administración · Validar registros</a><button class="btn btn-outline-secondary btn-sm w-100 mt-2" id="logoutButton">Cerrar sesión</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="site-nav-shell">
+<nav class="navbar navbar-expand-lg main-navbar" id="mainNavbar">
+<div class="container">
+<a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+<img alt="" height="42" src="img/logo-web.svg"/>
+<span>
+       Flora y Fauna
+       <small>
+        de Bizkaia
+       </small>
+</span>
+</a>
+<button aria-label="Abrir navegación" class="navbar-toggler" data-bs-target="#navbarContent" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon">
+</span>
+</button>
+<div class="collapse navbar-collapse" id="navbarContent">
+<ul class="navbar-nav ms-auto gap-lg-2">
+<li class="nav-item">
+<a class="nav-link" data-es="Inicio" data-eus="Hasiera" href="index.html">
+         Inicio
+        </a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-es="Catálogo" data-eus="Katalogoa" href="catalog.html">
+         Catálogo
+        </a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" data-es="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">
+           Fauna
+          </a>
+</li>
+<li>
+<a class="dropdown-item" data-es="Flora" data-eus="Flora" href="catalog.html?type=flora">
+           Flora
+          </a>
+</li>
+<li>
+<a class="dropdown-item" data-es="Hábitats" data-eus="Habitatak" href="habitats.html">
+           Hábitats
+          </a>
+</li>
+<li><a class="dropdown-item" data-es="Parques, reservas y centros" data-eus="Parkeak, erreserbak eta zentroak" href="spaces.html">Parques, reservas y centros</a></li>
+<li><a class="dropdown-item" data-es="Comarcas" data-eus="Eskualdeak" href="regions.html">Comarcas</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-es="Blog" data-eus="Bloga" href="blog.html">
+         Blog
+        </a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-es="Participa" data-eus="Parte hartu" href="species-submit.html">
+         Participa
+        </a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" data-es="Registrar una especie" data-eus="Espezie bat erregistratu" href="species-submit.html">
+           Registrar una especie
+          </a>
+</li>
+<li>
+<a class="dropdown-item" data-es="Registrar un avistamiento" data-eus="Behaketa bat erregistratu" href="register.html">
+           Registrar un avistamiento
+          </a>
+</li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" data-es="Vídeos" data-eus="Bideoak" href="videos.html">Vídeos</a></li>
+<li class="nav-item">
+<a class="nav-link" data-es="Contacto" data-eus="Kontaktua" href="contact.html">
+         Contacto
+        </a>
+</li>
+<li class="nav-item d-flex align-items-center"><button aria-label="Cambiar tema" class="btn btn-sm theme-toggle" id="themeToggle" type="button"><i class="bi bi-moon-stars-fill" id="themeIcon"></i></button></li>
+</ul>
+</div>
+</div>
+</nav>
+<nav aria-label="Migas de pan" class="container breadcrumb-wrap">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a data-es="Inicio" data-eus="Hasiera" href="index.html">Inicio</a></li>
+<li aria-current="page" class="breadcrumb-item active">Hábitats</li>
+</ol>
+</nav>
+</div>
+<main id="mainContent">
+<section class="inner-hero">
+<div class="container">
+<p class="section-kicker">
+      Espacios naturales
+     </p>
+<h1>
+      Hábitats de Bizkaia
+     </h1>
+<p class="lead">
+      Consulta ejemplos de hábitats y espacios naturales.
+     </p>
+</div>
+</section>
+<section class="content-section"><div class="container"><div class="section-heading"><p class="section-kicker">Catálogo de ecosistemas</p><h2 class="section-title">Los 26 hábitats del proyecto</h2><p class="section-copy">La distribución indicada es orientativa y no exclusiva: los hábitats pueden aparecer en más de una comarca y solaparse entre sí.</p></div><div class="row g-4"><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="marinos"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Marinos" loading="lazy" src="img/habitats/marinos.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Marinos</h2><p>Ecosistemas de agua salada que incluyen fondos, comunidades y zonas de transición del medio marino.</p><p class="small mt-auto"><strong>Comarcas:</strong> Busturialdea-Urdaibai · Uribe · Lea-Artibai · Gran Bilbao</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Marinos">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="litorales"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Litorales" loading="lazy" src="img/habitats/litorales.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Litorales</h2><p>Franja de contacto entre tierra y mar, sometida al oleaje, las mareas y el viento.</p><p class="small mt-auto"><strong>Comarcas:</strong> Uribe · Lea-Artibai · Busturialdea-Urdaibai · Gran Bilbao</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Litorales">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="mar abierto"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Mar abierto" loading="lazy" src="img/habitats/mar-abierto.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Mar abierto</h2><p>Aguas alejadas de la costa, utilizadas por aves marinas y cetáceos durante sus desplazamientos y alimentación.</p><p class="small mt-auto"><strong>Comarcas:</strong> Todas las comarcas costeras</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Mar%20abierto">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="acantilados costeros"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Acantilados costeros" loading="lazy" src="img/habitats/acantilados.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Acantilados costeros</h2><p>Paredes rocosas expuestas al mar, con vegetación adaptada al viento, la salinidad y la escasez de suelo.</p><p class="small mt-auto"><strong>Comarcas:</strong> Uribe · Lea-Artibai · Busturialdea-Urdaibai</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Acantilados%20costeros">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="islotes"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Islotes" loading="lazy" src="img/habitats/islotes.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Islotes</h2><p>Pequeñas elevaciones rocosas aisladas en el mar que ofrecen refugio y lugares de cría a aves marinas.</p><p class="small mt-auto"><strong>Comarcas:</strong> Busturialdea-Urdaibai · Uribe · Lea-Artibai</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Islotes">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="playa"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Playa" loading="lazy" src="img/habitats/playa.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Playa</h2><p>Acumulaciones de arena o grava modeladas por el oleaje y las mareas; son espacios dinámicos y sensibles.</p><p class="small mt-auto"><strong>Comarcas:</strong> Uribe · Lea-Artibai · Busturialdea-Urdaibai · Gran Bilbao</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Playa">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="dunas"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Dunas" loading="lazy" src="img/habitats/dunas.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Dunas</h2><p>Montículos de arena formados por el viento, con plantas especializadas que fijan el sustrato.</p><p class="small mt-auto"><strong>Comarcas:</strong> Uribe · Busturialdea-Urdaibai · Lea-Artibai</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Dunas">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="estuarios"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Estuarios" loading="lazy" src="img/habitats/estuarios.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Estuarios</h2><p>Tramos finales de los ríos donde se mezclan agua dulce y salada y se forman gradientes ecológicos.</p><p class="small mt-auto"><strong>Comarcas:</strong> Busturialdea-Urdaibai · Gran Bilbao · Lea-Artibai</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Estuarios">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="rías"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Rías" loading="lazy" src="img/habitats/rias.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Rías</h2><p>Valles fluviales inundados por el mar, con canales, márgenes y comunidades propias de aguas salobres.</p><p class="small mt-auto"><strong>Comarcas:</strong> Busturialdea-Urdaibai · Lea-Artibai · Gran Bilbao</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=R%C3%ADas">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="zonas húmedas"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Zonas húmedas" loading="lazy" src="img/habitats/humedales.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Zonas húmedas</h2><p>Áreas encharcadas de forma permanente o temporal que sostienen una elevada diversidad de vida.</p><p class="small mt-auto"><strong>Comarcas:</strong> Busturialdea-Urdaibai · Gran Bilbao · Encartaciones · Arratia-Nerbioi</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Zonas%20h%C3%BAmedas">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="marismas"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Marismas" loading="lazy" src="img/habitats/marismas.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Marismas</h2><p>Humedales mareales con vegetación tolerante a la sal, esenciales para alimentación y descanso de aves.</p><p class="small mt-auto"><strong>Comarcas:</strong> Busturialdea-Urdaibai · Gran Bilbao</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Marismas">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="ríos"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Ríos" loading="lazy" src="img/habitats/rios.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Ríos</h2><p>Cursos naturales de agua dulce que conectan montañas, valles y estuarios.</p><p class="small mt-auto"><strong>Comarcas:</strong> Las siete comarcas</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=R%C3%ADos">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="arroyos"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Arroyos" loading="lazy" src="img/habitats/arroyos.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Arroyos</h2><p>Pequeños cursos de agua, a menudo sombreados, que aportan conectividad y refugio a especies fluviales.</p><p class="small mt-auto"><strong>Comarcas:</strong> Las siete comarcas</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Arroyos">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="bosques de ribera"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Bosques de ribera" loading="lazy" src="img/habitats/bosque-ribera.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Bosques de ribera</h2><p>Formaciones arboladas que acompañan a ríos y arroyos, estabilizan orillas y aportan sombra.</p><p class="small mt-auto"><strong>Comarcas:</strong> Las siete comarcas</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Bosques%20de%20ribera">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="bosques y formaciones forestales"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Bosques y formaciones forestales" loading="lazy" src="img/habitats/bosques.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Bosques y formaciones forestales</h2><p>Robledales, hayedos, encinares y otras formaciones forestales, naturales o seminaturales.</p><p class="small mt-auto"><strong>Comarcas:</strong> Las siete comarcas</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Bosques%20y%20formaciones%20forestales">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="montaña"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Montaña" loading="lazy" src="img/habitats/montana.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Montaña</h2><p>Paisajes de media y alta montaña con mosaicos de bosque, matorral, roquedo y pastizal.</p><p class="small mt-auto"><strong>Comarcas:</strong> Durangaldea · Arratia-Nerbioi · Encartaciones</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Monta%C3%B1a">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="roquedos"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Roquedos" loading="lazy" src="img/habitats/roquedos.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Roquedos</h2><p>Afloramientos rocosos que proporcionan refugio, zonas de descanso y microhábitats especializados.</p><p class="small mt-auto"><strong>Comarcas:</strong> Durangaldea · Arratia-Nerbioi · Encartaciones</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Roquedos">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="zonas de cumbre"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Zonas de cumbre" loading="lazy" src="img/habitats/cumbres.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Zonas de cumbre</h2><p>Áreas elevadas expuestas al viento y a condiciones climáticas más extremas.</p><p class="small mt-auto"><strong>Comarcas:</strong> Durangaldea · Arratia-Nerbioi · Encartaciones</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Zonas%20de%20cumbre">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="pastizales"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Pastizales" loading="lazy" src="img/habitats/pastizales.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Pastizales</h2><p>Espacios abiertos dominados por herbáceas, mantenidos por condiciones naturales o por usos ganaderos.</p><p class="small mt-auto"><strong>Comarcas:</strong> Durangaldea · Arratia-Nerbioi · Encartaciones · Lea-Artibai</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Pastizales">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="matorrales de montaña"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Matorrales de montaña" loading="lazy" src="img/habitats/matorrales.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Matorrales de montaña</h2><p>Matorrales de altura y brezales que forman transiciones entre pastizales, roquedos y bosques.</p><p class="small mt-auto"><strong>Comarcas:</strong> Durangaldea · Arratia-Nerbioi · Encartaciones</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Matorrales%20de%20monta%C3%B1a">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="cortados calizos"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Cortados calizos" loading="lazy" src="img/habitats/cortados-calizos.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Cortados calizos</h2><p>Escarpes de roca caliza con grietas y repisas donde se desarrollan comunidades adaptadas a la roca.</p><p class="small mt-auto"><strong>Comarcas:</strong> Durangaldea · Arratia-Nerbioi · Encartaciones</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Cortados%20calizos">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="cuevas"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Cuevas" loading="lazy" src="img/habitats/cuevas.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Cuevas</h2><p>Cavidades subterráneas y sistemas kársticos con fauna especializada y condiciones ambientales estables.</p><p class="small mt-auto"><strong>Comarcas:</strong> Durangaldea · Arratia-Nerbioi · Encartaciones</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Cuevas">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="medios humano-agropecuarios"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Medios humano-agropecuarios" loading="lazy" src="img/habitats/agropecuarios.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Medios humano-agropecuarios</h2><p>Paisajes de caseríos, cultivos, prados y setos que combinan actividad humana y biodiversidad.</p><p class="small mt-auto"><strong>Comarcas:</strong> Las siete comarcas</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Medios%20humano-agropecuarios">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="valles"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Valles" loading="lazy" src="img/habitats/valles.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Valles</h2><p>Unidades de paisaje que integran laderas, cursos fluviales, bosques y asentamientos.</p><p class="small mt-auto"><strong>Comarcas:</strong> Las siete comarcas</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Valles">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="campiña atlántica"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Campiña atlántica" loading="lazy" src="img/habitats/agropecuarios.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Campiña atlántica</h2><p>Mosaico tradicional de prados, setos, pequeños bosquetes y explotaciones rurales del paisaje atlántico.</p><p class="small mt-auto"><strong>Comarcas:</strong> Las siete comarcas</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Campi%C3%B1a%20atl%C3%A1ntica">Ver especies de este hábitat</a></div></article></div><div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="urbes (ciudades y pueblos)"><article class="catalog-card habitat-card h-100"><img alt="Hábitat: Urbes (ciudades y pueblos)" loading="lazy" src="img/habitats/urbes.jpg"/><div class="card-body d-flex flex-column"><span class="blog-category">Hábitat de Bizkaia</span><h2 class="h5">Urbes (ciudades y pueblos)</h2><p>Entornos urbanos con parques, jardines, arbolado, solares y corredores verdes que pueden albergar fauna y flora.</p><p class="small mt-auto"><strong>Comarcas:</strong> Gran Bilbao · Durangaldea · Lea-Artibai · Busturialdea-Urdaibai · Uribe · Encartaciones · Arratia-Nerbioi</p><a class="btn btn-outline-primary btn-sm align-self-start" href="catalog.html?habitat=Urbes%20%28ciudades%20y%20pueblos%29">Ver especies de este hábitat</a></div></article></div></div></div></section>
+</main>
+<button aria-label="Volver al principio" class="back-to-top" id="backToTop" title="Volver al principio" type="button"><i class="bi bi-arrow-up"></i></button>
+<footer class="main-footer">
+<div aria-label="Entidades colaboradoras" class="partner-footer">
+<div class="container">
+<div aria-label="Arrastra para ver entidades colaboradoras" class="partner-slider" id="partnerSlider" tabindex="0">
+<div class="partner-track" id="partnerTrack">
+<a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank"><img alt="Diputación Foral de Bizkaia" src="img/partners/logo-diputacion-de-bizkaia.jpg"/></a>
+<a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank"><img alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png"/></a>
+<a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank"><img alt="MITECO" src="img/partners/logo-miteco-color.png"/></a>
+<a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank"><img alt="Universidad del País Vasco" src="img/partners/logo-upv-ehu-blanco-completo .png"/></a>
+<a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank"><img alt="Gobierno Vasco" src="img/partners/logo-gobierno-vasco.png"/></a>
+<a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank"><img alt="Fundación Biodiversidad" src="img/partners/fundacion-biodiversidad.jpg"/></a>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row g-4 py-4">
+<div class="col-lg-3 col-md-6">
+<a class="footer-brand" href="index.html"><img alt="Logotipo Flora y Fauna de Bizkaia" src="img/logo-web.svg"/><span>Flora y Fauna<small>de Bizkaia</small></span></a><p class="footer-slogan" data-es="Conocer · Proteger · Compartir" data-eus="Ezagutu · Babestu · Partekatu">Conocer · Proteger · Compartir</p>
+<p class="footer-copy mt-3"><b>Grupo:</b> June, Eritz, Kelea Rueda</p>
+<p class="footer-copy mt-3">Proyecto Challenge 1.2, DAMi 1º</p>
+<div class="social-links d-flex flex-wrap gap-2">
+<a aria-label="Instagram" href="https://www.instagram.com/" rel="noopener" target="_blank"><i class="bi bi-instagram"></i></a>
+<a aria-label="YouTube" href="https://www.youtube.com/@urdaibaibirdcenter" rel="noopener" target="_blank"><i class="bi bi-youtube"></i></a>
+<a aria-label="Facebook" href="https://www.facebook.com/" rel="noopener" target="_blank"><i class="bi bi-facebook"></i></a>
+<a aria-label="X" href="https://x.com/" rel="noopener" target="_blank"><i class="bi bi-twitter-x"></i></a>
+<a aria-label="GitHub del proyecto" href="https://github.com/keruka21/CHALLENGE-1-2-My-first-Application" rel="noopener" target="_blank"><i class="bi bi-github"></i></a>
+</div>
+</div>
+<div class="col-lg-2 col-6">
+<h2 class="footer-title">Explora</h2>
+<ul class="footer-links">
+<li><a data-es="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">Fauna</a></li>
+<li><a data-es="Flora" data-eus="Flora" href="catalog.html?type=flora">Flora</a></li>
+<li><a data-es="Hábitats" data-eus="Habitatak" href="habitats.html">Hábitats</a></li>
+<li><a data-es="Blog" data-eus="Bloga" href="blog.html">Blog</a></li>
+</ul>
+</div>
+<div class="col-lg-3 col-6">
+<h2 class="footer-title" data-es="Contacto" data-eus="Kontaktua">Contacto</h2>
+<a class="footer-contact" href="tel:+34555555555"><i class="bi bi-telephone-fill"></i>555 555 555</a>
+<a class="footer-contact" href="https://wa.me/34555555555" rel="noopener" target="_blank"><i class="bi bi-whatsapp"></i>WhatsApp: 555 555 555</a>
+<a class="footer-contact" href="mailto:faunayflora@bizkaia.com"><i class="bi bi-envelope"></i>faunayflora@bizkaia.com</a>
+<p class="small mt-2">Lunes a viernes<br/>08:00 am – 14:25pm (Aula 209)</p>
+</div>
+<div class="col-lg-4">
+<h2 class="footer-title">Estamos en CIFP TARTANGA LHII</h2>
+<p class="small"> Tartanga Kalea, 15 · Erandio, Bizkaia 48950</p>
+<p class="small"> Piso 1, Clase 209</p>
+<div class="footer-map"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Instituto%20Tartanga%20Erandio&amp;output=embed" title="Ubicación del Instituto Tartanga"></iframe></div>
+</div>
+</div>
+<p class="small text-secondary mb-2 audio-credit">Sonido de petirrojo: Lawrence Shove / British Library · <a href="https://commons.wikimedia.org/wiki/File:European_Robin_(Erithacus_rubecula)_(W1CDR0001425_BD16).ogg" rel="noopener" target="_blank">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">CC BY-SA 4.0</a>.</p>
+<div class="footer-bottom py-3 d-flex flex-wrap justify-content-between gap-2">
+<span>© <span id="currentYear"></span> Flora y Fauna de Bizkaia · Proyecto educativo</span>
+<div class="d-flex gap-3 flex-wrap"><a href="privacy.html">Privacidad</a><a href="legal.html">Aviso legal</a><a href="cookies.html">Cookies</a><a href="index.html">Volver a inicio</a></div>
+</div>
+</div>
+</footer>
+<script src="bootstrap-5.3.8/js/bootstrap.bundle.min.js">
+</script>
+<script src="js/main.js">
+</script>
+</body>
+</html>

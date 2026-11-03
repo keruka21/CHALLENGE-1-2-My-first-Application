@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html data-bs-theme="light" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Política de privacidad" name="description"/>
+<title>
+   Privacidad | Flora y Fauna de Bizkaia
+  </title>
+<link href="img/logo-web.svg" rel="icon"/>
+<link href="bootstrap-5.3.8/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/bootstrap-icons.css" rel="stylesheet"/>
+<link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<div class="user-bar">
+<div class="container d-flex justify-content-between align-items-center gap-2">
+<div aria-label="Seleccionar idioma" class="language-switch d-flex align-items-center gap-1">
+<button aria-pressed="true" class="btn btn-sm language-button active" data-language="es" type="button">ES</button>
+<span aria-hidden="true">|</span>
+<button aria-pressed="false" class="btn btn-sm language-button" data-language="eus" type="button">EUS</button>
+</div>
+<div class="position-relative">
+<button aria-controls="userPanel" aria-expanded="false" aria-label="Área de usuario" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" type="button">
+<i class="bi bi-person-circle fs-5"></i><span class="d-none d-sm-inline ms-1">Área de usuario</span>
+</button>
+<div class="collapse user-panel-collapse" id="userPanel">
+<div class="user-dropdown p-3">
+<div id="guestPanel"><p class="fw-semibold">Bienvenido/a</p><a class="btn btn-primary btn-sm w-100 mb-2" href="login.html">Iniciar sesión</a><a class="btn btn-outline-primary btn-sm w-100" href="register.html">Solicitar cuenta</a></div>
+<div class="d-none" id="memberPanel"><strong id="memberName">Usuario</strong><p class="small text-secondary" id="memberEmail"></p><a class="dropdown-item" href="user-area.html">Mi perfil y registros</a><a class="dropdown-item" href="user-area.html#privacySettingsForm">Ajustes y privacidad</a><a class="dropdown-item d-none" href="admin.html" id="adminPanelLink">Administración · Validar registros</a><button class="btn btn-outline-secondary btn-sm w-100 mt-2" id="logoutButton">Cerrar sesión</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="site-nav-shell">
+<nav class="navbar navbar-expand-lg main-navbar" id="mainNavbar">
+<div class="container">
+<a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+<img alt="" height="42" src="img/logo-web.svg"/>
+<span>
+       Flora y Fauna
+       <small>
+        de Bizkaia
+       </small>
+</span>
+</a>
+<button aria-label="Abrir navegación" class="navbar-toggler" data-bs-target="#navbarContent" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon">
+</span>
+</button>
+<div class="collapse navbar-collapse" id="navbarContent">
+<ul class="navbar-nav ms-auto gap-lg-2">
+<li class="nav-item">
+<a class="nav-link" data-es="Inicio" data-eus="Hasiera" href="index.html">
+         Inicio
+        </a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-es="Catálogo" data-eus="Katalogoa" href="catalog.html">
+         Catálogo
+        </a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" data-es="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">
+           Fauna
+          </a>
+</li>
+<li>
+<a class="dropdown-item" data-es="Flora" data-eus="Flora" href="catalog.html?type=flora">
+           Flora
+          </a>
+</li>
+<li>
+<a class="dropdown-item" data-es="Hábitats" data-eus="Habitatak" href="habitats.html">
+           Hábitats
+          </a>
+</li>
+<li><a class="dropdown-item" data-es="Parques, reservas y centros" data-eus="Parkeak, erreserbak eta zentroak" href="spaces.html">Parques, reservas y centros</a></li>
+<li><a class="dropdown-item" data-es="Comarcas" data-eus="Eskualdeak" href="regions.html">Comarcas</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-es="Blog" data-eus="Bloga" href="blog.html">
+         Blog
+        </a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-es="Participa" data-eus="Parte hartu" href="species-submit.html">
+         Participa
+        </a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" data-es="Registrar una especie" data-eus="Espezie bat erregistratu" href="species-submit.html">
+           Registrar una especie
+          </a>
+</li>
+<li>
+<a class="dropdown-item" data-es="Registrar un avistamiento" data-eus="Behaketa bat erregistratu" href="register.html">
+           Registrar un avistamiento
+          </a>
+</li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" data-es="Vídeos" data-eus="Bideoak" href="videos.html">Vídeos</a></li>
+<li class="nav-item">
+<a class="nav-link" data-es="Contacto" data-eus="Kontaktua" href="contact.html">
+         Contacto
+        </a>
+</li>
+<li class="nav-item d-flex align-items-center"><button aria-label="Cambiar tema" class="btn btn-sm theme-toggle" id="themeToggle" type="button"><i class="bi bi-moon-stars-fill" id="themeIcon"></i></button></li>
+</ul>
+</div>
+</div>
+</nav>
+<nav aria-label="Migas de pan" class="container breadcrumb-wrap">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a data-es="Inicio" data-eus="Hasiera" href="index.html">Inicio</a></li>
+<li aria-current="page" class="breadcrumb-item active">Privacidad</li>
+</ol>
+</nav>
+</div>
+<main id="mainContent">
+<section class="inner-hero">
+<div class="container">
+<p class="section-kicker">
+      Información
+     </p>
+<h1>
+      Política de privacidad
+     </h1>
+</div>
+</section>
+<section class="content-section">
+<div class="container">
+<div class="content-card">
+<div class="privacy-container" id="privacy-policy">
+<h1>PRIVACY POLICY</h1>
+<p class="subtitle">Last updated <strong>November 01, 2026</strong></p>
+<p class="body-text">
+        This Privacy Notice for <strong>Flora y Fauna de Bizkaia</strong> ("we," "us," or "our") describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
+    </p>
+<ul class="privacy-list">
+<li>Visit our website at <a class="link" href="https://florayfaunadebizkaia.com" target="_blank">florayfaunadebizkaia.com</a> or any website of ours that links to this Privacy Notice</li>
+<li>Engage with us in other related ways, including any marketing or events</li>
+</ul>
+<p class="body-text">
+<strong>Questions or concerns?</strong> Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at <a class="link" href="mailto:faunayflora@bizkaia.com">faunayflora@bizkaia.com</a>.
+    </p>
+<h2>SUMMARY OF KEY POINTS</h2>
+<p class="body-text">
+<em><strong>This summary provides key points from our Privacy Notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our </strong></em>
+<a class="link" href="#toc"><strong><em>table of contents</em></strong></a>
+<em><strong> below to find the section you are looking for.</strong></em>
+</p>
+<p class="body-text"><strong>What personal information do we process?</strong> When you visit, use, or navigate our Services, we may process personal information depending on how you interact with us and the Services, the choices you make, and the products and features you use. Learn more about <a class="link" href="#personalinfo">personal information you disclose to us</a>.</p>
+<p class="body-text"><strong>Do we process any sensitive personal information?</strong> Some of the information may be considered "special" or "sensitive" in certain jurisdictions, for example your racial or ethnic origins, sexual orientation, and religious beliefs. We do not process sensitive personal information.</p>
+<p class="body-text"><strong>Do we collect any information from third parties?</strong> We do not collect any information from third parties.</p>
+<p class="body-text"><strong>How do we process your information?</strong> We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. Learn more about <a class="link" href="#infouse">how we process your information</a>.</p>
+<p class="body-text"><strong>In what situations and with which parties do we share personal information?</strong> We may share information in specific situations and with specific third parties. Learn more about <a class="link" href="#whoshare">when and with whom we share your personal information</a>.</p>
+<p class="body-text"><strong>What are your rights?</strong> Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information. Learn more about <a class="link" href="#privacyrights">your privacy rights</a>.</p>
+<p class="body-text"><strong>How do you exercise your rights?</strong> The easiest way to exercise your rights is by submitting a <a class="link" href="https://app.termly.io/dsar/9db29cff-4438-4a8d-b4e6-6c881b2dbb77" rel="noopener noreferrer" target="_blank">data subject access request</a>, or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.</p>
+<p class="body-text">Want to learn more about what we do with any information we collect? <a class="link" href="#toc">Review the Privacy Notice in full</a>.</p>
+<h2 id="toc">TABLE OF CONTENTS</h2>
+<ul class="toc-list">
+<li><a class="link" href="#infocollect">1. WHAT INFORMATION DO WE COLLECT?</a></li>
+<li><a class="link" href="#infouse">2. HOW DO WE PROCESS YOUR INFORMATION?</a></li>
+<li><a class="link" href="#legalbases">3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?</a></li>
+<li><a class="link" href="#whoshare">4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a></li>
+<li><a class="link" href="#cookies">5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</a></li>
+<li><a class="link" href="#inforetain">6. HOW LONG DO WE KEEP YOUR INFORMATION?</a></li>
+<li><a class="link" href="#infominors">7. DO WE COLLECT INFORMATION FROM MINORS?</a></li>
+<li><a class="link" href="#privacyrights">8. WHAT ARE YOUR PRIVACY RIGHTS?</a></li>
+<li><a class="link" href="#DNT">9. CONTROLS FOR DO-NOT-TRACK FEATURES</a></li>
+<li><a class="link" href="#policyupdates">10. DO WE MAKE UPDATES TO THIS NOTICE?</a></li>
+<li><a class="link" href="#contact">11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a></li>
+<li><a class="link" href="#request">12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</a></li>
+</ul>
+<section id="infocollect">
+<h2>1. WHAT INFORMATION DO WE COLLECT?</h2>
+<h3>Personal information you disclose to us</h3>
+<p class="body-text"><strong><em>In Short:</em></strong> <em>We collect personal information that you provide to us.</em></p>
+<p class="body-text">We collect personal information that you voluntarily provide to us when you register on the Services, express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.</p>
+<p class="body-text"><strong id="personalinfo">Personal Information Provided by You.</strong> The personal information we collect may include the following:</p>
+<ul class="privacy-list">
+<li>names</li>
+<li>email addresses</li>
+<li>usernames</li>
+<li>passwords</li>
+</ul>
+<p class="body-text"><strong>Sensitive Information.</strong> We do not process sensitive information.</p>
+<p class="body-text">All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.</p>
+</section>
+<section id="infouse">
+<h2>2. HOW DO WE PROCESS YOUR INFORMATION?</h2>
+<p class="body-text"><strong><em>In Short:</em></strong> <em>We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent.</em></p>
+<p class="body-text"><strong>We process your personal information for a variety of reasons, depending on how you interact with our Services, including:</strong></p>
+<ul class="privacy-list">
+<li><strong>To facilitate account creation and authentication and otherwise manage user accounts.</strong> We may process your information so you can create and log in to your account, as well as keep your account in working order.</li>
+<li><strong>To respond to user inquiries/offer support to users.</strong> We may process your information to respond to your inquiries and solve any potential issues you might have with the requested service.</li>
+<li><strong>To send administrative information to you.</strong> We may process your information to send you details about our products and services, changes to our terms and policies, and other similar information.</li>
+<li><strong>To save or protect an individual's vital interest.</strong> We may process your information when necessary to save or protect an individual’s vital interest, such as to prevent harm.</li>
+</ul>
+</section>
+<section id="legalbases">
+<h2>3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?</h2>
+<p class="body-text"><em><strong>In Short:</strong> We only process your personal information when we believe it is necessary and we have a valid legal reason under applicable law...</em></p>
+<p class="body-text">The General Data Protection Regulation (GDPR) and UK GDPR require us to explain the valid legal bases we rely on in order to process your personal information. As such, we may rely on the following legal bases:</p>
+<ul class="privacy-list">
+<li><strong>Consent.</strong> We may process your information if you have given us permission for a specific purpose.</li>
+<li><strong>Performance of a Contract.</strong> We may process your personal information when we believe it is necessary to fulfill our contractual obligations to you.</li>
+<li><strong>Legal Obligations.</strong> We may process your information where we believe it is necessary for compliance with our legal obligations.</li>
+<li><strong>Vital Interests.</strong> We may process your information where we believe it is necessary to protect your vital interests or those of a third party.</li>
+</ul>
+</section>
+<section id="whoshare">
+<h2>4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</h2>
+<p class="body-text"><strong><em>In Short:</em></strong> <em>We may share information in specific situations described in this section and/or with the following third parties.</em></p>
+<p class="body-text">We may need to share your personal information in the following situations:</p>
+<ul class="privacy-list">
+<li><strong>Business Transfers.</strong> We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</li>
+</ul>
+</section>
+<section id="cookies">
+<h2>5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</h2>
+<p class="body-text"><strong><em>In Short:</em></strong> <em>We may use cookies and other tracking technologies to collect and store your information.</em></p>
+<p class="body-text">We may use cookies and similar tracking technologies (like web beacons and pixels) to gather information when you interact with our Services. Specific information about how we use such technologies is set out in our Cookie Notice.</p>
+</section>
+<section id="inforetain">
+<h2>6. HOW LONG DO WE KEEP YOUR INFORMATION?</h2>
+<p class="body-text"><strong><em>In Short:</em></strong> <em>We keep your information for as long as necessary to fulfill the purposes outlined in this Privacy Notice unless otherwise required by law.</em></p>
+<p class="body-text">When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information...</p>
+</section>
+<section id="infominors">
+<h2>7. DO WE COLLECT INFORMATION FROM MINORS?</h2>
+<p class="body-text"><strong><em>In Short:</em></strong> <em>We do not knowingly collect data from or market to children under 18 years of age.</em></p>
+<p class="body-text">We do not knowingly collect, solicit data from, or market to children under 18 years of age. If you become aware of any data we may have collected from children under age 18, please contact us at <a class="link" href="mailto:faunayflora@bizkaia.com">faunayflora@bizkaia.com</a>.</p>
+</section>
+<section id="privacyrights">
+<h2>8. WHAT ARE YOUR PRIVACY RIGHTS?</h2>
+<p class="body-text"><strong><em>In Short:</em></strong> <em>In some regions, such as the European Economic Area (EEA), United Kingdom (UK), and Switzerland, you have rights that allow you greater access to and control over your personal information.</em></p>
+<p class="body-text">These may include the right to request access, rectification, erasure, data portability, and restriction of processing. You can make such a request by contacting us or visiting <a class="link" href="#contact">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a></p>
+<p class="body-text"><strong><u>Withdrawing your consent:</u></strong> If we are relying on your consent to process your personal information, you have the right to withdraw your consent at any time.</p>
+</section>
+<section id="DNT">
+<h2>9. CONTROLS FOR DO-NOT-TRACK FEATURES</h2>
+<p class="body-text">Most web browsers and some mobile operating systems include a Do-Not-Track ("DNT") feature or setting you can activate... At this stage, no uniform technology standard for recognizing and implementing DNT signals has been finalized.</p>
+</section>
+<section id="policyupdates">
+<h2>10. DO WE MAKE UPDATES TO THIS NOTICE?</h2>
+<p class="body-text"><strong><em>In Short:</em></strong> <em>Yes, we will update this notice as necessary to stay compliant with relevant laws.</em></p>
+</section>
+<section id="contact">
+<h2>11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2>
+<p class="body-text">If you have questions or comments about this notice, you may email us at <a class="link" href="mailto:faunayflora@bizkaia.com">faunayflora@bizkaia.com</a> or contact us by post at:</p>
+<p class="body-text">
+            Flora y Fauna de Bizkaia<br/>
+            CIFP TARTANGA LHII<br/>
+            C. Tartanga, 15<br/>
+            Erandio, Biscay 48950<br/>
+            Spain
+        </p>
+</section>
+<section id="request">
+<h2>12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h2>
+<p class="body-text">Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. To request this, please <a class="link" href="https://app.termly.io/dsar/9db29cff-4438-4a8d-b4e6-6c881b2dbb77" target="_blank">fill out and submit a data subject access request</a>.</p>
+</section>
+<div class="privacy-footer">
+<p class="body-text">This Privacy Policy was created using Termly's <a class="link" href="https://termly.io/products/privacy-policy-generator/" rel="noopener external" target="_blank">Privacy Policy Generator</a>.</p>
+</div>
+</div>
+<a class="btn btn-primary mt-3" href="index.html">
+       Volver a inicio
+      </a>
+</div>
+</div>
+</section>
+</main>
+<button aria-label="Volver al principio" class="back-to-top" id="backToTop" title="Volver al principio" type="button"><i class="bi bi-arrow-up"></i></button>
+<footer class="main-footer">
+<div aria-label="Entidades colaboradoras" class="partner-footer">
+<div class="container">
+<div aria-label="Arrastra para ver entidades colaboradoras" class="partner-slider" id="partnerSlider" tabindex="0">
+<div class="partner-track" id="partnerTrack">
+<a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank"><img alt="Diputación Foral de Bizkaia" src="img/partners/logo-diputacion-de-bizkaia.jpg"/></a>
+<a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank"><img alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png"/></a>
+<a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank"><img alt="MITECO" src="img/partners/logo-miteco-color.png"/></a>
+<a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank"><img alt="Universidad del País Vasco" src="img/partners/logo-upv-ehu-blanco-completo .png"/></a>
+<a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank"><img alt="Gobierno Vasco" src="img/partners/logo-gobierno-vasco.png"/></a>
+<a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank"><img alt="Fundación Biodiversidad" src="img/partners/fundacion-biodiversidad.jpg"/></a>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row g-4 py-4">
+<div class="col-lg-3 col-md-6">
+<a class="footer-brand" href="index.html"><img alt="Logotipo Flora y Fauna de Bizkaia" src="img/logo-web.svg"/><span>Flora y Fauna<small>de Bizkaia</small></span></a><p class="footer-slogan" data-es="Conocer · Proteger · Compartir" data-eus="Ezagutu · Babestu · Partekatu">Conocer · Proteger · Compartir</p>
+<p class="footer-copy mt-3"><b>Grupo:</b> June, Eritz, Kelea Rueda</p>
+<p class="footer-copy mt-3">Proyecto Challenge 1.2, DAMi 1º</p>
+<div class="social-links d-flex flex-wrap gap-2">
+<a aria-label="Instagram" href="https://www.instagram.com/" rel="noopener" target="_blank"><i class="bi bi-instagram"></i></a>
+<a aria-label="YouTube" href="https://www.youtube.com/@urdaibaibirdcenter" rel="noopener" target="_blank"><i class="bi bi-youtube"></i></a>
+<a aria-label="Facebook" href="https://www.facebook.com/" rel="noopener" target="_blank"><i class="bi bi-facebook"></i></a>
+<a aria-label="X" href="https://x.com/" rel="noopener" target="_blank"><i class="bi bi-twitter-x"></i></a>
+<a aria-label="GitHub del proyecto" href="https://github.com/keruka21/CHALLENGE-1-2-My-first-Application" rel="noopener" target="_blank"><i class="bi bi-github"></i></a>
+</div>
+</div>
+<div class="col-lg-2 col-6">
+<h2 class="footer-title">Explora</h2>
+<ul class="footer-links">
+<li><a data-es="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">Fauna</a></li>
+<li><a data-es="Flora" data-eus="Flora" href="catalog.html?type=flora">Flora</a></li>
+<li><a data-es="Hábitats" data-eus="Habitatak" href="habitats.html">Hábitats</a></li>
+<li><a data-es="Blog" data-eus="Bloga" href="blog.html">Blog</a></li>
+</ul>
+</div>
+<div class="col-lg-3 col-6">
+<h2 class="footer-title" data-es="Contacto" data-eus="Kontaktua">Contacto</h2>
+<a class="footer-contact" href="tel:+34555555555"><i class="bi bi-telephone-fill"></i>555 555 555</a>
+<a class="footer-contact" href="https://wa.me/34555555555" rel="noopener" target="_blank"><i class="bi bi-whatsapp"></i>WhatsApp: 555 555 555</a>
+<a class="footer-contact" href="mailto:faunayflora@bizkaia.com"><i class="bi bi-envelope"></i>faunayflora@bizkaia.com</a>
+<p class="small mt-2">Lunes a viernes<br/>08:00 am – 14:25pm (Aula 209)</p>
+</div>
+<div class="col-lg-4">
+<h2 class="footer-title">Estamos en CIFP TARTANGA LHII</h2>
+<p class="small"> Tartanga Kalea, 15 · Erandio, Bizkaia 48950</p>
+<p class="small"> Piso 1, Clase 209</p>
+<div class="footer-map"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Instituto%20Tartanga%20Erandio&amp;output=embed" title="Ubicación del Instituto Tartanga"></iframe></div>
+</div>
+</div>
+<p class="small text-secondary mb-2 audio-credit">Sonido de petirrojo: Lawrence Shove / British Library · <a href="https://commons.wikimedia.org/wiki/File:European_Robin_(Erithacus_rubecula)_(W1CDR0001425_BD16).ogg" rel="noopener" target="_blank">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">CC BY-SA 4.0</a>.</p>
+<div class="footer-bottom py-3 d-flex flex-wrap justify-content-between gap-2">
+<span>© <span id="currentYear"></span> Flora y Fauna de Bizkaia · Proyecto educativo</span>
+<div class="d-flex gap-3 flex-wrap"><a href="privacy.html">Privacidad</a><a href="legal.html">Aviso legal</a><a href="cookies.html">Cookies</a><a href="index.html">Volver a inicio</a></div>
+</div>
+</div>
+</footer>
+<script src="bootstrap-5.3.8/js/bootstrap.bundle.min.js">
+</script>
+<script src="js/main.js">
+</script>
+</body>
+</html>

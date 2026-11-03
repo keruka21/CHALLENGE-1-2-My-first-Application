@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html data-bs-theme="light" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Contacta con el equipo." name="description"/>
+<title>
+   Contacto | Flora y Fauna de Bizkaia
+  </title>
+<link href="img/logo-web.svg" rel="icon"/>
+<link href="bootstrap-5.3.8/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/bootstrap-icons.css" rel="stylesheet"/>
+<link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<div class="user-bar">
+<div class="container d-flex justify-content-between align-items-center gap-2">
+<div aria-label="Seleccionar idioma" class="language-switch d-flex align-items-center gap-1">
+<button aria-pressed="true" class="btn btn-sm language-button active" data-language="es" type="button">ES</button>
+<span aria-hidden="true">|</span>
+<button aria-pressed="false" class="btn btn-sm language-button" data-language="eus" type="button">EUS</button>
+</div>
+<div class="position-relative">
+<button aria-controls="userPanel" aria-expanded="false" aria-label="Área de usuario" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" type="button">
+<i class="bi bi-person-circle fs-5"></i><span class="d-none d-sm-inline ms-1">Área de usuario</span>
+</button>
+<div class="collapse user-panel-collapse" id="userPanel">
+<div class="user-dropdown p-3">
+<div id="guestPanel"><p class="fw-semibold">Bienvenido/a</p><a class="btn btn-primary btn-sm w-100 mb-2" href="login.html">Iniciar sesión</a><a class="btn btn-outline-primary btn-sm w-100" href="register.html">Solicitar cuenta</a></div>
+<div class="d-none" id="memberPanel"><strong id="memberName">Usuario</strong><p class="small text-secondary" id="memberEmail"></p><a class="dropdown-item" href="user-area.html">Mi perfil y registros</a><a class="dropdown-item" href="user-area.html#privacySettingsForm">Ajustes y privacidad</a><a class="dropdown-item d-none" href="admin.html" id="adminPanelLink">Administración · Validar registros</a><button class="btn btn-outline-secondary btn-sm w-100 mt-2" id="logoutButton">Cerrar sesión</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="site-nav-shell">
+<nav class="navbar navbar-expand-lg main-navbar" id="mainNavbar">
+<div class="container">
+<a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+<img alt="" height="42" src="img/logo-web.svg"/>
+<span>
+       Flora y Fauna
+       <small>
+        de Bizkaia
+       </small>
+</span>
+</a>
+<button aria-label="Abrir navegación" class="navbar-toggler" data-bs-target="#navbarContent" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon">
+</span>
+</button>
+<div class="collapse navbar-collapse" id="navbarContent">
+<ul class="navbar-nav ms-auto gap-lg-2">
+<li class="nav-item">
+<a class="nav-link" data-es="Inicio" data-eus="Hasiera" href="index.html">
+         Inicio
+        </a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-es="Catálogo" data-eus="Katalogoa" href="catalog.html">
+         Catálogo
+        </a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" data-es="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">
+           Fauna
+          </a>
+</li>
+<li>
+<a class="dropdown-item" data-es="Flora" data-eus="Flora" href="catalog.html?type=flora">
+           Flora
+          </a>
+</li>
+<li>
+<a class="dropdown-item" data-es="Hábitats" data-eus="Habitatak" href="habitats.html">
+           Hábitats
+          </a>
+</li>
+<li><a class="dropdown-item" data-es="Parques, reservas y centros" data-eus="Parkeak, erreserbak eta zentroak" href="spaces.html">Parques, reservas y centros</a></li>
+<li><a class="dropdown-item" data-es="Comarcas" data-eus="Eskualdeak" href="regions.html">Comarcas</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-es="Blog" data-eus="Bloga" href="blog.html">
+         Blog
+        </a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-es="Participa" data-eus="Parte hartu" href="species-submit.html">
+         Participa
+        </a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" data-es="Registrar una especie" data-eus="Espezie bat erregistratu" href="species-submit.html">
+           Registrar una especie
+          </a>
+</li>
+<li>
+<a class="dropdown-item" data-es="Registrar un avistamiento" data-eus="Behaketa bat erregistratu" href="register.html">
+           Registrar un avistamiento
+          </a>
+</li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" data-es="Vídeos" data-eus="Bideoak" href="videos.html">Vídeos</a></li>
+<li class="nav-item">
+<a class="nav-link" data-es="Contacto" data-eus="Kontaktua" href="contact.html">
+         Contacto
+        </a>
+</li>
+<li class="nav-item d-flex align-items-center"><button aria-label="Cambiar tema" class="btn btn-sm theme-toggle" id="themeToggle" type="button"><i class="bi bi-moon-stars-fill" id="themeIcon"></i></button></li>
+</ul>
+</div>
+</div>
+</nav>
+<nav aria-label="Migas de pan" class="container breadcrumb-wrap">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a data-es="Inicio" data-eus="Hasiera" href="index.html">Inicio</a></li>
+<li aria-current="page" class="breadcrumb-item active">Contacto</li>
+</ol>
+</nav>
+</div>
+<main id="mainContent">
+<section class="inner-hero">
+<div class="container">
+<p class="section-kicker">
+      Estamos aquí
+     </p>
+<h1>
+      Contacto
+     </h1>
+<p class="lead">
+      ¿Quieres colaborar o proponer una mejora?
+     </p>
+</div>
+</section>
+<section class="content-section">
+<div class="container">
+<div class="row g-4">
+<div class="col-lg-5">
+<div class="content-card h-100">
+<h2 class="h4">
+         Canales de contacto
+        </h2>
+<p>
+<a href="mailto:info@florayfaunabizkaia.eus">
+<i class="bi bi-envelope me-2">
+</i>
+          info@florayfaunabizkaia.eus
+         </a>
+</p>
+<p>
+<a href="https://wa.me/34600000000" rel="noopener" target="_blank">
+<i class="bi bi-whatsapp me-2">
+</i>
+          WhatsApp
+         </a>
+</p>
+</div>
+</div>
+<div class="col-lg-7">
+<div class="content-card">
+<h2 class="h4">
+         Envíanos un mensaje
+        </h2>
+<form id="contactForm">
+<div class="mb-3">
+<label class="form-label" for="contactName">
+           Nombre
+          </label>
+<input class="form-control" id="contactName" maxlength="100" required=""/>
+</div>
+<div class="mb-3">
+<label class="form-label" for="contactEmail">
+           Correo
+          </label>
+<input class="form-control" id="contactEmail" required="" type="email"/>
+</div>
+<div class="mb-3">
+<label class="form-label" for="contactMessage">
+           Mensaje
+          </label>
+<textarea class="form-control" id="contactMessage" minlength="10" required="" rows="4"></textarea>
+</div>
+<button class="btn btn-primary" type="submit">
+          Preparar correo
+         </button>
+</form>
+<p class="form-hint mt-2">
+         Abre la aplicación de correo; no almacena mensajes en un servidor.
+        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<button aria-label="Volver al principio" class="back-to-top" id="backToTop" title="Volver al principio" type="button"><i class="bi bi-arrow-up"></i></button>
+<footer class="main-footer">
+<div aria-label="Entidades colaboradoras" class="partner-footer">
+<div class="container">
+<div aria-label="Arrastra para ver entidades colaboradoras" class="partner-slider" id="partnerSlider" tabindex="0">
+<div class="partner-track" id="partnerTrack">
+<a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank"><img alt="Diputación Foral de Bizkaia" src="img/partners/logo-diputacion-de-bizkaia.jpg"/></a>
+<a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank"><img alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png"/></a>
+<a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank"><img alt="MITECO" src="img/partners/logo-miteco-color.png"/></a>
+<a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank"><img alt="Universidad del País Vasco" src="img/partners/logo-upv-ehu-blanco-completo .png"/></a>
+<a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank"><img alt="Gobierno Vasco" src="img/partners/logo-gobierno-vasco.png"/></a>
+<a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank"><img alt="Fundación Biodiversidad" src="img/partners/fundacion-biodiversidad.jpg"/></a>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row g-4 py-4">
+<div class="col-lg-3 col-md-6">
+<a class="footer-brand" href="index.html"><img alt="Logotipo Flora y Fauna de Bizkaia" src="img/logo-web.svg"/><span>Flora y Fauna<small>de Bizkaia</small></span></a><p class="footer-slogan" data-es="Conocer · Proteger · Compartir" data-eus="Ezagutu · Babestu · Partekatu">Conocer · Proteger · Compartir</p>
+<p class="footer-copy mt-3"><b>Grupo:</b> June, Eritz, Kelea Rueda</p>
+<p class="footer-copy mt-3">Proyecto Challenge 1.2, DAMi 1º</p>
+<div class="social-links d-flex flex-wrap gap-2">
+<a aria-label="Instagram" href="https://www.instagram.com/" rel="noopener" target="_blank"><i class="bi bi-instagram"></i></a>
+<a aria-label="YouTube" href="https://www.youtube.com/@urdaibaibirdcenter" rel="noopener" target="_blank"><i class="bi bi-youtube"></i></a>
+<a aria-label="Facebook" href="https://www.facebook.com/" rel="noopener" target="_blank"><i class="bi bi-facebook"></i></a>
+<a aria-label="X" href="https://x.com/" rel="noopener" target="_blank"><i class="bi bi-twitter-x"></i></a>
+<a aria-label="GitHub del proyecto" href="https://github.com/keruka21/CHALLENGE-1-2-My-first-Application" rel="noopener" target="_blank"><i class="bi bi-github"></i></a>
+</div>
+</div>
+<div class="col-lg-2 col-6">
+<h2 class="footer-title">Explora</h2>
+<ul class="footer-links">
+<li><a data-es="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">Fauna</a></li>
+<li><a data-es="Flora" data-eus="Flora" href="catalog.html?type=flora">Flora</a></li>
+<li><a data-es="Hábitats" data-eus="Habitatak" href="habitats.html">Hábitats</a></li>
+<li><a data-es="Blog" data-eus="Bloga" href="blog.html">Blog</a></li>
+</ul>
+</div>
+<div class="col-lg-3 col-6">
+<h2 class="footer-title" data-es="Contacto" data-eus="Kontaktua">Contacto</h2>
+<a class="footer-contact" href="tel:+34555555555"><i class="bi bi-telephone-fill"></i>555 555 555</a>
+<a class="footer-contact" href="https://wa.me/34555555555" rel="noopener" target="_blank"><i class="bi bi-whatsapp"></i>WhatsApp: 555 555 555</a>
+<a class="footer-contact" href="mailto:faunayflora@bizkaia.com"><i class="bi bi-envelope"></i>faunayflora@bizkaia.com</a>
+<p class="small mt-2">Lunes a viernes<br/>08:00 am – 14:25pm (Aula 209)</p>
+</div>
+<div class="col-lg-4">
+<h2 class="footer-title">Estamos en CIFP TARTANGA LHII</h2>
+<p class="small"> Tartanga Kalea, 15 · Erandio, Bizkaia 48950</p>
+<p class="small"> Piso 1, Clase 209</p>
+<div class="footer-map"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Instituto%20Tartanga%20Erandio&amp;output=embed" title="Ubicación del Instituto Tartanga"></iframe></div>
+</div>
+</div>
+<p class="small text-secondary mb-2 audio-credit">Sonido de petirrojo: Lawrence Shove / British Library · <a href="https://commons.wikimedia.org/wiki/File:European_Robin_(Erithacus_rubecula)_(W1CDR0001425_BD16).ogg" rel="noopener" target="_blank">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">CC BY-SA 4.0</a>.</p>
+<div class="footer-bottom py-3 d-flex flex-wrap justify-content-between gap-2">
+<span>© <span id="currentYear"></span> Flora y Fauna de Bizkaia · Proyecto educativo</span>
+<div class="d-flex gap-3 flex-wrap"><a href="privacy.html">Privacidad</a><a href="legal.html">Aviso legal</a><a href="cookies.html">Cookies</a><a href="index.html">Volver a inicio</a></div>
+</div>
+</div>
+</footer>
+<script src="bootstrap-5.3.8/js/bootstrap.bundle.min.js">
+</script>
+<script src="js/main.js">
+</script>
+</body>
+</html>
