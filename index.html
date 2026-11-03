@@ -1,469 +1,436 @@
 <!DOCTYPE html>
-
-<html data-bs-theme="light" lang="es">
-
+<html data-bs-theme="light" lang="en">
 <head>
         <meta charset="utf-8" />
         <meta content="width=device-width,initial-scale=1" name="viewport" />
-        <meta content="Plataforma colaborativa para descubrir, consultar y registrar la flora y fauna de Bizkaia."
-                name="description" />
+        <meta content="Collaborative platform to discover, consult and record the flora and fauna of Biscay" name="description" />
         <title>
-                Flora y Fauna de Bizkaia | Conoce, Protege, Comparte
+                Flora and Fauna of Biscay | Discover, Protect, Share
         </title>
         <link href="img/logo-web.svg" rel="icon" />
         <link href="bootstrap-5.3.8/css/bootstrap.min.css" rel="stylesheet" />
         <link href="css/bootstrap-icons.css" rel="stylesheet" type="text/css" />
         <link href="css/styles.css" rel="stylesheet" />
+
+        <!--OPENGRAPH-->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Fauna and Flora of Biscay">
+        <meta property="og:url" content="https://faunaandfloraofbiscay.com">
+        <meta property="og:image" content="link de la imagen">
+        <meta property="og:description" content="A collaborative space to discover the flora and fauna of our territory, explore their habitats and provide observations that help conserve them.">
 </head>
 
 <body>
-        <!--HEADER-->
-        <header>
-                <!--BARRA DE USUARIO/IDIOMAS-->
-                <div class="user-bar">
-                        <div class="container d-flex justify-content-between align-items-center gap-2">
-                                <!--IDIOMAS-->
-                                <div aria-label="Seleccionar idioma"
-                                        class="language-switch d-flex align-items-center gap-1">
-                                        <button aria-pressed="true" class="btn btn-sm language-button active" data-language="es" type="button">ES</button>
-                                        <span aria-hidden="true">|</span>
-                                        <button aria-pressed="false" class="btn btn-sm language-button" data-language="eus" type="button">EUS</button>
-                                </div>
-                                <!--BARRA DE USUARIO-->
-                                <div class="position-relative">
-                                        <button aria-controls="userPanel" aria-expanded="false" aria-label="Área de usuario" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" type="button">
-                                                <i class="bi bi-person-circle fs-5"></i>
-                                                <span class="d-none d-sm-inline ms-1">
-                                                        Área de usuario
-                                                </span>
-                                        </button>
-                                        <div class="collapse user-panel-collapse" id="userPanel">
-                                                <div class="user-dropdown p-3">
-                                                        <!--USUARIO NO REGISTRADO-->
-                                                        <div id="guestPanel">
-                                                                <p class="fw-semibold">Bienvenido/a</p>
-                                                                <a class="btn btn-primary btn-sm w-100 mb-2" href="login.html">
-                                                                        Iniciar sesión
-                                                                </a>
-                                                                <a class="btn btn-outline-primary btn-sm w-100" href="register.html">
-                                                                        Regístrate
-                                                                </a>
-                                                        </div>
-                                                        <!--USUARIO REGISTRADO-->
-                                                        <div class="d-none" id="memberPanel">
-                                                                <strong id="memberName">Usuario</strong>
-                                                                <p class="small text-secondary" id="memberEmail"></p>
-                                                                <a class="dropdown-item" href="user-area.html">
-                                                                        Mi perfil</a>
-                                                                <a class="dropdown-item" href="user-area.html#privacySettingsForm">
-                                                                        Ajustes
-                                                                </a
-                                                                <button class="btn btn-outline-secondary btn-sm w-100 mt-2" id="logoutButton">
-                                                                        Cerrar sesión
-                                                                </button>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                </div>
-                <!-- FIN BARRA DE USUARIO/IDIOMAS-->
-                <!--NAVBAR-->
-                <nav class="navbar navbar-expand-lg main-navbar" id="mainNavbar">
-                        <div class="container">
-                                <!--LOGO-->
-                                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" id="logo-web">
-                                        <img alt="logo-web" height="50" src="img/logo-web.svg" />
-                                        <span>
-                                                Flora y Fauna
-                                                <small>
-                                                        de Bizkaia
-                                                </small>
-                                        </span>
-                                </a>
-                                <!--BOTÓN TOGGLE-->
-                                <button aria-label="Abrir navegación" class="navbar-toggler" data-bs-target="#navbarContent" data-bs-toggle="collapse" type="button">
-                                        <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <!--LINKS NAVBAR-->
-                                <div class="collapse navbar-collapse" id="navbarContent">
-                                        <ul class="navbar-nav ms-auto gap-lg-2">
-                                                <li class="nav-item">
-                                                        <a class="nav-link" data-es="Inicio" data-eus="Hasiera" href="index.html">
-                                                                Inicio
-                                                        </a>
-                                                </li>
-                                                <li class="nav-item dropdown">
-                                                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-es="Catálogo" data-eus="Katalogoa" href="catalog.html">
-                                                                Catálogo
-                                                        </a>
-                                                        <!--dropdown-->
-                                                        <ul class="dropdown-menu">
-                                                                <li>
-                                                                        <a class="dropdown-item" data-es="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">
-                                                                                Fauna
-                                                                        </a>
-                                                                </li>
-                                                                <li>
-                                                                        <a class="dropdown-item" data-es="Flora" data-eus="Flora" href="catalog.html?type=flora">
-                                                                                Flora
-                                                                        </a>
-                                                                </li>
-                                                                <li>
-                                                                        <a class="dropdown-item" data-es="Hábitats" data-eus="Habitatak" href="habitats.html">
-                                                                                Hábitats
-                                                                        </a>
-                                                                </li>
-                                                                <li>
-                                                                        <a class="dropdown-item" data-es="Parques, reservas y centros" data-eus="Parkeak, erreserbak eta zentroak" href="spaces.html">
-                                                                                Parques, reservas y centros
-                                                                        </a>
-                                                                </li>
-                                                                <li>
-                                                                        <a class="dropdown-item" data-es="Comarcas" data-eus="Eskualdeak" href="regions.html">
-                                                                                Comarcas
-                                                                        </a>
-                                                                </li>
-                                                        </ul>
-                                                        <!--fin dropdown-->
-                                                </li>
-                                                <li class="nav-item">
-                                                        <a class="nav-link" data-es="Blog" data-eus="Bloga" href="blog.html">
-                                                                Blog
-                                                        </a>
-                                                </li>
-                                                <li class="nav-item dropdown">
-                                                        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-es="Participa" data-eus="Parte hartu" href="species-submit.html">
-                                                                Participa
-                                                        </a>
-                                                        <!--dropdown-->
-                                                        <ul class="dropdown-menu">
-                                                                <li>
-                                                                        <a class="dropdown-item" data-es="Registrar una especie" data-eus="Espezie bat erregistratu" href="species-submit.html">
-                                                                                Registrar una especie
-                                                                        </a>
-                                                                </li>
-                                                                <li>
-                                                                        <a class="dropdown-item" data-es="Registrar un avistamiento" data-eus="Behaketa bat erregistratu" href="register.html">
-                                                                                Registrar un avistamiento
-                                                                        </a>
-                                                                </li>
-                                                        </ul>
-                                                        <!--fin dropdown-->
-                                                </li>
-                                                <li class="nav-item">
-                                                        <a class="nav-link" data-es="Vídeos" data-eus="Bideoak" href="videos.html">
-                                                                Vídeos</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                        <a class="nav-link" data-es="Contacto" data-eus="Kontaktua" href="contact.html">
-                                                                Contacto
-                                                        </a>
-                                                </li>
-                                                <!--BOTÓN TEMA CLARO/OSCURO-->
-                                                <li class="nav-item d-flex align-items-center">
-                                                        <button aria-label="Cambiar tema"class="btn btn-sm theme-toggle" id="themeToggle" type="button">
-                                                                <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
-                                                        </button>
-                                                </li>
-                                        </ul>
-                                </div>
-                        </div>
-                </nav>
-        </header>
+  <!--HEADER-->
+  <header>
+  	<!--BARRA DE USUARIO/IDIOMAS-->
+    <div class="user-bar">
+      <div class="container d-flex justify-content-between align-items-center gap-2">
+      	<!--IDIOMAS-->
+        <div aria-label="Select Language" class="language-switch d-flex align-items-center gap-1">
+        	<button aria-prsed="true" class="btn btn-sm language-button active" data-language="en" type="button">EN</button>
+            <span aria-hidden="true">|</span>
+            	<button aria-prsed="false" class="btn btn-sm language-button" data-language="eus" type="button">EUS</button>
+				</div>
+				<!--BARRA DE USUARIO-->
+        <div class="position-relative">
+					<button aria-controls="userPanel" aria-expanded="false" aria-label="User Area" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" type="button">
+						<i class="bi bi-person-circle fs-5"></i>
+						<span class="d-none d-sm-inline ms-1">
+							User Area
+            </span>
+          </button>
+					<div class="collapse user-panel-collapse" id="userPanel">
+						<div class="user-dropdown p-3">
+							<!--USUARIO NO REGISTRADO-->
+							<div id="gutPanel">
+								<p class="fw-semibold">Welcome!</p>
+                <a class="btn btn-primary btn-sm w-100 mb-2" href="login.html">
+                	Log-in
+                </a>
+								<a class="btn btn-outline-primary btn-sm w-100" href="register.html">
+									Sing-up
+                </a>
+							</div>
+							<!--USUARIO REGISTRADO-->
+							<div class="d-none" id="memberPanel">
+								<strong id="memberName">
+									User
+								</strong>
+								<p class="small text-secondary" id="memberEmail"></p>
+								<a class="dropdown-item" href="user-area.html">
+									My Profile
+								</a>
+								<a class="dropdown-item" href="user-area.html#privacySettingsForm">
+									Settings
+								</a
+								<button class="btn btn-outline-secondary btn-sm w-100 mt-2" id="logoutButton">
+									Log-out
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN BARRA DE USUARIO/IDIOMAS-->
+		<!--NAVBAR-->
+		<nav class="navbar navbar-expand-lg main-navbar" id="mainNavbar">
+			<div class="container">
+				<!--LOGO-->
+				<a class="navbar-brand d-flex align-items-center gap-2" href="index.html" id="logo-web">
+					<img alt="logo-web" height="50" src="img/logo-web.svg" />
+					<span>
+						Flora and Fauna
+						<small>of Biscay</small>
+					</span>
+				</a>
+				<!--BOTÓN TOGGLE-->
+				<button aria-label="Open navigation" class="navbar-toggler" data-bs-target="#navbarContent" data-bs-toggle="collapse" type="button">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!--LINKS NAVBAR-->
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<ul class="navbar-nav ms-auto gap-lg-2">
+						<li class="nav-item">
+							<a class="nav-link" data-en="Home" data-eus="Hasiera" href="index.html">
+								Home
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Catalogue" data-eus="Katalogoa" href="catalog.html">
+								Catalogue
+							</a>
+							<!--dropdown-->
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" data-en="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">
+										Fauna
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item" data-en="Flora" data-eus="Flora" href="catalog.html?type=flora">
+										Flora
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item" data-en="Habitats" data-eus="Habitatak" href="habitats.html">
+										Habitats
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item" data-en="Parks, rerv and centers" data-eus="Parkeak, errerbak eta zentroak" href="spac.html">
+										Parks, rerves and centers
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item" data-en="Regions" data-eus="Eskualdeak" href="regions.html">
+										Regions
+									</a>
+								</li>
+							</ul>
+							<!--fin dropdown-->
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-en="Blog" data-eus="Bloga" href="blog.html">
+								Blog
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Participate" data-eus="Parte hartu" href="species-submit.html">
+								Participate
+							</a>
+							<!--dropdown-->
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" data-en="Register a species" data-eus="Espezie bat erregistratu" href="species-submit.html">
+										Register a species
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item" data-en="Record a sighting" data-eus="Behaketa bat erregistratu" href="register.html">
+										Record a sighting
+									</a>
+								</li>
+							</ul>
+							<!--fin dropdown-->
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-en="Videos" data-eus="Bideoak" href="videos.html">
+								Vídeos
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-en="Contact" data-eus="Kontaktua" href="contact.html">
+								Contact
+							</a>
+						</li>
+						<!--BOTÓN TEMA CLARO/OSCURO-->
+						<li class="nav-item d-flex align-items-center">
+							<button aria-label="Change theme" class="btn btn-sm theme-toggle" id="themeToggle" type="button">
+								<i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+	<!--AUDIO-->
+	<audio id="backgroundAudio" loop="" preload="none">
+		<source src="audio/European_Robin.mp3" type="audio/mpeg" />
+	</audio>
+	<button aria-label="Silence Sound" class="floating-control audio-control" id="audioToggle" title="Silence">
+		<i class="bi bi-volume-up-fill" id="audioIcon"></i>
+	</button>
 
-        <!--AUDIO-->
-        <audio id="backgroundAudio" loop="" preload="none">
-                <source src="audio/European_Robin.mp3" type="audio/mpeg" />
-        </audio>
+	<!--BOTÓN VOLVER AL TOP DE LA PÁGINA-->
+	<button aria-label="Back to the top" class="floating-control top-control" id="backToTop">
+		<i class="bi bi-chevron-up"></i>
+	</button>x
+	
+	<!--MAIN-->
+	<main id="mainContent">
+		<!-- SECCIÓN HERO-->
+		<section class="hero-section" id="heroSection">
+			<!--CAROUSEL-->
+			<div class="carousel slide carousel-fade hero-carousel" data-bs-interval="6200" data-bs-ride="carousel" id="heroCarousel">
+				<!--botones-->
+				<div class="carousel-indicators">
+					<button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#heroCarousel"></button>
+					<button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#heroCarousel"></button>
+					<button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#heroCarousel"></button>
+					<button aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="#heroCarousel"></button>
+					<button aria-label="Slide 5" data-bs-slide-to="4" data-bs-target="#heroCarousel"></button>
+				</div>
+				<!--imágenes-->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img alt="Natural landscape of Biscay" src="img/hero/hero-bizkaia-1.jpg" />
+					</div>
+					<div class="carousel-item">
+						<img alt="Natural environment of Biscay" loading="lazy" src="img/hero/hero-bizkaia-2.jpg" />
+					</div>
+					<div class="carousel-item">
+						<img alt="Biscay Biodiversity" loading="lazy" src="img/hero/hero-bizkaia-3.jpg" />
+					</div>
+					<div class="carousel-item">
+						<img alt="Forests and mountains" loading="lazy" src="img/hero/hero-bizkaia-4.jpg" />
+					</div>
+					<div class="carousel-item">
+						<img alt="Coastal Landscape" loading="lazy" src="img/hero/hero-bizkaia-5.jpeg" />
+					</div>
+				</div>
 
-        <button aria-label="Silenciar sonido" class="floating-control audio-control" id="audioToggle" title="Silenciar sonido">
-                <i class="bi bi-volume-up-fill" id="audioIcon"></i>
-        </button>
+ <!--OVERLAY-->
+				<div class="hero-overlay"></div>			
+<!--CONTENIDO-->
+				<div class="hero-content container">
+					<p class="eyebrow">
+						Discover · Protect · Share
+					</p>
+					<h1>
+						The nature of Bizkaia,
+						<em> in your hands</em>
+					</h1>
+					<p class="hero-lead">
+						A collaborative space to discover the flora and fauna of our
+						territory, explore their habitats and provide observations that help
+						keep them.
+					</p>
+					<!-- botones hero-->
+					<div class="d-flex flex-wrap justify-content-center gap-3">
+						<a class="btn btn-accent btn-lg" href="#mapSection">
+							Explore
+							<i class="bi bi-arrow-down-right"></i>
+						</a>
+						<a class="btn btn-outline-light btn-lg" href="register.html">
+							Participate
+						</a>
+					</div>
+					<!--hero facts-->
+					<div class="hero-facts">
+						<span>
+							<i class="bi bi-map"></i> 
+							7 regions
+						</span>
+						<span>
+							<i class="bi bi-flower1"></i> 
+							Flora and fauna
+						</span>
+						<span>
+							<i class="bi bi-people"></i>
+							Citizen collaboration
+						</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- SOBRE NOSOTROS-->
+		<section class="section-padding about-section" id="aboutSection">
+			<div class="container">
+				<div class="row align-items-center g-5">
+					<div class="col-lg-6">
+						<div class="about-image-wrap">
+							<img alt="Natural environment of Biscay" class="about-image" loading="lazy" src="img/imagenes-extra/about.jpg" />
+							<span class="image-caption">
+								<i class="bi bi-heart-fill me-2"></i>
+								A territory full of life
+							</span>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<p class="section-kicker">
+							Our objective
+						</p>
+						<h2 class="section-title">
+							A community that observes
+							<span> to conserve the natural environment</span>
+						</h2>
+						<p class="section-copy">
+							Bizkaia brings together coastal landscapes, estuaries, forests, mountains and areas
+							humid areas that are home to extraordinary biological diversity.
+							This platform connects that natural heritage with people who want to know him and take care of him.
+						</p>
+						<p class="section-copy">
+							We organize information by regions and habitats,
+							we gather sheets of flora and fauna species and facilitate the record of observations.
+							Each contribution helps build a shared vision of the local biodiversity.
+						</p>
+						<div class="row g-3 mt-3">
+							<div class="col-6">
+								<div class="objective-point">
+									<i class="bi bi-binoculars"></i>
+									<div>
+										<strong>
+											Discover
+										</strong>
+										<small>
+											Know species and habitats.
+										</small>
+									</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="objective-point">
+									<i class="bi bi-shield-check"></i>
+									<div>
+										<strong>
+											Conserve nature
+										</strong>
+										<small>
+											Respetar el entorno natural.
+										</small>
+									</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="objective-point">
+									<i class="bi bi-journal-richtext"></i>
+									<div>
+										<strong>
+											Document
+										</strong>
+										<small>
+											Share observations.
+										</small>
+									</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="mission-point">
+									<i class="bi bi-people"></i>
+									<div>
+										<strong>
+											Collaborate
+										</strong>
+										<small>
+											Build knowledge.
+										</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="text-link mt-4 d-inline-flex" href="register.html">
+							Participate
+							<i class="bi bi-arrow-up-right ms-2"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <!--BOTÓN VOLVER AL TOP DE LA PÁGINA-->
-        <button aria-label="Volver a la navegación" class="floating-control top-control" id="backToTop">
-                <i class="bi bi-chevron-up"></i>
-        </button>
-
-        <!--MAIN-->
-        <main id="mainContent">
-                <!-- SECCIÓN HERO-->
-                <section class="hero-section" id="heroSection">
-                        <!--CAROUSEL-->
-                        <div class="carousel slide carousel-fade hero-carousel" data-bs-interval="6200"
-                                data-bs-ride="carousel" id="heroCarousel">
-                                <!--botones-->
-                                <div class="carousel-indicators">
-                                        <button aria-label="Diapositiva 1" class="active" data-bs-slide-to="0"
-                                                data-bs-target="#heroCarousel">
-                                        </button>
-                                        <button aria-label="Diapositiva 2" data-bs-slide-to="1"
-                                                data-bs-target="#heroCarousel">
-                                        </button>
-                                        <button aria-label="Diapositiva 3" data-bs-slide-to="2"
-                                                data-bs-target="#heroCarousel">
-                                        </button>
-                                        <button aria-label="Diapositiva 4" data-bs-slide-to="3"
-                                                data-bs-target="#heroCarousel">
-                                        </button>
-                                        <button aria-label="Diapositiva 5" data-bs-slide-to="4"
-                                                data-bs-target="#heroCarousel">
-                                        </button>
-                                </div>
-                                <!--imágenes-->
-                                <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                                <img alt="Paisaje natural de Bizkaia"
-                                                        src="img/hero/hero-bizkaia-1.jpg" />
-                                        </div>
-                                        <div class="carousel-item">
-                                                <img alt="Entorno natural de Bizkaia" loading="lazy"
-                                                        src="img/hero/hero-bizkaia-2.jpg" />
-                                        </div>
-                                        <div class="carousel-item">
-                                                <img alt="Biodiversidad de Bizkaia" loading="lazy"
-                                                        src="img/hero/hero-bizkaia-3.jpg" />
-                                        </div>
-                                        <div class="carousel-item">
-                                                <img alt="Bosques y montañas" loading="lazy"
-                                                        src="img/hero/hero-bizkaia-4.jpg" />
-                                        </div>
-                                        <div class="carousel-item">
-                                                <img alt="Paisaje costero" loading="lazy"
-                                                        src="img/hero/hero-bizkaia-5.jpeg" />
-                                        </div>
-                                </div>
-
-                                <!--overlay-->
-                                <div class="hero-overlay"></div>
-
-                                <!--contenido-->
-                                <div class="hero-content container">
-                                        <p class="eyebrow">
-                                                Conoce · Protege · Comparte
-                                        </p>
-                                        <h1>
-                                                La naturaleza de Bizkaia,
-                                                <em> en tus manos</em>
-                                        </h1>
-                                        <p class="hero-lead">
-                                                Un espacio colaborativo para descubrir la flora y fauna de nuestro
-                                                territorio, explorar sus hábitats y aportar observaciones que ayuden a
-                                                conservarlos.
-                                        </p>
-                                        <!-- botones hero-->
-                                        <div class="d-flex flex-wrap justify-content-center gap-3">
-                                                <a class="btn btn-accent btn-lg" href="#mapSection">
-                                                        Explorar
-                                                        <i class="bi bi-arrow-down-right"></i>
-                                                </a>
-                                                <a class="btn btn-outline-light btn-lg" href="register.html">
-                                                        Participar
-                                                </a>
-                                        </div>
-                                        <!--hero facts-->
-                                        <div class="hero-facts">
-                                                <span>
-                                                        <i class="bi bi-map"></i>
-                                                        7 comarcas
-                                                </span>
-                                                <span>
-                                                        <i class="bi bi-flower1"></i>
-                                                        Flora y fauna
-                                                </span>
-                                                <span>
-                                                        <i class="bi bi-people"></i>
-                                                        Colaboración ciudadana
-                                                </span>
-                                        </div>
-                                </div>
-                        </div>
-                </section>
-
-                <!-- SOBRE NOSOTROS-->
-
-                <section class="section-padding about-section" id="aboutSection">
-                        <div class="container">
-                                <div class="row align-items-center g-5">
-                                        <div class="col-lg-6">
-                                                <div class="about-image-wrap">
-                                                        <img alt="Entorno natural de Bizkaia" class="about-image" loading="lazy" src="img/imagenes-extra/about.jpg" />
-                                                        <span class="image-caption">
-                                                                <i class="bi bi-heart-fill me-2"></i>
-                                                                Un territorio lleno de vida
-                                                        </span>
-                                                </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                                <p class="section-kicker">
-                                                        Nuestro objetivo
-                                                </p>
-                                                <h2 class="section-title">
-                                                        Una comunidad que observa para
-                                                        <span>
-                                                                conservar el medio natural
-                                                        </span>
-                                                </h2>
-                                                <p class="section-copy">
-                                                        Bizkaia reúne paisajes costeros, rías, bosques, montañas y zonas
-                                                        húmedas que albergan una extraordinaria diversidad biológica.
-                                                        Esta plataforma conecta ese patrimonio natural con las personas
-                                                        que quieren conocerlo y cuidarlo.
-                                                </p>
-                                                <p class="section-copy">
-                                                        Organizamos la información por comarcas y hábitats,
-                                                        reunimos fichas de especies de flora y fauna y facilitamos el
-                                                        registro de observaciones.
-                                                        Cada aportación ayuda a construir una visión compartida de la
-                                                        biodiversidad local.
-                                                </p>
-                                                <div class="row g-3 mt-3">
-                                                        <div class="col-6">
-                                                                <div class="objective-point">
-                                                                        <i class="bi bi-binoculars">
-                                                                        </i>
-                                                                        <div>
-                                                                                <strong>
-                                                                                        Descubrir
-                                                                                </strong>
-                                                                                <small>
-                                                                                        Conocer especies y hábitats.
-                                                                                </small>
-                                                                        </div>
-                                                                </div>
-                                                        </div>
-                                                        <div class="col-6">
-                                                                <div class="objective-point">
-                                                                        <i class="bi bi-shield-check">
-                                                                        </i>
-                                                                        <div>
-                                                                                <strong>
-                                                                                        Conservar
-                                                                                </strong>
-                                                                                <small>
-                                                                                        Respetar el entorno natural.
-                                                                                </small>
-                                                                        </div>
-                                                                </div>
-                                                        </div>
-                                                        <div class="col-6">
-                                                                <div class="objective-point">
-                                                                        <i class="bi bi-journal-richtext">
-                                                                        </i>
-                                                                        <div>
-                                                                                <strong>
-                                                                                        Documentar
-                                                                                </strong>
-                                                                                <small>
-                                                                                        Compartir observaciones.
-                                                                                </small>
-                                                                        </div>
-                                                                </div>
-                                                        </div>
-                                                        <div class="col-6">
-                                                                <div class="mission-point">
-                                                                        <i class="bi bi-people">
-                                                                        </i>
-                                                                        <div>
-                                                                                <strong>
-                                                                                        Colaborar
-                                                                                </strong>
-                                                                                <small>
-                                                                                        Constrir conocimiento.
-                                                                                </small>
-                                                                        </div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                                <a class="text-link mt-4 d-inline-flex" href="register.html">
-                                                        Participa
-                                                        <i class="bi bi-arrow-up-right ms-2">
-                                                        </i>
-                                                </a>
-                                        </div>
-                                </div>
-                        </div>
-                </section>
-
-                <!-- MAPA/COMARCAS -->
-                <section class="section-padding map-section" id="mapSection">
-                        <div class="container">
-                                <div class="section-heading text-center">
-                                        <h2 class="section-title">
-                                                Bizkaia comarca a comarca
-                                        </h2>
-                                        <p class="section-copy mx-auto">
-                                                Selecciona una comarca en el mapa o en la lista para consultar las
-                                                especies registradas en esa localización.
-                                        </p>
-                                </div>
-                                <div class="region-map-card home-region-map-card">
-                                        <div class="region-map-list home-region-list">
-                                                <ul class="region-map-links" id="regionList">
-                                                        <li data-map-region="gran-bilbao">
-                                                                <button data-region="gran-bilbao" type="button">
-                                                                        <span>Gran
-                                                                                Bilbao</span><small>Bilboaldea</small>
-                                                                        <i aria-hidden="true" class="bi bi-arrow-up-right"></i>
-                                                                </button>
-                                                        </li>
-                                                        <li data-map-region="encartaciones">
-                                                                <button data-region="encartaciones" type="button">
-                                                                        <span>Encartaciones</span><small>Enkarterri</small>
-                                                                        <i aria-hidden="true" class="bi bi-arrow-up-right"></i>
-                                                                </button>
-                                                        </li>
-                                                        <li data-map-region="durangaldea">
-                                                                <button data-region="durangaldea" type="button">
-                                                                        <span>Durangaldea</span><small>Durangaldea</small>
-                                                                        <i aria-hidden="true" class="bi bi-arrow-up-right"></i>
-                                                                </button>
-                                                        </li>
-                                                        <li data-map-region="arratia-nervion">
-                                                                <button data-region="arratia-nervion" type="button">
-                                                                        <span>Arratia-Nerbioi</span><small>Arratia-Nerbioi</small>
-                                                                        <i aria-hidden="true" class="bi bi-arrow-up-right"></i>
-                                                                </button>
-                                                        </li>
-                                                        <li data-map-region="lea-artibai">
-                                                                <button data-region="lea-artibai" type="button">
-                                                                        <span>Lea-Artibai</span><small>Lea-Artibai</small>
-                                                                        <i aria-hidden="true class="bi bi-arrow-up-right"></i>
-                                                                </button>
-                                                        </li>
-                                                        <li data-map-region="busturioaldea">
-                                                                <button data-region="busturioaldea" type="button">
-                                                                        <span>Busturialdea-Urdaibai</span><small>Busturialdea</small>
-                                                                        <i aria-hidden="true" class="bi bi-arrow-up-right"></i>
-                                                                </button>
-                                                        </li>
-                                                        <li data-map-region="uribe-kosta">
-                                                                <button data-region="uribe-kosta" type="button">
-                                                                        <span>Uribe Kosta</span>
-                                                                        <i aria-hidden="true" class="bi bi-arrow-up-right"></i>
-                                                                </button>
-                                                        </li>
-                                                </ul>
-                                        </div>
-                                        <div class="region-map-visual" id="regionMapVisual">
-                                                <svg aria-labelledby="bizkaiaMapTitle" height="319.75" id="bizkaia-comarcas" role="img" viewbox="0 0 528.55 319.75" width="528.55" xmlns="http://www.w3.org/2000/svg">
-                                                        <title id="bizkaiaMapTitle">
-                                                                Mapa interactivo de las comarcas de Bizkaia
-                                                        </title>
-                                                        <defs>
-                                                                <style>
-                                                                        .cls-1 {
-                                                                                fill: #000;
-                                                                                stroke: #000;
-                                                                                stroke-linecap: round;
-                                                                                stroke-miterlimit: 6.27;
-                                                                        }
-                                                                </style>
-                                                        </defs>
-                                                        <path class="cls-1" d="M400.45,258.86l-3.2,1.74-.3,9.12-3.16,3.21.02,1.04,1.76.91-.19,2.91-.98,3.12-2.75,1.22,2.14,4.8-5.3,3.13-.36-1.36-2.22,1.31-3.34-3.43-1.73-.58-.92-2.17-2.17.78-3.54-.56-7.3,4.47-2.01-.91-.63-2.5-2.49-3.28-2.91.46-1.74,4.04-1.06.51-3.37-1.15-6.01.92-2.11-1.45-.4-1.37-3.26-1.86-4.26-.33-16.34-.36-7.47-4.54-5.76-1.7-7.91-4.87-10.1.99-2.23,1.04-1.05,1.98-1.96-.38-6.29-5.79-6.14-3.34-5.79-8.44-6.22-2.2.79-1.56-10.02-9.32-6.13-1.56-1.29-2.64,5.35-3.17,3.63-7.16.83.02,3.79-6.31,2.92-2.72.75-2.45,2.77-2.35-1.7-1.67.83-2.57-.66-1.72-.49-.62-4.95-7.11-2.3-1.74,3.93-7.33-7.65-3.6-5.81-6.53-3.54-10.24-.69.02-.23-.23,11.78-3.61.82-3.28,2.14,3.53,6.51,6.38,2.77.75-1.51-1.94,3.94-1.4,4.36,3.71-3.35,4.45,1.88,1.44h0l3.95-2.68,4.65,2.94,3.43.54.49,1.56,1.07.25,1.13-3.23-2.5-2.35,2.25.49,2.26-.89,4.78,2.84,1.55-.64-.11-1.59,4.77,4.26,1.97-.2,2.31-2.78,3.14,1.24.99,2.8-3.15,5.21,8.26,4.11-3.3-4.73-1.1-4.42,2.4-4.18,4.48-3.99,2.28-9.08,2.34-2.57,5.46-2.03,1.38.45-.32-1.4,3-.67,3.75-5.43,2.64,1.61,3.34-4.01,4.86.65.94-.62,1.21-.03.96,1.33-.4,1.08,2.37,2.14,9.94,3.37,1.3,2.51.72,8.97,2.49,2.31,3.03,9.18-.5.61,7.85,6.6,5.03,2.16,7.41,8.43,1.85,5.28-.39,9.76,5.42,4.17,1.34,2.23.3,3.38-1.8,5.13,2.14,5.64,2.45,1.93,2.33,5.72-.37,8.5,3.5,5.54ZM247.24,304.47l-2.32,1.79-7.4,3.07-2.94-5.19,3.68-5.28-.83-2.55-5.63-1.43-5.05.54-6.36-3.2-4.91-.23-1.74-1.08-.1-2.02,6.09-5.79,1.26-3.58-5.35.48.27-6.34-7.11,1.62-.8-1.12-1.79.93-.97-1.85-6.38,7.41-1.63,8.42-12.57,8.92.75,5.19,5.68.92,4.07-3.34,4.07,3.74.6,2.59,3.36,1.04,8.51,7.81,2.77-.91,11.33,1.14,2.52-.66.36-2.94,1.41-1.5,2.42.79,9.3-.13,9.72-3.82,1.22-2.89-5.33-1.78-.18,1.23Z"
-                                                                id="arratia-nervion">
-                                                        </path>
+<!-- MAPA/COMARCAS -->
+		<section class="section-padding map-section" id="mapSection">
+			<div class="container">
+				<div class="section-heading text-center">
+					<h2 class="section-title">
+						Biscay region by region
+					</h2>
+					<p class="section-copy mx-auto">
+						Select a region on the map or in the list to see the species registered in that location.
+					</p>
+				</div>
+				<div class="region-map-card home-region-map-card">
+					<div class="region-map-list home-region-list">
+						<ul class="region-map-links" id="regionList">
+							<li data-map-region="gran-bilbao">
+								<button data-region="gran-bilbao" type="button">
+									<span>Gran Bilbao</span><small>Bilboaldea</small>
+									<i aria-hidden="true" class="bi bi-arrow-up-right"></i>
+								</button>
+							</li>
+							<li data-map-region="encartaciones">
+								<button data-region="encartaciones" type="button">
+									<span>Encartaciones</span><small>Enkarterri</small>
+									<i aria-hidden="true" class="bi bi-arrow-up-right"></i>
+								</button>
+							</li>
+							<li data-map-region="durangaldea">
+								<button data-region="durangaldea" type="button">
+									<span>Durangaldea</span><small>Durangaldea</small>
+									<i aria-hidden="true" class="bi bi-arrow-up-right"></i>
+								</button>
+							</li>
+							<li data-map-region="arratia-nervion">
+								<button data-region="arratia-nervion" type="button">
+									<span>Arratia-Nerbioi</span><small>Arratia-Nerbioi</small>
+									<i aria-hidden="true" class="bi bi-arrow-up-right"></i>
+								</button>
+							</li>
+							<li data-map-region="lea-artibai">
+								<button data-region="lea-artibai" type="button">
+									<span>Lea-Artibai</span><small>Lea-Artibai</small>
+									<i aria-hidden="true class="bi bi-arrow-up-right"></i>
+								</button>
+							</li>
+							<li data-map-region="busturioaldea">
+								<button data-region="busturioaldea" type="button">
+									<span>Busturialdea-Urdaibai</span><small>Busturialdea</small>
+									<i aria-hidden="true" class="bi bi-arrow-up-right"></i>
+								</button>
+							</li>
+							<li data-map-region="uribe-kosta">
+								<button data-region="uribe-kosta" type="button">
+									<span>Uribe Kosta</span><small>Uribe</small>
+									<i aria-hidden="true" class="bi bi-arrow-up-right"></i>
+								</button>
+							</li>
+						</ul>
+					</div>
+					<div class="region-map-visual" id="regionMapVisual">
+						<svg aria-labelledby="bizkaiaMapTitle" height="319.75" id="bizkaia-comarcas" role="img" viewbox="0 0 528.55 319.75" width="528.55" xmlns="http://www.w3.org/2000/svg">
+							<title id="bizkaiaMapTitle">Interactive map of the regions of Biscay</title>
+							<defs>
+								<style>
+									.cls-1 {fill: #000; stroke: #000; stroke-linecap: round; stroke-miterlimit: 6.27;}
+								</style>
+							</defs>
+							<path class="cls-1" d="M400.45,258.86l-3.2,1.74-.3,9.12-3.16,3.21.02,1.04,1.76.91-.19,2.91-.98,3.12-2.75,1.22,2.14,4.8-5.3,3.13-.36-1.36-2.22,1.31-3.34-3.43-1.73-.58-.92-2.17-2.17.78-3.54-.56-7.3,4.47-2.01-.91-.63-2.5-2.49-3.28-2.91.46-1.74,4.04-1.06.51-3.37-1.15-6.01.92-2.11-1.45-.4-1.37-3.26-1.86-4.26-.33-16.34-.36-7.47-4.54-5.76-1.7-7.91-4.87-10.1.99-2.23,1.04-1.05,1.98-1.96-.38-6.29-5.79-6.14-3.34-5.79-8.44-6.22-2.2.79-1.56-10.02-9.32-6.13-1.56-1.29-2.64,5.35-3.17,3.63-7.16.83.02,3.79-6.31,2.92-2.72.75-2.45,2.77-2.35-1.7-1.67.83-2.57-.66-1.72-.49-.62-4.95-7.11-2.3-1.74,3.93-7.33-7.65-3.6-5.81-6.53-3.54-10.24-.69.02-.23-.23,11.78-3.61.82-3.28,2.14,3.53,6.51,6.38,2.77.75-1.51-1.94,3.94-1.4,4.36,3.71-3.35,4.45,1.88,1.44h0l3.95-2.68,4.65,2.94,3.43.54.49,1.56,1.07.25,1.13-3.23-2.5-2.35,2.25.49,2.26-.89,4.78,2.84,1.55-.64-.11-1.59,4.77,4.26,1.97-.2,2.31-2.78,3.14,1.24.99,2.8-3.15,5.21,8.26,4.11-3.3-4.73-1.1-4.42,2.4-4.18,4.48-3.99,2.28-9.08,2.34-2.57,5.46-2.03,1.38.45-.32-1.4,3-.67,3.75-5.43,2.64,1.61,3.34-4.01,4.86.65.94-.62,1.21-.03.96,1.33-.4,1.08,2.37,2.14,9.94,3.37,1.3,2.51.72,8.97,2.49,2.31,3.03,9.18-.5.61,7.85,6.6,5.03,2.16,7.41,8.43,1.85,5.28-.39,9.76,5.42,4.17,1.34,2.23.3,3.38-1.8,5.13,2.14,5.64,2.45,1.93,2.33,5.72-.37,8.5,3.5,5.54ZM247.24,304.47l-2.32,1.79-7.4,3.07-2.94-5.19,3.68-5.28-.83-2.55-5.63-1.43-5.05.54-6.36-3.2-4.91-.23-1.74-1.08-.1-2.02,6.09-5.79,1.26-3.58-5.35.48.27-6.34-7.11,1.62-.8-1.12-1.79.93-.97-1.85-6.38,7.41-1.63,8.42-12.57,8.92.75,5.19,5.68.92,4.07-3.34,4.07,3.74.6,2.59,3.36,1.04,8.51,7.81,2.77-.91,11.33,1.14,2.52-.66.36-2.94,1.41-1.5,2.42.79,9.3-.13,9.72-3.82,1.22-2.89-5.33-1.78-.18,1.23Z" id="arratia-nervion">
+								
+							</path>
                                                         <path class="cls-1" d="M481.54,195.57l.62-1.29,7.39-1.31,1.07-1.45-2.61-5.4-1.23-.58,1.76-4.17,1.06-9.45-2.19-.34-2.34-3.09-1.83-2.04.1-1.42-2.58-.1-1.97-1.91-.42.87-5.94-3.27-1.68-4.1-4.13-1.32-1.5-1.95-2.38-.62-3.3.45-3.89-.83-5.53,5.15-6.52,4.16-6.81-6.34-5.26-2.12-5.33,2.01-6.64,3-2.53-1.72-3.45-.04-1.86,2.64-2.84-.84-3.38,1.78-3.12-.25-.74,4.16-.95,1.21-2.87.7.48,2.26h-.01l-1.81-2.05,2-1.23-.19-1.17-1.27-1.42h-2.8l.79-1.81,2.01.58-2.11-4.7-9.74-3.67-3.87-2.54-1.42.1-2.69-2.89-2.45-.88-2.79-3.38,2.7-1.52.44-1.61-.84-.98-1.37,3.33-.78-.2.98-2.45-4.26,1.67-1.52-.3,1.72-4.5-.2-5.92-3.57-3.62.78-2.01-3.03-1.52-1.37.34-3.09,6.22-2.94-1.91v-.88l-2.59.49,1.66,1.32-.78,1.32-2.1-.24,1.86,1.17-.15,3.92-4.85,4.55-.53,2.55-3.72.98-.64,1.07-2.5-1.42-.88.74.05.93-.2,2.05.93.64-.24,2.74,1.47,3.04,1.17-.05.98,1.32-.39,1.07,2.35,2.16,9.94,3.38,1.32,2.49.73,8.96,2.5,2.35,2.98,9.15-.48.64,7.88,6.56,4.99,2.2,7.43,8.41h0l1.85,5.28-.39,9.76,5.42,4.17,1.34,2.23.3,3.38-1.8,5.13,2.14,5.64,2.45,1.93,2.33,5.72-.37,8.5,3.5,5.54-3.2,1.74-.3,9.12-3.16,3.21.02,1.04,1.76.91-.19,2.91-.98,3.12-2.75,1.22,2.14,4.8,1.29.28,3.58-3.6,5.15,3.34,1.74-2.42-.1,1.9,5.13,3.79,4.89.96,1.53-5.78-1.66-3.23.09-7.35-1.86-.98-5.47-7.72-2.26-1.1-2.24-3.14-2.09-.55-.22-5.86,14.47-8.39,4.34.96,6.54-.25,2.52,1.61,7.1,1.52,16.36-2.57,6.14-1.82.65-.2.99-2.38,2.92-.11,6.54-2.3,6.13,3.53,5.79-3.46.62-.77-2.03-.35,1.93-14.24,2.59-3.06-3.71-10.87,1.49-7.45-2.2-2.93-2.4-3.74.92-2.92,2.55.29ZM399.41,167.96l-1.01.04"
                                                                 id="durangaldea">
                                                         </path>
