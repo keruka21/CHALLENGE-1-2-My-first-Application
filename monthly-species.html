@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-
-<html data-bs-theme="light" lang="es">
+<html data-bs-theme="light" lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="Archivo de especies destacadas del mes." name="description"/>
+<meta content="Archive of featured species of the month." name="description"/>
 <title>
-   Especies destacadas | Flora y Fauna de Bizkaia
+   Featured species | Flora and Fauna of Bizkaia
   </title>
 <link href="img/logo-web.svg" rel="icon"/>
 <link href="bootstrap-5.3.8/css/bootstrap.min.css" rel="stylesheet"/>
@@ -17,19 +16,19 @@
 <header>
 <div class="user-bar">
 <div class="container d-flex justify-content-between align-items-center gap-2">
-<div aria-label="Seleccionar idioma" class="language-switch d-flex align-items-center gap-1">
-<button aria-pressed="true" class="btn btn-sm language-button active" data-language="es" type="button">ES</button>
+<div aria-label="Select language" class="language-switch d-flex align-items-center gap-1">
+<button aria-pressed="true" class="btn btn-sm language-button active" data-language="en" type="button">EN</button>
 <span aria-hidden="true">|</span>
 <button aria-pressed="false" class="btn btn-sm language-button" data-language="eus" type="button">EUS</button>
 </div>
 <div class="position-relative">
-<button aria-controls="userPanel" aria-expanded="false" aria-label="Área de usuario" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" type="button">
-<i class="bi bi-person-circle fs-5"></i><span class="d-none d-sm-inline ms-1">Área de usuario</span>
+<button aria-controls="userPanel" aria-expanded="false" aria-label="User area" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" type="button">
+<i class="bi bi-person-circle fs-5"></i><span class="d-none d-sm-inline ms-1">User area</span>
 </button>
 <div class="collapse user-panel-collapse" id="userPanel">
 <div class="user-dropdown p-3">
-<div id="guestPanel"><p class="fw-semibold">Bienvenido/a</p><a class="btn btn-primary btn-sm w-100 mb-2" href="login.html">Iniciar sesión</a><a class="btn btn-outline-primary btn-sm w-100" href="register.html">Solicitar cuenta</a></div>
-<div class="d-none" id="memberPanel"><strong id="memberName">Usuario</strong><p class="small text-secondary" id="memberEmail"></p><a class="dropdown-item" href="user-area.html">Mi perfil y registros</a><a class="dropdown-item" href="user-area.html#privacySettingsForm">Ajustes y privacidad</a><a class="dropdown-item d-none" href="admin.html" id="adminPanelLink">Administración · Validar registros</a><button class="btn btn-outline-secondary btn-sm w-100 mt-2" id="logoutButton">Cerrar sesión</button></div>
+<div id="guestPanel"><p class="fw-semibold" data-en="Welcome" data-eus="Ongi etorri">Welcome</p><a class="btn btn-primary btn-sm w-100 mb-2" data-en="Sign in" data-eus="Saioa hasi" href="#loginModal" data-bs-toggle="modal">Sign in</a><a class="btn btn-outline-primary btn-sm w-100" data-en="Sign up" data-eus="Izena eman" href="signup.html">Sign up</a><a class="small d-block text-center mt-2 text-secondary" data-en="User area · demo" data-eus="Erabiltzaileen area · demo" href="user-area.html">User area · demo</a></div>
+<div class="d-none" id="memberPanel"><strong id="memberName" data-en="User" data-eus="Erabiltzailea">User</strong><p class="small text-secondary" id="memberEmail"></p><a class="dropdown-item" data-en="My profile and records" data-eus="Nire profila eta erregistroak" href="user-area.html">My profile and records</a><a class="dropdown-item" data-en="Settings and privacy" data-eus="Ezarpenak eta pribatutasuna" href="user-area.html#privacySettingsForm">Settings and privacy</a><button class="btn btn-outline-secondary btn-sm w-100 mt-2" data-en="Sign out" data-eus="Saioa amaitu" id="logoutButton">Sign out</button></div>
 </div>
 </div>
 </div>
@@ -42,98 +41,98 @@
 <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
 <img alt="" height="42" src="img/logo-web.svg"/>
 <span>
-       Flora y Fauna
+       Flora and Fauna
        <small>
-        de Bizkaia
+        of Bizkaia
        </small>
 </span>
 </a>
-<button aria-label="Abrir navegación" class="navbar-toggler" data-bs-target="#navbarContent" data-bs-toggle="collapse" type="button">
+<button aria-label="Open navigation" class="navbar-toggler" data-bs-target="#navbarContent" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon">
 </span>
 </button>
 <div class="collapse navbar-collapse" id="navbarContent">
 <ul class="navbar-nav ms-auto gap-lg-2">
 <li class="nav-item">
-<a class="nav-link" data-es="Inicio" data-eus="Hasiera" href="index.html">
-         Inicio
+<a class="nav-link" data-en="Home" data-eus="Hasiera" href="index.html">
+         Home
         </a>
 </li>
 <li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-es="Catálogo" data-eus="Katalogoa" href="catalog.html">
-         Catálogo
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Catalogue" data-eus="Katalogoa" href="catalog.html">
+         Catalogue
         </a>
 <ul class="dropdown-menu">
 <li>
-<a class="dropdown-item" data-es="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">
+<a class="dropdown-item" data-en="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">
            Fauna
           </a>
 </li>
 <li>
-<a class="dropdown-item" data-es="Flora" data-eus="Flora" href="catalog.html?type=flora">
+<a class="dropdown-item" data-en="Flora" data-eus="Flora" href="catalog.html?type=flora">
            Flora
           </a>
 </li>
 <li>
-<a class="dropdown-item" data-es="Hábitats" data-eus="Habitatak" href="habitats.html">
-           Hábitats
+<a class="dropdown-item" data-en="Habitats" data-eus="Habitatak" href="habitats.html">
+           Habitats
           </a>
 </li>
-<li><a class="dropdown-item" data-es="Parques, reservas y centros" data-eus="Parkeak, erreserbak eta zentroak" href="spaces.html">Parques, reservas y centros</a></li>
-<li><a class="dropdown-item" data-es="Comarcas" data-eus="Eskualdeak" href="regions.html">Comarcas</a></li>
+<li><a class="dropdown-item" data-en="Parks, reserves and centres" data-eus="Parkeak, erreserbak eta zentroak" href="spaces.html">Parks, reserves and centres</a></li>
+<li><a class="dropdown-item" data-en="Regions" data-eus="Eskualdeak" href="regions.html">Regions</a></li>
 </ul>
 </li>
 <li class="nav-item">
-<a class="nav-link" data-es="Blog" data-eus="Bloga" href="blog.html">
+<a class="nav-link" data-en="Blog" data-eus="Bloga" href="blog.html">
          Blog
         </a>
 </li>
 <li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-es="Participa" data-eus="Parte hartu" href="species-submit.html">
-         Participa
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Get involved" data-eus="Parte hartu" href="species-submit.html">
+         Get involved
         </a>
 <ul class="dropdown-menu">
 <li>
-<a class="dropdown-item" data-es="Registrar una especie" data-eus="Espezie bat erregistratu" href="species-submit.html">
-           Registrar una especie
+<a class="dropdown-item" data-en="Register a species" data-eus="Espezie bat erregistratu" href="species-submit.html">
+           Register a species
           </a>
 </li>
 <li>
-<a class="dropdown-item" data-es="Registrar un avistamiento" data-eus="Behaketa bat erregistratu" href="register.html">
-           Registrar un avistamiento
+<a class="dropdown-item" data-en="Register a sighting" data-eus="Behaketa bat erregistratu" href="register-sighting.html">
+           Register a sighting
           </a>
 </li>
 </ul>
 </li>
-<li class="nav-item"><a class="nav-link" data-es="Vídeos" data-eus="Bideoak" href="videos.html">Vídeos</a></li>
+<li class="nav-item"><a class="nav-link" data-en="Gallery" data-eus="Galeria" href="gallery.html">Gallery</a></li><li class="nav-item"><a class="nav-link" data-en="Videos" data-eus="Bideoak" href="videos.html">Videos</a></li>
 <li class="nav-item">
-<a class="nav-link" data-es="Contacto" data-eus="Kontaktua" href="contact.html">
-         Contacto
+<a class="nav-link" data-en="Contact" data-eus="Kontaktua" href="contact.html">
+         Contact
         </a>
 </li>
-<li class="nav-item d-flex align-items-center"><button aria-label="Cambiar tema" class="btn btn-sm theme-toggle" id="themeToggle" type="button"><i class="bi bi-moon-stars-fill" id="themeIcon"></i></button></li>
+<li class="nav-item d-flex align-items-center"><button aria-label="Toggle theme" class="btn btn-sm theme-toggle" id="themeToggle" type="button"><i class="bi bi-moon-stars-fill" id="themeIcon"></i></button></li>
 </ul>
 </div>
 </div>
 </nav>
-<nav aria-label="Migas de pan" class="container breadcrumb-wrap">
+<nav aria-label="Breadcrumbs" class="container breadcrumb-wrap">
 <ol class="breadcrumb">
-<li class="breadcrumb-item"><a data-es="Inicio" data-eus="Hasiera" href="index.html">Inicio</a></li>
-<li aria-current="page" class="breadcrumb-item active">Especie del mes</li>
+<li class="breadcrumb-item"><a data-en="Home" data-eus="Hasiera" href="index.html">Home</a></li>
+<li aria-current="page" class="breadcrumb-item active" data-en="Species of the month" data-eus="Hileko espeziea">Species of the month</li>
 </ol>
 </nav>
 </div>
 <main id="mainContent">
 <section class="inner-hero">
 <div class="container">
-<p class="section-kicker">
-      Archivo de la comunidad
+<p class="section-kicker" data-en="Community archive" data-eus="Komunitateko artxiboa">
+      Community archive
      </p>
-<h1>
-      Archivo editorial de especies
+<h1 data-en="Editorial species archive" data-eus="Espezien artxibo editoriala">
+      Editorial species archive
      </h1>
-<p class="lead">
-      Un recorrido por especies destacadas.
+<p class="lead" data-en="A journey through featured species." data-eus="Ibilbide bat nabarmentutako espezien artean.">
+      A journey through featured species.
      </p>
 </div>
 </section>
@@ -142,57 +141,57 @@
 <div class="row g-4">
 <div class="col-md-6 col-lg-4">
 <div class="catalog-card">
-<img alt="Petirrojo" src="img/imagenes-extra/txantxangorri.jpg"/>
+<img alt="European Robin" src="img/imagenes-extra/txantxangorri.jpg"/>
 <div class="card-body">
-<span class="blog-category">
-          Noviembre · Fauna
+<span class="blog-category" data-en="November · Fauna" data-eus="Azaroa · Fauna">
+          November · Fauna
          </span>
-<h2 class="h5">
-          Petirrojo europeo
+<h2 class="h5" data-en="European Robin" data-eus="Petirroja">
+          European Robin
          </h2>
 <p class="fst-italic">
           Erithacus rubecula
          </p>
-<a href="species-detail.html?id=robin">
-          Consultar ficha
+<a data-en="View profile" data-eus="Ikusi fitxa" href="species-detail.html?id=robin">
+          View profile
          </a>
 </div>
 </div>
 </div>
 <div class="col-md-6 col-lg-4">
 <div class="catalog-card">
-<img alt="Hayedo" src="img/hero/hero-bizkaia-3.jpg"/>
+<img alt="Beech forest" src="img/hero/hero-bizkaia-3.jpg"/>
 <div class="card-body">
-<span class="blog-category">
-          Archivo · Flora
+<span class="blog-category" data-en="Archive · Flora" data-eus="Artxiboa · Flora">
+          Archive · Flora
          </span>
-<h2 class="h5">
-          Haya común
+<h2 class="h5" data-en="Common beech" data-eus="Haya arrunta">
+          Common beech
          </h2>
 <p class="fst-italic">
           Fagus sylvatica
          </p>
-<a href="species-detail.html?id=beech">
-          Consultar ficha
+<a data-en="View profile" data-eus="Ikusi fitxa" href="species-detail.html?id=beech">
+          View profile
          </a>
 </div>
 </div>
 </div>
 <div class="col-md-6 col-lg-4">
 <div class="catalog-card">
-<img alt="Garza" src="img/hero/hero-bizkaia-2.jpg"/>
+<img alt="Grey heron" src="img/hero/hero-bizkaia-2.jpg"/>
 <div class="card-body">
-<span class="blog-category">
-          Archivo · Fauna
+<span class="blog-category" data-en="Archive · Fauna" data-eus="Artxiboa · Fauna">
+          Archive · Fauna
          </span>
-<h2 class="h5">
-          Garza real
+<h2 class="h5" data-en="Grey heron" data-eus="Garza errea">
+          Grey heron
          </h2>
 <p class="fst-italic">
           Ardea cinerea
          </p>
-<a href="species-detail.html?id=heron">
-          Consultar ficha
+<a data-en="View profile" data-eus="Ikusi fitxa" href="species-detail.html?id=heron">
+          View profile
          </a>
 </div>
 </div>
@@ -201,18 +200,18 @@
 </div>
 </section>
 </main>
-<button aria-label="Volver al principio" class="back-to-top" id="backToTop" title="Volver al principio" type="button"><i class="bi bi-arrow-up"></i></button>
+<button aria-label="Back to top" class="back-to-top" data-en-title="Back to top" data-eus-title="Gora itzuli" id="backToTop" title="Back to top" type="button"><i class="bi bi-arrow-up"></i></button>
 <footer class="main-footer">
-<div aria-label="Entidades colaboradoras" class="partner-footer">
+<div aria-label="Partner organisations" class="partner-footer">
 <div class="container">
-<div aria-label="Arrastra para ver entidades colaboradoras" class="partner-slider" id="partnerSlider" tabindex="0">
+<div aria-label="Drag to see partner organisations" class="partner-slider" id="partnerSlider" tabindex="0">
 <div class="partner-track" id="partnerTrack">
-<a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank"><img alt="Diputación Foral de Bizkaia" src="img/partners/logo-diputacion-de-bizkaia.jpg"/></a>
+<a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank"><img alt="Biscay Provincial Council" src="img/partners/logo-diputacion-de-bizkaia.jpg"/></a>
 <a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank"><img alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png"/></a>
 <a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank"><img alt="MITECO" src="img/partners/logo-miteco-color.png"/></a>
-<a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank"><img alt="Universidad del País Vasco" src="img/partners/logo-upv-ehu-blanco-completo .png"/></a>
-<a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank"><img alt="Gobierno Vasco" src="img/partners/logo-gobierno-vasco.png"/></a>
-<a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank"><img alt="Fundación Biodiversidad" src="img/partners/fundacion-biodiversidad.jpg"/></a>
+<a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank"><img alt="University of the Basque Country" src="img/partners/logo-upv-ehu-blanco-completo .png"/></a>
+<a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank"><img alt="Basque Government" src="img/partners/logo-gobierno-vasco.png"/></a>
+<a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank"><img alt="Biodiversity Foundation" src="img/partners/fundacion-biodiversidad.jpg"/></a>
 </div>
 </div>
 </div>
@@ -220,44 +219,44 @@
 <div class="container">
 <div class="row g-4 py-4">
 <div class="col-lg-3 col-md-6">
-<a class="footer-brand" href="index.html"><img alt="Logotipo Flora y Fauna de Bizkaia" src="img/logo-web.svg"/><span>Flora y Fauna<small>de Bizkaia</small></span></a><p class="footer-slogan" data-es="Conocer · Proteger · Compartir" data-eus="Ezagutu · Babestu · Partekatu">Conocer · Proteger · Compartir</p>
-<p class="footer-copy mt-3"><b>Grupo:</b> June, Eritz, Kelea Rueda</p>
-<p class="footer-copy mt-3">Proyecto Challenge 1.2, DAMi 1º</p>
+<a class="footer-brand" href="index.html"><img alt="Flora and Fauna of Bizkaia logo" src="img/logo-web.svg"/><span>Flora and Fauna<small>of Bizkaia</small></span></a><p class="footer-slogan" data-en="Learn · Protect · Share" data-eus="Ezagutu · Babestu · Partekatu">Learn · Protect · Share</p>
+<p class="footer-copy mt-3"><b data-en="Group:" data-eus="Taldea:">Group:</b> June, Eritz, Kelea Rueda</p>
+<p class="footer-copy mt-3" data-en="Challenge 1.2 Project, DAMi 1st year" data-eus="Challenge 1.2 proiektua, DAMi 1. urtea">Challenge 1.2 Project, DAMi 1st year</p>
 <div class="social-links d-flex flex-wrap gap-2">
 <a aria-label="Instagram" href="https://www.instagram.com/" rel="noopener" target="_blank"><i class="bi bi-instagram"></i></a>
 <a aria-label="YouTube" href="https://www.youtube.com/@urdaibaibirdcenter" rel="noopener" target="_blank"><i class="bi bi-youtube"></i></a>
 <a aria-label="Facebook" href="https://www.facebook.com/" rel="noopener" target="_blank"><i class="bi bi-facebook"></i></a>
 <a aria-label="X" href="https://x.com/" rel="noopener" target="_blank"><i class="bi bi-twitter-x"></i></a>
-<a aria-label="GitHub del proyecto" href="https://github.com/keruka21/CHALLENGE-1-2-My-first-Application" rel="noopener" target="_blank"><i class="bi bi-github"></i></a>
+<a aria-label="Project GitHub" href="https://github.com/keruka21/CHALLENGE-1-2-My-first-Application" rel="noopener" target="_blank"><i class="bi bi-github"></i></a>
 </div>
 </div>
 <div class="col-lg-2 col-6">
-<h2 class="footer-title">Explora</h2>
+<h2 class="footer-title" data-en="Explore" data-eus="Arakatu">Explore</h2>
 <ul class="footer-links">
-<li><a data-es="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">Fauna</a></li>
-<li><a data-es="Flora" data-eus="Flora" href="catalog.html?type=flora">Flora</a></li>
-<li><a data-es="Hábitats" data-eus="Habitatak" href="habitats.html">Hábitats</a></li>
-<li><a data-es="Blog" data-eus="Bloga" href="blog.html">Blog</a></li>
+<li><a data-en="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">Fauna</a></li>
+<li><a data-en="Flora" data-eus="Flora" href="catalog.html?type=flora">Flora</a></li>
+<li><a data-en="Habitats" data-eus="Habitatak" href="habitats.html">Habitats</a></li>
+<li><a data-en="Blog" data-eus="Bloga" href="blog.html">Blog</a></li>
 </ul>
 </div>
 <div class="col-lg-3 col-6">
-<h2 class="footer-title" data-es="Contacto" data-eus="Kontaktua">Contacto</h2>
+<h2 class="footer-title" data-en="Contact" data-eus="Kontaktua">Contact</h2>
 <a class="footer-contact" href="tel:+34555555555"><i class="bi bi-telephone-fill"></i>555 555 555</a>
 <a class="footer-contact" href="https://wa.me/34555555555" rel="noopener" target="_blank"><i class="bi bi-whatsapp"></i>WhatsApp: 555 555 555</a>
 <a class="footer-contact" href="mailto:faunayflora@bizkaia.com"><i class="bi bi-envelope"></i>faunayflora@bizkaia.com</a>
-<p class="small mt-2">Lunes a viernes<br/>08:00 am – 14:25pm (Aula 209)</p>
+<p class="small mt-2" data-en="Monday to Friday" data-eus="Astelehenetik ostiralera">Monday to Friday<br/>08:00 am – 14:25pm (Room 209)</p>
 </div>
 <div class="col-lg-4">
-<h2 class="footer-title">Estamos en CIFP TARTANGA LHII</h2>
-<p class="small"> Tartanga Kalea, 15 · Erandio, Bizkaia 48950</p>
-<p class="small"> Piso 1, Clase 209</p>
-<div class="footer-map"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Instituto%20Tartanga%20Erandio&amp;output=embed" title="Ubicación del Instituto Tartanga"></iframe></div>
+<h2 class="footer-title" data-en="We are at CIFP TARTANGA LHII" data-eus="CIFP TARTANGA LHII-n gaude">We are at CIFP TARTANGA LHII</h2>
+<p class="small" data-en="Tartanga Kalea, 15 · Erandio, Biscay 48950" data-eus="Tartanga Kalea, 15 · Erandio, Bizkaia 48950">Tartanga Kalea, 15 · Erandio, Biscay 48950</p>
+<p class="small" data-en="Floor 1, Room 209" data-eus="1. solairua, 209. gela">Floor 1, Room 209</p>
+<div class="footer-map"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Instituto%20Tartanga%20Erandio&amp;output=embed" title="Instituto Tartanga location"></iframe></div>
 </div>
 </div>
-<p class="small text-secondary mb-2 audio-credit">Sonido de petirrojo: Lawrence Shove / British Library · <a href="https://commons.wikimedia.org/wiki/File:European_Robin_(Erithacus_rubecula)_(W1CDR0001425_BD16).ogg" rel="noopener" target="_blank">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">CC BY-SA 4.0</a>.</p>
+<p class="small text-secondary mb-2 audio-credit" data-en="European Robin sound: Lawrence Shove / British Library" data-eus="Petirrojen soinua: Lawrence Shove / British Library">European Robin sound: Lawrence Shove / British Library · <a href="https://commons.wikimedia.org/wiki/File:European_Robin_(Erithacus_rubecula)_(W1CDR0001425_BD16).ogg" rel="noopener" target="_blank">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">CC BY-SA 4.0</a>.</p>
 <div class="footer-bottom py-3 d-flex flex-wrap justify-content-between gap-2">
-<span>© <span id="currentYear"></span> Flora y Fauna de Bizkaia · Proyecto educativo</span>
-<div class="d-flex gap-3 flex-wrap"><a href="privacy.html">Privacidad</a><a href="legal.html">Aviso legal</a><a href="cookies.html">Cookies</a><a href="index.html">Volver a inicio</a></div>
+<span data-en="© {year} Flora and Fauna of Bizkaia · Educational project" data-eus="© {year} Bizkaiko Flora eta Fauna · Hezkuntza proiektua">© <span id="currentYear"></span> Flora and Fauna of Bizkaia · Educational project</span>
+<div class="d-flex gap-3 flex-wrap"><a data-en="Privacy" data-eus="Pribatutasuna" href="privacy.html">Privacy</a><a data-en="Legal notice" data-eus="Lege-oharra" href="legal.html">Legal notice</a><a data-en="Cookies" data-eus="Cookieak" href="cookies.html">Cookies</a><a data-en="Back to home" data-eus="Hasierara itzuli" href="index.html">Back to home</a></div>
 </div>
 </div>
 </footer>
@@ -266,4 +265,4 @@
 <script src="js/main.js">
 </script>
 </body>
-</html>
+</html>   

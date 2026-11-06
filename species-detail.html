@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html data-bs-theme="light" lang="es">
+<html data-bs-theme="light" lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="Ficha de especie de Bizkaia." name="description"/>
+<meta content="Species profile de Bizkaia." name="description"/>
 <title>
-   Ficha de especie | Flora y Fauna de Bizkaia
+   Species profile | Flora y Fauna de Bizkaia
   </title>
 <link href="img/logo-web.svg" rel="icon"/>
 <link href="bootstrap-5.3.8/css/bootstrap.min.css" rel="stylesheet"/>
@@ -17,19 +17,19 @@
 <header>
 <div class="user-bar">
 <div class="container d-flex justify-content-between align-items-center gap-2">
-<div aria-label="Seleccionar idioma" class="language-switch d-flex align-items-center gap-1">
-<button aria-pressed="true" class="btn btn-sm language-button active" data-language="es" type="button">ES</button>
+<div aria-label="Select language" class="language-switch d-flex align-items-center gap-1">
+<button aria-pressed="true" class="btn btn-sm language-button active" data-language="en" type="button">EN</button>
 <span aria-hidden="true">|</span>
 <button aria-pressed="false" class="btn btn-sm language-button" data-language="eus" type="button">EUS</button>
 </div>
 <div class="position-relative">
-<button aria-controls="userPanel" aria-expanded="false" aria-label="Área de usuario" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" type="button">
-<i class="bi bi-person-circle fs-5"></i><span class="d-none d-sm-inline ms-1">Área de usuario</span>
+<button aria-controls="userPanel" aria-expanded="false" aria-label="User area" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" type="button">
+<i class="bi bi-person-circle fs-5"></i><span class="d-none d-sm-inline ms-1">User area</span>
 </button>
 <div class="collapse user-panel-collapse" id="userPanel">
 <div class="user-dropdown p-3">
-<div id="guestPanel"><p class="fw-semibold">Bienvenido/a</p><a class="btn btn-primary btn-sm w-100 mb-2" href="login.html">Iniciar sesión</a><a class="btn btn-outline-primary btn-sm w-100" href="register.html">Solicitar cuenta</a></div>
-<div class="d-none" id="memberPanel"><strong id="memberName">Usuario</strong><p class="small text-secondary" id="memberEmail"></p><a class="dropdown-item" href="user-area.html">Mi perfil y registros</a><a class="dropdown-item" href="user-area.html#privacySettingsForm">Ajustes y privacidad</a><a class="dropdown-item d-none" href="admin.html" id="adminPanelLink">Administración · Validar registros</a><button class="btn btn-outline-secondary btn-sm w-100 mt-2" id="logoutButton">Cerrar sesión</button></div>
+<div id="guestPanel"><p class="fw-semibold">Welcome</p><a class="btn btn-primary btn-sm w-100 mb-2" href="#loginModal" data-bs-toggle="modal">Sign in</a><a class="btn btn-outline-primary btn-sm w-100" href="signup.html">Sign up</a><a class="small d-block text-center mt-2 text-secondary" href="user-area.html">User area · demo</a></div>
+<div class="d-none" id="memberPanel"><strong id="memberName">Usuario</strong><p class="small text-secondary" id="memberEmail"></p><a class="dropdown-item" href="user-area.html">My profile and records</a><a class="dropdown-item" href="user-area.html#privacySettingsForm">Settings and privacy</a><button class="btn btn-outline-secondary btn-sm w-100 mt-2" id="logoutButton">Sign out</button></div>
 </div>
 </div>
 </div>
@@ -55,59 +55,59 @@
 <div class="collapse navbar-collapse" id="navbarContent">
 <ul class="navbar-nav ms-auto gap-lg-2">
 <li class="nav-item">
-<a class="nav-link" data-es="Inicio" data-eus="Hasiera" href="index.html">
+<a class="nav-link" data-en="Home" data-eus="Hasiera" href="index.html">
          Inicio
         </a>
 </li>
 <li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-es="Catálogo" data-eus="Katalogoa" href="catalog.html">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Catalogue" data-eus="Katalogoa" href="catalog.html">
          Catálogo
         </a>
 <ul class="dropdown-menu">
 <li>
-<a class="dropdown-item" data-es="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">
+<a class="dropdown-item" data-en="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">
            Fauna
           </a>
 </li>
 <li>
-<a class="dropdown-item" data-es="Flora" data-eus="Flora" href="catalog.html?type=flora">
+<a class="dropdown-item" data-en="Flora" data-eus="Flora" href="catalog.html?type=flora">
            Flora
           </a>
 </li>
 <li>
-<a class="dropdown-item" data-es="Hábitats" data-eus="Habitatak" href="habitats.html">
-           Hábitats
+<a class="dropdown-item" data-en="Habitats" data-eus="Habitatak" href="habitats.html">
+           Habitats
           </a>
 </li>
-<li><a class="dropdown-item" data-es="Parques, reservas y centros" data-eus="Parkeak, erreserbak eta zentroak" href="spaces.html">Parques, reservas y centros</a></li>
-<li><a class="dropdown-item" data-es="Comarcas" data-eus="Eskualdeak" href="regions.html">Comarcas</a></li>
+<li><a class="dropdown-item" data-en="Parks, reserves and centres" data-eus="Parkeak, erreserbak eta zentroak" href="spaces.html">Parques, reservas y centros</a></li>
+<li><a class="dropdown-item" data-en="Regions" data-eus="Eskualdeak" href="regions.html">Regions</a></li>
 </ul>
 </li>
 <li class="nav-item">
-<a class="nav-link" data-es="Blog" data-eus="Bloga" href="blog.html">
+<a class="nav-link" data-en="Blog" data-eus="Bloga" href="blog.html">
          Blog
         </a>
 </li>
 <li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-es="Participa" data-eus="Parte hartu" href="species-submit.html">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Get involved" data-eus="Parte hartu" href="species-submit.html">
          Participa
         </a>
 <ul class="dropdown-menu">
 <li>
-<a class="dropdown-item" data-es="Registrar una especie" data-eus="Espezie bat erregistratu" href="species-submit.html">
+<a class="dropdown-item" data-en="Registrar una especie" data-eus="Espezie bat erregistratu" href="species-submit.html">
            Registrar una especie
           </a>
 </li>
 <li>
-<a class="dropdown-item" data-es="Registrar un avistamiento" data-eus="Behaketa bat erregistratu" href="register.html">
+<a class="dropdown-item" data-en="Registrar un avistamiento" data-eus="Behaketa bat erregistratu" href="register-sighting.html">
            Registrar un avistamiento
           </a>
 </li>
 </ul>
 </li>
-<li class="nav-item"><a class="nav-link" data-es="Vídeos" data-eus="Bideoak" href="videos.html">Vídeos</a></li>
+<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li><li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
 <li class="nav-item">
-<a class="nav-link" data-es="Contacto" data-eus="Kontaktua" href="contact.html">
+<a class="nav-link" data-en="Contact" data-eus="Kontaktua" href="contact.html">
          Contacto
         </a>
 </li>
@@ -118,8 +118,8 @@
 </nav>
 <nav aria-label="Migas de pan" class="container breadcrumb-wrap">
 <ol class="breadcrumb">
-<li class="breadcrumb-item"><a data-es="Inicio" data-eus="Hasiera" href="index.html">Inicio</a></li>
-<li aria-current="page" class="breadcrumb-item active">Ficha de especie</li>
+<li class="breadcrumb-item"><a data-en="Home" data-eus="Hasiera" href="index.html">Home</a></li>
+<li aria-current="page" class="breadcrumb-item active">Species profile</li>
 </ol>
 </nav>
 </div>
@@ -127,10 +127,10 @@
 <section class="inner-hero">
 <div class="container">
 <p class="section-kicker">
-      Ficha de especie
+      Species profile
      </p>
 <h1 id="detailTitle">
-      Petirrojo europeo
+      European robin
      </h1>
 <p class="lead fst-italic" id="detailScientific">
       Erithacus rubecula
@@ -141,87 +141,85 @@
 <div class="container">
 <div class="row g-5">
 <div class="col-lg-6">
-<img alt="Petirrojo europeo" class="img-fluid rounded-4 shadow" id="detailImage" src="img/imagenes-extra/txantxangorri.jpg"/>
+<img alt="European robin" class="img-fluid rounded-4 shadow" id="detailImage" src="img/imagenes-extra/txantxangorri.jpg"/>
 </div>
 <div class="col-lg-6">
 <span class="status-pill" id="detailType">
         Fauna
        </span>
 <h2 class="section-title mt-3">
-        Descripción
+        Description
        </h2>
 <p class="section-copy" id="detailDescription">
         Ave pequeña y robusta, reconocible por la coloración anaranjada de la cara y el pecho. Habita bosques, setos, parques y jardines.
        </p>
 <dl class="row">
 <dt class="col-5">
-         Conservación
+         Conservation
         </dt>
 <dd class="col-7" id="detailConservation">
          Preocupación menor (referencia general; verificar fuente oficial)
         </dd>
 <dt class="col-5">
-         Hábitats
+         Habitats
         </dt>
 <dd class="col-7" id="detailHabitats">
          Bosques, setos, jardines y parques
         </dd>
 <dt class="col-5">
-         Comarcas
+         Regions
         </dt>
 <dd class="col-7">
          Distribución a verificar mediante registros locales
         </dd>
 </dl>
-<a class="btn btn-primary" href="register.html">
-        Registrar observación
+<a class="btn btn-primary" href="register-sighting.html">
+        Record a sighting
        </a>
 <a class="btn btn-outline-primary" href="catalog.html">
-        Volver al catálogo
+        Back to catalogue
        </a>
 </div>
 </div>
 <div class="content-card mt-5">
 <h2 class="h4">
-       Observaciones relacionadas
+       Sighting records
       </h2>
 <div class="table-responsive">
 <table class="table table-hover secondary-table">
 <thead>
 <tr>
-<th>
-           Fecha
-          </th>
-<th>
-           Hábitat
-          </th>
-<th>
-           Comarca
-          </th>
-<th>
-           Observador/a
-          </th>
+<th>Date</th><th>Time</th>
+
+<th>Region</th>
+<th>Observer</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>
-           —
-          </td>
-<td>
-           Pendiente de registros
-          </td>
-<td>
-           —
-          </td>
-<td>
-           —
-          </td>
-</tr>
+<tr><td>18 Nov 2026</td><td>09:15</td><td>Gran Bilbao</td><td>Demo user</td></tr>
+<tr><td>12 Nov 2026</td><td>08:40</td><td>Uribe</td><td>Anonymous</td></tr>
+<tr><td>05 Nov 2026</td><td>16:20</td><td>Duranguesado</td><td>Demo user</td></tr>
+<tr><td>28 Oct 2026</td><td>10:05</td><td>Lea-Artibai</td><td>Alias</td></tr>
+<tr><td>14 Oct 2026</td><td>17:30</td><td>Gran Bilbao</td><td>Anonymous</td></tr>
 </tbody>
 </table>
 </div>
 </div>
+</div>
+<div class="content-card mt-4 robin-sighting-gallery">
+  <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-3">
+    <div><p class="section-kicker mb-1">Community photographs</p><h2 class="h4 mb-0">European robin sightings</h2><p class="small text-secondary mb-0"><em>Erithacus rubecula</em></p></div>
+    <span class="small text-secondary">5 photographs · Demonstration content</span>
+  </div>
+  <div class="row g-3">
+    <div class="col-6 col-lg-4"><button class="robin-photo" data-bs-toggle="modal" data-bs-target="#robinPhotoModal" data-photo="img/avistamientos/Erithacus_rubecula2.jpg"><img src="img/avistamientos/Erithacus_rubecula2.jpg" alt="European robin" loading="lazy"><span>European robin</span></button></div>
+    <div class="col-6 col-lg-4"><button class="robin-photo" data-bs-toggle="modal" data-bs-target="#robinPhotoModal" data-photo="img/avistamientos/Erithacus_rubecula3.jpg"><img src="img/avistamientos/Erithacus_rubecula3.jpg" alt="European robin" loading="lazy"><span>European robin</span></button></div>
+    <div class="col-6 col-lg-4"><button class="robin-photo" data-bs-toggle="modal" data-bs-target="#robinPhotoModal" data-photo="img/avistamientos/Erithacus_rubecula4.jpg"><img src="img/avistamientos/Erithacus_rubecula4.jpg" alt="European robin" loading="lazy"><span>European robin</span></button></div>
+    <div class="col-6 col-lg-4"><button class="robin-photo" data-bs-toggle="modal" data-bs-target="#robinPhotoModal" data-photo="img/avistamientos/Erithacus_rubecula6.jpg"><img src="img/avistamientos/Erithacus_rubecula6.jpg" alt="European robin" loading="lazy"><span>European robin</span></button></div>
+    <div class="col-6 col-lg-4"><button class="robin-photo" data-bs-toggle="modal" data-bs-target="#robinPhotoModal" data-photo="img/avistamientos/Erithacus_rubecula7.jpg"><img src="img/avistamientos/Erithacus_rubecula7.jpg" alt="European robin" loading="lazy"><span>European robin</span></button></div>
+  </div>
+</div>
+<div class="modal fade" id="robinPhotoModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content"><div class="modal-body p-2"><img id="robinModalImage" class="img-fluid rounded" alt="European robin"><p class="text-center mb-0 mt-2">European robin · <em>Erithacus rubecula</em></p></div></div></div></div>
 </div>
 </section>
 </main>
@@ -244,7 +242,7 @@
 <div class="container">
 <div class="row g-4 py-4">
 <div class="col-lg-3 col-md-6">
-<a class="footer-brand" href="index.html"><img alt="Logotipo Flora y Fauna de Bizkaia" src="img/logo-web.svg"/><span>Flora y Fauna<small>de Bizkaia</small></span></a><p class="footer-slogan" data-es="Conocer · Proteger · Compartir" data-eus="Ezagutu · Babestu · Partekatu">Conocer · Proteger · Compartir</p>
+<a class="footer-brand" href="index.html"><img alt="Logotipo Flora y Fauna de Bizkaia" src="img/logo-web.svg"/><span>Flora y Fauna<small>de Bizkaia</small></span></a><p class="footer-slogan" data-en="Conocer · Proteger · Compartir" data-eus="Ezagutu · Babestu · Partekatu">Conocer · Proteger · Compartir</p>
 <p class="footer-copy mt-3"><b>Grupo:</b> June, Eritz, Kelea Rueda</p>
 <p class="footer-copy mt-3">Proyecto Challenge 1.2, DAMi 1º</p>
 <div class="social-links d-flex flex-wrap gap-2">
@@ -258,14 +256,14 @@
 <div class="col-lg-2 col-6">
 <h2 class="footer-title">Explora</h2>
 <ul class="footer-links">
-<li><a data-es="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">Fauna</a></li>
-<li><a data-es="Flora" data-eus="Flora" href="catalog.html?type=flora">Flora</a></li>
-<li><a data-es="Hábitats" data-eus="Habitatak" href="habitats.html">Hábitats</a></li>
-<li><a data-es="Blog" data-eus="Bloga" href="blog.html">Blog</a></li>
+<li><a data-en="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">Fauna</a></li>
+<li><a data-en="Flora" data-eus="Flora" href="catalog.html?type=flora">Flora</a></li>
+<li><a data-en="Habitats" data-eus="Habitatak" href="habitats.html">Habitats</a></li>
+<li><a data-en="Blog" data-eus="Bloga" href="blog.html">Blog</a></li>
 </ul>
 </div>
 <div class="col-lg-3 col-6">
-<h2 class="footer-title" data-es="Contacto" data-eus="Kontaktua">Contacto</h2>
+<h2 class="footer-title" data-en="Contact" data-eus="Kontaktua">Contacto</h2>
 <a class="footer-contact" href="tel:+34555555555"><i class="bi bi-telephone-fill"></i>555 555 555</a>
 <a class="footer-contact" href="https://wa.me/34555555555" rel="noopener" target="_blank"><i class="bi bi-whatsapp"></i>WhatsApp: 555 555 555</a>
 <a class="footer-contact" href="mailto:faunayflora@bizkaia.com"><i class="bi bi-envelope"></i>faunayflora@bizkaia.com</a>
@@ -287,6 +285,7 @@
 </footer>
 <script src="bootstrap-5.3.8/js/bootstrap.bundle.min.js">
 </script>
+<script src="js/fauna-details.js"></script>
 <script src="js/main.js">
 </script>
 </body>

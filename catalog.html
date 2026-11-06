@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-
-<html data-bs-theme="light" lang="es">
+<html data-bs-theme="light" lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="Catálogo de flora y fauna de Bizkaia." name="description"/>
+<meta content="Flora and fauna catalogue of Bizkaia." name="description"/>
 <title>
-   Catálogo de biodiversidad | Flora y Fauna de Bizkaia
+   Biodiversity catalogue | Flora and Fauna of Bizkaia
   </title>
 <link href="img/logo-web.svg" rel="icon"/>
 <link href="bootstrap-5.3.8/css/bootstrap.min.css" rel="stylesheet"/>
@@ -16,19 +15,19 @@
 <body><header>
 <div class="user-bar">
 <div class="container d-flex justify-content-between align-items-center gap-2">
-<div aria-label="Seleccionar idioma" class="language-switch d-flex align-items-center gap-1">
-<button aria-pressed="true" class="btn btn-sm language-button active" data-language="es" type="button">ES</button>
+<div aria-label="Select language" class="language-switch d-flex align-items-center gap-1">
+<button aria-pressed="true" class="btn btn-sm language-button active" data-language="en" type="button">EN</button>
 <span aria-hidden="true">|</span>
 <button aria-pressed="false" class="btn btn-sm language-button" data-language="eus" type="button">EUS</button>
 </div>
 <div class="position-relative">
-<button aria-controls="userPanel" aria-expanded="false" aria-label="Área de usuario" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" type="button">
-<i class="bi bi-person-circle fs-5"></i><span class="d-none d-sm-inline ms-1">Área de usuario</span>
+<button aria-controls="userPanel" aria-expanded="false" aria-label="User area" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" type="button">
+<i class="bi bi-person-circle fs-5"></i><span class="d-none d-sm-inline ms-1">User area</span>
 </button>
 <div class="collapse user-panel-collapse" id="userPanel">
 <div class="user-dropdown p-3">
-<div id="guestPanel"><p class="fw-semibold">Bienvenido/a</p><a class="btn btn-primary btn-sm w-100 mb-2" href="login.html">Iniciar sesión</a><a class="btn btn-outline-primary btn-sm w-100" href="register.html">Solicitar cuenta</a></div>
-<div class="d-none" id="memberPanel"><strong id="memberName">Usuario</strong><p class="small text-secondary" id="memberEmail"></p><a class="dropdown-item" href="user-area.html">Mi perfil y registros</a><a class="dropdown-item" href="user-area.html#privacySettingsForm">Ajustes y privacidad</a><a class="dropdown-item d-none" href="admin.html" id="adminPanelLink">Administración · Validar registros</a><button class="btn btn-outline-secondary btn-sm w-100 mt-2" id="logoutButton">Cerrar sesión</button></div>
+<div id="guestPanel"><p class="fw-semibold" data-en="Welcome" data-eus="Ongi etorri">Welcome</p><a class="btn btn-primary btn-sm w-100 mb-2" data-en="Sign in" data-eus="Saioa hasi" href="#loginModal" data-bs-toggle="modal">Sign in</a><a class="btn btn-outline-primary btn-sm w-100" data-en="Sign up" data-eus="Izena eman" href="signup.html">Sign up</a><a class="small d-block text-center mt-2 text-secondary" data-en="User area · demo" data-eus="Erabiltzaileen area · demo" href="user-area.html">User area · demo</a></div>
+<div class="d-none" id="memberPanel"><strong id="memberName" data-en="User" data-eus="Erabiltzailea">User</strong><p class="small text-secondary" id="memberEmail"></p><a class="dropdown-item" data-en="My profile and records" data-eus="Nire profila eta erregistroak" href="user-area.html">My profile and records</a><a class="dropdown-item" data-en="Settings and privacy" data-eus="Ezarpenak eta pribatutasuna" href="user-area.html#privacySettingsForm">Settings and privacy</a><button class="btn btn-outline-secondary btn-sm w-100 mt-2" data-en="Sign out" data-eus="Saioa amaitu" id="logoutButton">Sign out</button></div>
 </div>
 </div>
 </div>
@@ -41,98 +40,98 @@
 <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
 <img alt="" height="42" src="img/logo-web.svg"/>
 <span>
-       Flora y Fauna
+       Flora and Fauna
        <small>
-        de Bizkaia
+        of Bizkaia
        </small>
 </span>
 </a>
-<button aria-label="Abrir navegación" class="navbar-toggler" data-bs-target="#navbarContent" data-bs-toggle="collapse" type="button">
+<button aria-label="Open navigation" class="navbar-toggler" data-bs-target="#navbarContent" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon">
 </span>
 </button>
 <div class="collapse navbar-collapse" id="navbarContent">
 <ul class="navbar-nav ms-auto gap-lg-2">
 <li class="nav-item">
-<a class="nav-link" data-es="Inicio" data-eus="Hasiera" href="index.html">
-         Inicio
+<a class="nav-link" data-en="Home" data-eus="Hasiera" href="index.html">
+         Home
         </a>
 </li>
 <li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-es="Catálogo" data-eus="Katalogoa" href="catalog.html">
-         Catálogo
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Catalogue" data-eus="Katalogoa" href="catalog.html">
+         Catalogue
         </a>
 <ul class="dropdown-menu">
 <li>
-<a class="dropdown-item" data-es="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">
+<a class="dropdown-item" data-en="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">
            Fauna
           </a>
 </li>
 <li>
-<a class="dropdown-item" data-es="Flora" data-eus="Flora" href="catalog.html?type=flora">
+<a class="dropdown-item" data-en="Flora" data-eus="Flora" href="catalog.html?type=flora">
            Flora
           </a>
 </li>
 <li>
-<a class="dropdown-item" data-es="Hábitats" data-eus="Habitatak" href="habitats.html">
-           Hábitats
+<a class="dropdown-item" data-en="Habitats" data-eus="Habitatak" href="habitats.html">
+           Habitats
           </a>
 </li>
-<li><a class="dropdown-item" data-es="Parques, reservas y centros" data-eus="Parkeak, erreserbak eta zentroak" href="spaces.html">Parques, reservas y centros</a></li>
-<li><a class="dropdown-item" data-es="Comarcas" data-eus="Eskualdeak" href="regions.html">Comarcas</a></li>
+<li><a class="dropdown-item" data-en="Parks, reserves and centres" data-eus="Parkeak, erreserbak eta zentroak" href="spaces.html">Parks, reserves and centres</a></li>
+<li><a class="dropdown-item" data-en="Regions" data-eus="Eskualdeak" href="regions.html">Regions</a></li>
 </ul>
 </li>
 <li class="nav-item">
-<a class="nav-link" data-es="Blog" data-eus="Bloga" href="blog.html">
+<a class="nav-link" data-en="Blog" data-eus="Bloga" href="blog.html">
          Blog
         </a>
 </li>
 <li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-es="Participa" data-eus="Parte hartu" href="species-submit.html">
-         Participa
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Get involved" data-eus="Parte hartu" href="species-submit.html">
+         Get involved
         </a>
 <ul class="dropdown-menu">
 <li>
-<a class="dropdown-item" data-es="Registrar una especie" data-eus="Espezie bat erregistratu" href="species-submit.html">
-           Registrar una especie
+<a class="dropdown-item" data-en="Register a species" data-eus="Espezie bat erregistratu" href="species-submit.html">
+           Register a species
           </a>
 </li>
 <li>
-<a class="dropdown-item" data-es="Registrar un avistamiento" data-eus="Behaketa bat erregistratu" href="register.html">
-           Registrar un avistamiento
+<a class="dropdown-item" data-en="Register a sighting" data-eus="Behaketa bat erregistratu" href="register-sighting.html">
+           Register a sighting
           </a>
 </li>
 </ul>
 </li>
-<li class="nav-item"><a class="nav-link" data-es="Vídeos" data-eus="Bideoak" href="videos.html">Vídeos</a></li>
+<li class="nav-item"><a class="nav-link" data-en="Gallery" data-eus="Galeria" href="gallery.html">Gallery</a></li><li class="nav-item"><a class="nav-link" data-en="Videos" data-eus="Bideoak" href="videos.html">Videos</a></li>
 <li class="nav-item">
-<a class="nav-link" data-es="Contacto" data-eus="Kontaktua" href="contact.html">
-         Contacto
+<a class="nav-link" data-en="Contact" data-eus="Kontaktua" href="contact.html">
+         Contact
         </a>
 </li>
-<li class="nav-item d-flex align-items-center"><button aria-label="Cambiar tema" class="btn btn-sm theme-toggle" id="themeToggle" type="button"><i class="bi bi-moon-stars-fill" id="themeIcon"></i></button></li>
+<li class="nav-item d-flex align-items-center"><button aria-label="Toggle theme" class="btn btn-sm theme-toggle" id="themeToggle" type="button"><i class="bi bi-moon-stars-fill" id="themeIcon"></i></button></li>
 </ul>
 </div>
 </div>
 </nav>
-<nav aria-label="Migas de pan" class="container breadcrumb-wrap">
+<nav aria-label="Breadcrumbs" class="container breadcrumb-wrap">
 <ol class="breadcrumb">
-<li class="breadcrumb-item"><a data-es="Inicio" data-eus="Hasiera" href="index.html">Inicio</a></li>
-<li aria-current="page" class="breadcrumb-item active">Catálogo</li>
+<li class="breadcrumb-item"><a data-en="Home" data-eus="Hasiera" href="index.html">Home</a></li>
+<li aria-current="page" class="breadcrumb-item active" data-en="Catalogue" data-eus="Katalogoa">Catalogue</li>
 </ol>
 </nav>
 </div>
 <main id="mainContent">
 <section class="inner-hero">
 <div class="container">
-<p class="section-kicker">
-      Biodiversidad
+<p class="section-kicker" data-en="Biodiversity" data-eus="Biodibertsitatea">
+      Biodiversity
      </p>
-<h1>
-      Catálogo de biodiversidad
+<h1 data-en="Biodiversity catalogue" data-eus="Biodibertsitatearen katalogoa">
+      Biodiversity catalogue
      </h1>
-<p class="lead">
-      Consulta fichas de flora y fauna y filtra por tipo o comarca.
+<p class="lead" data-en="Browse flora and fauna profiles and filter by type or region." data-eus="Arakatu flora eta faunaren fitxak eta iragazi mota edo eskualdearen arabera.">
+      Browse flora and fauna profiles and filter by type or region.
      </p>
 </div>
 </section>
@@ -140,18 +139,18 @@
 <div class="container"><div class="content-card mb-4">
 <form class="row g-3 align-items-end" id="catalogFilter">
 <div class="col-md-4">
-<label class="form-label" for="speciesSearch">
-         Buscar especie
+<label class="form-label" data-en="Search species" data-eus="Bilatu espeziea" for="speciesSearch">
+         Search species
         </label>
-<input class="form-control" id="speciesSearch" placeholder="Nombre común o científico" type="search"/>
+<input class="form-control" data-en-placeholder="Common or scientific name" data-eus-placeholder="Izen arrunta edo zientifikoa" id="speciesSearch" placeholder="Common or scientific name" type="search"/>
 </div>
 <div class="col-md-3">
-<label class="form-label" for="speciesType">
-         Tipo
+<label class="form-label" data-en="Type" data-eus="Mota" for="speciesType">
+         Type
         </label>
 <select class="form-select" id="speciesType">
 <option value="">
-          Flora y fauna
+          Flora and fauna
          </option>
 <option>
           Fauna
@@ -162,12 +161,12 @@
 </select>
 </div>
 <div class="col-md-3">
-<label class="form-label" for="regionFilter">
-         Comarca
+<label class="form-label" data-en="Region" data-eus="Eskualdea" for="regionFilter">
+         Region
         </label>
 <select class="form-select" id="regionFilter">
 <option value="">
-          Todas
+          All
          </option>
 <option value="gran-bilbao">
           Gran Bilbao
@@ -179,7 +178,7 @@
           Durangaldea
          </option>
 <option value="arratia-nervion">
-          Arratia-Nerbioi
+          Arratia-Nervión
          </option>
 <option value="lea-artibai">
           Lea-Artibai
@@ -193,297 +192,257 @@
 </select>
 </div>
 <div class="col-md-2">
-<button class="btn btn-primary w-100" type="submit">
-         Filtrar
+<button class="btn btn-primary w-100" data-en="Filter" data-eus="Iragazi" type="submit">
+         Filter
         </button>
 </div>
 </form>
 </div>
 <ul class="nav nav-tabs catalog-tabs mb-3" id="biodiversityTabs" role="tablist">
-<li class="nav-item" role="presentation"><button aria-controls="fauna-pane" aria-selected="true" class="nav-link active" data-bs-target="#fauna-pane" data-bs-toggle="tab" id="fauna-tab" role="tab" type="button">Fauna</button></li>
-<li class="nav-item" role="presentation"><button aria-controls="flora-pane" aria-selected="false" class="nav-link" data-bs-target="#flora-pane" data-bs-toggle="tab" id="flora-tab" role="tab" type="button">Flora</button></li>
+<li class="nav-item" role="presentation"><button aria-controls="fauna-pane" aria-selected="true" class="nav-link active" data-bs-target="#fauna-pane" data-bs-toggle="tab" data-en="Fauna" data-eus="Fauna" id="fauna-tab" role="tab" type="button">Fauna</button></li>
+<li class="nav-item" role="presentation"><button aria-controls="flora-pane" aria-selected="false" class="nav-link" data-bs-target="#flora-pane" data-bs-toggle="tab" data-en="Flora" data-eus="Flora" id="flora-tab" role="tab" type="button">Flora</button></li>
 </ul>
 <div class="tab-content" id="biodiversityTabContent">
 <section aria-labelledby="fauna-tab" class="tab-pane fade show active" id="fauna-pane" role="tabpanel" tabindex="0">
 <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-3">
-<div><h2 class="h4 mb-1">Registro de fauna</h2><p class="text-secondary mb-0">Listado estático de especies con identificador, fotografía y clasificación.</p></div>
+<div><h2 class="h4 mb-1" data-en="Fauna registry" data-eus="Faunaren erregistroa">Fauna registry</h2><p class="text-secondary mb-0" data-en="Static list of species with identifier, photograph and classification." data-eus="Espezien zerrenda estatikoa identifikadore, argazki eta sailkarekin.">Static list of species with identifier, photograph and classification.</p></div>
 <div class="d-flex flex-wrap gap-2">
-<label class="visually-hidden" for="faunaGroupFilter">Filtrar por grupo</label>
-<select aria-label="Filtrar por hábitat principal" class="form-select form-select-sm" id="habitatFilter"><option value="">Todos los hábitats</option><option value="Marinos">Marinos</option><option value="Litorales">Litorales</option><option value="Mar abierto">Mar abierto</option><option value="Acantilados costeros">Acantilados costeros</option><option value="Islotes">Islotes</option><option value="Playa">Playa</option><option value="Dunas">Dunas</option><option value="Estuarios">Estuarios</option><option value="Rías">Rías</option><option value="Zonas húmedas">Zonas húmedas</option><option value="Marismas">Marismas</option><option value="Ríos">Ríos</option><option value="Arroyos">Arroyos</option><option value="Bosques de ribera">Bosques de ribera</option><option value="Bosques y formaciones forestales">Bosques y formaciones forestales</option><option value="Montaña">Montaña</option><option value="Roquedos">Roquedos</option><option value="Zonas de cumbre">Zonas de cumbre</option><option value="Pastizales">Pastizales</option><option value="Matorrales de montaña">Matorrales de montaña</option><option value="Cortados calizos">Cortados calizos</option><option value="Cuevas">Cuevas</option><option value="Medios humano-agropecuarios">Medios humano-agropecuarios</option><option value="Valles">Valles</option><option value="Campiña atlántica">Campiña atlántica</option><option value="Urbes (ciudades y pueblos)">Urbes (ciudades y pueblos)</option></select><select aria-label="Filtrar por grupo" class="form-select form-select-sm" id="faunaGroupFilter">
-<option value="">Todos los grupos</option><option value="mamífero">Mamíferos</option><option value="cetáceo">Cetáceos</option><option value="murciélago">Murciélagos</option><option value="ave rapaz">Aves rapaces</option><option value="ave marina">Aves marinas</option><option value="ave acuática">Aves acuáticas</option><option value="ave limícola">Aves limícolas</option><option value="ave fluvial">Aves fluviales</option><option value="ave de roquedo">Aves de roquedo</option><option value="ave de montaña">Aves de montaña</option><option value="ave paseriforme">Paseriformes</option>
+<label class="visually-hidden" data-en="Filter by group" data-eus="Iragazi taldearen arabera" for="faunaGroupFilter">Filter by group</label>
+<select aria-label="Filter by main habitat" class="form-select form-select-sm" id="habitatFilter"><option value="">All habitats</option><option value="Marinos">Marine</option><option value="Litorales">Coastal</option><option value="Mar abierto">Open sea</option><option value="Acantilados costeros">Coastal cliffs</option><option value="Islotes">Islets</option><option value="Playa">Beach</option><option value="Dunas">Dunes</option><option value="Estuarios">Estuaries</option><option value="Rías">Rías</option><option value="Zonas húmedas">Wetlands</option><option value="Marismas">Marshes</option><option value="Ríos">Rivers</option><option value="Arroyos">Streams</option><option value="Bosques de ribera">Riparian forests</option><option value="Bosques y formaciones forestales">Forests and woodland</option><option value="Montaña">Mountain</option><option value="Roquedos">Rocky areas</option><option value="Zonas de cumbre">Summit zones</option><option value="Pastizales">Grasslands</option><option value="Matorrales de montaña">Mountain scrubland</option><option value="Cortados calizos">Limestone cliffs</option><option value="Cuevas">Caves</option><option value="Medios humano-agropecuarios">Human-agricultural environments</option><option value="Valles">Valleys</option><option value="Urbes (ciudades y pueblos)">Urban areas (towns and cities)</option></select><select aria-label="Filter by group" class="form-select form-select-sm" id="faunaGroupFilter">
+<option value="">All groups</option><option value="mamífero">Mammals</option><option value="cetáceo">Cetaceans</option><option value="murciélago">Bats</option><option value="ave rapaz">Birds of prey</option><option value="ave marina">Seabirds</option><option value="ave acuática">Waterbirds</option><option value="ave limícola">Waders</option><option value="ave fluvial">River birds</option><option value="ave de roquedo">Cliff birds</option><option value="ave de montaña">Mountain birds</option><option value="ave paseriforme">Passerines</option>
 </select>
 </div>
-</div>
+</div>   
+
 <div class="table-responsive fauna-table-wrap">
-<table class="table table-hover align-middle fauna-table" id="faunaTable">
-<thead><tr>
+<table class="table table-striped table-hover table-bordered align-middle fauna-table" id="faunaTable">
+<thead><tr class="table-group-heading"><th class="text-center table-dark" colspan="2">Identification</th><th class="text-center table-dark" colspan="3">Species details</th><th class="text-center table-dark" colspan="2">Habitat and profile</th></tr><tr>
 <th scope="col"><button class="table-sort" data-sort="id" type="button">ID <i class="bi bi-arrow-down-up"></i></button></th>
-<th scope="col">Foto</th>
-<th scope="col"><button class="table-sort" data-sort="common" type="button">Nombre común <i class="bi bi-arrow-down-up"></i></button></th>
-<th scope="col"><button class="table-sort" data-sort="scientific" type="button">Nombre científico <i class="bi bi-arrow-down-up"></i></button></th>
-<th scope="col"><button class="table-sort" data-sort="group" type="button">Grupo <i class="bi bi-arrow-down-up"></i></button></th>
-<th scope="col"><button class="table-sort" data-sort="habitat" type="button">Hábitat principal <i class="bi bi-arrow-down-up"></i></button></th><th scope="col">Ficha</th>
+<th scope="col">Photo</th>
+<th scope="col"><button class="table-sort" data-sort="common" type="button">Common name <i class="bi bi-arrow-down-up"></i></button></th>
+<th scope="col"><button class="table-sort" data-sort="scientific" type="button">Scientific name <i class="bi bi-arrow-down-up"></i></button></th>
+<th scope="col"><button class="table-sort" data-sort="group" type="button">Group <i class="bi bi-arrow-down-up"></i></button></th>
+<th scope="col"><button class="table-sort" data-sort="habitat" type="button">Main habitat <i class="bi bi-arrow-down-up"></i></button></th><th scope="col">Profile</th>
 </tr></thead>
-<tbody><tr data-group="mamífero" data-region="encartaciones durangaldea busturioaldea" data-search="corzo capreolus capreolus mamífero bosques y formaciones forestales bosques y formaciones forestales">
-<td class="text-nowrap">FAU-001</td><td><img alt="Corzo" class="fauna-table-image" loading="lazy" src="img/fauna/Capreolus_capreolus.jpg"/></td>
-<td>Corzo</td>
-<td><em>Capreolus capreolus</em></td><td>Mamífero</td><td>Bosques y formaciones forestales</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-001" type="button">Ver ficha</button></td>
+<tbody><tr id="FAU-001" data-group="mamífero" data-region="encartaciones durangaldea busturioaldea" data-search="corzo capreolus capreolus mamífero bosques y formaciones forestales bosques y formaciones forestales"><td class="text-nowrap">FAU-001</td><td><img alt="Roe deer" class="fauna-table-image" loading="lazy" src="img/fauna/Capreolus_capreolus.jpg"/></td>
+<td>Roe deer</td>
+<td><em>Capreolus capreolus</em></td><td>Mammal</td><td>Forests and woodland</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-001" type="button">View profile</button></td>
 </tr>
-<tr data-group="mamífero" data-region="encartaciones durangaldea busturioaldea" data-search="jabalí sus scrofa mamífero bosques y formaciones forestales bosques y formaciones forestales">
-<td class="text-nowrap">FAU-002</td><td><img alt="Jabalí" class="fauna-table-image" loading="lazy" src="img/fauna/Sus_scrofa.jpg"/></td>
-<td>Jabalí</td>
-<td><em>Sus scrofa</em></td><td>Mamífero</td><td>Bosques y formaciones forestales</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-002" type="button">Ver ficha</button></td>
+<tr id="FAU-002" data-group="mamífero" data-region="encartaciones durangaldea busturioaldea" data-search="jabalí sus scrofa mamífero bosques y formaciones forestales bosques y formaciones forestales"><td class="text-nowrap">FAU-002</td><td><img alt="Wild boar" class="fauna-table-image" loading="lazy" src="img/fauna/Sus_scrofa.jpg"/></td>
+<td>Wild boar</td>
+<td><em>Sus scrofa</em></td><td>Mammal</td><td>Forests and woodland</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-002" type="button">View profile</button></td>
 </tr>
-<tr data-group="mamífero" data-region="gran-bilbao lea-artibai" data-search="zorro rojo vulpes vulpes mamífero campiña atlántica y mosaico forestal campiña atlántica">
-<td class="text-nowrap">FAU-003</td><td><img alt="Zorro rojo" class="fauna-table-image" loading="lazy" src="img/fauna/Vulpes_vulpes.jpg"/></td>
-<td>Zorro rojo</td>
-<td><em>Vulpes vulpes</em></td><td>Mamífero</td><td>Campiña atlántica</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-003" type="button">Ver ficha</button></td>
+<tr id="FAU-003" data-group="mamífero" data-region="gran-bilbao lea-artibai" data-search="zorro rojo vulpes vulpes mamífero campiña atlántica y mosaico forestal campiña atlántica"><td class="text-nowrap">FAU-003</td><td><img alt="Red fox" class="fauna-table-image" loading="lazy" src="img/fauna/Vulpes_vulpes.jpg"/></td>
+<td>Red fox</td>
+<td><em>Vulpes vulpes</em></td><td>Mammal</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-003" type="button">View profile</button></td>
 </tr>
-<tr data-group="mamífero" data-region="encartaciones durangaldea busturioaldea" data-search="tejón europeo meles meles mamífero bosques y formaciones forestales bosques y formaciones forestales">
-<td class="text-nowrap">FAU-004</td><td><img alt="Tejón europeo" class="fauna-table-image" loading="lazy" src="img/fauna/Meles_meles.jpg"/></td>
-<td>Tejón europeo</td>
-<td><em>Meles meles</em></td><td>Mamífero</td><td>Bosques y formaciones forestales</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-004" type="button">Ver ficha</button></td>
+<tr id="FAU-004" data-group="mamífero" data-region="encartaciones durangaldea busturioaldea" data-search="tejón europeo meles meles mamífero bosques y formaciones forestales bosques y formaciones forestales"><td class="text-nowrap">FAU-004</td><td><img alt="European badger" class="fauna-table-image" loading="lazy" src="img/fauna/Meles_meles.jpg"/></td>
+<td>European badger</td>
+<td><em>Meles meles</em></td><td>Mammal</td><td>Forests and woodland</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-004" type="button">View profile</button></td>
 </tr>
-<tr data-group="mamífero" data-region="encartaciones durangaldea busturioaldea" data-search="gato montés felis silvestris mamífero bosques y formaciones forestales bosques y formaciones forestales">
-<td class="text-nowrap">FAU-005</td><td><span aria-label="Fotografía pendiente" class="fauna-image-pending" role="img"><i class="bi bi-camera"></i></span></td>
-<td>Gato montés</td>
-<td><em>Felis silvestris</em></td><td>Mamífero</td><td>Bosques y formaciones forestales</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-005" type="button">Ver ficha</button></td>
+<tr id="FAU-005" data-group="mamífero" data-region="encartaciones durangaldea busturioaldea" data-search="gato montés felis silvestris mamífero bosques y formaciones forestales bosques y formaciones forestales"><td class="text-nowrap">FAU-005</td><td><span aria-label="Photo pending" class="fauna-image-pending" role="img"><i class="bi bi-camera"></i></span></td>
+<td>Wildcat</td>
+<td><em>Felis silvestris</em></td><td>Mammal</td><td>Forests and woodland</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-005" type="button">View profile</button></td>
 </tr>
-<tr data-group="mamífero" data-region="encartaciones durangaldea busturioaldea" data-search="marta europea martes martes mamífero bosques y formaciones forestales bosques y formaciones forestales">
-<td class="text-nowrap">FAU-006</td><td><img alt="Marta europea" class="fauna-table-image" loading="lazy" src="img/fauna/Martes_martes.jpg"/></td>
-<td>Marta europea</td>
-<td><em>Martes martes</em></td><td>Mamífero</td><td>Bosques y formaciones forestales</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-006" type="button">Ver ficha</button></td>
+<tr id="FAU-006" data-group="mamífero" data-region="encartaciones durangaldea busturioaldea" data-search="marta europea martes martes mamífero bosques y formaciones forestales bosques y formaciones forestales"><td class="text-nowrap">FAU-006</td><td><img alt="European pine marten" class="fauna-table-image" loading="lazy" src="img/fauna/Martes_martes.jpg"/></td>
+<td>European pine marten</td>
+<td><em>Martes martes</em></td><td>Mammal</td><td>Forests and woodland</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-006" type="button">View profile</button></td>
 </tr>
-<tr data-group="mamífero" data-region="encartaciones durangaldea busturioaldea" data-search="gineta genetta genetta mamífero bosques y matorrales bosques y formaciones forestales">
-<td class="text-nowrap">FAU-007</td><td><img alt="Gineta" class="fauna-table-image" loading="lazy" src="img/fauna/Genetta_genetta.jpg"/></td>
-<td>Gineta</td>
-<td><em>Genetta genetta</em></td><td>Mamífero</td><td>Bosques y formaciones forestales</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-007" type="button">Ver ficha</button></td>
+<tr id="FAU-007" data-group="mamífero" data-region="encartaciones durangaldea busturioaldea" data-search="gineta genetta genetta mamífero bosques y matorrales bosques y formaciones forestales"><td class="text-nowrap">FAU-007</td><td><img alt="Genet" class="fauna-table-image" loading="lazy" src="img/fauna/Genetta_genetta.jpg"/></td>
+<td>Genet</td>
+<td><em>Genetta genetta</em></td><td>Mammal</td><td>Forests and woodland</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-007" type="button">View profile</button></td>
 </tr>
-<tr data-group="mamífero" data-region="gran-bilbao lea-artibai" data-search="comadreja común mustela nivalis mamífero campiña atlántica campiña atlántica">
-<td class="text-nowrap">FAU-008</td><td><img alt="Comadreja común" class="fauna-table-image" loading="lazy" src="img/fauna/Mustela_nivalis.jpg"/></td>
-<td>Comadreja común</td>
-<td><em>Mustela nivalis</em></td><td>Mamífero</td><td>Campiña atlántica</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-008" type="button">Ver ficha</button></td>
+<tr id="FAU-008" data-group="mamífero" data-region="gran-bilbao lea-artibai" data-search="comadreja común mustela nivalis mamífero campiña atlántica campiña atlántica"><td class="text-nowrap">FAU-008</td><td><img alt="Least weasel" class="fauna-table-image" loading="lazy" src="img/fauna/Mustela_nivalis.jpg"/></td>
+<td>Least weasel</td>
+<td><em>Mustela nivalis</em></td><td>Mammal</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-008" type="button">View profile</button></td>
 </tr>
-<tr data-group="mamífero" data-region="gran-bilbao arratia-nervion lea-artibai" data-search="visón europeo mustela lutreola mamífero ríos y bosques de ribera bosques de ribera">
-<td class="text-nowrap">FAU-009</td><td><img alt="Visón europeo" class="fauna-table-image" loading="lazy" src="img/fauna/Mustela_lutreola.jpg"/></td>
-<td>Visón europeo</td>
-<td><em>Mustela lutreola</em></td><td>Mamífero</td><td>Bosques de ribera</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-009" type="button">Ver ficha</button></td>
+<tr id="FAU-009" data-group="mamífero" data-region="gran-bilbao arratia-nervion lea-artibai" data-search="visón europeo mustela lutreola mamífero ríos y bosques de ribera bosques de ribera"><td class="text-nowrap">FAU-009</td><td><img alt="European otter" class="fauna-table-image" loading="lazy" src="img/fauna/Mustela_lutreola.jpg"/></td>
+<td>European otter</td>
+<td><em>Mustela lutreola</em></td><td>Mammal</td><td>Riparian forests</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-009" type="button">View profile</button></td>
 </tr>
-<tr data-group="mamífero" data-region="gran-bilbao arratia-nervion lea-artibai" data-search="nutria europea lutra lutra mamífero ríos y bosques de ribera bosques de ribera">
-<td class="text-nowrap">FAU-010</td><td><img alt="Nutria europea" class="fauna-table-image" loading="lazy" src="img/fauna/Lutra_Lutra.JPG"/></td>
-<td>Nutria europea</td>
-<td><em>Lutra lutra</em></td><td>Mamífero</td><td>Bosques de ribera</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-010" type="button">Ver ficha</button></td>
+<tr id="FAU-010" data-group="mamífero" data-region="gran-bilbao arratia-nervion lea-artibai" data-search="nutria europea lutra lutra mamífero ríos y bosques de ribera bosques de ribera"><td class="text-nowrap">FAU-010</td><td><img alt="Eurasian otter" class="fauna-table-image" loading="lazy" src="img/fauna/Lutra_Lutra.JPG"/></td>
+<td>Eurasian otter</td>
+<td><em>Lutra lutra</em></td><td>Mammal</td><td>Riparian forests</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-010" type="button">View profile</button></td>
 </tr>
-<tr data-group="mamífero" data-region="arratia-nervion" data-search="desmán ibérico galemys pyrenaicus mamífero arroyos de montaña arroyos">
-<td class="text-nowrap">FAU-011</td><td><img alt="Desmán ibérico" class="fauna-table-image" loading="lazy" src="img/fauna/Galemys_pyrenaicus.jpg"/></td>
-<td>Desmán ibérico</td>
-<td><em>Galemys pyrenaicus</em></td><td>Mamífero</td><td>Arroyos</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-011" type="button">Ver ficha</button></td>
+<tr id="FAU-011" data-group="mamífero" data-region="arratia-nervion" data-search="desmán ibérico galemys pyrenaicus mamífero arroyos de montaña arroyos"><td class="text-nowrap">FAU-011</td><td><img alt="Pyrenean desman" class="fauna-table-image" loading="lazy" src="img/fauna/Galemys_pyrenaicus.jpg"/></td>
+<td>Pyrenean desman</td>
+<td><em>Galemys pyrenaicus</em></td><td>Mammal</td><td>Streams</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-011" type="button">View profile</button></td>
 </tr>
-<tr data-group="mamífero" data-region="encartaciones durangaldea busturioaldea" data-search="lirón gris glis glis mamífero bosques caducifolios bosques y formaciones forestales">
-<td class="text-nowrap">FAU-012</td><td><img alt="Lirón gris" class="fauna-table-image" loading="lazy" src="img/fauna/Glis_glis.JPG"/></td>
-<td>Lirón gris</td>
-<td><em>Glis glis</em></td><td>Mamífero</td><td>Bosques y formaciones forestales</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-012" type="button">Ver ficha</button></td>
+<tr id="FAU-012" data-group="mamífero" data-region="encartaciones durangaldea busturioaldea" data-search="lirón gris glis glis mamífero bosques caducifolios bosques y formaciones forestales"><td class="text-nowrap">FAU-012</td><td><img alt="Eurasian dormouse" class="fauna-table-image" loading="lazy" src="img/fauna/Glis_glis.JPG"/></td>
+<td>Eurasian dormouse</td>
+<td><em>Glis glis</em></td><td>Mammal</td><td>Forests and woodland</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-012" type="button">View profile</button></td>
 </tr>
-<tr data-group="mamífero" data-region="encartaciones durangaldea busturioaldea" data-search="ardilla roja sciurus vulgaris mamífero bosques y formaciones forestales bosques y formaciones forestales">
-<td class="text-nowrap">FAU-013</td><td><img alt="Ardilla roja" class="fauna-table-image" loading="lazy" src="img/fauna/Sciurus_vulgaris.jpg"/></td>
-<td>Ardilla roja</td>
-<td><em>Sciurus vulgaris</em></td><td>Mamífero</td><td>Bosques y formaciones forestales</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-013" type="button">Ver ficha</button></td>
+<tr id="FAU-013" data-group="mamífero" data-region="encartaciones durangaldea busturioaldea" data-search="ardilla roja sciurus vulgaris mamífero bosques y formaciones forestales bosques y formaciones forestales"><td class="text-nowrap">FAU-013</td><td><img alt="Eurasian red squirrel" class="fauna-table-image" loading="lazy" src="img/fauna/Sciurus_vulgaris.jpg"/></td>
+<td>Eurasian red squirrel</td>
+<td><em>Sciurus vulgaris</em></td><td>Mammal</td><td>Forests and woodland</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-013" type="button">View profile</button></td>
 </tr>
-<tr data-group="mamífero" data-region="gran-bilbao lea-artibai" data-search="erizo europeo erinaceus europaeus mamífero campiña atlántica campiña atlántica">
-<td class="text-nowrap">FAU-014</td><td><img alt="Erizo europeo" class="fauna-table-image" loading="lazy" src="img/fauna/Erinaceus_europaeus.jpg"/></td>
-<td>Erizo europeo</td>
-<td><em>Erinaceus europaeus</em></td><td>Mamífero</td><td>Campiña atlántica</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-014" type="button">Ver ficha</button></td>
+<tr id="FAU-014" data-group="mamífero" data-region="gran-bilbao lea-artibai" data-search="erizo europeo erinaceus europaeus mamífero campiña atlántica campiña atlántica"><td class="text-nowrap">FAU-014</td><td><img alt="European hedgehog" class="fauna-table-image" loading="lazy" src="img/fauna/Erinaceus_europaeus.jpg"/></td>
+<td>European hedgehog</td>
+<td><em>Erinaceus europaeus</em></td><td>Mammal</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-014" type="button">View profile</button></td>
 </tr>
-<tr data-group="cetáceo" data-region="uribe-kosta" data-search="delfín mular tursiops truncatus cetáceo mar abierto y litoral mar abierto">
-<td class="text-nowrap">FAU-015</td><td><img alt="Delfín mular" class="fauna-table-image" loading="lazy" src="img/fauna/Tursiops_truncatus.jpg"/></td>
-<td>Delfín mular</td>
-<td><em>Tursiops truncatus</em></td><td>Cetáceo</td><td>Mar abierto</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-015" type="button">Ver ficha</button></td>
+<tr id="FAU-015" data-group="cetáceo" data-region="uribe-kosta" data-search="delfín mular tursiops truncatus cetáceo mar abierto y litoral mar abierto"><td class="text-nowrap">FAU-015</td><td><img alt="Bottlenose dolphin" class="fauna-table-image" loading="lazy" src="img/fauna/Tursiops_truncatus.jpg"/></td>
+<td>Bottlenose dolphin</td>
+<td><em>Tursiops truncatus</em></td><td>Cetacean</td><td>Open sea</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-015" type="button">View profile</button></td>
 </tr>
-<tr data-group="cetáceo" data-region="uribe-kosta" data-search="delfín común delphinus delphis cetáceo mar abierto mar abierto">
-<td class="text-nowrap">FAU-016</td><td><img alt="Delfín común" class="fauna-table-image" loading="lazy" src="img/fauna/Delphinus_delphis.jpg"/></td>
-<td>Delfín común</td>
-<td><em>Delphinus delphis</em></td><td>Cetáceo</td><td>Mar abierto</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-016" type="button">Ver ficha</button></td>
+<tr id="FAU-016" data-group="cetáceo" data-region="uribe-kosta" data-search="delfín común delphinus delphis cetáceo mar abierto mar abierto"><td class="text-nowrap">FAU-016</td><td><img alt="Common dolphin" class="fauna-table-image" loading="lazy" src="img/fauna/Delphinus_delphis.jpg"/></td>
+<td>Common dolphin</td>
+<td><em>Delphinus delphis</em></td><td>Cetacean</td><td>Open sea</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-016" type="button">View profile</button></td>
 </tr>
-<tr data-group="cetáceo" data-region="uribe-kosta" data-search="calderón común globicephala melas cetáceo mar abierto mar abierto">
-<td class="text-nowrap">FAU-017</td><td><img alt="Calderón común" class="fauna-table-image" loading="lazy" src="img/fauna/Globicephala_melas.jpg"/></td>
-<td>Calderón común</td>
-<td><em>Globicephala melas</em></td><td>Cetáceo</td><td>Mar abierto</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-017" type="button">Ver ficha</button></td>
+<tr id="FAU-017" data-group="cetáceo" data-region="uribe-kosta" data-search="calderón común globicephala melas cetáceo mar abierto mar abierto"><td class="text-nowrap">FAU-017</td><td><img alt="Short-finned pilot whale" class="fauna-table-image" loading="lazy" src="img/fauna/Globicephala_melas.jpg"/></td>
+<td>Short-finned pilot whale</td>
+<td><em>Globicephala melas</em></td><td>Cetacean</td><td>Open sea</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-017" type="button">View profile</button></td>
 </tr>
-<tr data-group="murciélago" data-region="encartaciones durangaldea arratia-nervion" data-search="murciélago grande de herradura rhinolophus ferrumequinum murciélago cuevas y roquedos cuevas">
-<td class="text-nowrap">FAU-018</td><td><img alt="Murciélago grande de herradura" class="fauna-table-image" loading="lazy" src="img/fauna/Rhinolophus_ferrumequinum.jpg"/></td>
-<td>Murciélago grande de herradura</td>
-<td><em>Rhinolophus ferrumequinum</em></td><td>Murciélago</td><td>Cuevas</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-018" type="button">Ver ficha</button></td>
+<tr id="FAU-018" data-group="murciélago" data-region="encartaciones durangaldea arratia-nervion" data-search="murciélago grande de herradura rhinolophus ferrumequinum murciélago cuevas y roquedos cuevas"><td class="text-nowrap">FAU-018</td><td><img alt="Greater horseshoe bat" class="fauna-table-image" loading="lazy" src="img/fauna/Rhinolophus_ferrumequinum.jpg"/></td>
+<td>Greater horseshoe bat</td>
+<td><em>Rhinolophus ferrumequinum</em></td><td>Bat</td><td>Caves</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-018" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave rapaz" data-region="busturioaldea" data-search="águila pescadora pandion haliaetus ave rapaz estuarios y zonas húmedas zonas húmedas">
-<td class="text-nowrap">FAU-019</td><td><img alt="Águila pescadora" class="fauna-table-image" loading="lazy" src="img/fauna/Pandion_haliaetus.jpg"/></td>
-<td>Águila pescadora</td>
-<td><em>Pandion haliaetus</em></td><td>Ave rapaz</td><td>Zonas húmedas</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-019" type="button">Ver ficha</button></td>
+<tr id="FAU-019" data-group="ave rapaz" data-region="busturioaldea" data-search="águila pescadora pandion haliaetus ave rapaz estuarios y zonas húmedas zonas húmedas"><td class="text-nowrap">FAU-019</td><td><img alt="Osprey" class="fauna-table-image" loading="lazy" src="img/fauna/Pandion_haliaetus.jpg"/></td>
+<td>Osprey</td>
+<td><em>Pandion haliaetus</em></td><td>Bird of prey</td><td>Wetlands</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-019" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave rapaz" data-region="durangaldea" data-search="halcón peregrino falco peregrinus ave rapaz acantilados y roquedos roquedos">
-<td class="text-nowrap">FAU-020</td><td><img alt="Halcón peregrino" class="fauna-table-image" loading="lazy" src="img/fauna/Falco_peregrinus.jpg"/></td>
-<td>Halcón peregrino</td>
-<td><em>Falco peregrinus</em></td><td>Ave rapaz</td><td>Roquedos</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-020" type="button">Ver ficha</button></td>
+<tr id="FAU-020" data-group="ave rapaz" data-region="durangaldea" data-search="halcón peregrino falco peregrinus ave rapaz acantilados y roquedos roquedos"><td class="text-nowrap">FAU-020</td><td><img alt="Peregrine falcon" class="fauna-table-image" loading="lazy" src="img/fauna/Falco_peregrinus.jpg"/></td>
+<td>Peregrine falcon</td>
+<td><em>Falco peregrinus</em></td><td>Bird of prey</td><td>Rocky areas</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-020" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave rapaz" data-region="encartaciones durangaldea busturioaldea" data-search="azor común accipiter gentilis ave rapaz bosques y formaciones forestales bosques y formaciones forestales">
-<td class="text-nowrap">FAU-021</td><td><img alt="Azor común" class="fauna-table-image" loading="lazy" src="img/fauna/Astur_gentilis.jpg"/></td>
-<td>Azor común</td>
-<td><em>Accipiter gentilis</em></td><td>Ave rapaz</td><td>Bosques y formaciones forestales</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-021" type="button">Ver ficha</button></td>
+<tr id="FAU-021" data-group="ave rapaz" data-region="encartaciones durangaldea busturioaldea" data-search="azor común accipiter gentilis ave rapaz bosques y formaciones forestales bosques y formaciones forestales"><td class="text-nowrap">FAU-021</td><td><img alt="Northern goshawk" class="fauna-table-image" loading="lazy" src="img/fauna/Astur_gentilis.jpg"/></td>
+<td>Northern goshawk</td>
+<td><em>Accipiter gentilis</em></td><td>Bird of prey</td><td>Forests and woodland</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-021" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave rapaz" data-region="encartaciones durangaldea busturioaldea" data-search="gavilán común accipiter nisus ave rapaz bosques y formaciones forestales bosques y formaciones forestales">
-<td class="text-nowrap">FAU-022</td><td><img alt="Gavilán común" class="fauna-table-image" loading="lazy" src="img/fauna/Accipiter_nisus.jpg"/></td>
-<td>Gavilán común</td>
-<td><em>Accipiter nisus</em></td><td>Ave rapaz</td><td>Bosques y formaciones forestales</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-022" type="button">Ver ficha</button></td>
+<tr id="FAU-022" data-group="ave rapaz" data-region="encartaciones durangaldea busturioaldea" data-search="gavilán común accipiter nisus ave rapaz bosques y formaciones forestales bosques y formaciones forestales"><td class="text-nowrap">FAU-022</td><td><img alt="Eurasian sparrowhawk" class="fauna-table-image" loading="lazy" src="img/fauna/Accipiter_nisus.jpg"/></td>
+<td>Eurasian sparrowhawk</td>
+<td><em>Accipiter nisus</em></td><td>Bird of prey</td><td>Forests and woodland</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-022" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave rapaz" data-region="durangaldea" data-search="buitre leonado gyps fulvus ave rapaz roquedos y cortados calizos cortados calizos">
-<td class="text-nowrap">FAU-023</td><td><img alt="Buitre leonado" class="fauna-table-image" loading="lazy" src="img/fauna/Gyps_fulvus.jpg"/></td>
-<td>Buitre leonado</td>
-<td><em>Gyps fulvus</em></td><td>Ave rapaz</td><td>Cortados calizos</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-023" type="button">Ver ficha</button></td>
+<tr id="FAU-023" data-group="ave rapaz" data-region="durangaldea" data-search="buitre leonado gyps fulvus ave rapaz roquedos y cortados calizos cortados calizos"><td class="text-nowrap">FAU-023</td><td><img alt="Egyptian vulture" class="fauna-table-image" loading="lazy" src="img/fauna/Gyps_fulvus.jpg"/></td>
+<td>Egyptian vulture</td>
+<td><em>Gyps fulvus</em></td><td>Bird of prey</td><td>Limestone cliffs</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-023" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave rapaz" data-region="durangaldea" data-search="alimoche común neophron percnopterus ave rapaz roquedos y cortados calizos cortados calizos">
-<td class="text-nowrap">FAU-024</td><td><img alt="Alimoche común" class="fauna-table-image" loading="lazy" src="img/fauna/Neophron_percnopterus.jpg"/></td>
-<td>Alimoche común</td>
-<td><em>Neophron percnopterus</em></td><td>Ave rapaz</td><td>Cortados calizos</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-024" type="button">Ver ficha</button></td>
+<tr id="FAU-024" data-group="ave rapaz" data-region="durangaldea" data-search="alimoche común neophron percnopterus ave rapaz roquedos y cortados calizos cortados calizos"><td class="text-nowrap">FAU-024</td><td><img alt="Cinereous vulture" class="fauna-table-image" loading="lazy" src="img/fauna/Neophron_percnopterus.jpg"/></td>
+<td>Cinereous vulture</td>
+<td><em>Neophron percnopterus</em></td><td>Bird of prey</td><td>Limestone cliffs</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-024" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave rapaz" data-region="encartaciones durangaldea busturioaldea" data-search="cárabo común strix aluco ave rapaz bosques y formaciones forestales bosques y formaciones forestales">
-<td class="text-nowrap">FAU-025</td><td><img alt="Cárabo común" class="fauna-table-image" loading="lazy" src="img/fauna/Strix_aluco.jpg"/></td>
-<td>Cárabo común</td>
-<td><em>Strix aluco</em></td><td>Ave rapaz</td><td>Bosques y formaciones forestales</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-025" type="button">Ver ficha</button></td>
+<tr id="FAU-025" data-group="ave rapaz" data-region="encartaciones durangaldea busturioaldea" data-search="cárabo común strix aluco ave rapaz bosques y formaciones forestales bosques y formaciones forestales"><td class="text-nowrap">FAU-025</td><td><img alt="Tawny owl" class="fauna-table-image" loading="lazy" src="img/fauna/Strix_aluco.jpg"/></td>
+<td>Tawny owl</td>
+<td><em>Strix aluco</em></td><td>Bird of prey</td><td>Forests and woodland</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-025" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave rapaz" data-region="gran-bilbao lea-artibai" data-search="lechuza común tyto alba ave rapaz campiña y medios agropecuarios medios humano-agropecuarios">
-<td class="text-nowrap">FAU-026</td><td><img alt="Lechuza común" class="fauna-table-image" loading="lazy" src="img/fauna/Tyto_alba.jpg"/></td>
-<td>Lechuza común</td>
-<td><em>Tyto alba</em></td><td>Ave rapaz</td><td>Medios humano-agropecuarios</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-026" type="button">Ver ficha</button></td>
+<tr id="FAU-026" data-group="ave rapaz" data-region="gran-bilbao lea-artibai" data-search="lechuza común tyto alba ave rapaz campiña y medios agropecuarios medios humano-agropecuarios"><td class="text-nowrap">FAU-026</td><td><img alt="Barn owl" class="fauna-table-image" loading="lazy" src="img/fauna/Tyto_alba.jpg"/></td>
+<td>Barn owl</td>
+<td><em>Tyto alba</em></td><td>Bird of prey</td><td>Human-agricultural environments</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-026" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave marina" data-region="busturioaldea" data-search="cormorán moñudo gulosus aristotelis ave marina litoral e islotes islotes">
-<td class="text-nowrap">FAU-027</td><td><img alt="Cormorán moñudo" class="fauna-table-image" loading="lazy" src="img/fauna/Gulosus aristotelis.jpg"/></td>
-<td>Cormorán moñudo</td>
-<td><em>Gulosus aristotelis</em></td><td>Ave marina</td><td>Islotes</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-027" type="button">Ver ficha</button></td>
+<tr id="FAU-027" data-group="ave marina" data-region="busturioaldea" data-search="cormorán moñudo gulosus aristotelis ave marina litoral e islotes islotes"><td class="text-nowrap">FAU-027</td><td><img alt="Great cormorant" class="fauna-table-image" loading="lazy" src="img/fauna/Gulosus aristotelis.jpg"/></td>
+<td>Great cormorant</td>
+<td><em>Gulosus aristotelis</em></td><td>Seabird</td><td>Islets</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-027" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave marina" data-region="lea-artibai uribe-kosta" data-search="gaviota patiamarilla larus michahellis ave marina litoral y playas playa">
-<td class="text-nowrap">FAU-028</td><td><img alt="Gaviota patiamarilla" class="fauna-table-image" loading="lazy" src="img/fauna/Larus_michahellis.jpg"/></td>
-<td>Gaviota patiamarilla</td>
-<td><em>Larus michahellis</em></td><td>Ave marina</td><td>Playa</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-028" type="button">Ver ficha</button></td>
+<tr id="FAU-028" data-group="ave marina" data-region="lea-artibai uribe-kosta" data-search="gaviota patiamarilla larus michahellis ave marina litoral y playas playa"><td class="text-nowrap">FAU-028</td><td><img alt="Yellow-legged gull" class="fauna-table-image" loading="lazy" src="img/fauna/Larus_michahellis.jpg"/></td>
+<td>Yellow-legged gull</td>
+<td><em>Larus michahellis</em></td><td>Seabird</td><td>Beach</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-028" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave marina" data-region="uribe-kosta" data-search="paíño europeo hydrobates pelagicus ave marina mar abierto e islotes mar abierto">
-<td class="text-nowrap">FAU-029</td><td><img alt="Paíño europeo" class="fauna-table-image" loading="lazy" src="img/fauna/Hydrobates_pelagicus.jpg"/></td>
-<td>Paíño europeo</td>
-<td><em>Hydrobates pelagicus</em></td><td>Ave marina</td><td>Mar abierto</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-029" type="button">Ver ficha</button></td>
+<tr id="FAU-029" data-group="ave marina" data-region="uribe-kosta" data-search="paíño europeo hydrobates pelagicus ave marina mar abierto e islotes mar abierto"><td class="text-nowrap">FAU-029</td><td><img alt="European storm petrel" class="fauna-table-image" loading="lazy" src="img/fauna/Hydrobates_pelagicus.jpg"/></td>
+<td>European storm petrel</td>
+<td><em>Hydrobates pelagicus</em></td><td>Seabird</td><td>Open sea</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-029" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave acuática" data-region="busturioaldea" data-search="espátula común platalea leucorodia ave acuática estuarios y marismas marismas">
-<td class="text-nowrap">FAU-030</td><td><img alt="Espátula común" class="fauna-table-image" loading="lazy" src="img/fauna/Platalea_leucorodia.jpg"/></td>
-<td>Espátula común</td>
-<td><em>Platalea leucorodia</em></td><td>Ave acuática</td><td>Marismas</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-030" type="button">Ver ficha</button></td>
+<tr id="FAU-030" data-group="ave acuática" data-region="busturioaldea" data-search="espátula común platalea leucorodia ave acuática estuarios y marismas marismas"><td class="text-nowrap">FAU-030</td><td><img alt="Eurasian spoonbill" class="fauna-table-image" loading="lazy" src="img/fauna/Platalea_leucorodia.jpg"/></td>
+<td>Eurasian spoonbill</td>
+<td><em>Platalea leucorodia</em></td><td>Waterbird</td><td>Marshes</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-030" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave acuática" data-region="gran-bilbao encartaciones arratia-nervion lea-artibai" data-search="garza real ardea cinerea ave acuática ríos, estuarios y zonas húmedas ríos">
-<td class="text-nowrap">FAU-031</td><td><img alt="Garza real" class="fauna-table-image" loading="lazy" src="img/fauna/Ardea_cinerea.jpg"/></td>
-<td>Garza real</td>
-<td><em>Ardea cinerea</em></td><td>Ave acuática</td><td>Ríos</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-031" type="button">Ver ficha</button></td>
+<tr id="FAU-031" data-group="ave acuática" data-region="gran-bilbao encartaciones arratia-nervion lea-artibai" data-search="garza real ardea cinerea ave acuática ríos, estuarios y zonas húmedas ríos"><td class="text-nowrap">FAU-031</td><td><img alt="Grey heron" class="fauna-table-image" loading="lazy" src="img/fauna/Ardea_cinerea.jpg"/></td>
+<td>Grey heron</td>
+<td><em>Ardea cinerea</em></td><td>Waterbird</td><td>Rivers</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-031" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave limícola" data-region="lea-artibai uribe-kosta" data-search="zarapito trinador numenius phaeopus ave limícola litoral y estuarios litorales">
-<td class="text-nowrap">FAU-032</td><td><span aria-label="Fotografía pendiente" class="fauna-image-pending" role="img"><i class="bi bi-camera"></i></span></td>
-<td>Zarapito trinador</td>
-<td><em>Numenius phaeopus</em></td><td>Ave limícola</td><td>Litorales</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-032" type="button">Ver ficha</button></td>
+<tr id="FAU-032" data-group="ave limícola" data-region="lea-artibai uribe-kosta" data-search="zarapito trinador numenius phaeopus ave limícola litoral y estuarios litorales"><td class="text-nowrap">FAU-032</td><td><span aria-label="Photo pending" class="fauna-image-pending" role="img"><i class="bi bi-camera"></i></span></td>
+<td>Whimbrel</td>
+<td><em>Numenius phaeopus</em></td><td>Wader</td><td>Coastal</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-032" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave limícola" data-region="busturioaldea" data-search="aguja colinegra limosa limosa ave limícola marismas y zonas húmedas marismas">
-<td class="text-nowrap">FAU-033</td><td><img alt="Aguja colinegra" class="fauna-table-image" loading="lazy" src="img/fauna/Limosa limosa.jpg"/></td>
-<td>Aguja colinegra</td>
-<td><em>Limosa limosa</em></td><td>Ave limícola</td><td>Marismas</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-033" type="button">Ver ficha</button></td>
+<tr id="FAU-033" data-group="ave limícola" data-region="busturioaldea" data-search="aguja colinegra limosa limosa ave limícola marismas y zonas húmedas marismas"><td class="text-nowrap">FAU-033</td><td><img alt="Black-tailed godwit" class="fauna-table-image" loading="lazy" src="img/fauna/Limosa limosa.jpg"/></td>
+<td>Black-tailed godwit</td>
+<td><em>Limosa limosa</em></td><td>Wader</td><td>Marshes</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-033" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave limícola" data-region="lea-artibai uribe-kosta" data-search="correlimos común calidris alpina ave limícola playas y estuarios playa">
-<td class="text-nowrap">FAU-034</td><td><img alt="Correlimos común" class="fauna-table-image" loading="lazy" src="img/fauna/Calidris_alpina.jpg"/></td>
-<td>Correlimos común</td>
-<td><em>Calidris alpina</em></td><td>Ave limícola</td><td>Playa</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-034" type="button">Ver ficha</button></td>
+<tr id="FAU-034" data-group="ave limícola" data-region="lea-artibai uribe-kosta" data-search="correlimos común calidris alpina ave limícola playas y estuarios playa"><td class="text-nowrap">FAU-034</td><td><img alt="Dunlin" class="fauna-table-image" loading="lazy" src="img/fauna/Calidris_alpina.jpg"/></td>
+<td>Dunlin</td>
+<td><em>Calidris alpina</em></td><td>Wader</td><td>Beach</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-034" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave limícola" data-region="lea-artibai uribe-kosta" data-search="chorlitejo grande charadrius hiaticula ave limícola playas y estuarios playa">
-<td class="text-nowrap">FAU-035</td><td><img alt="Chorlitejo grande" class="fauna-table-image" loading="lazy" src="img/fauna/Charadrius_hiaticula.jpg"/></td>
-<td>Chorlitejo grande</td>
-<td><em>Charadrius hiaticula</em></td><td>Ave limícola</td><td>Playa</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-035" type="button">Ver ficha</button></td>
+<tr id="FAU-035" data-group="ave limícola" data-region="lea-artibai uribe-kosta" data-search="chorlitejo grande charadrius hiaticula ave limícola playas y estuarios playa"><td class="text-nowrap">FAU-035</td><td><img alt="Common tern" class="fauna-table-image" loading="lazy" src="img/fauna/Charadrius_hiaticula.jpg"/></td>
+<td>Common tern</td>
+<td><em>Charadrius hiaticula</em></td><td>Wader</td><td>Beach</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-035" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave fluvial" data-region="gran-bilbao encartaciones arratia-nervion lea-artibai" data-search="martín pescador alcedo atthis ave fluvial ríos y arroyos ríos">
-<td class="text-nowrap">FAU-036</td><td><img alt="Martín pescador" class="fauna-table-image" loading="lazy" src="img/fauna/Alcedo_atthis.jpg"/></td>
-<td>Martín pescador</td>
-<td><em>Alcedo atthis</em></td><td>Ave fluvial</td><td>Ríos</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-036" type="button">Ver ficha</button></td>
+<tr id="FAU-036" data-group="ave fluvial" data-region="gran-bilbao encartaciones arratia-nervion lea-artibai" data-search="martín pescador alcedo atthis ave fluvial ríos y arroyos ríos"><td class="text-nowrap">FAU-036</td><td><img alt="Common kingfisher" class="fauna-table-image" loading="lazy" src="img/fauna/Alcedo_atthis.jpg"/></td>
+<td>Common kingfisher</td>
+<td><em>Alcedo atthis</em></td><td>River bird</td><td>Rivers</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-036" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave fluvial" data-region="gran-bilbao encartaciones arratia-nervion lea-artibai" data-search="mirlo acuático cinclus cinclus ave fluvial ríos y arroyos ríos">
-<td class="text-nowrap">FAU-037</td><td><img alt="Mirlo acuático" class="fauna-table-image" loading="lazy" src="img/fauna/Cinclus_cinclus.jpg"/></td>
-<td>Mirlo acuático</td>
-<td><em>Cinclus cinclus</em></td><td>Ave fluvial</td><td>Ríos</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-037" type="button">Ver ficha</button></td>
+<tr id="FAU-037" data-group="ave fluvial" data-region="gran-bilbao encartaciones arratia-nervion lea-artibai" data-search="mirlo acuático cinclus cinclus ave fluvial ríos y arroyos ríos"><td class="text-nowrap">FAU-037</td><td><img alt="White-throated dipper" class="fauna-table-image" loading="lazy" src="img/fauna/Cinclus_cinclus.jpg"/></td>
+<td>White-throated dipper</td>
+<td><em>Cinclus cinclus</em></td><td>River bird</td><td>Rivers</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-037" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave de roquedo" data-region="durangaldea" data-search="chova piquirroja pyrrhocorax pyrrhocorax ave de roquedo roquedos y cortados calizos cortados calizos">
-<td class="text-nowrap">FAU-038</td><td><img alt="Chova piquirroja" class="fauna-table-image" loading="lazy" src="img/fauna/Pyrrhocorax_pyrrhocorax.jpg"/></td>
-<td>Chova piquirroja</td>
-<td><em>Pyrrhocorax pyrrhocorax</em></td><td>Ave de roquedo</td><td>Cortados calizos</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-038" type="button">Ver ficha</button></td>
+<tr id="FAU-038" data-group="ave de roquedo" data-region="durangaldea" data-search="chova piquirroja pyrrhocorax pyrrhocorax ave de roquedo roquedos y cortados calizos cortados calizos"><td class="text-nowrap">FAU-038</td><td><img alt="Red-billed chough" class="fauna-table-image" loading="lazy" src="img/fauna/Pyrrhocorax_pyrrhocorax.jpg"/></td>
+<td>Red-billed chough</td>
+<td><em>Pyrrhocorax pyrrhocorax</em></td><td>Cliff bird</td><td>Limestone cliffs</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-038" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave de montaña" data-region="durangaldea" data-search="acentor alpino prunella collaris ave de montaña zonas de cumbre y roquedos zonas de cumbre">
-<td class="text-nowrap">FAU-039</td><td><img alt="Acentor alpino" class="fauna-table-image" loading="lazy" src="img/fauna/Prunella_collaris.jpg"/></td>
-<td>Acentor alpino</td>
-<td><em>Prunella collaris</em></td><td>Ave de montaña</td><td>Zonas de cumbre</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-039" type="button">Ver ficha</button></td>
+<tr id="FAU-039" data-group="ave de montaña" data-region="durangaldea" data-search="acentor alpino prunella collaris ave de montaña zonas de cumbre y roquedos zonas de cumbre"><td class="text-nowrap">FAU-039</td><td><img alt="Alpine accentor" class="fauna-table-image" loading="lazy" src="img/fauna/Prunella_collaris.jpg"/></td>
+<td>Alpine accentor</td>
+<td><em>Prunella collaris</em></td><td>Mountain bird</td><td>Summit zones</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-039" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave paseriforme" data-region="encartaciones durangaldea arratia-nervion" data-search="bisbita campestre anthus campestris ave paseriforme pastizales y matorrales pastizales">
-<td class="text-nowrap">FAU-040</td><td><img alt="Bisbita campestre" class="fauna-table-image" loading="lazy" src="img/fauna/Anthus_campestris.jpg"/></td>
-<td>Bisbita campestre</td>
-<td><em>Anthus campestris</em></td><td>Ave paseriforme</td><td>Pastizales</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-040" type="button">Ver ficha</button></td>
+<tr id="FAU-040" data-group="ave paseriforme" data-region="encartaciones durangaldea arratia-nervion" data-search="bisbita campestre anthus campestris ave paseriforme pastizales y matorrales pastizales"><td class="text-nowrap">FAU-040</td><td><img alt="Skylark" class="fauna-table-image" loading="lazy" src="img/fauna/Anthus_campestris.jpg"/></td>
+<td>Skylark</td>
+<td><em>Anthus campestris</em></td><td>Passerine</td><td>Grasslands</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-040" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave paseriforme" data-region="gran-bilbao lea-artibai" data-search="mirlo común turdus merula ave paseriforme bosques, setos y campiña campiña atlántica">
-<td class="text-nowrap">FAU-041</td><td><img alt="Mirlo común" class="fauna-table-image" loading="lazy" src="img/fauna/Turdus_merula.jpg"/></td>
-<td>Mirlo común</td>
-<td><em>Turdus merula</em></td><td>Ave paseriforme</td><td>Campiña atlántica</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-041" type="button">Ver ficha</button></td>
+<tr id="FAU-041" data-group="ave paseriforme" data-region="gran-bilbao lea-artibai" data-search="mirlo común turdus merula ave paseriforme bosques, setos y campiña campiña atlántica"><td class="text-nowrap">FAU-041</td><td><img alt="Blackbird" class="fauna-table-image" loading="lazy" src="img/fauna/Turdus_merula.jpg"/></td>
+<td>Blackbird</td>
+<td><em>Turdus merula</em></td><td>Passerine</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-041" type="button">View profile</button></td>
 </tr>
-<tr data-group="ave paseriforme" data-region="encartaciones durangaldea busturioaldea" data-search="curruca capirotada sylvia atricapilla ave paseriforme bosques y matorrales bosques y formaciones forestales">
-<td class="text-nowrap">FAU-042</td><td><img alt="Curruca capirotada" class="fauna-table-image" loading="lazy" src="img/fauna/Sylvia_atricapilla.jpg"/></td>
-<td>Curruca capirotada</td>
-<td><em>Sylvia atricapilla</em></td><td>Ave paseriforme</td><td>Bosques y formaciones forestales</td>
-<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-042" type="button">Ver ficha</button></td>
+<tr id="FAU-042" data-group="ave paseriforme" data-region="encartaciones durangaldea busturioaldea" data-search="curruca capirotada sylvia atricapilla ave paseriforme bosques y matorrales bosques y formaciones forestales"><td class="text-nowrap">FAU-042</td><td><img alt="Eurasian blackcap" class="fauna-table-image" loading="lazy" src="img/fauna/Sylvia_atricapilla.jpg"/></td>
+<td>Eurasian blackcap</td>
+<td><em>Sylvia atricapilla</em></td><td>Passerine</td><td>Forests and woodland</td>
+<td><button class="btn btn-sm btn-outline-primary fauna-detail-trigger" data-bs-target="#faunaDetailModal" data-bs-toggle="modal" data-species-id="FAU-042" type="button">View profile</button></td>
 </tr></tbody>
 </table>
+</div>   
 </div>
 <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-3">
-<small class="text-secondary" id="faunaTableCount">42 especies</small>
-<nav aria-label="Paginación de fauna"><ul class="pagination pagination-sm mb-0" id="faunaPagination"></ul></nav>
+<small class="text-secondary" id="faunaTableCount">42 species</small>
+<nav aria-label="Fauna pagination"><ul class="pagination pagination-sm mb-0" id="faunaPagination"></ul></nav>
 </div>
 </section>
-<section aria-labelledby="flora-tab" class="tab-pane fade" id="flora-pane" role="tabpanel" tabindex="0"><div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-3"><div><h2 class="h4 mb-1">Registro de flora</h2><p class="text-secondary mb-0">Listado de especies vegetales del proyecto. Las fotografías se incorporarán cuando estén preparadas.</p></div><input aria-label="Buscar flora" class="form-control form-control-sm" id="floraSearch" placeholder="Buscar por nombre común o científico" style="max-width:320px" type="search"/></div><div class="table-responsive fauna-table-wrap"><table class="table table-hover align-middle fauna-table" id="floraTable"><thead><tr><th scope="col">ID</th><th scope="col">Fotografía</th><th scope="col">Nombre común</th><th scope="col">Nombre científico</th><th scope="col">Hábitat principal</th></tr></thead><tbody><tr data-search="haya fagus sylvatica bosques y formaciones forestales"><td>FLR-001</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Haya</td><td><em>Fagus sylvatica</em></td><td>Bosques y formaciones forestales</td></tr><tr data-search="roble albar / carballo quercus robur bosques y formaciones forestales"><td>FLR-002</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Roble albar / Carballo</td><td><em>Quercus robur</em></td><td>Bosques y formaciones forestales</td></tr><tr data-search="roble sesil quercus petraea bosques y formaciones forestales"><td>FLR-003</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Roble sésil</td><td><em>Quercus petraea</em></td><td>Bosques y formaciones forestales</td></tr><tr data-search="castano castanea sativa bosques y formaciones forestales"><td>FLR-004</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Castaño</td><td><em>Castanea sativa</em></td><td>Bosques y formaciones forestales</td></tr><tr data-search="avellano corylus avellana bosques y formaciones forestales"><td>FLR-005</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Avellano</td><td><em>Corylus avellana</em></td><td>Bosques y formaciones forestales</td></tr><tr data-search="arce campestre acer campestre bosques y formaciones forestales"><td>FLR-006</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Arce campestre</td><td><em>Acer campestre</em></td><td>Bosques y formaciones forestales</td></tr><tr data-search="aliso comun alnus glutinosa bosques de ribera"><td>FLR-007</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Aliso común</td><td><em>Alnus glutinosa</em></td><td>Bosques de ribera</td></tr><tr data-search="chopo negro populus nigra bosques de ribera"><td>FLR-008</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Chopo negro</td><td><em>Populus nigra</em></td><td>Bosques de ribera</td></tr><tr data-search="fresno de hoja ancha fraxinus excelsior bosques de ribera"><td>FLR-009</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Fresno de hoja ancha</td><td><em>Fraxinus excelsior</em></td><td>Bosques de ribera</td></tr><tr data-search="sauce blanco salix alba bosques de ribera"><td>FLR-010</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Sauce blanco</td><td><em>Salix alba</em></td><td>Bosques de ribera</td></tr><tr data-search="encina cantabrica quercus ilex subsp. ilex bosques y formaciones forestales"><td>FLR-011</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Encina cantábrica</td><td><em>Quercus ilex subsp. ilex</em></td><td>Bosques y formaciones forestales</td></tr><tr data-search="madrono arbutus unedo bosques y formaciones forestales"><td>FLR-012</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Madroño</td><td><em>Arbutus unedo</em></td><td>Bosques y formaciones forestales</td></tr><tr data-search="aladierno rhamnus alaternus bosques y formaciones forestales"><td>FLR-013</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Aladierno</td><td><em>Rhamnus alaternus</em></td><td>Bosques y formaciones forestales</td></tr><tr data-search="lentisco pistacia lentiscus bosques y formaciones forestales"><td>FLR-014</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Lentisco</td><td><em>Pistacia lentiscus</em></td><td>Bosques y formaciones forestales</td></tr><tr data-search="zarzaparrilla smilax aspera bosques y formaciones forestales"><td>FLR-015</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Zarzaparrilla</td><td><em>Smilax aspera</em></td><td>Bosques y formaciones forestales</td></tr><tr data-search="pino insigne / pino de monterrey pinus radiata bosques y formaciones forestales"><td>FLR-016</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Pino insigne / Pino de Monterrey</td><td><em>Pinus radiata</em></td><td>Bosques y formaciones forestales</td></tr><tr data-search="eucalipto blanco eucalyptus globulus bosques y formaciones forestales"><td>FLR-017</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Eucalipto blanco</td><td><em>Eucalyptus globulus</em></td><td>Bosques y formaciones forestales</td></tr><tr data-search="hinojo de mar crithmum maritimum litorales"><td>FLR-018</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Hinojo de mar</td><td><em>Crithmum maritimum</em></td><td>Litorales</td></tr><tr data-search="armeria marina armeria maritima litorales"><td>FLR-019</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Armeria marina</td><td><em>Armeria maritima</em></td><td>Litorales</td></tr><tr data-search="llanten marino plantago maritima litorales"><td>FLR-020</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Llantén marino</td><td><em>Plantago maritima</em></td><td>Litorales</td></tr><tr data-search="barron / paja de duna ammophila arenaria dunas"><td>FLR-021</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Barrón / Paja de duna</td><td><em>Ammophila arenaria</em></td><td>Dunas</td></tr><tr data-search="correhuela de las dunas calystegia soldanella dunas"><td>FLR-022</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Correhuela de las dunas</td><td><em>Calystegia soldanella</em></td><td>Dunas</td></tr><tr data-search="oruga de mar cakile maritima playa"><td>FLR-023</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Oruga de mar</td><td><em>Cakile maritima</em></td><td>Playa</td></tr><tr data-search="lechetrezna de playa euphorbia paralias playa"><td>FLR-024</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Lechetrezna de playa</td><td><em>Euphorbia paralias</em></td><td>Playa</td></tr><tr data-search="carrizo phragmites australis zonas humedas"><td>FLR-025</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Carrizo</td><td><em>Phragmites australis</em></td><td>Zonas húmedas</td></tr><tr data-search="junco marino juncus maritimus marismas"><td>FLR-026</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Junco marino</td><td><em>Juncus maritimus</em></td><td>Marismas</td></tr><tr data-search="salicornia / hierba salada sarcocornia fruticosa marismas"><td>FLR-027</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Salicornia / Hierba salada</td><td><em>Sarcocornia fruticosa</em></td><td>Marismas</td></tr><tr data-search="hierba de las marismas zostera noltii / zostera marina marismas"><td>FLR-028</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Hierba de las marismas</td><td><em>Zostera noltii / Zostera marina</em></td><td>Marismas</td></tr><tr data-search="helecho real / helecho florido osmunda regalis zonas humedas"><td>FLR-029</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Helecho real / Helecho florido</td><td><em>Osmunda regalis</em></td><td>Zonas húmedas</td></tr><tr data-search="atrapamoscas / rocio del sol drosera rotundifolia zonas humedas"><td>FLR-030</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Atrapamoscas / Rocío del sol</td><td><em>Drosera rotundifolia</em></td><td>Zonas húmedas</td></tr><tr data-search="brezina / brezo comun calluna vulgaris matorrales de montana"><td>FLR-031</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Brezina / Brezo común</td><td><em>Calluna vulgaris</em></td><td>Matorrales de montaña</td></tr><tr data-search="brezo blanco erica vagans matorrales de montana"><td>FLR-032</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Brezo blanco</td><td><em>Erica vagans</em></td><td>Matorrales de montaña</td></tr><tr data-search="brezo de cienaga / brezo humedo erica tetralix zonas humedas"><td>FLR-033</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Brezo de ciénaga / Brezo húmedo</td><td><em>Erica tetralix</em></td><td>Zonas húmedas</td></tr><tr data-search="tojo / argoma ulex europaeus matorrales de montana"><td>FLR-034</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Tojo / Argoma</td><td><em>Ulex europaeus</em></td><td>Matorrales de montaña</td></tr><tr data-search="enebro rastrero juniperus communis subsp. alpina matorrales de montana"><td>FLR-035</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Enebro rastrero</td><td><em>Juniperus communis subsp. alpina</em></td><td>Matorrales de montaña</td></tr><tr data-search="arandano vaccinium myrtillus matorrales de montana"><td>FLR-036</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Arándano</td><td><em>Vaccinium myrtillus</em></td><td>Matorrales de montaña</td></tr><tr data-search="helecho comun pteridium aquilinum bosques y formaciones forestales"><td>FLR-037</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Helecho común</td><td><em>Pteridium aquilinum</em></td><td>Bosques y formaciones forestales</td></tr><tr data-search="saxifraga cantabrica saxifraga babiana roquedos"><td>FLR-038</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Saxífraga cantábrica</td><td><em>Saxifraga babiana</em></td><td>Roquedos</td></tr><tr data-search="te de roca / lengua de ciervo asplenium scolopendrium cuevas"><td>FLR-039</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Té de roca / Lengua de ciervo</td><td><em>Asplenium scolopendrium</em></td><td>Cuevas</td></tr><tr data-search="clematide / vidarra clematis vitalba bosques y formaciones forestales"><td>FLR-040</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Clemátide / Vidarra</td><td><em>Clematis vitalba</em></td><td>Bosques y formaciones forestales</td></tr><tr data-search="pulsatilla cantabrica pulsatilla alpina subsp. cantabrica zonas de cumbre"><td>FLR-041</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Pulsatilla cantábrica</td><td><em>Pulsatilla alpina subsp. cantabrica</em></td><td>Zonas de cumbre</td></tr><tr data-search="helecho de cueva culcita macrocarpa cuevas"><td>FLR-042</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Helecho de cueva</td><td><em>Culcita macrocarpa</em></td><td>Cuevas</td></tr><tr data-search="majuelo / espino blanco crataegus monogyna campina atlantica"><td>FLR-043</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Majuelo / Espino blanco</td><td><em>Crataegus monogyna</em></td><td>Campiña atlántica</td></tr><tr data-search="trebol blanco trifolium repens campina atlantica"><td>FLR-044</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Trébol blanco</td><td><em>Trifolium repens</em></td><td>Campiña atlántica</td></tr><tr data-search="diente de leon taraxacum officinale campina atlantica"><td>FLR-045</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Diente de león</td><td><em>Taraxacum officinale</em></td><td>Campiña atlántica</td></tr><tr data-search="ortiga mayor urtica dioica campina atlantica"><td>FLR-046</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Ortiga mayor</td><td><em>Urtica dioica</em></td><td>Campiña atlántica</td></tr><tr data-search="gamon / varita de san jose asphodelus albus pastizales"><td>FLR-047</td><td><span class="flora-photo-pending">Foto pendiente</span></td><td>Gamón / Varita de San José</td><td><em>Asphodelus albus</em></td><td>Pastizales</td></tr></tbody></table></div><p class="small text-secondary mt-2" id="floraTableCount">47 especies vegetales</p></section>
+<section aria-labelledby="flora-tab" class="tab-pane fade" id="flora-pane" role="tabpanel" tabindex="0"><div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-3"><div><h2 class="h4 mb-1" data-en="Flora registry" data-eus="Floraren erregistroa">Flora registry</h2><p class="text-secondary mb-0" data-en="List of plant species in the project. Photographs will be added when ready." data-eus="Proiektuko landare-espezien zerrenda. Argazkiak prestatuta daudenean gehituko dira.">List of plant species in the project. Photographs will be added when ready.</p></div><input aria-label="Search flora" class="form-control form-control-sm" data-en-placeholder="Search by common or scientific name" data-eus-placeholder="Bilatu izen arrunten edo zientifikoaren arabera" id="floraSearch" placeholder="Search by common or scientific name" style="max-width:320px" type="search"/></div><div class="table-responsive fauna-table-wrap"><table class="table table-striped-columns table-bordered align-middle fauna-table" id="floraTable"><thead><tr class="table-group-heading"><th class="text-center table-dark" colspan="2">Identification</th><th class="text-center table-dark" colspan="3">Species details</th></tr><tr><th scope="col">ID</th><th scope="col">Photo</th><th scope="col">Common name</th><th scope="col">Scientific name</th><th scope="col">Main habitat</th></tr></thead><tbody><tr data-search="haya fagus sylvatica bosques y formaciones forestales"><td>FLR-001</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Beech</td><td><em>Fagus sylvatica</em></td><td>Forests and woodland</td></tr><tr data-search="roble albar / carballo quercus robur bosques y formaciones forestales"><td>FLR-002</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Pedunculate oak / Carballo</td><td><em>Quercus robur</em></td><td>Forests and woodland</td></tr><tr data-search="roble sesil quercus petraea bosques y formaciones forestales"><td>FLR-003</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Sessile oak</td><td><em>Quercus petraea</em></td><td>Forests and woodland</td></tr><tr data-search="castano castanea sativa bosques y formaciones forestales"><td>FLR-004</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Sweet chestnut</td><td><em>Castanea sativa</em></td><td>Forests and woodland</td></tr><tr data-search="avellano corylus avellana bosques y formaciones forestales"><td>FLR-005</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Hazel</td><td><em>Corylus avellana</em></td><td>Forests and woodland</td></tr><tr data-search="arce campestre acer campestre bosques y formaciones forestales"><td>FLR-006</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Field maple</td><td><em>Acer campestre</em></td><td>Forests and woodland</td></tr><tr data-search="aliso comun alnus glutinosa bosques de ribera"><td>FLR-007</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Alder</td><td><em>Alnus glutinosa</em></td><td>Riparian forests</td></tr><tr data-search="chopo negro populus nigra bosques de ribera"><td>FLR-008</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Black poplar</td><td><em>Populus nigra</em></td><td>Riparian forests</td></tr><tr data-search="fresno de hoja ancha fraxinus excelsior bosques de ribera"><td>FLR-009</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Large-leaved ash</td><td><em>Fraxinus excelsior</em></td><td>Riparian forests</td></tr><tr data-search="sauce blanco salix alba bosques de ribera"><td>FLR-010</td><td><span class="flora-photo-pending">Photo pending</span></td><td>White willow</td><td><em>Salix alba</em></td><td>Riparian forests</td></tr><tr data-search="encina cantabrica quercus ilex subsp. ilex bosques y formaciones forestales"><td>FLR-011</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Cantabrian holm oak</td><td><em>Quercus ilex subsp. ilex</em></td><td>Forests and woodland</td></tr><tr data-search="madrono arbutus unedo bosques y formaciones forestales"><td>FLR-012</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Strawberry tree</td><td><em>Arbutus unedo</em></td><td>Forests and woodland</td></tr><tr data-search="aladierno rhamnus alaternus bosques y formaciones forestales"><td>FLR-013</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Alaternus</td><td><em>Rhamnus alaternus</em></td><td>Forests and woodland</td></tr><tr data-search="lentisco pistacia lentiscus bosques y formaciones forestales"><td>FLR-014</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Mastic tree</td><td><em>Pistacia lentiscus</em></td><td>Forests and woodland</td></tr><tr data-search="zarzaparrilla smilax aspera bosques y formaciones forestales"><td>FLR-015</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Asper Smilax</td><td><em>Smilax aspera</em></td><td>Forests and woodland</td></tr><tr data-search="pino insigne / pino de monterrey pinus radiata bosques y formaciones forestales"><td>FLR-016</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Radiata pine / Monterey pine</td><td><em>Pinus radiata</em></td><td>Forests and woodland</td></tr><tr data-search="eucalipto blanco eucalyptus globulus bosques y formaciones forestales"><td>FLR-017</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Tasmanian blue gum</td><td><em>Eucalyptus globulus</em></td><td>Forests and woodland</td></tr><tr data-search="hinojo de mar crithmum maritimum litorales"><td>FLR-018</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Sea fennel</td><td><em>Crithmum maritimum</em></td><td>Coastal</td></tr><tr data-search="armeria marina armeria maritima litorales"><td>FLR-019</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Sea thrift</td><td><em>Armeria maritima</em></td><td>Coastal</td></tr><tr data-search="llanten marino plantago maritima litorales"><td>FLR-020</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Sea plantain</td><td><em>Plantago maritima</em></td><td>Coastal</td></tr><tr data-search="barron / paja de duna ammophila arenaria dunas"><td>FLR-021</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Marram grass / Dune grass</td><td><em>Ammophila arenaria</em></td><td>Dunes</td></tr><tr data-search="correhuela de las dunas calystegia soldanella dunas"><td>FLR-022</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Dune bindweed</td><td><em>Calystegia soldanella</em></td><td>Dunes</td></tr><tr data-search="oruga de mar cakile maritima playa"><td>FLR-023</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Sea rocket</td><td><em>Cakile maritima</em></td><td>Beach</td></tr><tr data-search="lechetrezna de playa euphorbia paralias playa"><td>FLR-024</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Beach spurge</td><td><em>Euphorbia paralias</em></td><td>Beach</td></tr><tr data-search="carrizo phragmites australis zonas humedas"><td>FLR-025</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Common reed</td><td><em>Phragmites australis</em></td><td>Wetlands</td></tr><tr data-search="junco marino juncus maritimus marismas"><td>FLR-026</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Marine rush</td><td><em>Juncus maritimus</em></td><td>Marshes</td></tr><tr data-search="salicornia / hierba salada sarcocornia fruticosa marismas"><td>FLR-027</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Glasswort / Samphire</td><td><em>Sarcocornia fruticosa</em></td><td>Marshes</td></tr><tr data-search="hierba de las marismas zostera noltii / zostera marina marismas"><td>FLR-028</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Eelgrass</td><td><em>Zostera noltii / Zostera marina</em></td><td>Marshes</td></tr><tr data-search="helecho real / helecho florido osmunda regalis zonas humedas"><td>FLR-029</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Royal fern</td><td><em>Osmunda regalis</em></td><td>Wetlands</td></tr><tr data-search="atrapamoscas / rocio del sol drosera rotundifolia zonas humedas"><td>FLR-030</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Sundew</td><td><em>Drosera rotundifolia</em></td><td>Wetlands</td></tr><tr data-search="brezina / brezo comun calluna vulgaris matorrales de montana"><td>FLR-031</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Heather</td><td><em>Calluna vulgaris</em></td><td>Mountain scrubland</td></tr><tr data-search="brezo blanco erica vagans matorrales de montana"><td>FLR-032</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Bell heather</td><td><em>Erica vagans</em></td><td>Mountain scrubland</td></tr><tr data-search="brezo de cienaga / brezo humedo erica tetralix zonas humedas"><td>FLR-033</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Cross-leaved heath</td><td><em>Erica tetralix</em></td><td>Wetlands</td></tr><tr data-search="tojo / argoma ulex europaeus matorrales de montana"><td>FLR-034</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Gorse</td><td><em>Ulex europaeus</em></td><td>Mountain scrubland</td></tr><tr data-search="enebro rastrero juniperus communis subsp. alpina matorrales de montana"><td>FLR-035</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Alpine juniper</td><td><em>Juniperus communis subsp. alpina</em></td><td>Mountain scrubland</td></tr><tr data-search="arandano vaccinium myrtillus matorrales de montana"><td>FLR-036</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Bilberry</td><td><em>Vaccinium myrtillus</em></td><td>Mountain scrubland</td></tr><tr data-search="helecho comun pteridium aquilinum bosques y formaciones forestales"><td>FLR-037</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Bracken</td><td><em>Pteridium aquilinum</em></td><td>Forests and woodland</td></tr><tr data-search="saxifraga cantabrica saxifraga babiana roquedos"><td>FLR-038</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Cantabrian saxifrage</td><td><em>Saxifraga babiana</em></td><td>Rocky areas</td></tr><tr data-search="te de roca / lengua de ciervo asplenium scolopendrium cuevas"><td>FLR-039</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Hart's tongue fern</td><td><em>Asplenium scolopendrium</em></td><td>Caves</td></tr><tr data-search="clematide / vidarra clematis vitalba bosques y formaciones forestales"><td>FLR-040</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Old man's beard</td><td><em>Clematis vitalba</em></td><td>Forests and woodland</td></tr><tr data-search="pulsatilla cantabrica pulsatilla alpina subsp. cantabrica zonas de cumbre"><td>FLR-041</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Cantabrian pasqueflower</td><td><em>Pulsatilla alpina subsp. cantabrica</em></td><td>Summit zones</td></tr><tr data-search="helecho de cueva culcita macrocarpa cuevas"><td>FLR-042</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Cave fern</td><td><em>Culcita macrocarpa</em></td><td>Caves</td></tr><tr data-search="majuelo / espino blanco crataegus monogyna campina atlantica"><td>FLR-043</td><td><span class="flora-photo-pending">Photo pending</span></td><td>White hawthorn</td><td><em>Crataegus monogyna</em></td></tr><tr data-search="trebol blanco trifolium repens campina atlantica"><td>FLR-044</td><td><span class="flora-photo-pending">Photo pending</span></td><td>White clover</td><td><em>Trifolium repens</em></td></tr><tr data-search="diente de leon taraxacum officinale campina atlantica"><td>FLR-045</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Dandelion</td><td><em>Taraxacum officinale</em></td></tr><tr data-search="ortiga mayor urtica dioica campina atlantica"><td>FLR-046</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Stinging nettle</td><td><em>Urtica dioica</em></td></tr><tr data-search="gamon / varita de san jose asphodelus albus pastizales"><td>FLR-047</td><td><span class="flora-photo-pending">Photo pending</span></td><td>Sea asphodel / St. Joseph's staff</td><td><em>Asphodelus albus</em></td><td>Grasslands</td></tr></tbody></table></div><p class="small text-secondary mt-2" id="floraTableCount">47 plant species</p></section>
 </div>
 </div>
 </section>
@@ -492,38 +451,38 @@
 <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
 <div class="modal-content">
 <div class="modal-header">
-<div><p class="section-kicker mb-1" id="faunaDetailId">Ficha de especie</p><h2 class="modal-title h3 mb-0" id="faunaDetailTitle">Nombre de la especie</h2><p class="text-secondary fst-italic mb-0" id="faunaDetailScientific"></p></div>
-<button aria-label="Cerrar" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+<div><p class="section-kicker mb-1" id="faunaDetailId">Species profile</p><h2 class="modal-title h3 mb-0" id="faunaDetailTitle">Species name</h2><p class="text-secondary fst-italic mb-0" id="faunaDetailScientific"></p></div>
+<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
 </div>
 <div class="modal-body">
 <div class="row g-4">
 <div class="col-md-4"><img alt="" class="img-fluid rounded fauna-detail-image" id="faunaDetailImage"/><p class="small text-secondary mt-2 mb-0" id="faunaDetailGroup"></p></div>
 <div class="col-md-8"><p class="lead" id="faunaDetailDescription"></p><div class="row g-3">
-<div class="col-sm-6"><div class="fauna-detail-field"><h3>Taxonomía</h3><dl><dt>Reino</dt><dd>Animalia</dd><dt>Filo</dt><dd id="faunaDetailPhylum"></dd><dt>Clase</dt><dd id="faunaDetailClass"></dd><dt>Orden</dt><dd id="faunaDetailOrder"></dd><dt>Familia</dt><dd id="faunaDetailFamily"></dd></dl></div></div>
-<div class="col-sm-6"><div class="fauna-detail-field"><h3>Conservación</h3><p class="mb-0" id="faunaDetailStatus"></p></div><div class="fauna-detail-field mt-3"><h3>Esperanza de vida</h3><p class="mb-0" id="faunaDetailLifespan"></p></div></div>
-<div class="col-12"><div class="fauna-detail-field"><h3>Alimentación</h3><p class="mb-0" id="faunaDetailDiet"></p></div></div>
-<div class="col-12"><div class="fauna-detail-field"><h3>Reproducción</h3><p class="mb-0" id="faunaDetailReproduction"></p></div></div>
-<div class="col-md-6"><div class="fauna-detail-field"><h3>Hábitat principal</h3><p class="mb-0" id="faunaDetailHabitat"></p></div></div>
-<div class="col-md-6"><div class="fauna-detail-field"><h3>Distribución y comarcas</h3><p class="mb-0" id="faunaDetailRegions"></p></div></div>
+<div class="col-sm-6"><div class="fauna-detail-field"><h3>Taxonomy</h3><dl><dt>Kingdom</dt><dd>Animalia</dd><dt>Phylum</dt><dd id="faunaDetailPhylum"></dd><dt>Class</dt><dd id="faunaDetailClass"></dd><dt>Order</dt><dd id="faunaDetailOrder"></dd><dt>Family</dt><dd id="faunaDetailFamily"></dd></dl></div></div>
+<div class="col-sm-6"><div class="fauna-detail-field"><h3>Conservation</h3><p class="mb-0" id="faunaDetailStatus"></p></div><div class="fauna-detail-field mt-3"><h3>Lifespan</h3><p class="mb-0" id="faunaDetailLifespan"></p></div></div>
+<div class="col-12"><div class="fauna-detail-field"><h3>Diet</h3><p class="mb-0" id="faunaDetailDiet"></p></div></div>
+<div class="col-12"><div class="fauna-detail-field"><h3>Reproduction</h3><p class="mb-0" id="faunaDetailReproduction"></p></div></div>
+<div class="col-md-6"><div class="fauna-detail-field"><h3>Main habitat</h3><p class="mb-0" id="faunaDetailHabitat"></p></div></div>
+<div class="col-md-6"><div class="fauna-detail-field"><h3>Distribution and regions</h3><p class="mb-0" id="faunaDetailRegions"></p></div></div>
 </div></div>
 </div>
 </div>
-<div class="modal-footer justify-content-between"><small class="text-secondary">Información resumida y adaptada de Wikipedia en español. Consulta la fuente para ampliar detalles.</small><a class="btn btn-outline-primary" href="#" id="faunaDetailSource" rel="noopener" target="_blank">Consultar fuente en Wikipedia</a><button class="btn btn-primary" data-bs-dismiss="modal" type="button">Cerrar ficha</button></div>
+<div class="modal-footer justify-content-between"><a class="btn btn-outline-primary" href="species-detail.html" id="faunaFullSheetLink">View full species profile</a><button class="btn btn-primary" data-bs-dismiss="modal" type="button">Close</button></div>
 </div>
 </div>
 </div>
-<button aria-label="Volver al principio" class="back-to-top" id="backToTop" title="Volver al principio" type="button"><i class="bi bi-arrow-up"></i></button>
+<button aria-label="Back to top" class="back-to-top" data-en-title="Back to top" data-eus-title="Gora itzuli" id="backToTop" title="Back to top" type="button"><i class="bi bi-arrow-up"></i></button>
 <footer class="main-footer">
-<div aria-label="Entidades colaboradoras" class="partner-footer">
+<div aria-label="Partner organisations" class="partner-footer">
 <div class="container">
-<div aria-label="Arrastra para ver entidades colaboradoras" class="partner-slider" id="partnerSlider" tabindex="0">
+<div aria-label="Drag to see partner organisations" class="partner-slider" id="partnerSlider" tabindex="0">
 <div class="partner-track" id="partnerTrack">
-<a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank"><img alt="Diputación Foral de Bizkaia" src="img/partners/logo-diputacion-de-bizkaia.jpg"/></a>
+<a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank"><img alt="Biscay Provincial Council" src="img/partners/logo-diputacion-de-bizkaia.jpg"/></a>
 <a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank"><img alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png"/></a>
 <a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank"><img alt="MITECO" src="img/partners/logo-miteco-color.png"/></a>
-<a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank"><img alt="Universidad del País Vasco" src="img/partners/logo-upv-ehu-blanco-completo .png"/></a>
-<a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank"><img alt="Gobierno Vasco" src="img/partners/logo-gobierno-vasco.png"/></a>
-<a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank"><img alt="Fundación Biodiversidad" src="img/partners/fundacion-biodiversidad.jpg"/></a>
+<a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank"><img alt="University of the Basque Country" src="img/partners/logo-upv-ehu-blanco-completo .png"/></a>
+<a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank"><img alt="Basque Government" src="img/partners/logo-gobierno-vasco.png"/></a>
+<a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank"><img alt="Biodiversity Foundation" src="img/partners/fundacion-biodiversidad.jpg"/></a>
 </div>
 </div>
 </div>
@@ -531,44 +490,44 @@
 <div class="container">
 <div class="row g-4 py-4">
 <div class="col-lg-3 col-md-6">
-<a class="footer-brand" href="index.html"><img alt="Logotipo Flora y Fauna de Bizkaia" src="img/logo-web.svg"/><span>Flora y Fauna<small>de Bizkaia</small></span></a><p class="footer-slogan" data-es="Conocer · Proteger · Compartir" data-eus="Ezagutu · Babestu · Partekatu">Conocer · Proteger · Compartir</p>
-<p class="footer-copy mt-3"><b>Grupo:</b> June, Eritz, Kelea Rueda</p>
-<p class="footer-copy mt-3">Proyecto Challenge 1.2, DAMi 1º</p>
+<a class="footer-brand" href="index.html"><img alt="Flora and Fauna of Bizkaia logo" src="img/logo-web.svg"/><span>Flora and Fauna<small>of Bizkaia</small></span></a><p class="footer-slogan" data-en="Learn · Protect · Share" data-eus="Ezagutu · Babestu · Partekatu">Learn · Protect · Share</p>
+<p class="footer-copy mt-3"><b data-en="Group:" data-eus="Taldea:">Group:</b> June, Eritz, Kelea Rueda</p>
+<p class="footer-copy mt-3" data-en="Challenge 1.2 Project, DAMi 1st year" data-eus="Challenge 1.2 proiektua, DAMi 1. urtea">Challenge 1.2 Project, DAMi 1st year</p>
 <div class="social-links d-flex flex-wrap gap-2">
 <a aria-label="Instagram" href="https://www.instagram.com/" rel="noopener" target="_blank"><i class="bi bi-instagram"></i></a>
 <a aria-label="YouTube" href="https://www.youtube.com/@urdaibaibirdcenter" rel="noopener" target="_blank"><i class="bi bi-youtube"></i></a>
 <a aria-label="Facebook" href="https://www.facebook.com/" rel="noopener" target="_blank"><i class="bi bi-facebook"></i></a>
 <a aria-label="X" href="https://x.com/" rel="noopener" target="_blank"><i class="bi bi-twitter-x"></i></a>
-<a aria-label="GitHub del proyecto" href="https://github.com/keruka21/CHALLENGE-1-2-My-first-Application" rel="noopener" target="_blank"><i class="bi bi-github"></i></a>
+<a aria-label="Project GitHub" href="https://github.com/keruka21/CHALLENGE-1-2-My-first-Application" rel="noopener" target="_blank"><i class="bi bi-github"></i></a>
 </div>
 </div>
 <div class="col-lg-2 col-6">
-<h2 class="footer-title">Explora</h2>
+<h2 class="footer-title" data-en="Explore" data-eus="Arakatu">Explore</h2>
 <ul class="footer-links">
-<li><a data-es="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">Fauna</a></li>
-<li><a data-es="Flora" data-eus="Flora" href="catalog.html?type=flora">Flora</a></li>
-<li><a data-es="Hábitats" data-eus="Habitatak" href="habitats.html">Hábitats</a></li>
-<li><a data-es="Blog" data-eus="Bloga" href="blog.html">Blog</a></li>
+<li><a data-en="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">Fauna</a></li>
+<li><a data-en="Flora" data-eus="Flora" href="catalog.html?type=flora">Flora</a></li>
+<li><a data-en="Habitats" data-eus="Habitatak" href="habitats.html">Habitats</a></li>
+<li><a data-en="Blog" data-eus="Bloga" href="blog.html">Blog</a></li>
 </ul>
 </div>
 <div class="col-lg-3 col-6">
-<h2 class="footer-title" data-es="Contacto" data-eus="Kontaktua">Contacto</h2>
+<h2 class="footer-title" data-en="Contact" data-eus="Kontaktua">Contact</h2>
 <a class="footer-contact" href="tel:+34555555555"><i class="bi bi-telephone-fill"></i>555 555 555</a>
 <a class="footer-contact" href="https://wa.me/34555555555" rel="noopener" target="_blank"><i class="bi bi-whatsapp"></i>WhatsApp: 555 555 555</a>
 <a class="footer-contact" href="mailto:faunayflora@bizkaia.com"><i class="bi bi-envelope"></i>faunayflora@bizkaia.com</a>
-<p class="small mt-2">Lunes a viernes<br/>08:00 am – 14:25pm (Aula 209)</p>
+<p class="small mt-2" data-en="Monday to Friday" data-eus="Astelehenetik ostiralera">Monday to Friday<br/>08:00 am – 14:25pm (Room 209)</p>
 </div>
 <div class="col-lg-4">
-<h2 class="footer-title">Estamos en CIFP TARTANGA LHII</h2>
-<p class="small"> Tartanga Kalea, 15 · Erandio, Bizkaia 48950</p>
-<p class="small"> Piso 1, Clase 209</p>
-<div class="footer-map"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Instituto%20Tartanga%20Erandio&amp;output=embed" title="Ubicación del Instituto Tartanga"></iframe></div>
+<h2 class="footer-title" data-en="We are at CIFP TARTANGA LHII" data-eus="CIFP TARTANGA LHII-n gaude">We are at CIFP TARTANGA LHII</h2>
+<p class="small" data-en="Tartanga Kalea, 15 · Erandio, Biscay 48950" data-eus="Tartanga Kalea, 15 · Erandio, Bizkaia 48950">Tartanga Kalea, 15 · Erandio, Biscay 48950</p>
+<p class="small" data-en="Floor 1, Room 209" data-eus="1. solairua, 209. gela">Floor 1, Room 209</p>
+<div class="footer-map"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Instituto%20Tartanga%20Erandio&amp;output=embed" title="Instituto Tartanga location"></iframe></div>
 </div>
 </div>
-<p class="small text-secondary mb-2 audio-credit">Sonido de petirrojo: Lawrence Shove / British Library · <a href="https://commons.wikimedia.org/wiki/File:European_Robin_(Erithacus_rubecula)_(W1CDR0001425_BD16).ogg" rel="noopener" target="_blank">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">CC BY-SA 4.0</a>.</p>
+<p class="small text-secondary mb-2 audio-credit" data-en="European Robin sound: Lawrence Shove / British Library" data-eus="Petirrojen soinua: Lawrence Shove / British Library">European Robin sound: Lawrence Shove / British Library · <a href="https://commons.wikimedia.org/wiki/File:European_Robin_(Erithacus_rubecula)_(W1CDR0001425_BD16).ogg" rel="noopener" target="_blank">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank">CC BY-SA 4.0</a>.</p>
 <div class="footer-bottom py-3 d-flex flex-wrap justify-content-between gap-2">
-<span>© <span id="currentYear"></span> Flora y Fauna de Bizkaia · Proyecto educativo</span>
-<div class="d-flex gap-3 flex-wrap"><a href="privacy.html">Privacidad</a><a href="legal.html">Aviso legal</a><a href="cookies.html">Cookies</a><a href="index.html">Volver a inicio</a></div>
+<span data-en="© {year} Flora and Fauna of Bizkaia · Educational project" data-eus="© {year} Bizkaiko Flora eta Fauna · Hezkuntza proiektua">© <span id="currentYear"></span> Flora and Fauna of Bizkaia · Educational project</span>
+<div class="d-flex gap-3 flex-wrap"><a data-en="Privacy" data-eus="Pribatutasuna" href="privacy.html">Privacy</a><a data-en="Legal notice" data-eus="Lege-oharra" href="legal.html">Legal notice</a><a data-en="Cookies" data-eus="Cookieak" href="cookies.html">Cookies</a><a data-en="Back to home" data-eus="Hasierara itzuli" href="index.html">Back to home</a></div>
 </div>
 </div>
 </footer>
@@ -577,4 +536,4 @@
 <script src="js/main.js">
 </script><script src="js/fauna-details.js"></script>
 </body>
-</html>
+</html>   

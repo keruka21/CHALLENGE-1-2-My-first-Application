@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html data-bs-theme="light" lang="es">
+<html data-bs-theme="light" lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
@@ -17,19 +17,19 @@
 <header>
 <div class="user-bar">
 <div class="container d-flex justify-content-between align-items-center gap-2">
-<div aria-label="Seleccionar idioma" class="language-switch d-flex align-items-center gap-1">
-<button aria-pressed="true" class="btn btn-sm language-button active" data-language="es" type="button">ES</button>
+<div aria-label="Select language" class="language-switch d-flex align-items-center gap-1">
+<button aria-pressed="true" class="btn btn-sm language-button active" data-language="en" type="button">EN</button>
 <span aria-hidden="true">|</span>
 <button aria-pressed="false" class="btn btn-sm language-button" data-language="eus" type="button">EUS</button>
 </div>
 <div class="position-relative">
-<button aria-controls="userPanel" aria-expanded="false" aria-label="Área de usuario" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" type="button">
-<i class="bi bi-person-circle fs-5"></i><span class="d-none d-sm-inline ms-1">Área de usuario</span>
+<button aria-controls="userPanel" aria-expanded="false" aria-label="User area" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" type="button">
+<i class="bi bi-person-circle fs-5"></i><span class="d-none d-sm-inline ms-1">User area</span>
 </button>
 <div class="collapse user-panel-collapse" id="userPanel">
 <div class="user-dropdown p-3">
-<div id="guestPanel"><p class="fw-semibold">Bienvenido/a</p><a class="btn btn-primary btn-sm w-100 mb-2" href="login.html">Iniciar sesión</a><a class="btn btn-outline-primary btn-sm w-100" href="register.html">Solicitar cuenta</a></div>
-<div class="d-none" id="memberPanel"><strong id="memberName">Usuario</strong><p class="small text-secondary" id="memberEmail"></p><a class="dropdown-item" href="user-area.html">Mi perfil y registros</a><a class="dropdown-item" href="user-area.html#privacySettingsForm">Ajustes y privacidad</a><a class="dropdown-item d-none" href="admin.html" id="adminPanelLink">Administración · Validar registros</a><button class="btn btn-outline-secondary btn-sm w-100 mt-2" id="logoutButton">Cerrar sesión</button></div>
+<div id="guestPanel"><p class="fw-semibold">Welcome</p><a class="btn btn-primary btn-sm w-100 mb-2" href="#loginModal" data-bs-toggle="modal">Sign in</a><a class="btn btn-outline-primary btn-sm w-100" href="signup.html">Sign up</a><a class="small d-block text-center mt-2 text-secondary" href="user-area.html">User area · demo</a></div>
+<div class="d-none" id="memberPanel"><strong id="memberName">Usuario</strong><p class="small text-secondary" id="memberEmail"></p><a class="dropdown-item" href="user-area.html">My profile and records</a><a class="dropdown-item" href="user-area.html#privacySettingsForm">Settings and privacy</a><button class="btn btn-outline-secondary btn-sm w-100 mt-2" id="logoutButton">Sign out</button></div>
 </div>
 </div>
 </div>
@@ -55,59 +55,59 @@
 <div class="collapse navbar-collapse" id="navbarContent">
 <ul class="navbar-nav ms-auto gap-lg-2">
 <li class="nav-item">
-<a class="nav-link" data-es="Inicio" data-eus="Hasiera" href="index.html">
+<a class="nav-link" data-en="Home" data-eus="Hasiera" href="index.html">
          Inicio
         </a>
 </li>
 <li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-es="Catálogo" data-eus="Katalogoa" href="catalog.html">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Catalogue" data-eus="Katalogoa" href="catalog.html">
          Catálogo
         </a>
 <ul class="dropdown-menu">
 <li>
-<a class="dropdown-item" data-es="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">
+<a class="dropdown-item" data-en="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">
            Fauna
           </a>
 </li>
 <li>
-<a class="dropdown-item" data-es="Flora" data-eus="Flora" href="catalog.html?type=flora">
+<a class="dropdown-item" data-en="Flora" data-eus="Flora" href="catalog.html?type=flora">
            Flora
           </a>
 </li>
 <li>
-<a class="dropdown-item" data-es="Hábitats" data-eus="Habitatak" href="habitats.html">
+<a class="dropdown-item" data-en="Habitats" data-eus="Habitatak" href="habitats.html">
            Hábitats
           </a>
 </li>
-<li><a class="dropdown-item" data-es="Parques, reservas y centros" data-eus="Parkeak, erreserbak eta zentroak" href="spaces.html">Parques, reservas y centros</a></li>
-<li><a class="dropdown-item" data-es="Comarcas" data-eus="Eskualdeak" href="regions.html">Comarcas</a></li>
+<li><a class="dropdown-item" data-en="Parks, reserves and centres" data-eus="Parkeak, erreserbak eta zentroak" href="spaces.html">Parques, reservas y centros</a></li>
+<li><a class="dropdown-item" data-en="Regions" data-eus="Eskualdeak" href="regions.html">Regions</a></li>
 </ul>
 </li>
 <li class="nav-item">
-<a class="nav-link" data-es="Blog" data-eus="Bloga" href="blog.html">
+<a class="nav-link" data-en="Blog" data-eus="Bloga" href="blog.html">
          Blog
         </a>
 </li>
 <li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-es="Participa" data-eus="Parte hartu" href="species-submit.html">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Get involved" data-eus="Parte hartu" href="species-submit.html">
          Participa
         </a>
 <ul class="dropdown-menu">
 <li>
-<a class="dropdown-item" data-es="Registrar una especie" data-eus="Espezie bat erregistratu" href="species-submit.html">
+<a class="dropdown-item" data-en="Registrar una especie" data-eus="Espezie bat erregistratu" href="species-submit.html">
            Registrar una especie
           </a>
 </li>
 <li>
-<a class="dropdown-item" data-es="Registrar un avistamiento" data-eus="Behaketa bat erregistratu" href="register.html">
+<a class="dropdown-item" data-en="Registrar un avistamiento" data-eus="Behaketa bat erregistratu" href="register-sighting.html">
            Registrar un avistamiento
           </a>
 </li>
 </ul>
 </li>
-<li class="nav-item"><a class="nav-link" data-es="Vídeos" data-eus="Bideoak" href="videos.html">Vídeos</a></li>
+<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li><li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
 <li class="nav-item">
-<a class="nav-link" data-es="Contacto" data-eus="Kontaktua" href="contact.html">
+<a class="nav-link" data-en="Contact" data-eus="Kontaktua" href="contact.html">
          Contacto
         </a>
 </li>
@@ -118,7 +118,7 @@
 </nav>
 <nav aria-label="Migas de pan" class="container breadcrumb-wrap">
 <ol class="breadcrumb">
-<li class="breadcrumb-item"><a data-es="Inicio" data-eus="Hasiera" href="index.html">Inicio</a></li>
+<li class="breadcrumb-item"><a data-en="Home" data-eus="Hasiera" href="index.html">Home</a></li>
 <li aria-current="page" class="breadcrumb-item active">Mapa del sitio</li>
 </ol>
 </nav>
@@ -141,10 +141,10 @@
        Accesos principales del proyecto:
       </p>
 <ul class="row row-cols-1 row-cols-md-3 g-3 list-unstyled">
-<li><a href="index.html">Inicio</a></li><li><a href="catalog.html?type=fauna">Fauna</a></li><li><a href="catalog.html?type=flora">Flora</a></li>
-<li><a href="habitats.html">Hábitats</a></li><li><a href="spaces.html">Parques, reservas y centros</a></li><li><a href="regions.html">Comarcas</a></li>
-<li><a href="videos.html">Vídeos y webcams</a></li><li><a href="blog.html">Blog</a></li><li><a href="register.html">Registrar observación</a></li>
-<li><a href="species-submit.html">Proponer especie</a></li><li><a href="user-area.html">Área de usuario</a></li><li><a href="contact.html">Contacto</a></li>
+<li><a href="index.html">Home</a></li><li><a href="catalog.html?type=fauna">Fauna</a></li><li><a href="catalog.html?type=flora">Flora</a></li>
+<li><a href="habitats.html">Habitats</a></li><li><a href="spaces.html">Parques, reservas y centros</a></li><li><a href="regions.html">Regions</a></li>
+<li><a href="videos.html">Vídeos y webcams</a></li><li><a href="blog.html">Blog</a></li><li><a href="register-sighting.html">Record a sighting</a></li>
+<li><a href="species-submit.html">Proponer especie</a></li><li><a href="user-area.html">User area</a></li><li><a href="contact.html">Contact</a></li>
 </ul>
 <a class="btn btn-primary mt-3" href="index.html">
        Volver a inicio
@@ -172,7 +172,7 @@
 <div class="container">
 <div class="row g-4 py-4">
 <div class="col-lg-3 col-md-6">
-<a class="footer-brand" href="index.html"><img alt="Logotipo Flora y Fauna de Bizkaia" src="img/logo-web.svg"/><span>Flora y Fauna<small>de Bizkaia</small></span></a><p class="footer-slogan" data-es="Conocer · Proteger · Compartir" data-eus="Ezagutu · Babestu · Partekatu">Conocer · Proteger · Compartir</p>
+<a class="footer-brand" href="index.html"><img alt="Logotipo Flora y Fauna de Bizkaia" src="img/logo-web.svg"/><span>Flora y Fauna<small>de Bizkaia</small></span></a><p class="footer-slogan" data-en="Conocer · Proteger · Compartir" data-eus="Ezagutu · Babestu · Partekatu">Conocer · Proteger · Compartir</p>
 <p class="footer-copy mt-3"><b>Grupo:</b> June, Eritz, Kelea Rueda</p>
 <p class="footer-copy mt-3">Proyecto Challenge 1.2, DAMi 1º</p>
 <div class="social-links d-flex flex-wrap gap-2">
@@ -186,14 +186,14 @@
 <div class="col-lg-2 col-6">
 <h2 class="footer-title">Explora</h2>
 <ul class="footer-links">
-<li><a data-es="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">Fauna</a></li>
-<li><a data-es="Flora" data-eus="Flora" href="catalog.html?type=flora">Flora</a></li>
-<li><a data-es="Hábitats" data-eus="Habitatak" href="habitats.html">Hábitats</a></li>
-<li><a data-es="Blog" data-eus="Bloga" href="blog.html">Blog</a></li>
+<li><a data-en="Fauna" data-eus="Fauna" href="catalog.html?type=fauna">Fauna</a></li>
+<li><a data-en="Flora" data-eus="Flora" href="catalog.html?type=flora">Flora</a></li>
+<li><a data-en="Habitats" data-eus="Habitatak" href="habitats.html">Habitats</a></li>
+<li><a data-en="Blog" data-eus="Bloga" href="blog.html">Blog</a></li>
 </ul>
 </div>
 <div class="col-lg-3 col-6">
-<h2 class="footer-title" data-es="Contacto" data-eus="Kontaktua">Contacto</h2>
+<h2 class="footer-title" data-en="Contact" data-eus="Kontaktua">Contacto</h2>
 <a class="footer-contact" href="tel:+34555555555"><i class="bi bi-telephone-fill"></i>555 555 555</a>
 <a class="footer-contact" href="https://wa.me/34555555555" rel="noopener" target="_blank"><i class="bi bi-whatsapp"></i>WhatsApp: 555 555 555</a>
 <a class="footer-contact" href="mailto:faunayflora@bizkaia.com"><i class="bi bi-envelope"></i>faunayflora@bizkaia.com</a>
