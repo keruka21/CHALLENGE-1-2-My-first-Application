@@ -1038,12 +1038,19 @@ h5,
     transition: fill 0.2s ease, filter 0.2s ease;
 }
 
+
 #bizkaia-comarcas path.is-active,
 #bizkaia-comarcas polygon.is-active,
 #bizkaia-comarcas polyline.is-active {
     fill: var(--color-accent) !important;
     filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.22));
 }
+#bizkaia-comarcas path:focus,
+#bizkaia-comarcas polygon:focus,
+#bizkaia-comarcas polyline:focus {
+    outline: none;
+    stroke: none;
+} 
 
 #bizkaia-comarcas #contorno,
 #contorno {
