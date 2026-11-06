@@ -2,21 +2,19 @@
    FONTS
    ============================================================ */
 @font-face {
-    font-family: "Anton";
-    src: url("../fonts/Anton/Anton-Regular.ttf") format("truetype");
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
     font-display: swap;
 }
-
 @font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins/Poppins-Light.ttf") format("truetype");
+    font-family: "Fauna_One";
+    src: url("../fonts/Fauna_One/FaunaOne-Regular.ttf") format("truetype");
     font-weight: 300;
     font-display: swap;
 }
-
 @font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+    font-family: "Fauna_One";
+    src: url("../fonts/Fauna_One/FaunaOne-Regular.ttf") format("truetype");
     font-weight: 400;
     font-display: swap;
 }
@@ -48,8 +46,8 @@
     --overlay-light: rgba(12, 31, 26, 0.72);
     --shadow-soft: 0 18px 55px rgba(20, 55, 45, 0.10);
     --radius-card: 1.2rem;
-    --font-body: "Poppins", Arial, sans-serif;
-    --font-heading: "Anton", Impact, sans-serif;
+    --font-body: "Fauna_One", Arial, sans-serif;
+    --font-heading: "Montserrat", Impact, sans-serif;
 }
 
 [data-bs-theme="dark"] {
@@ -560,7 +558,6 @@ h5,
     text-align: center;
     color: #fff;
     max-width: 900px;
-    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
 }
 
 .hero-content .eyebrow {
