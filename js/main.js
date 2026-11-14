@@ -1,7 +1,7 @@
-/** Flora and Fauna of Bizkaia — shared interactions and accessible controls. */
+/* Flora and Fauna of Bizkaia — shared interactions and accessible controls. */
 "use strict";
 
-/** Entry point: initialize only the components present on the current page. */
+/* Entry point: initialize only the components present on the current page. */
 document.addEventListener("DOMContentLoaded", () => {
     initLanguage();
     initTheme();
@@ -32,7 +32,7 @@ function initTheme() {
     button.addEventListener("click", () => set(document.documentElement.dataset.bsTheme === "dark" ? "light" : "dark"));
 }
 
-/** Keep the navbar transparent at the top and apply the primary color on scroll. */
+/* Keep the navbar transparent at the top and apply the primary color on scroll*/
 function initNavbar() {
     const nav = document.getElementById("mainNavbar");
     if (!nav) return;
@@ -42,7 +42,7 @@ function initNavbar() {
     addEventListener("resize", update);
 }
 
-/* Background audio controls */
+/* Background audio*/
 function initAudio() {
     const audio = document.getElementById("backgroundAudio"),
           button = document.getElementById("audioToggle"),
@@ -67,7 +67,7 @@ function initAudio() {
     });
 }
 
-/* Back-to-top control */
+/* Back-to-top*/
 function initBackToTop() {
     const button = document.getElementById("backToTop");
     if (!button) return;
@@ -481,7 +481,7 @@ function initContact() {
 }
 
 
-/** Apply the selected language to all translatable interface elements. */
+/*Apply the selected language to all translatable interface elements. */
 function initLanguage() {
     const languageButtons = document.querySelectorAll(".language-button");
     if (!languageButtons.length) return;
@@ -545,7 +545,7 @@ function initLanguage() {
     setLanguage("en");
 }
 
-/** Blog slider navigation. */
+/*Blog slider navigation arrows*/
 function initBlogSlider() {
     const track = document.getElementById("blogTrack");
     if (!track) return;
@@ -555,7 +555,7 @@ function initBlogSlider() {
     if (nextBtn) nextBtn.addEventListener("click", () => track.scrollBy({ left: 340, behavior: "smooth" }));
 }
 
-/** Habitat card filtering. */
+/* Habitat card filtering. */
 function initHabitatFilter() {
     const t = document.getElementById("habitatTypeFilter"), r = document.getElementById("habitatRegionFilter");
     if (!t || !r) return;
@@ -570,7 +570,7 @@ function initHabitatFilter() {
     r.addEventListener("change", run);
 }
 
-/** Route the species detail page to the selected featured profile. */
+/*Route the species detail page to the selected featured profile.*/
 function initSpeciesRoute() {
     const params = new URLSearchParams(window.location.search);
     const speciesId = (params.get("id") || "").toUpperCase();
