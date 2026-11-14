@@ -26,13 +26,13 @@ VARIABLES
 }
 
 [data-bs-theme="dark"] {
-    --color-primary: #4c9449;   
+    --color-primary: #4c9449;
     --color-primary-dark: #2d5327;
     --color-accent: #ff9d00;
-    --color-accent-dark: #8c6d48;   
+    --color-accent-dark: #8c6d48;
     --color-ink: #8aad69;
     --color-muted: #ffffff;
-    --color-surface: #204b24;   
+    --color-surface: #204b24;
     --color-surface-alt: #325733;
     --color-background-light: var(--color-background-dark);
     --color-background-dark: #22351c;
@@ -374,7 +374,7 @@ HERO SECTION (INDEX) AND HEADERS ON OTHER PAGES
     min-height: 680px;
     height: auto;
     padding-top: calc(var(--header-height) + 3rem);
-    padding-bottom: 4rem; 
+    padding-bottom: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -699,6 +699,27 @@ SECTIONS
     background-color: var(--color-accent);
 }
 
+/* Home page links highlighted as primary calls to action. */
+.home-emphasis-link {
+    color: var(--color-accent) !important;
+    font-weight: 800;
+}
+
+.home-emphasis-link:hover,
+.home-emphasis-link:focus-visible {
+    color: var(--color-accent-dark) !important;
+}
+
+.btn-outline-light.home-emphasis-link {
+    border-color: var(--color-accent);
+}
+
+.btn-outline-light.home-emphasis-link:hover,
+.btn-outline-light.home-emphasis-link:focus-visible {
+    color: #1d2925 !important;
+    background: var(--color-accent);
+}
+
 /* ==========================================================
 COMPONENTS
 ========================================================== */
@@ -770,7 +791,6 @@ COMPONENTS
     background: #ffb52e;
     color: #1d2925;
 }
-
 
 /* Shared badge scale and shape. Keep semantic Bootstrap background colors. */
 .badge {
@@ -934,6 +954,29 @@ COMPONENTS
     margin-bottom: .5rem;
 }
 
+/* Blog card alignment utilities. */
+
+#blogTrack {
+    align-items: stretch;
+}
+
+#blogTrack > .blog-card {
+    height: auto;
+    align-self: stretch;
+}
+
+#blogTrack > .blog-card .card-body {
+    flex: 1 1 auto;
+}
+
+#blogTrack > .blog-card .card-text {
+    flex-grow: 1;
+}
+
+#blogTrack > .blog-card .card-body > a {
+    margin-top: auto;
+}
+
 /* ==========================================================
 TABLES STYLES
 ========================================================== */
@@ -1019,10 +1062,6 @@ HABITAT CARDS
     min-width: 0;
 }
 
-.catalog-tabs .nav-link {
-    border-radius: .7rem .7rem 0 0;
-}
-
 /* ==========================================================
 GALLERY
 ========================================================== */
@@ -1083,12 +1122,30 @@ GALLERY
     background: #101815;
 }
 
+/* Fullscreen gallery viewer. Layout and spacing still use Bootstrap utilities. */
+.gallery-modal-content {
+    background-color: rgba(0, 0, 0, .95) !important;
+}
+
+.gallery-modal-nav-button {
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: rgba(0, 0, 0, .6);
+}
+
+.gallery-modal-caption {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+
 /* ==========================================================
 VIDEO & BLOG CARDS
 ========================================================== */
 .video-resource-card .card-body {
     padding: 1.25rem;
-}   
+}
 
 .blog-card > img {
     width: 100%;
@@ -1112,7 +1169,61 @@ VIDEO & BLOG CARDS
 .blog-card .card-body > a:hover,
 .blog-card .card-body > a:focus {
     color: var(--color-accent-dark);
-}   
+}
+
+/* ==========================================================
+   ARTICLE CONTENT
+   ========================================================== */
+#articleBody {
+    max-width: 72ch;
+    margin-inline: auto;
+    color: var(--color-ink);
+    font-size: 1.05rem;
+    line-height: 1.85;
+}
+
+#articleBody h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+}
+
+#articleBody p,
+#articleBody ul {
+    margin-bottom: 1.25rem;
+}
+
+#articleBody ul {
+    padding-left: 1.4rem;
+}
+
+#articleBody li {
+    padding-left: .25rem;
+    margin-bottom: .45rem;
+}
+
+#articleBody blockquote {
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    border-left: 4px solid var(--color-accent);
+    border-radius: 0 .75rem .75rem 0;
+    background: var(--color-surface-alt);
+    color: var(--color-primary);
+    font-size: 1.15rem;
+    font-style: italic;
+}
+
+.article-meta {
+    color: var(--color-muted);
+    font-size: .9rem;
+}
+
+.article-image {
+    width: 100%;
+    max-height: 32rem;
+    object-fit: cover;
+}
 
 /* ==========================================================
 REGIONS MAP & LIST — HOVER AND SELECTION STATES
@@ -1457,18 +1568,6 @@ FOOTER
     color: #17231f !important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================
    CATALOGUE TABLES — shared visual system for fauna and flora
    ========================================================== */
@@ -1724,8 +1823,6 @@ FOOTER
     padding-top: .25rem;
 }
 
-
-
 /* ==========================================================
    SPECIES DETAIL — matching cards and image galleries
    ========================================================== */
@@ -1976,10 +2073,6 @@ FOOTER
     color: var(--color-ink);
 }
 
-
-
-
-
 /* Reusable profile modal photo placeholders */
 .species-photo-placeholder {
     display: flex;
@@ -2019,71 +2112,6 @@ FOOTER
     font-size: .82rem;
     line-height: 1.5;
 }
-
-
-/* Blog card alignment utilities. */
-
-#blogTrack {
-      align-items: stretch;
-    }
-
-    #blogTrack > .blog-card {
-      height: auto;
-      align-self: stretch;
-    }
-
-    #blogTrack > .blog-card .card-body {
-      flex: 1 1 auto;
-    }
-
-    #blogTrack > .blog-card .card-text {
-      flex-grow: 1;
-    }
-
-    #blogTrack > .blog-card .card-body > a {
-      margin-top: auto;
-    }
-
-/* Home page links highlighted as primary calls to action. */
-.home-emphasis-link {
-    color: var(--color-accent) !important;
-    font-weight: 800;
-}
-
-.home-emphasis-link:hover,
-.home-emphasis-link:focus-visible {
-    color: var(--color-accent-dark) !important;
-}
-
-.btn-outline-light.home-emphasis-link {
-    border-color: var(--color-accent);
-}
-
-.btn-outline-light.home-emphasis-link:hover,
-.btn-outline-light.home-emphasis-link:focus-visible {
-    color: #1d2925 !important;
-    background: var(--color-accent);
-}
-
-
-/* Fullscreen gallery viewer. Layout and spacing still use Bootstrap utilities. */
-.gallery-modal-content {
-    background-color: rgba(0, 0, 0, .95) !important;
-}
-
-.gallery-modal-nav-button {
-    width: 3.125rem;
-    height: 3.125rem;
-    border: 1px solid rgba(255, 255, 255, .2);
-    background: rgba(0, 0, 0, .6);
-}
-
-
-.gallery-modal-caption {
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-}
-
 
 /* ==========================================================
    RESPONSIVE LAYOUT — Bootstrap 5 breakpoints
@@ -2219,4 +2247,3 @@ FOOTER
         font-size: .78rem;
     }
 }
-

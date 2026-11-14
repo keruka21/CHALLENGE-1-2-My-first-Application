@@ -1,1330 +1,1330 @@
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width,initial-scale=1" name="viewport" />
-    <meta content="Collaborative platform to discover, consult and record the flora and fauna of Biscay" name="description" />
-    <title>Flora & Fauna of Biscay | Discover, Protect, Share</title>
-    <link href="img/logo-web.svg" rel="icon" />
-    <link href="bootstrap-5.3.8/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/bootstrap-icons.css" rel="stylesheet" type="text/css" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="Collaborative platform to discover, consult and record the flora and fauna of Biscay" name="description">
+    <title>Flora &amp; Fauna of Biscay | Discover, Protect, Share</title>
+    <link href="img/logo-web.svg" rel="icon">
+    <link href="bootstrap-5.3.8/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Flora & Fauna of Biscay">
+    <meta property="og:title" content="Flora &amp; Fauna of Biscay">
     <meta property="og:url" content="https://faunaandfloraofbiscay.com">
     <meta property="og:image" content="https://faunaandfloraofbiscay.com/img/logo-web.svg">
     <meta property="og:description" content="A collaborative space to discover the flora and fauna of our territory, explore their habitats and provide sightings that help conserve them.">
 </head>
- <body>
-  <!-- HEADER -->
-  <header>
-   <!-- USER BAR / LANGUAGES -->
-   <div class="user-bar">
-    <div class="container d-flex justify-content-between align-items-center gap-2">
-     <div aria-label="Select Language" class="language-switch d-flex align-items-center gap-1" data-en-aria-label="Select Language" data-eu-aria-label="Select Language">
-      <button aria-pressed="true" class="btn btn-sm language-button active" data-en="EN" data-eu="EN" data-language="en" type="button">
-       EN
-      </button>
-      <span aria-hidden="true">
-       <span data-en="
+    <body>
+        <!-- HEADER -->
+        <header>
+            <!-- USER BAR / LANGUAGES -->
+            <div class="user-bar">
+                <div class="container d-flex justify-content-between align-items-center gap-2">
+                    <div aria-label="Select language" class="language-switch d-flex align-items-center gap-1" data-en-aria-label="Select language" data-eu-aria-label="Hizkuntza hautatu" role="group">
+                        <button aria-pressed="true" class="btn btn-sm language-button active" data-en="EN" data-eu="EN" data-language="en" type="button">
+                            EN
+                        </button>
+                        <span aria-hidden="true">
+                            <span data-en="
        |
       " data-eu="
        |
       ">
-        |
-       </span>
-      </span>
-      <button aria-pressed="false" class="btn btn-sm language-button" data-en="EUS" data-eu="EUS" data-language="eu" type="button">
-       EUS
-      </button>
-     </div>
-     <div class="position-relative">
-      <button aria-controls="userPanel" aria-expanded="false" aria-label="User Area" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" data-en-aria-label="User Area" data-eu-aria-label="User Area" type="button">
-       <i class="bi bi-person-circle fs-5">
-       </i>
-       <span class="d-none d-sm-inline ms-1" data-en="User Area" data-eu="Erabiltzaile eremua">
-        User Area
-       </span>
-      </button>
-      <div class="collapse user-panel-collapse" id="userPanel">
-       <div class="user-dropdown p-3">
-        <div id="guestPanel">
-         <p class="fw-semibold text-primary" data-en="Welcome!" data-eu="Ongi etorri!">
-          Welcome!
-         </p>
-         <button class="btn btn-primary btn-sm w-100 mb-2" data-bs-target="#loginModal" data-bs-toggle="modal" type="button">
-          <span data-en="Log-in" data-eu="Saioa hasi">
-           Log-in
-          </span>
-         </button>
-         <a class="btn btn-outline-primary btn-sm w-100 mb-2" data-en="Sign-up" data-eu="Erregistratu" href="signup.html">
-          Sign-up
-         </a>
-         <a class="d-block text-center small mt-1 text-decoration-underline" data-en="demo user area" data-eu="demo erabiltzaile eremua" href="user-area.html">
-          demo user area
-         </a>
-        </div>
-        <div class="d-none" id="memberPanel">
-         <strong data-en="User" data-eu="Erabiltzailea" id="memberName">
-          User
-         </strong>
-         <p class="small text-secondary" id="memberEmail">
-         </p>
-         <a class="dropdown-item" data-en="My Profile" data-eu="Nire profila" href="user-area.html">
-          My Profile
-         </a>
-         <a class="dropdown-item" data-en="Settings" data-eu="Ezarpenak" href="user-area.html#privacySettingsForm">
-          Settings
-         </a>
-         <button class="btn btn-outline-secondary btn-sm w-100 mt-2" data-en="Log-out" data-eu="Saioa itxi" id="logoutButton">
-          Log-out
-         </button>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-   <!-- NAVBAR -->
-   <nav class="navbar navbar-expand-lg main-navbar" id="mainNavbar">
-    <div class="container">
-     <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" id="logo-web">
-      <img alt="logo-web" data-en-alt="logo-web" data-eu-alt="logo-web" height="50" src="img/logo-web.svg"/>
-      <div class="d-flex flex-column lh-1">
-       <span data-en="Flora &amp; Fauna" data-eu="Bizkaiko">
-        Flora &amp; Fauna
-       </span>
-       <small data-en="of Biscay" data-eu="flora eta fauna">
-        of Biscay
-       </small>
-      </div>
-     </a>
-     <button aria-label="Open navigation" class="navbar-toggler" data-bs-target="#navbarContent" data-bs-toggle="collapse" data-en-aria-label="Open navigation" data-eu-aria-label="Open navigation" type="button">
-      <span class="navbar-toggler-icon">
-      </span>
-     </button>
-     <div class="collapse navbar-collapse" id="navbarContent">
-      <ul class="navbar-nav ms-auto gap-lg-2">
-       <li class="nav-item">
-        <a class="nav-link" data-en="Home" data-eu="Hasiera" href="index.html">
-         Home
-        </a>
-       </li>
-       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Catalogue" data-eu="Katalogoa" href="catalog.html">
-         Catalogue
-        </a>
-        <ul class="dropdown-menu">
-         <li>
-          <a class="dropdown-item" data-en="Fauna" data-eu="Fauna" href="catalog.html?type=fauna">
-           Fauna
-          </a>
-         </li>
-         <li>
-          <a class="dropdown-item" data-en="Flora" data-eu="Flora" href="catalog.html?type=flora">
-           Flora
-          </a>
-         </li>
-         <li>
-          <a class="dropdown-item" data-en="Habitats" data-eu="Habitatak" href="habitats.html">
-           Habitats
-          </a>
-         </li>
-         <li>
-          <a class="dropdown-item" data-en="Parks, reserves and centers" data-eu="Parkeak, erreserbak eta zentroak" href="spaces.html">
-           Parks, reserves and centers
-          </a>
-         </li>
-         <li>
-          <a class="dropdown-item" data-en="Regions" data-eu="Eskualdeak" href="regions.html">
-           Regions
-          </a>
-         </li>
-        </ul>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link" data-en="Blog" data-eu="Bloga" href="blog.html">
-         Blog
-        </a>
-       </li>
-       <li class="nav-item dropdown">
-        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Participate" data-eu="Parte hartu" href="species-submit.html">
-         Participate
-        </a>
-        <ul class="dropdown-menu">
-         <li>
-          <a class="dropdown-item" data-en="Register a species" data-eu="Espezie bat erregistratu" href="species-submit.html">
-           Register a species
-          </a>
-         </li>
-         <li>
-          <a class="dropdown-item" data-en="Record a sighting" data-eu="Behaketa bat erregistratu" href="register-sighting.html">
-           Record a sighting
-          </a>
-         </li>
-        </ul>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link" data-en="Gallery" data-eu="Galeria" href="gallery.html">
-         Gallery
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link" data-en="Videos" data-eu="Bideoak" href="videos.html">
-         Videos
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link" data-en="Contact" data-eu="Kontaktua" href="contact.html">
-         Contact
-        </a>
-       </li>
-       <li class="nav-item d-flex align-items-center">
-        <button aria-label="Change theme" class="btn btn-sm theme-toggle" data-en-aria-label="Change theme" data-eu-aria-label="Change theme" id="themeToggle" type="button">
-         <i class="bi bi-moon-stars-fill" id="themeIcon">
-         </i>
+                                |
+                            </span>
+                        </span>
+                        <button aria-pressed="false" class="btn btn-sm language-button" data-en="EUS" data-eu="EUS" data-language="eu" type="button">
+                            EUS
+                        </button>
+                    </div>
+                    <div class="position-relative">
+                        <button aria-controls="userPanel" aria-expanded="false" aria-label="User Area" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" data-en-aria-label="User Area" data-eu-aria-label="User Area" type="button">
+                            <i class="bi bi-person-circle fs-5">
+                            </i>
+                            <span class="d-none d-sm-inline ms-1" data-en="User Area" data-eu="Erabiltzaile eremua">
+                                User Area
+                            </span>
+                        </button>
+                        <div class="collapse user-panel-collapse" id="userPanel">
+                            <div class="user-dropdown p-3">
+                                <div id="guestPanel">
+                                    <p class="fw-semibold text-primary" data-en="Welcome!" data-eu="Ongi etorri!">
+                                        Welcome!
+                                    </p>
+                                    <button class="btn btn-primary btn-sm w-100 mb-2" data-bs-target="#loginModal" data-bs-toggle="modal" type="button">
+                                        <span data-en="Log-in" data-eu="Saioa hasi">
+                                            Log-in
+                                        </span>
+                                    </button>
+                                    <a class="btn btn-outline-primary btn-sm w-100 mb-2" data-en="Sign-up" data-eu="Erregistratu" href="signup.html">
+                                        Sign-up
+                                    </a>
+                                    <a class="d-block text-center small mt-1 text-decoration-underline" data-en="demo user area" data-eu="demo erabiltzaile eremua" href="user-area.html">
+                                        demo user area
+                                    </a>
+                                </div>
+                                <div class="d-none" id="memberPanel">
+                                    <strong data-en="User" data-eu="Erabiltzailea" id="memberName">
+                                        User
+                                    </strong>
+                                    <p class="small text-secondary" id="memberEmail">
+                                    </p>
+                                    <a class="dropdown-item" data-en="My Profile" data-eu="Nire profila" href="user-area.html">
+                                        My Profile
+                                    </a>
+                                    <a class="dropdown-item" data-en="Settings" data-eu="Ezarpenak" href="user-area.html#privacySettingsForm">
+                                        Settings
+                                    </a>
+                                    <button class="btn btn-outline-secondary btn-sm w-100 mt-2" data-en="Log-out" data-eu="Saioa itxi" id="logoutButton" type="button">
+                                        Log-out
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg main-navbar" id="mainNavbar">
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" id="logo-web">
+                        <img alt="logo-web" data-en-alt="logo-web" data-eu-alt="logo-web" height="50" src="img/logo-web.svg">
+                        <div class="d-flex flex-column lh-1">
+                            <span data-en="Flora &amp; Fauna" data-eu="Bizkaiko">
+                                Flora &amp; Fauna
+                            </span>
+                            <small data-en="of Biscay" data-eu="flora eta fauna">
+                                of Biscay
+                            </small>
+                        </div>
+                    </a>
+                    <button aria-label="Open navigation" class="navbar-toggler" data-bs-target="#navbarContent" data-bs-toggle="collapse" data-en-aria-label="Open navigation" data-eu-aria-label="Open navigation" type="button">
+                        <span class="navbar-toggler-icon">
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav ms-auto gap-lg-2">
+                            <li class="nav-item">
+                                <a class="nav-link" data-en="Home" data-eu="Hasiera" href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Catalogue" data-eu="Katalogoa" href="catalog.html">
+                                    Catalogue
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" data-en="Fauna" data-eu="Fauna" href="catalog.html?type=fauna">
+                                            Fauna
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" data-en="Flora" data-eu="Flora" href="catalog.html?type=flora">
+                                            Flora
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" data-en="Habitats" data-eu="Habitatak" href="habitats.html">
+                                            Habitats
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" data-en="Parks, reserves and centers" data-eu="Parkeak, erreserbak eta zentroak" href="spaces.html">
+                                            Parks, reserves and centers
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" data-en="Regions" data-eu="Eskualdeak" href="regions.html">
+                                            Regions
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-en="Blog" data-eu="Bloga" href="blog.html">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Participate" data-eu="Parte hartu" href="species-submit.html">
+                                    Participate
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" data-en="Register a species" data-eu="Espezie bat erregistratu" href="species-submit.html">
+                                            Register a species
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" data-en="Record a sighting" data-eu="Behaketa bat erregistratu" href="register-sighting.html">
+                                            Record a sighting
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-en="Gallery" data-eu="Galeria" href="gallery.html">
+                                    Gallery
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-en="Videos" data-eu="Bideoak" href="videos.html">
+                                    Videos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-en="Contact" data-eu="Kontaktua" href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <button aria-label="Change theme" class="btn btn-sm theme-toggle" data-en-aria-label="Change theme" data-eu-aria-label="Change theme" id="themeToggle" type="button">
+                                    <i class="bi bi-moon-stars-fill" id="themeIcon">
+                                    </i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- AUDIO & CONTROLS -->
+        <audio id="backgroundAudio" loop="" preload="none">
+            <source src="audio/European_Robin.mp3" type="audio/mpeg"></source>
+        </audio>
+        <button aria-label="Silence Sound" class="floating-control audio-control" data-en-aria-label="Silence Sound" data-en-title="Silence" data-eu-aria-label="Silence Sound" data-eu-title="Silence" id="audioToggle" title="Silence" type="button">
+            <i class="bi bi-volume-up-fill" id="audioIcon">
+            </i>
         </button>
-       </li>
-      </ul>
-     </div>
-    </div>
-   </nav>
-  </header>
-  <!-- AUDIO & CONTROLS -->
-  <audio id="backgroundAudio" loop="" preload="none">
-   <source src="audio/European_Robin.mp3" type="audio/mpeg"/>
-  </audio>
-  <button aria-label="Silence Sound" class="floating-control audio-control" data-en-aria-label="Silence Sound" data-en-title="Silence" data-eu-aria-label="Silence Sound" data-eu-title="Silence" id="audioToggle" title="Silence">
-   <i class="bi bi-volume-up-fill" id="audioIcon">
-   </i>
-  </button>
-  <button aria-label="Back to the top" class="floating-control top-control" data-en-aria-label="Back to the top" data-eu-aria-label="Back to the top" id="backToTop" type="button">
-   <i class="bi bi-chevron-up">
-   </i>
-  </button>
-  <!-- LOGIN MODAL -->
-  <div aria-hidden="true" aria-labelledby="loginModalLabel" class="modal fade" id="loginModal" tabindex="-1">
-   <div class="modal-dialog">
-    <div class="modal-content p-3">
-     <div class="modal-header border-0">
-      <h5 class="modal-title fw-bold" data-en="Log-in" data-eu="Saioa hasi" id="loginModalLabel">
-       Log-in
-      </h5>
-      <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" data-en-aria-label="Close" data-eu-aria-label="Close" type="button">
-      </button>
-     </div>
-     <div class="modal-body">
-      <form id="loginForm">
-       <div class="mb-3">
-        <label class="form-label" data-en="Email address" data-eu="Posta elektronikoa" for="loginEmail">
-         Email address
-        </label>
-        <input class="form-control" id="loginEmail" required="" type="email"/>
-       </div>
-       <div class="mb-3">
-        <label class="form-label" data-en="Password" data-eu="Pasahitza" for="loginPassword">
-         Password
-        </label>
-        <input class="form-control" id="loginPassword" required="" type="password"/>
-       </div>
-       <button class="btn btn-primary w-100" data-en="Sign in" data-eu="Hasi saioa" type="submit">
-        Sign in
-       </button>
-      </form>
-     </div>
-    </div>
-   </div>
-  </div>
-  <!--MAIN CONTENT-->
-  <main id="mainContent">
-   <!-- PAGE HERO -->
-   <section class="inner-hero page-hero species-detail-hero">
-    <div class="container">
-     <nav aria-label="breadcrumb" data-en-aria-label="breadcrumb" data-eu-aria-label="breadcrumb">
-      <ol class="breadcrumb mb-3">
-       <li class="breadcrumb-item">
-        <a data-en="Home" data-eu="Hasiera" href="index.html">
-         Home
-        </a>
-       </li>
-       <li class="breadcrumb-item">
-        <a data-en="Catalogue" data-eu="Katalogoa" href="catalog.html">
-         Catalogue
-        </a>
-       </li>
-       <li aria-current="page" class="breadcrumb-item active" data-en="Featured species" data-eu="Espezie nabarmenduak" id="breadcrumbSpecies">
-        Featured species
-       </li>
-      </ol>
-     </nav>
-     <p class="section-kicker" data-en="Species encyclopedia" data-eu="Espezieen entziklopedia" id="heroKicker">
-      Species encyclopedia
-     </p>
-     <h1 data-en="Featured species of Bizkaia" data-eu="Bizkaiko espezie nabarmenduak" id="heroTitle">
-      Featured species of Bizkaia
-     </h1>
-     <p class="lead" data-en="Explore detailed species profiles in our biological encyclopedia." data-eu="Ezagutu espezieen fitxa zehatzak gure entziklopedia biologikoan." id="heroSubtitle">
-      Explore detailed species profiles in our biological encyclopedia.
-     </p>
-    </div>
-   </section>
-   <!-- SPECIES DETAIL SECTION -->
-   <section class="content-section species-detail-section">
-    <div class="container">
-     <!-- TEMPLATE VIEW (Shown when no valid ID is present in the URL) -->
-     <div class="species-detail-card content-card mb-5" id="speciesTemplateView">
-      <div class="species-detail-heading text-center py-5">
-       <p class="section-kicker mb-2" data-en="Future Species Template" data-eu="Etorkizuneko Espezie Txantloia">
-        Future Species Template
-       </p>
-       <h2 class="display-6 mb-3" data-en="Species Template Structure" data-eu="Espezie Txantlloiaren Egitura">
-        Species Template Structure
-       </h2>
-       <p class="text-secondary mx-auto mb-4 col-lg-8" data-en="This section serves as a standardized template for incorporating future flora and fauna entries into the Biscay biodiversity platform. Select a specific species below to view its complete record." data-eu="Atal hau etorkizuneko flora eta fauna sarrerak Bizkaiko biodibertsitate plataforman sartzeko txantloi estandarizatu gisa balio du. Aukeratu espezie zehatz bat behean bere erregistro osoa ikusteko.">
-        This section serves as a standardized template for incorporating future flora and fauna entries into the Biscay biodiversity platform. Select a specific species below to view its complete record.
-       </p>
-      </div>
-     </div>
-     <!-- EUROPEAN ROBIN ARTICLE (FAU-028) -->
-     <article class="species-detail-card content-card mb-5 d-none" id="robinDetailView">
-      <div class="species-detail-heading d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
-       <div>
-        <p class="section-kicker mb-2" data-en="FAU-028 &middot; Fauna &middot; Bird &middot; Muscicapidae" data-eu="FAU-028 &middot; Fauna &middot; Hegaztia &middot; Muscicapidae">
-         FAU-028 &middot; Fauna &middot; Bird &middot; Muscicapidae
-        </p>
-        <h2 class="display-6 mb-1" data-en="European Robin" data-eu="Txantxangorria">
-         European Robin
-        </h2>
-        <p class="species-scientific-name mb-0">
-         <em data-en="Erithacus rubecula" data-eu="Erithacus rubecula">
-          Erithacus rubecula
-         </em>
-         <span data-en="
+        <button aria-label="Back to the top" class="floating-control top-control" data-en-aria-label="Back to the top" data-eu-aria-label="Back to the top" id="backToTop" type="button">
+            <i class="bi bi-chevron-up">
+            </i>
+        </button>
+        <!-- LOGIN MODAL -->
+        <div aria-hidden="true" aria-labelledby="loginModalLabel" class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title fw-bold" data-en="Log-in" data-eu="Saioa hasi" id="loginModalLabel">
+                            Log-in
+                        </h5>
+                        <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" data-en-aria-label="Close" data-eu-aria-label="Close" type="button">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label class="form-label" data-en="Email address" data-eu="Posta elektronikoa" for="loginEmail">
+                                    Email address
+                                </label>
+                                <input class="form-control" id="loginEmail" required="" type="email">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" data-en="Password" data-eu="Pasahitza" for="loginPassword">
+                                    Password
+                                </label>
+                                <input class="form-control" id="loginPassword" required="" type="password">
+                            </div>
+                            <button class="btn btn-primary w-100" data-en="Sign in" data-eu="Hasi saioa" type="submit">
+                                Sign in
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--MAIN CONTENT-->
+        <main id="mainContent">
+            <!-- PAGE HERO -->
+            <section class="inner-hero page-hero species-detail-hero">
+                <div class="container">
+                    <nav aria-label="breadcrumb" data-en-aria-label="breadcrumb" data-eu-aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-3">
+                            <li class="breadcrumb-item">
+                                <a data-en="Home" data-eu="Hasiera" href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a data-en="Catalogue" data-eu="Katalogoa" href="catalog.html">
+                                    Catalogue
+                                </a>
+                            </li>
+                            <li aria-current="page" class="breadcrumb-item active" data-en="Featured species" data-eu="Espezie nabarmenduak" id="breadcrumbSpecies">
+                                Featured species
+                            </li>
+                        </ol>
+                    </nav>
+                    <p class="section-kicker" data-en="Species encyclopedia" data-eu="Espezieen entziklopedia" id="heroKicker">
+                        Species encyclopedia
+                    </p>
+                    <h1 data-en="Featured species of Bizkaia" data-eu="Bizkaiko espezie nabarmenduak" id="heroTitle">
+                        Featured species of Bizkaia
+                    </h1>
+                    <p class="lead" data-en="Explore detailed species profiles in our biological encyclopedia." data-eu="Ezagutu espezieen fitxa zehatzak gure entziklopedia biologikoan." id="heroSubtitle">
+                        Explore detailed species profiles in our biological encyclopedia.
+                    </p>
+                </div>
+            </section>
+            <!-- SPECIES DETAIL SECTION -->
+            <section class="content-section species-detail-section">
+                <div class="container">
+                    <!-- TEMPLATE VIEW (Shown when no valid ID is present in the URL) -->
+                    <div class="species-detail-card content-card mb-5" id="speciesTemplateView">
+                        <div class="species-detail-heading text-center py-5">
+                            <p class="section-kicker mb-2" data-en="Future Species Template" data-eu="Etorkizuneko Espezie Txantloia">
+                                Future Species Template
+                            </p>
+                            <h2 class="display-6 mb-3" data-en="Species Template Structure" data-eu="Espezie Txantlloiaren Egitura">
+                                Species Template Structure
+                            </h2>
+                            <p class="text-secondary mx-auto mb-4 col-lg-8" data-en="This section serves as a standardized template for incorporating future flora and fauna entries into the Biscay biodiversity platform. Select a specific species below to view its complete record." data-eu="Atal hau etorkizuneko flora eta fauna sarrerak Bizkaiko biodibertsitate plataforman sartzeko txantloi estandarizatu gisa balio du. Aukeratu espezie zehatz bat behean bere erregistro osoa ikusteko.">
+                                This section serves as a standardized template for incorporating future flora and fauna entries into the Biscay biodiversity platform. Select a specific species below to view its complete record.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- EUROPEAN ROBIN ARTICLE (FAU-028) -->
+                    <article class="species-detail-card content-card mb-5 d-none" id="robinDetailView">
+                        <div class="species-detail-heading d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
+                            <div>
+                                <p class="section-kicker mb-2" data-en="FAU-028 · Fauna · Bird · Muscicapidae" data-eu="FAU-028 · Fauna · Hegaztia · Muscicapidae">
+                                    FAU-028 · Fauna · Bird · Muscicapidae
+                                </p>
+                                <h2 class="display-6 mb-1" data-en="European Robin" data-eu="Txantxangorria">
+                                    European Robin
+                                </h2>
+                                <p class="species-scientific-name mb-0">
+                                    <em data-en="Erithacus rubecula" data-eu="Erithacus rubecula">
+                                        Erithacus rubecula
+                                    </em>
+                                    <span data-en="
          (Linnaeus, 1758)
         " data-eu="
          (Linnaeus, 1758)
         ">
-          (Linnaeus, 1758)
-         </span>
-        </p>
-        <p class="text-secondary mt-2 mb-0" data-en="The beloved songbird of the Basque landscape, symbol of Euskara and guardian of the woodlands." data-eu="Euskal lurraldeko abeslari maitea, euskararen ikurra eta basoen zainaria.">
-         The beloved songbird of the Basque landscape, symbol of Euskara and guardian of the woodlands.
-        </p>
-       </div>
-       <a class="btn btn-outline-primary" data-en="Back to fauna catalogue" data-eu="Itzuli faunaren katalogora" href="catalog.html?type=fauna">
-        Back to fauna catalogue
-       </a>
-      </div>
-      <div class="row g-4 align-items-start mb-4">
-       <div class="col-lg-5">
-        <figure class="species-detail-hero-image mb-0">
-         <img alt="European Robin (Erithacus rubecula)" class="img-fluid w-100" data-en-alt="European Robin (Erithacus rubecula)" data-eu-alt="Txantxangorria (Erithacus rubecula)" decoding="async" loading="eager" src="img/fauna/Erithacus_rubecula.jpg"/>
-         <figcaption class="small text-secondary pt-2" data-en="Local species photograph from the project image collection." data-eu="Proiektuaren irudi-bildumako espeziearen tokiko argazkia.">
-          Local species photograph from the project image collection.
-         </figcaption>
-        </figure>
-       </div>
-       <div class="col-lg-7">
-        <div class="row g-3 species-fact-grid">
-         <div class="col-6">
-          <div class="species-fact-card h-100">
-           <span class="species-fact-label" data-en="Conservation status" data-eu="Kontserbazio-egoera">
-            Conservation status
-           </span>
-           <strong data-en="Least Concern (IUCN 3.1)" data-eu="Kezka txikiena (IUCN 3.1)">
-            Least Concern (IUCN 3.1)
-           </strong>
-          </div>
-         </div>
-         <div class="col-6">
-          <div class="species-fact-card h-100">
-           <span class="species-fact-label" data-en="Adult length" data-eu="Helduaren luzera">
-            Adult length
-           </span>
-           <strong data-en="12.5&ndash;14.0 cm" data-eu="12,5&ndash;14,0 cm">
-            12.5&ndash;14.0 cm
-           </strong>
-          </div>
-         </div>
-         <div class="col-6">
-          <div class="species-fact-card h-100">
-           <span class="species-fact-label" data-en="Wingspan" data-eu="Hego-zabalera">
-            Wingspan
-           </span>
-           <strong data-en="20&ndash;22 cm" data-eu="20&ndash;22 cm">
-            20&ndash;22 cm
-           </strong>
-          </div>
-         </div>
-         <div class="col-6">
-          <div class="species-fact-card h-100">
-           <span class="species-fact-label" data-en="Typical weight" data-eu="Ohiko pisua">
-            Typical weight
-           </span>
-           <strong data-en="16&ndash;22 g" data-eu="16&ndash;22 g">
-            16&ndash;22 g
-           </strong>
-          </div>
-         </div>
-         <div class="col-6">
-          <div class="species-fact-card h-100">
-           <span class="species-fact-label" data-en="Average lifespan" data-eu="Batez besteko bizi-iraupena">
-            Average lifespan
-           </span>
-           <strong data-en="1.1 years (up to 19 max)" data-eu="1,1 urte (gehienez 19)">
-            1.1 years (up to 19 max)
-           </strong>
-          </div>
-         </div>
-         <div class="col-6">
-          <div class="species-fact-card h-100">
-           <span class="species-fact-label" data-en="Reproduction" data-eu="Ugalketa">
-            Reproduction
-           </span>
-           <strong data-en="Oviparous (4&ndash;7 eggs)" data-eu="Obiparoa (4&ndash;7 arrautza)">
-            Oviparous (4&ndash;7 eggs)
-           </strong>
-          </div>
-         </div>
-        </div>
-        <p class="small text-secondary mt-3 mb-0" data-en="Global population estimated at 130&ndash;201 million individuals, with an increasing trend. The oldest ringed robin in the BTO record lived for more than eight years." data-eu="Populazio globala 130&ndash;201 milioi banako artean estimatua, joera gorakorra. BTOren eraztundutako txantxangorri zaharrenak zortzi urte baino gehiago bizi izan zen.">
-         Global population estimated at 130&ndash;201 million individuals, with an increasing trend. The oldest ringed robin in the BTO record lived for more than eight years.
-        </p>
-       </div>
-      </div>
-      <div class="row g-4">
-       <div class="col-lg-6">
-        <section class="species-info-block h-100">
-         <h3 class="h5" data-en="Taxonomy and identification" data-eu="Taxonomia eta identifikazioa">
-          Taxonomy and identification
-         </h3>
-         <dl class="species-detail-list">
-          <div>
-           <dt data-en="Kingdom" data-eu="Erreinua">
-            Kingdom
-           </dt>
-           <dd data-en="Animalia" data-eu="Animalia">
-            Animalia
-           </dd>
-          </div>
-          <div>
-           <dt data-en="Phylum" data-eu="Filuma">
-            Phylum
-           </dt>
-           <dd data-en="Chordata" data-eu="Chordata">
-            Chordata
-           </dd>
-          </div>
-          <div>
-           <dt data-en="Class" data-eu="Klasea">
-            Class
-           </dt>
-           <dd data-en="Aves" data-eu="Aves">
-            Aves
-           </dd>
-          </div>
-          <div>
-           <dt data-en="Order" data-eu="Ordena">
-            Order
-           </dt>
-           <dd data-en="Passeriformes" data-eu="Passeriformes">
-            Passeriformes
-           </dd>
-          </div>
-          <div>
-           <dt data-en="Family" data-eu="Familia">
-            Family
-           </dt>
-           <dd data-en="Muscicapidae" data-eu="Muscicapidae">
-            Muscicapidae
-           </dd>
-          </div>
-          <div>
-           <dt data-en="Genus" data-eu="Generoa">
-            Genus
-           </dt>
-           <dd>
-            <em data-en="Erithacus" data-eu="Erithacus">
-             Erithacus
-            </em>
-           </dd>
-          </div>
-          <div>
-           <dt data-en="Species" data-eu="Espeziea">
-            Species
-           </dt>
-           <dd>
-            <em data-en="Erithacus rubecula" data-eu="Erithacus rubecula">
-             Erithacus rubecula
-            </em>
-           </dd>
-          </div>
-         </dl>
-         <p class="mb-0" data-en="Adults of both sexes have a similar orange-red face and breast with a grey border. Juveniles are freckled brown and gold and do not yet show the adult orange breast." data-eu="Bi sexuetako helduek aurpegi eta bular laranja-gorri antzekoak dituzte ertz gris batekin. Gazteak marroi eta urre koloreko orbanekin jaiotzen dira, eta oraindik ez dute helduen bular laranja.">
-          Adults of both sexes have a similar orange-red face and breast with a grey border. Juveniles are freckled brown and gold and do not yet show the adult orange breast.
-         </p>
-        </section>
-       </div>
-       <div class="col-lg-6">
-        <section class="species-info-block h-100">
-         <h3 class="h5" data-en="Diet and feeding" data-eu="Dieta eta elikadura">
-          Diet and feeding
-         </h3>
-         <p data-en="The robin feeds mainly on ground-dwelling invertebrates, including insects, beetles, spiders and earthworms. It also takes berries, small fruits, seeds, and even small vertebrates when available." data-eu="Txantxangorriak lurreko ornogabeak jaten ditu batez ere: intsektuak, kakalardoak, armiarmak eta lur-zizareak. Baia, fruitu txikiak, haziak eta ornogabe txikiak ere hartzen ditu.">
-          The robin feeds mainly on ground-dwelling invertebrates, including insects, beetles, spiders and earthworms. It also takes berries, small fruits, seeds, and even small vertebrates when available.
-         </p>
-         <h3 class="h5 mt-4" data-en="Habitat and distribution" data-eu="Habitata eta banaketa">
-          Habitat and distribution
-         </h3>
-         <p class="mb-0" data-en="It uses forests, woodland edges, hedgerows, scrub, parks and gardens. Widespread across all regions in Biscay: Gran Bilbao, Duranguesado, Uribe, Lea-Artibai, Enkarterri, and Busturialdea." data-eu="Basoak, baso-ertzak, heskaiak, sastrakadiak, parkeak eta lorategiak erabiltzen ditu. Bizkaiko eskualde guztietan zabalduta dago: Gran Bilbao, Durangaldea, Uribe, Lea-Artibai, Enkarterri eta Busturialdea.">
-          It uses forests, woodland edges, hedgerows, scrub, parks and gardens. Widespread across all regions in Biscay: Gran Bilbao, Duranguesado, Uribe, Lea-Artibai, Enkarterri, and Busturialdea.
-         </p>
-        </section>
-       </div>
-       <div class="col-lg-6">
-        <section class="species-info-block h-100">
-         <h3 class="h5" data-en="Breeding and life cycle" data-eu="Ugalketa eta bizi-zikloa">
-          Breeding and life cycle
-         </h3>
-         <ul class="species-detail-bullets">
-          <li data-en="Typical clutch: 4&ndash;7 eggs (white with red-brown freckles)." data-eu="Ohiko errunaldia: 4&ndash;7 arrautza (zuriak gorri-marratxuekin).">
-           Typical clutch: 4&ndash;7 eggs (white with red-brown freckles).
-          </li>
-          <li data-en="Incubation lasts approximately 12&ndash;14 days, performed exclusively by the female." data-eu="Inkubazioak 12&ndash;14 egun irauten du, emeak bakarrik eginda.">
-           Incubation lasts approximately 12&ndash;14 days, performed exclusively by the female.
-          </li>
-          <li data-en="Chicks usually fledge 13&ndash;15 days after hatching." data-eu="Txitek normalean 13&ndash;15 egunera uzten dute habia.">
-           Chicks usually fledge 13&ndash;15 days after hatching.
-          </li>
-          <li data-en="The species can raise 2&ndash;3 broods in a favourable breeding season." data-eu="Espezieak 2&ndash;3 kumaldi izan ditzake ugalketa-garai egokian.">
-           The species can raise 2&ndash;3 broods in a favourable breeding season.
-          </li>
-         </ul>
-        </section>
-       </div>
-       <div class="col-lg-6">
-        <section class="species-info-block h-100">
-         <h3 class="h5" data-en="Behaviour and interesting facts" data-eu="Portaera eta bitxikeriak">
-          Behaviour and interesting facts
-         </h3>
-         <ul class="species-detail-bullets mb-0">
-          <li data-en="Robins are intensely territorial and may defend feeding areas year-round, sometimes leading to fatal territorial disputes." data-eu="Txantxangorriak oso lurraldekoiak dira eta elikatzeko eremuak urte osoan defenda ditzakete.">
-           Robins are intensely territorial and may defend feeding areas year-round, sometimes leading to fatal territorial disputes.
-          </li>
-          <li data-en="They sing almost year-round with sweet, fluting phrases, pausing only during moulting in July and August." data-eu="Urte osoan ia abesten dute doinu gozoekin, uztailan eta abuztuan soilik isilik egonez.">
-           They sing almost year-round with sweet, fluting phrases, pausing only during moulting in July and August.
-          </li>
-          <li data-en="They frequently approach gardeners because disturbed soil exposes worms and larvae." data-eu="Lorategietan lan egiten dutenengana hurbiltzen dira maiz lur mugituak zizareak agerian uzten dituelako.">
-           They frequently approach gardeners because disturbed soil exposes worms and larvae.
-          </li>
-          <li data-en="They can mistakenly attack their own mirror reflection or orange-colored models." data-eu="Beren islatzea edo objektu laranjak okerrean erasotu ditzakete.">
-           They can mistakenly attack their own mirror reflection or orange-colored models.
-          </li>
-         </ul>
-        </section>
-       </div>
-      </div>
-      <!-- BASQUE CULTURAL SIGNIFICANCE (Robin Specific) -->
-      <div class="content-card mt-4 mb-4 border-start border-4 border-warning">
-       <h2 class="h4 mb-3">
-        <i class="bi bi-star-fill text-warning me-1">
-        </i>
-        <span data-en="Cultural Significance in the Basque Country" data-eu="Garrantzi kulturala Euskal Herrian">
-         Cultural Significance in the Basque Country
-        </span>
-       </h2>
-       <div class="row g-4">
-        <div class="col-md-6">
-         <h3 class="h6 fw-bold" data-en="The Name: Txantxangorri" data-eu="Izena: Txantxangorri">
-          The Name: Txantxangorri
-         </h3>
-         <p data-en="The Basque name txantxangorri combines txantxan (song/chattering) and gorri (red), translating literally to 'red singer'. It is one of the most endearing words in Euskara." data-eu="Txantxangorri euskarazko izena konposatua da: txantxan (abestia) + gorri (gorria). Zuzenean 'abeslari gorria' esan nahi du.">
-          The Basque name
-          <strong data-en="txantxangorri" data-eu="txantxangorri">
-           txantxangorri
-          </strong>
-          combines
-          <em data-en="txantxan" data-eu="txantxan">
-           txantxan
-          </em>
-          (song/chattering) and
-          <em data-en="gorri" data-eu="gorri">
-           gorri
-          </em>
-          (red), translating literally to 'red singer'. It is one of the most endearing words in Euskara.
-         </p>
-        </div>
-        <div class="col-md-6">
-         <h3 class="h6 fw-bold" data-en="The Legend and Symbol of Euskara" data-eu="Kondaira eta Euskararen Ikurra">
-          The Legend and Symbol of Euskara
-         </h3>
-         <p class="mb-0" data-en="According to tradition, the robin gained its red breast trying to remove thorns from Christ's crown. In 2016, it was chosen as 'Euskararen Txantxangorria', a mascot inviting citizens to embrace the Basque language." data-eu="Tradizioaren arabera, txantxangorriak bular gorria lortu zuen Kristoren koronako arantzak kentzen saiatzean. 2016an 'Euskararen Txantxangorria' kanpainako maskota bihurtu zen.">
-          According to tradition, the robin gained its red breast trying to remove thorns from Christ's crown. In 2016, it was chosen as 'Euskararen Txantxangorria', a mascot inviting citizens to embrace the Basque language.
-         </p>
-        </div>
-       </div>
-      </div>
-      <section class="species-source-panel mt-4">
-       <h3 class="h6 mb-2" data-en="Scientific references" data-eu="Erreferentzia zientifikoak">
-        Scientific references
-       </h3>
-       <ul class="mb-0">
-        <li>
-         <a data-en="Natural History Museum &mdash; Robin facts and identification" data-eu="Natural History Museum &mdash; Txantxangorriaren ezaugarriak eta identifikazioa" href="https://www.nhm.ac.uk/discover/robin-erithacus-rubecula.html" rel="noopener noreferrer" target="_blank">
-          Natural History Museum &mdash; Robin facts and identification
-         </a>
-        </li>
-        <li>
-         <a data-en="British Trust for Ornithology &mdash; Robin" data-eu="British Trust for Ornithology &mdash; Txantxangorria" href="https://www.bto.org/learn/about-birds/birdfacts/robin" rel="noopener noreferrer" target="_blank">
-          British Trust for Ornithology &mdash; Robin
-         </a>
-        </li>
-       </ul>
-      </section>
-      <!-- ROBIN SIGHTINGS GALLERY -->
-      <section class="species-sightings-section mt-5" id="FAU-028-sightings">
-       <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-3">
-        <div>
-         <p class="section-kicker mb-1" data-en="FAU-028 &middot; European Robin" data-eu="FAU-028 &middot; Txantxangorria">
-          FAU-028 &middot; European Robin
-         </p>
-         <h3 class="h3 mb-1" data-en="Sightings gallery" data-eu="Behaketen galeria">
-          Sightings gallery
-         </h3>
-         <p class="text-secondary mb-0" data-en="Local robin photographs supplied with this project." data-eu="Proiektu honekin emandako txantxangorriaren tokiko argazkiak.">
-          Local robin photographs supplied with this project.
-         </p>
-        </div>
-        <a class="btn btn-outline-primary btn-sm" data-en="Return to catalogue" data-eu="Itzuli katalogora" href="catalog.html?type=fauna">
-         Return to catalogue
-        </a>
-       </div>
-       <div class="alert alert-light border species-gallery-note" data-en="The supplied image files do not include verified dates or locations. These photographs are shown as a species gallery, not as individually verified sighting records." data-eu="Emandako irudi-fitxategiek ez dute data edo kokapen egiaztaturik. Argazki hauek espeziearen galeria gisa erakusten dira." role="note">
-        The supplied image files do not include verified dates or locations. These photographs are shown as a species gallery, not as individually verified sighting records.
-       </div>
-       <div class="row g-3 species-gallery-grid">
-        <div class="col-12 col-sm-6 col-lg-4">
-         <figure class="species-gallery-card h-100 mb-0">
-          <a href="img/sightings/Erithacus_rubecula2.jpg" rel="noopener" target="_blank">
-           <img alt="European Robin photograph 1" data-en-alt="European Robin photograph 1" data-eu-alt="Txantxangorriaren argazkia 1" decoding="async" loading="lazy" src="img/sightings/Erithacus_rubecula2.jpg"/>
-          </a>
-          <figcaption>
-           <strong data-en="European Robin" data-eu="Txantxangorria">
-            European Robin
-           </strong>
-           <span data-en="Reference photograph" data-eu="Erreferentzia-argazkia">
-            Reference photograph
-           </span>
-          </figcaption>
-         </figure>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-         <figure class="species-gallery-card h-100 mb-0">
-          <a href="img/sightings/Erithacus_rubecula3.jpg" rel="noopener" target="_blank">
-           <img alt="European Robin photograph 2" data-en-alt="European Robin photograph 2" data-eu-alt="Txantxangorriaren argazkia 2" decoding="async" loading="lazy" src="img/sightings/Erithacus_rubecula3.jpg"/>
-          </a>
-          <figcaption>
-           <strong data-en="European Robin" data-eu="Txantxangorria">
-            European Robin
-           </strong>
-           <span data-en="Reference photograph" data-eu="Erreferentzia-argazkia">
-            Reference photograph
-           </span>
-          </figcaption>
-         </figure>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-         <figure class="species-gallery-card h-100 mb-0">
-          <a href="img/sightings/Erithacus_rubecula4.jpg" rel="noopener" target="_blank">
-           <img alt="European Robin photograph 3" data-en-alt="European Robin photograph 3" data-eu-alt="Txantxangorriaren argazkia 3" decoding="async" loading="lazy" src="img/sightings/Erithacus_rubecula4.jpg"/>
-          </a>
-          <figcaption>
-           <strong data-en="European Robin" data-eu="Txantxangorria">
-            European Robin
-           </strong>
-           <span data-en="Reference photograph" data-eu="Erreferentzia-argazkia">
-            Reference photograph
-           </span>
-          </figcaption>
-         </figure>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-         <figure class="species-gallery-card h-100 mb-0">
-          <a href="img/sightings/Erithacus_rubecula6.jpg" rel="noopener" target="_blank">
-           <img alt="European Robin photograph 4" data-en-alt="European Robin photograph 4" data-eu-alt="Txantxangorriaren argazkia 4" decoding="async" loading="lazy" src="img/sightings/Erithacus_rubecula6.jpg"/>
-          </a>
-          <figcaption>
-           <strong data-en="European Robin" data-eu="Txantxangorria">
-            European Robin
-           </strong>
-           <span data-en="Reference photograph" data-eu="Erreferentzia-argazkia">
-            Reference photograph
-           </span>
-          </figcaption>
-         </figure>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-         <figure class="species-gallery-card h-100 mb-0">
-          <a href="img/sightings/Erithacus_rubecula7.jpg" rel="noopener" target="_blank">
-           <img alt="European Robin photograph 5" data-en-alt="European Robin photograph 5" data-eu-alt="Txantxangorriaren argazkia 5" decoding="async" loading="lazy" src="img/sightings/Erithacus_rubecula7.jpg"/>
-          </a>
-          <figcaption>
-           <strong data-en="European Robin" data-eu="Txantxangorria">
-            European Robin
-           </strong>
-           <span data-en="Reference photograph" data-eu="Erreferentzia-argazkia">
-            Reference photograph
-           </span>
-          </figcaption>
-         </figure>
-        </div>
-       </div>
-      </section>
-     </article>
-     <!-- PEDUNCULATE OAK ARTICLE (FLO-052) -->
-     <article class="species-detail-card content-card mb-5 d-none" id="oakDetailView">
-      <div class="species-detail-heading d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
-       <div>
-        <p class="section-kicker mb-2" data-en="FLO-052 &middot; Flora &middot; Trees and shrubs &middot; Fagaceae" data-eu="FLO-052 &middot; Flora &middot; Zuhaitzak eta zuhaixkak &middot; Fagaceae">
-         FLO-052 &middot; Flora &middot; Trees and shrubs &middot; Fagaceae
-        </p>
-        <h2 class="display-6 mb-1" data-en="Pedunculate Oak" data-eu="Haritz arrunta">
-         Pedunculate Oak
-        </h2>
-        <p class="species-scientific-name mb-0">
-         <em data-en="Quercus robur" data-eu="Quercus robur">
-          Quercus robur
-         </em>
-         <span data-en="
+                                        (Linnaeus, 1758)
+                                    </span>
+                                </p>
+                                <p class="text-secondary mt-2 mb-0" data-en="The beloved songbird of the Basque landscape, symbol of Euskara and guardian of the woodlands." data-eu="Euskal lurraldeko abeslari maitea, euskararen ikurra eta basoen zainaria.">
+                                    The beloved songbird of the Basque landscape, symbol of Euskara and guardian of the woodlands.
+                                </p>
+                            </div>
+                            <a class="btn btn-outline-primary" data-en="Back to fauna catalogue" data-eu="Itzuli faunaren katalogora" href="catalog.html?type=fauna">
+                                Back to fauna catalogue
+                            </a>
+                        </div>
+                        <div class="row g-4 align-items-start mb-4">
+                            <div class="col-lg-5">
+                                <figure class="species-detail-hero-image mb-0">
+                                    <img alt="European Robin (Erithacus rubecula)" class="img-fluid w-100" data-en-alt="European Robin (Erithacus rubecula)" data-eu-alt="Txantxangorria (Erithacus rubecula)" decoding="async" loading="eager" src="img/fauna/Erithacus_rubecula.jpg">
+                                    <figcaption class="small text-secondary pt-2" data-en="Local species photograph from the project image collection." data-eu="Proiektuaren irudi-bildumako espeziearen tokiko argazkia.">
+                                        Local species photograph from the project image collection.
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="row g-3 species-fact-grid">
+                                    <div class="col-6">
+                                        <div class="species-fact-card h-100">
+                                            <span class="species-fact-label" data-en="Conservation status" data-eu="Kontserbazio-egoera">
+                                                Conservation status
+                                            </span>
+                                            <strong data-en="Least Concern (IUCN 3.1)" data-eu="Kezka txikiena (IUCN 3.1)">
+                                                Least Concern (IUCN 3.1)
+                                            </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="species-fact-card h-100">
+                                            <span class="species-fact-label" data-en="Adult length" data-eu="Helduaren luzera">
+                                                Adult length
+                                            </span>
+                                            <strong data-en="12.5–14.0 cm" data-eu="12,5–14,0 cm">
+                                                12.5–14.0 cm
+                                            </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="species-fact-card h-100">
+                                            <span class="species-fact-label" data-en="Wingspan" data-eu="Hego-zabalera">
+                                                Wingspan
+                                            </span>
+                                            <strong data-en="20–22 cm" data-eu="20–22 cm">
+                                                20–22 cm
+                                            </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="species-fact-card h-100">
+                                            <span class="species-fact-label" data-en="Typical weight" data-eu="Ohiko pisua">
+                                                Typical weight
+                                            </span>
+                                            <strong data-en="16–22 g" data-eu="16–22 g">
+                                                16–22 g
+                                            </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="species-fact-card h-100">
+                                            <span class="species-fact-label" data-en="Average lifespan" data-eu="Batez besteko bizi-iraupena">
+                                                Average lifespan
+                                            </span>
+                                            <strong data-en="1.1 years (up to 19 max)" data-eu="1,1 urte (gehienez 19)">
+                                                1.1 years (up to 19 max)
+                                            </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="species-fact-card h-100">
+                                            <span class="species-fact-label" data-en="Reproduction" data-eu="Ugalketa">
+                                                Reproduction
+                                            </span>
+                                            <strong data-en="Oviparous (4–7 eggs)" data-eu="Obiparoa (4–7 arrautza)">
+                                                Oviparous (4–7 eggs)
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="small text-secondary mt-3 mb-0" data-en="Global population estimated at 130–201 million individuals, with an increasing trend. The oldest ringed robin in the BTO record lived for more than eight years." data-eu="Populazio globala 130–201 milioi banako artean estimatua, joera gorakorra. BTOren eraztundutako txantxangorri zaharrenak zortzi urte baino gehiago bizi izan zen.">
+                                    Global population estimated at 130–201 million individuals, with an increasing trend. The oldest ringed robin in the BTO record lived for more than eight years.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <section class="species-info-block h-100">
+                                    <h3 class="h5" data-en="Taxonomy and identification" data-eu="Taxonomia eta identifikazioa">
+                                        Taxonomy and identification
+                                    </h3>
+                                    <dl class="species-detail-list">
+                                        <div>
+                                            <dt data-en="Kingdom" data-eu="Erreinua">
+                                                Kingdom
+                                            </dt>
+                                            <dd data-en="Animalia" data-eu="Animalia">
+                                                Animalia
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt data-en="Phylum" data-eu="Filuma">
+                                                Phylum
+                                            </dt>
+                                            <dd data-en="Chordata" data-eu="Chordata">
+                                                Chordata
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt data-en="Class" data-eu="Klasea">
+                                                Class
+                                            </dt>
+                                            <dd data-en="Aves" data-eu="Aves">
+                                                Aves
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt data-en="Order" data-eu="Ordena">
+                                                Order
+                                            </dt>
+                                            <dd data-en="Passeriformes" data-eu="Passeriformes">
+                                                Passeriformes
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt data-en="Family" data-eu="Familia">
+                                                Family
+                                            </dt>
+                                            <dd data-en="Muscicapidae" data-eu="Muscicapidae">
+                                                Muscicapidae
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt data-en="Genus" data-eu="Generoa">
+                                                Genus
+                                            </dt>
+                                            <dd>
+                                                <em data-en="Erithacus" data-eu="Erithacus">
+                                                    Erithacus
+                                                </em>
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt data-en="Species" data-eu="Espeziea">
+                                                Species
+                                            </dt>
+                                            <dd>
+                                                <em data-en="Erithacus rubecula" data-eu="Erithacus rubecula">
+                                                    Erithacus rubecula
+                                                </em>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                    <p class="mb-0" data-en="Adults of both sexes have a similar orange-red face and breast with a grey border. Juveniles are freckled brown and gold and do not yet show the adult orange breast." data-eu="Bi sexuetako helduek aurpegi eta bular laranja-gorri antzekoak dituzte ertz gris batekin. Gazteak marroi eta urre koloreko orbanekin jaiotzen dira, eta oraindik ez dute helduen bular laranja.">
+                                        Adults of both sexes have a similar orange-red face and breast with a grey border. Juveniles are freckled brown and gold and do not yet show the adult orange breast.
+                                    </p>
+                                </section>
+                            </div>
+                            <div class="col-lg-6">
+                                <section class="species-info-block h-100">
+                                    <h3 class="h5" data-en="Diet and feeding" data-eu="Dieta eta elikadura">
+                                        Diet and feeding
+                                    </h3>
+                                    <p data-en="The robin feeds mainly on ground-dwelling invertebrates, including insects, beetles, spiders and earthworms. It also takes berries, small fruits, seeds, and even small vertebrates when available." data-eu="Txantxangorriak lurreko ornogabeak jaten ditu batez ere: intsektuak, kakalardoak, armiarmak eta lur-zizareak. Baia, fruitu txikiak, haziak eta ornogabe txikiak ere hartzen ditu.">
+                                        The robin feeds mainly on ground-dwelling invertebrates, including insects, beetles, spiders and earthworms. It also takes berries, small fruits, seeds, and even small vertebrates when available.
+                                    </p>
+                                    <h3 class="h5 mt-4" data-en="Habitat and distribution" data-eu="Habitata eta banaketa">
+                                        Habitat and distribution
+                                    </h3>
+                                    <p class="mb-0" data-en="It uses forests, woodland edges, hedgerows, scrub, parks and gardens. Widespread across all regions in Biscay: Gran Bilbao, Duranguesado, Uribe, Lea-Artibai, Enkarterri, and Busturialdea." data-eu="Basoak, baso-ertzak, heskaiak, sastrakadiak, parkeak eta lorategiak erabiltzen ditu. Bizkaiko eskualde guztietan zabalduta dago: Gran Bilbao, Durangaldea, Uribe, Lea-Artibai, Enkarterri eta Busturialdea.">
+                                        It uses forests, woodland edges, hedgerows, scrub, parks and gardens. Widespread across all regions in Biscay: Gran Bilbao, Duranguesado, Uribe, Lea-Artibai, Enkarterri, and Busturialdea.
+                                    </p>
+                                </section>
+                            </div>
+                            <div class="col-lg-6">
+                                <section class="species-info-block h-100">
+                                    <h3 class="h5" data-en="Breeding and life cycle" data-eu="Ugalketa eta bizi-zikloa">
+                                        Breeding and life cycle
+                                    </h3>
+                                    <ul class="species-detail-bullets">
+                                        <li data-en="Typical clutch: 4–7 eggs (white with red-brown freckles)." data-eu="Ohiko errunaldia: 4–7 arrautza (zuriak gorri-marratxuekin).">
+                                            Typical clutch: 4–7 eggs (white with red-brown freckles).
+                                        </li>
+                                        <li data-en="Incubation lasts approximately 12–14 days, performed exclusively by the female." data-eu="Inkubazioak 12–14 egun irauten du, emeak bakarrik eginda.">
+                                            Incubation lasts approximately 12–14 days, performed exclusively by the female.
+                                        </li>
+                                        <li data-en="Chicks usually fledge 13–15 days after hatching." data-eu="Txitek normalean 13–15 egunera uzten dute habia.">
+                                            Chicks usually fledge 13–15 days after hatching.
+                                        </li>
+                                        <li data-en="The species can raise 2–3 broods in a favourable breeding season." data-eu="Espezieak 2–3 kumaldi izan ditzake ugalketa-garai egokian.">
+                                            The species can raise 2–3 broods in a favourable breeding season.
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-lg-6">
+                                <section class="species-info-block h-100">
+                                    <h3 class="h5" data-en="Behaviour and interesting facts" data-eu="Portaera eta bitxikeriak">
+                                        Behaviour and interesting facts
+                                    </h3>
+                                    <ul class="species-detail-bullets mb-0">
+                                        <li data-en="Robins are intensely territorial and may defend feeding areas year-round, sometimes leading to fatal territorial disputes." data-eu="Txantxangorriak oso lurraldekoiak dira eta elikatzeko eremuak urte osoan defenda ditzakete.">
+                                            Robins are intensely territorial and may defend feeding areas year-round, sometimes leading to fatal territorial disputes.
+                                        </li>
+                                        <li data-en="They sing almost year-round with sweet, fluting phrases, pausing only during moulting in July and August." data-eu="Urte osoan ia abesten dute doinu gozoekin, uztailan eta abuztuan soilik isilik egonez.">
+                                            They sing almost year-round with sweet, fluting phrases, pausing only during moulting in July and August.
+                                        </li>
+                                        <li data-en="They frequently approach gardeners because disturbed soil exposes worms and larvae." data-eu="Lorategietan lan egiten dutenengana hurbiltzen dira maiz lur mugituak zizareak agerian uzten dituelako.">
+                                            They frequently approach gardeners because disturbed soil exposes worms and larvae.
+                                        </li>
+                                        <li data-en="They can mistakenly attack their own mirror reflection or orange-colored models." data-eu="Beren islatzea edo objektu laranjak okerrean erasotu ditzakete.">
+                                            They can mistakenly attack their own mirror reflection or orange-colored models.
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <!-- BASQUE CULTURAL SIGNIFICANCE (Robin Specific) -->
+                        <div class="content-card mt-4 mb-4 border-start border-4 border-warning">
+                            <h2 class="h4 mb-3">
+                                <i class="bi bi-star-fill text-warning me-1">
+                                </i>
+                                <span data-en="Cultural Significance in the Basque Country" data-eu="Garrantzi kulturala Euskal Herrian">
+                                    Cultural Significance in the Basque Country
+                                </span>
+                            </h2>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <h3 class="h6 fw-bold" data-en="The Name: Txantxangorri" data-eu="Izena: Txantxangorri">
+                                        The Name: Txantxangorri
+                                    </h3>
+                                    <p data-en="The Basque name txantxangorri combines txantxan (song/chattering) and gorri (red), translating literally to 'red singer'. It is one of the most endearing words in Euskara." data-eu="Txantxangorri euskarazko izena konposatua da: txantxan (abestia) + gorri (gorria). Zuzenean 'abeslari gorria' esan nahi du.">
+                                        The Basque name
+                                        <strong data-en="txantxangorri" data-eu="txantxangorri">
+                                            txantxangorri
+                                        </strong>
+                                        combines
+                                        <em data-en="txantxan" data-eu="txantxan">
+                                            txantxan
+                                        </em>
+                                        (song/chattering) and
+                                        <em data-en="gorri" data-eu="gorri">
+                                            gorri
+                                        </em>
+                                        (red), translating literally to 'red singer'. It is one of the most endearing words in Euskara.
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h6 fw-bold" data-en="The Legend and Symbol of Euskara" data-eu="Kondaira eta Euskararen Ikurra">
+                                        The Legend and Symbol of Euskara
+                                    </h3>
+                                    <p class="mb-0" data-en="According to tradition, the robin gained its red breast trying to remove thorns from Christ's crown. In 2016, it was chosen as 'Euskararen Txantxangorria', a mascot inviting citizens to embrace the Basque language." data-eu="Tradizioaren arabera, txantxangorriak bular gorria lortu zuen Kristoren koronako arantzak kentzen saiatzean. 2016an 'Euskararen Txantxangorria' kanpainako maskota bihurtu zen.">
+                                        According to tradition, the robin gained its red breast trying to remove thorns from Christ's crown. In 2016, it was chosen as 'Euskararen Txantxangorria', a mascot inviting citizens to embrace the Basque language.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="species-source-panel mt-4">
+                            <h3 class="h6 mb-2" data-en="Scientific references" data-eu="Erreferentzia zientifikoak">
+                                Scientific references
+                            </h3>
+                            <ul class="mb-0">
+                                <li>
+                                    <a data-en="Natural History Museum — Robin facts and identification" data-eu="Natural History Museum — Txantxangorriaren ezaugarriak eta identifikazioa" href="https://www.nhm.ac.uk/discover/robin-erithacus-rubecula.html" rel="noopener noreferrer" target="_blank">
+                                        Natural History Museum — Robin facts and identification
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-en="British Trust for Ornithology — Robin" data-eu="British Trust for Ornithology — Txantxangorria" href="https://www.bto.org/learn/about-birds/birdfacts/robin" rel="noopener noreferrer" target="_blank">
+                                        British Trust for Ornithology — Robin
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                        <!-- ROBIN SIGHTINGS GALLERY -->
+                        <section class="species-sightings-section mt-5" id="FAU-028-sightings">
+                            <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-3">
+                                <div>
+                                    <p class="section-kicker mb-1" data-en="FAU-028 · European Robin" data-eu="FAU-028 · Txantxangorria">
+                                        FAU-028 · European Robin
+                                    </p>
+                                    <h3 class="h3 mb-1" data-en="Sightings gallery" data-eu="Behaketen galeria">
+                                        Sightings gallery
+                                    </h3>
+                                    <p class="text-secondary mb-0" data-en="Local robin photographs supplied with this project." data-eu="Proiektu honekin emandako txantxangorriaren tokiko argazkiak.">
+                                        Local robin photographs supplied with this project.
+                                    </p>
+                                </div>
+                                <a class="btn btn-outline-primary btn-sm" data-en="Return to catalogue" data-eu="Itzuli katalogora" href="catalog.html?type=fauna">
+                                    Return to catalogue
+                                </a>
+                            </div>
+                            <div class="alert alert-light border species-gallery-note" data-en="The supplied image files do not include verified dates or locations. These photographs are shown as a species gallery, not as individually verified sighting records." data-eu="Emandako irudi-fitxategiek ez dute data edo kokapen egiaztaturik. Argazki hauek espeziearen galeria gisa erakusten dira." role="note">
+                                The supplied image files do not include verified dates or locations. These photographs are shown as a species gallery, not as individually verified sighting records.
+                            </div>
+                            <div class="row g-3 species-gallery-grid">
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <figure class="species-gallery-card h-100 mb-0">
+                                        <a href="img/sightings/Erithacus_rubecula2.jpg" rel="noopener" target="_blank">
+                                            <img alt="European Robin photograph 1" data-en-alt="European Robin photograph 1" data-eu-alt="Txantxangorriaren argazkia 1" decoding="async" loading="lazy" src="img/sightings/Erithacus_rubecula2.jpg">
+                                        </a>
+                                        <figcaption>
+                                            <strong data-en="European Robin" data-eu="Txantxangorria">
+                                                European Robin
+                                            </strong>
+                                            <span data-en="Reference photograph" data-eu="Erreferentzia-argazkia">
+                                                Reference photograph
+                                            </span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <figure class="species-gallery-card h-100 mb-0">
+                                        <a href="img/sightings/Erithacus_rubecula3.jpg" rel="noopener" target="_blank">
+                                            <img alt="European Robin photograph 2" data-en-alt="European Robin photograph 2" data-eu-alt="Txantxangorriaren argazkia 2" decoding="async" loading="lazy" src="img/sightings/Erithacus_rubecula3.jpg">
+                                        </a>
+                                        <figcaption>
+                                            <strong data-en="European Robin" data-eu="Txantxangorria">
+                                                European Robin
+                                            </strong>
+                                            <span data-en="Reference photograph" data-eu="Erreferentzia-argazkia">
+                                                Reference photograph
+                                            </span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <figure class="species-gallery-card h-100 mb-0">
+                                        <a href="img/sightings/Erithacus_rubecula4.jpg" rel="noopener" target="_blank">
+                                            <img alt="European Robin photograph 3" data-en-alt="European Robin photograph 3" data-eu-alt="Txantxangorriaren argazkia 3" decoding="async" loading="lazy" src="img/sightings/Erithacus_rubecula4.jpg">
+                                        </a>
+                                        <figcaption>
+                                            <strong data-en="European Robin" data-eu="Txantxangorria">
+                                                European Robin
+                                            </strong>
+                                            <span data-en="Reference photograph" data-eu="Erreferentzia-argazkia">
+                                                Reference photograph
+                                            </span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <figure class="species-gallery-card h-100 mb-0">
+                                        <a href="img/sightings/Erithacus_rubecula6.jpg" rel="noopener" target="_blank">
+                                            <img alt="European Robin photograph 4" data-en-alt="European Robin photograph 4" data-eu-alt="Txantxangorriaren argazkia 4" decoding="async" loading="lazy" src="img/sightings/Erithacus_rubecula6.jpg">
+                                        </a>
+                                        <figcaption>
+                                            <strong data-en="European Robin" data-eu="Txantxangorria">
+                                                European Robin
+                                            </strong>
+                                            <span data-en="Reference photograph" data-eu="Erreferentzia-argazkia">
+                                                Reference photograph
+                                            </span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <figure class="species-gallery-card h-100 mb-0">
+                                        <a href="img/sightings/Erithacus_rubecula7.jpg" rel="noopener" target="_blank">
+                                            <img alt="European Robin photograph 5" data-en-alt="European Robin photograph 5" data-eu-alt="Txantxangorriaren argazkia 5" decoding="async" loading="lazy" src="img/sightings/Erithacus_rubecula7.jpg">
+                                        </a>
+                                        <figcaption>
+                                            <strong data-en="European Robin" data-eu="Txantxangorria">
+                                                European Robin
+                                            </strong>
+                                            <span data-en="Reference photograph" data-eu="Erreferentzia-argazkia">
+                                                Reference photograph
+                                            </span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    <!-- PEDUNCULATE OAK ARTICLE (FLO-052) -->
+                    <article class="species-detail-card content-card mb-5 d-none" id="oakDetailView">
+                        <div class="species-detail-heading d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
+                            <div>
+                                <p class="section-kicker mb-2" data-en="FLO-052 · Flora · Trees and shrubs · Fagaceae" data-eu="FLO-052 · Flora · Zuhaitzak eta zuhaixkak · Fagaceae">
+                                    FLO-052 · Flora · Trees and shrubs · Fagaceae
+                                </p>
+                                <h2 class="display-6 mb-1" data-en="Pedunculate Oak" data-eu="Haritz arrunta">
+                                    Pedunculate Oak
+                                </h2>
+                                <p class="species-scientific-name mb-0">
+                                    <em data-en="Quercus robur" data-eu="Quercus robur">
+                                        Quercus robur
+                                    </em>
+                                    <span data-en="
          L.
         " data-eu="
          L.
         ">
-          L.
-         </span>
-        </p>
-        <p class="text-secondary mt-2 mb-0" data-en="A long-lived native deciduous tree that supports rich woodland food webs and habitats." data-eu="Bizitza luzeko bertako zuhaitz hostoerorkorra, basoko elika-sare eta habitat aberatsak sostengatzen dituena.">
-         A long-lived native deciduous tree that supports rich woodland food webs and habitats.
-        </p>
-       </div>
-       <a class="btn btn-outline-primary" data-en="Back to flora catalogue" data-eu="Itzuli floraren katalogora" href="catalog.html?type=flora">
-        Back to flora catalogue
-       </a>
-      </div>
-      <div class="row g-4 align-items-start mb-4">
-       <div class="col-lg-5">
-        <figure class="species-detail-hero-image mb-0">
-         <img alt="Pedunculate Oak (Quercus robur)" class="img-fluid w-100" data-en-alt="Pedunculate Oak (Quercus robur)" data-eu-alt="Haritz arrunta (Quercus robur)" decoding="async" loading="lazy" src="img/flora/Quercus robur.jpg"/>
-         <figcaption class="small text-secondary pt-2" data-en="Local oak photograph from the project image collection." data-eu="Proiektuaren irudi-bildumako haritzaren tokiko argazkia.">
-          Local oak photograph from the project image collection.
-         </figcaption>
-        </figure>
-       </div>
-       <div class="col-lg-7">
-        <div class="row g-3 species-fact-grid">
-         <div class="col-6">
-          <div class="species-fact-card h-100">
-           <span class="species-fact-label" data-en="Plant type" data-eu="Landare mota">
-            Plant type
-           </span>
-           <strong data-en="Deciduous tree" data-eu="Zuhaitz hostoerorkorra">
-            Deciduous tree
-           </strong>
-          </div>
-         </div>
-         <div class="col-6">
-          <div class="species-fact-card h-100">
-           <span class="species-fact-label" data-en="Maximum size" data-eu="Gehieneko tamaina">
-            Maximum size
-           </span>
-           <strong data-en="Up to 40 m" data-eu="40 m-raino">
-            Up to 40 m
-           </strong>
-          </div>
-         </div>
-         <div class="col-6">
-          <div class="species-fact-card h-100">
-           <span class="species-fact-label" data-en="Foliage" data-eu="Hostotza">
-            Foliage
-           </span>
-           <strong data-en="Deciduous" data-eu="Hostoerorkorra">
-            Deciduous
-           </strong>
-          </div>
-         </div>
-         <div class="col-6">
-          <div class="species-fact-card h-100">
-           <span class="species-fact-label" data-en="Flowering season" data-eu="Loraldia">
-            Flowering season
-           </span>
-           <strong data-en="Spring (April&ndash;May)" data-eu="Udaberria (apirila&ndash;maiatza)">
-            Spring (April&ndash;May)
-           </strong>
-          </div>
-         </div>
-         <div class="col-6">
-          <div class="species-fact-card h-100">
-           <span class="species-fact-label" data-en="Fruit" data-eu="Fruitua">
-            Fruit
-           </span>
-           <strong data-en="Acorn" data-eu="Ezkurra">
-            Acorn
-           </strong>
-          </div>
-         </div>
-         <div class="col-6">
-          <div class="species-fact-card h-100">
-           <span class="species-fact-label" data-en="Pollination" data-eu="Polinizazioa">
-            Pollination
-           </span>
-           <strong data-en="Wind-pollinated" data-eu="Haize bidezkoa">
-            Wind-pollinated
-           </strong>
-          </div>
-         </div>
-        </div>
-        <p class="small text-secondary mt-3 mb-0" data-en="The 40 m maximum size matches the value recorded in the project spreadsheet. Actual height varies with age, growing conditions and management." data-eu="40 m-ko gehieneko tamaina proiektuaren kalkulu-orrian jasotako balioarekin bat dator.">
-         The 40 m maximum size matches the value recorded in the project spreadsheet. Actual height varies with age, growing conditions and management.
-        </p>
-       </div>
-      </div>
-      <div class="row g-4">
-       <div class="col-lg-6">
-        <section class="species-info-block h-100">
-         <h3 class="h5" data-en="Taxonomy and identification" data-eu="Taxonomia eta identifikazioa">
-          Taxonomy and identification
-         </h3>
-         <dl class="species-detail-list">
-          <div>
-           <dt data-en="Kingdom" data-eu="Erreinua">
-            Kingdom
-           </dt>
-           <dd data-en="Plantae" data-eu="Plantae">
-            Plantae
-           </dd>
-          </div>
-          <div>
-           <dt data-en="Clade" data-eu="Kladoa">
-            Clade
-           </dt>
-           <dd data-en="Tracheophytes &middot; Angiosperms &middot; Eudicots" data-eu="Tracheophytes &middot; Angiosperms &middot; Eudicots">
-            Tracheophytes &middot; Angiosperms &middot; Eudicots
-           </dd>
-          </div>
-          <div>
-           <dt data-en="Order" data-eu="Ordena">
-            Order
-           </dt>
-           <dd data-en="Fagales" data-eu="Fagales">
-            Fagales
-           </dd>
-          </div>
-          <div>
-           <dt data-en="Family" data-eu="Familia">
-            Family
-           </dt>
-           <dd data-en="Fagaceae" data-eu="Fagaceae">
-            Fagaceae
-           </dd>
-          </div>
-          <div>
-           <dt data-en="Genus" data-eu="Generoa">
-            Genus
-           </dt>
-           <dd>
-            <em data-en="Quercus" data-eu="Quercus">
-             Quercus
-            </em>
-           </dd>
-          </div>
-          <div>
-           <dt data-en="Species" data-eu="Espeziea">
-            Species
-           </dt>
-           <dd>
-            <em data-en="Quercus robur" data-eu="Quercus robur">
-             Quercus robur
-            </em>
-            <span data-en="
+                                        L.
+                                    </span>
+                                </p>
+                                <p class="text-secondary mt-2 mb-0" data-en="A long-lived native deciduous tree that supports rich woodland food webs and habitats." data-eu="Bizitza luzeko bertako zuhaitz hostoerorkorra, basoko elika-sare eta habitat aberatsak sostengatzen dituena.">
+                                    A long-lived native deciduous tree that supports rich woodland food webs and habitats.
+                                </p>
+                            </div>
+                            <a class="btn btn-outline-primary" data-en="Back to flora catalogue" data-eu="Itzuli floraren katalogora" href="catalog.html?type=flora">
+                                Back to flora catalogue
+                            </a>
+                        </div>
+                        <div class="row g-4 align-items-start mb-4">
+                            <div class="col-lg-5">
+                                <figure class="species-detail-hero-image mb-0">
+                                    <img alt="Pedunculate Oak (Quercus robur)" class="img-fluid w-100" data-en-alt="Pedunculate Oak (Quercus robur)" data-eu-alt="Haritz arrunta (Quercus robur)" decoding="async" loading="lazy" src="img/flora/Quercus%20robur.jpg">
+                                    <figcaption class="small text-secondary pt-2" data-en="Local oak photograph from the project image collection." data-eu="Proiektuaren irudi-bildumako haritzaren tokiko argazkia.">
+                                        Local oak photograph from the project image collection.
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="row g-3 species-fact-grid">
+                                    <div class="col-6">
+                                        <div class="species-fact-card h-100">
+                                            <span class="species-fact-label" data-en="Plant type" data-eu="Landare mota">
+                                                Plant type
+                                            </span>
+                                            <strong data-en="Deciduous tree" data-eu="Zuhaitz hostoerorkorra">
+                                                Deciduous tree
+                                            </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="species-fact-card h-100">
+                                            <span class="species-fact-label" data-en="Maximum size" data-eu="Gehieneko tamaina">
+                                                Maximum size
+                                            </span>
+                                            <strong data-en="Up to 40 m" data-eu="40 m-raino">
+                                                Up to 40 m
+                                            </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="species-fact-card h-100">
+                                            <span class="species-fact-label" data-en="Foliage" data-eu="Hostotza">
+                                                Foliage
+                                            </span>
+                                            <strong data-en="Deciduous" data-eu="Hostoerorkorra">
+                                                Deciduous
+                                            </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="species-fact-card h-100">
+                                            <span class="species-fact-label" data-en="Flowering season" data-eu="Loraldia">
+                                                Flowering season
+                                            </span>
+                                            <strong data-en="Spring (April–May)" data-eu="Udaberria (apirila–maiatza)">
+                                                Spring (April–May)
+                                            </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="species-fact-card h-100">
+                                            <span class="species-fact-label" data-en="Fruit" data-eu="Fruitua">
+                                                Fruit
+                                            </span>
+                                            <strong data-en="Acorn" data-eu="Ezkurra">
+                                                Acorn
+                                            </strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="species-fact-card h-100">
+                                            <span class="species-fact-label" data-en="Pollination" data-eu="Polinizazioa">
+                                                Pollination
+                                            </span>
+                                            <strong data-en="Wind-pollinated" data-eu="Haize bidezkoa">
+                                                Wind-pollinated
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="small text-secondary mt-3 mb-0" data-en="The 40 m maximum size matches the value recorded in the project spreadsheet. Actual height varies with age, growing conditions and management." data-eu="40 m-ko gehieneko tamaina proiektuaren kalkulu-orrian jasotako balioarekin bat dator.">
+                                    The 40 m maximum size matches the value recorded in the project spreadsheet. Actual height varies with age, growing conditions and management.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <section class="species-info-block h-100">
+                                    <h3 class="h5" data-en="Taxonomy and identification" data-eu="Taxonomia eta identifikazioa">
+                                        Taxonomy and identification
+                                    </h3>
+                                    <dl class="species-detail-list">
+                                        <div>
+                                            <dt data-en="Kingdom" data-eu="Erreinua">
+                                                Kingdom
+                                            </dt>
+                                            <dd data-en="Plantae" data-eu="Plantae">
+                                                Plantae
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt data-en="Clade" data-eu="Kladoa">
+                                                Clade
+                                            </dt>
+                                            <dd data-en="Tracheophytes · Angiosperms · Eudicots" data-eu="Tracheophytes · Angiosperms · Eudicots">
+                                                Tracheophytes · Angiosperms · Eudicots
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt data-en="Order" data-eu="Ordena">
+                                                Order
+                                            </dt>
+                                            <dd data-en="Fagales" data-eu="Fagales">
+                                                Fagales
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt data-en="Family" data-eu="Familia">
+                                                Family
+                                            </dt>
+                                            <dd data-en="Fagaceae" data-eu="Fagaceae">
+                                                Fagaceae
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt data-en="Genus" data-eu="Generoa">
+                                                Genus
+                                            </dt>
+                                            <dd>
+                                                <em data-en="Quercus" data-eu="Quercus">
+                                                    Quercus
+                                                </em>
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt data-en="Species" data-eu="Espeziea">
+                                                Species
+                                            </dt>
+                                            <dd>
+                                                <em data-en="Quercus robur" data-eu="Quercus robur">
+                                                    Quercus robur
+                                                </em>
+                                                <span data-en="
             L.
            " data-eu="
             L.
            ">
-             L.
-            </span>
-           </dd>
-          </div>
-         </dl>
-         <p class="mb-0" data-en="The leaves are lobed and have very short stalks. The acorns are borne on conspicuously long stalks, which is the origin of the common name &ldquo;pedunculate oak&rdquo;." data-eu="Hostoak lobulatuak dira eta peziolo oso laburra dute. Ezkurrak zurtoin luze nabarmenetan hazten dira; hortik dator &ldquo;haritz kanduduna&rdquo; izena.">
-          The leaves are lobed and have very short stalks. The acorns are borne on conspicuously long stalks, which is the origin of the common name &ldquo;pedunculate oak&rdquo;.
-         </p>
-        </section>
-       </div>
-       <div class="col-lg-6">
-        <section class="species-info-block h-100">
-         <h3 class="h5" data-en="Habitat and distribution" data-eu="Habitata eta banaketa">
-          Habitat and distribution
-         </h3>
-         <p data-en="Pedunculate oak is native to much of Europe and extends eastwards into western Asia. It grows in temperate broadleaf woodland, fertile valleys and moist, deep soils, and is a hallmark of Atlantic Basque landscapes." data-eu="Haritz kanduduna Europako zati handi batekoa da. Baso hostozabal epeletan, haran emankorretan eta lurzoru sakon eta hezeetan hazten da.">
-          Pedunculate oak is native to much of Europe and extends eastwards into western Asia. It grows in temperate broadleaf woodland, fertile valleys and moist, deep soils, and is a hallmark of Atlantic Basque landscapes.
-         </p>
-         <h3 class="h5 mt-4" data-en="Flowering and fruiting" data-eu="Loraldia eta fruituak">
-          Flowering and fruiting
-         </h3>
-         <p class="mb-0" data-en="Male flowers are carried in hanging catkins and female flowers are small. Flowering occurs in April and May, pollinated by wind, producing acorns ripening in autumn." data-eu="Lore arrak amentu zintzilikarietan agertzen dira eta emeak txikiak dira. Loraldia apirilean eta maiatzean izaten da.">
-          Male flowers are carried in hanging catkins and female flowers are small. Flowering occurs in April and May, pollinated by wind, producing acorns ripening in autumn.
-         </p>
-        </section>
-       </div>
-       <div class="col-lg-6">
-        <section class="species-info-block h-100">
-         <h3 class="h5" data-en="Ecological importance" data-eu="Garrantzi ekologikoa">
-          Ecological importance
-         </h3>
-         <ul class="species-detail-bullets mb-0">
-          <li data-en="Acorns provide an essential seasonal food source for birds, jays, squirrels, and mammals." data-eu="Ezkurrek sasoiko elikagai garrantzitsua ematen diete hegaztiei, urtxintxei eta ugaztunei.">
-           Acorns provide an essential seasonal food source for birds, jays, squirrels, and mammals.
-          </li>
-          <li data-en="Mature trees provide nesting sites, protective shelter, and complex feeding habitats." data-eu="Zuhaitz helduek habia egiteko lekuak, babesa eta elikatzeko habitata eskaintzen dituzte.">
-           Mature trees provide nesting sites, protective shelter, and complex feeding habitats.
-          </li>
-          <li data-en="Old trunks and dead wood support specialized fungi, lichens, and diverse invertebrates." data-eu="Enbor zaharrek eta egur hilak onddoak, likenak eta ornogabe ugari sostengatzen dituzte.">
-           Old trunks and dead wood support specialized fungi, lichens, and diverse invertebrates.
-          </li>
-          <li data-en="Oak woodland contributes significantly to soil protection, water regulation, and carbon storage." data-eu="Hariztiek lurzoruaren babesa, uraren erregulazioa eta karbono-biltegiratzea laguntzen dituzte.">
-           Oak woodland contributes significantly to soil protection, water regulation, and carbon storage.
-          </li>
-         </ul>
-        </section>
-       </div>
-       <div class="col-lg-6">
-        <section class="species-info-block h-100">
-         <h3 class="h5" data-en="Toxicity and traditional uses" data-eu="Toxikotasuna eta erabilera tradizionalak">
-          Toxicity and traditional uses
-         </h3>
-         <p data-en="While marked non-toxic in basic lists, veterinary references note that substantial ingestion of oak foliage and acorns can be toxic to livestock due to high tannin content." data-eu="Kalkulu-orriak toxikoa ez dela dioen arren, albaitaritza-iturriek ohartarazten dute taninoengatik abereentzat toxikoak izan daitezkeela kantitate handietan.">
-          While marked non-toxic in basic lists, veterinary references note that substantial ingestion of oak foliage and acorns can be toxic to livestock due to high tannin content.
-         </p>
-         <p class="mb-0" data-en="Oak bark has a documented history in traditional herbal medicine and European Pharmacopoeia preparations for its astringent properties." data-eu="Haritz-azalak belar-medikuntzako erabilera tradizional dokumentatua du bere propietate astringenteengatik.">
-          Oak bark has a documented history in traditional herbal medicine and European Pharmacopoeia preparations for its astringent properties.
-         </p>
-        </section>
-       </div>
-       <div class="col-12">
-        <section class="species-info-block">
-         <h3 class="h5" data-en="Interesting facts" data-eu="Bitxikeriak">
-          Interesting facts
-         </h3>
-         <ul class="species-detail-bullets mb-0">
-          <li data-en="The long stalk of the acorn differentiates the pedunculate oak from other European oak varieties." data-eu="Ezkurraren zurtoin luzea da haritz kanduduna beste haritzetatik bereizten duen ezaugarria.">
-           The long stalk of the acorn differentiates the pedunculate oak from other European oak varieties.
-          </li>
-          <li data-en="Ancient monumental oaks can support entire ecosystems of wildlife for centuries." data-eu="Haritz handi eta zaharrak mendeetan zehar fauna eta ekosistema osoak sostengatu ditzakete.">
-           Ancient monumental oaks can support entire ecosystems of wildlife for centuries.
-          </li>
-          <li data-en="Acorn dispersal relies heavily on caching animals like Eurasian jays and squirrels." data-eu="Ezkurren sakabanaketa eskinoso eta eskinosoek biltegiratzeari esker gertatzen da nagusiki.">
-           Acorn dispersal relies heavily on caching animals like Eurasian jays and squirrels.
-          </li>
-         </ul>
-        </section>
-       </div>
-      </div>
-      <!-- BASQUE CULTURAL SIGNIFICANCE (Oak Specific - Added to match Robin's depth) -->
-      <div class="content-card mt-4 mb-4 border-start border-4 border-success">
-       <h2 class="h4 mb-3">
-        <i class="bi bi-tree-fill text-success me-1">
-        </i>
-        <span data-en="Cultural Significance in the Basque Country" data-eu="Garrantzi kulturala Euskal Herrian">
-         Cultural Significance in the Basque Country
-        </span>
-       </h2>
-       <div class="row g-4">
-        <div class="col-md-6">
-         <h3 class="h6 fw-bold" data-en="Symbol of Freedom and Law: The Oak of Gernika" data-eu="Askatasunaren eta Legearen Ikurra: Gernikako Arbola">
-          Symbol of Freedom and Law: The Oak of Gernika
-         </h3>
-         <p data-en="The oak tree holds paramount cultural and political significance in Biscay and the Basque Country. The Tree of Gernika (Gernikako Arbola) stands as the historic symbol of Basque freedoms, where ancient Lordship laws were sworn." data-eu="Haritzak garrantzi handia du Bizkaian eta Euskal Herrian. Gernikako Arbola euskal askatasunen ikur historikoa da, bertan Bizkaiko Foruak zin egiten zirelarik.">
-          The oak tree holds paramount cultural and political significance in Biscay and the Basque Country. The Tree of Gernika (
-          <em data-en="Gernikako Arbola" data-eu="Gernikako Arbola">
-           Gernikako Arbola
-          </em>
-          ) stands as the historic symbol of Basque freedoms, where ancient Lordship laws were sworn.
-         </p>
-        </div>
-        <div class="col-md-6">
-         <h3 class="h6 fw-bold" data-en="Traditional Basque Farmhouses and Timber" data-eu="Euskal Etxek eta Zurgintza Tradizionala">
-          Traditional Basque Farmhouses and Timber
-         </h3>
-         <p class="mb-0" data-en="Historically, sturdy oak timber formed the robust structural framing of traditional Basque farmhouses (baserriak). Oak forests provided charcoal, construction materials, and mast to feed the iconic Basque black pigs." data-eu="Historikoki, haritz-egur sendoak euskal baserrien egitura eraikitzen zuen. Hariztiek ikatza, materialak eta euskal zerriak elikatzeko ezkurrak eskaintzen zituzten.">
-          Historically, sturdy oak timber formed the robust structural framing of traditional Basque farmhouses (
-          <em data-en="baserriak" data-eu="baserriak">
-           baserriak
-          </em>
-          ). Oak forests provided charcoal, construction materials, and mast to feed the iconic Basque black pigs.
-         </p>
-        </div>
-       </div>
-      </div>
-      <section class="species-source-panel mt-4">
-       <h3 class="h6 mb-2" data-en="Scientific references" data-eu="Erreferentzia zientifikoak">
-        Scientific references
-       </h3>
-       <ul class="mb-0">
-        <li>
-         <a data-en="Kew Science &mdash; Plants of the World Online: Quercus robur" data-eu="Kew Science &mdash; Plants of the World Online: Quercus robur" href="https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:304293-2/general-information" rel="noopener noreferrer" target="_blank">
-          Kew Science &mdash; Plants of the World Online:
-          <em data-en="Quercus robur" data-eu="Quercus robur">
-           Quercus robur
-          </em>
-         </a>
-        </li>
-        <li>
-         <a data-en="Woodland Trust &mdash; English Oak" data-eu="Woodland Trust &mdash; Haritz arrunta" href="https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/english-oak/" rel="noopener noreferrer" target="_blank">
-          Woodland Trust &mdash; English Oak
-         </a>
-        </li>
-        <li>
-         <a data-en="MSD Veterinary Manual &mdash; Oak toxicosis in animals" data-eu="MSD Albaitaritza Eskuliburua &mdash; Haritzaren toxikotasuna animalietan" href="https://www.msdvetmanual.com/toxicology/oak-toxicosis/oak-toxicosis-in-animals" rel="noopener noreferrer" target="_blank">
-          MSD Veterinary Manual &mdash; Oak toxicosis in animals
-         </a>
-        </li>
-        <li>
-         <a data-en="European Medicines Agency &mdash; Quercus cortex" data-eu="Sendagaien Europako Agentzia &mdash; Quercus cortex" href="https://www.ema.europa.eu/en/medicines/herbal/quercus-cortex" rel="noopener noreferrer" target="_blank">
-          European Medicines Agency &mdash; Quercus cortex
-         </a>
-        </li>
-       </ul>
-      </section>
-      <!-- OAK SIGHTINGS GALLERY -->
-      <section class="species-sightings-section mt-5" id="FLO-052-sightings">
-       <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-3">
-        <div>
-         <p class="section-kicker mb-1" data-en="FLO-052 &middot; Pedunculate Oak" data-eu="FLO-052 &middot; Haritz arrunta">
-          FLO-052 &middot; Pedunculate Oak
-         </p>
-         <h3 class="h3 mb-1" data-en="Sightings gallery" data-eu="Behaketen galeria">
-          Sightings gallery
-         </h3>
-         <p class="text-secondary mb-0" data-en="Gallery placeholders ready for future local oak photographs." data-eu="Galeria-leku-markak prest etorkizuneko tokiko haritz-argazkietarako.">
-          Gallery placeholders ready for future local oak photographs.
-         </p>
-        </div>
-        <a class="btn btn-outline-primary btn-sm" data-en="Return to catalogue" data-eu="Itzuli katalogora" href="catalog.html?type=flora">
-         Return to catalogue
-        </a>
-       </div>
-       <div class="alert alert-light border species-gallery-note" data-en="Only one local oak photograph is currently available and is used above. The cards below are empty placeholders." data-eu="Une honetan tokiko haritz-argazki bakarra dago eskuragarri eta goian erabiltzen da." role="note">
-        Only one local oak photograph is currently available and is used above. The cards below are empty placeholders.
-       </div>
-       <div class="row g-3 species-gallery-grid">
-        <div class="col-12 col-sm-6 col-lg-4">
-         <div class="species-gallery-placeholder h-100">
-          <i aria-hidden="true" class="bi bi-camera">
-          </i>
-          <strong data-en="Photo placeholder" data-eu="Argazkiaren leku-marka">
-           Photo placeholder
-          </strong>
-          <span data-en="Add a local Quercus robur photograph" data-eu="Gehitu Quercus robur espeziearen tokiko argazkia">
-           Add a local Quercus robur photograph
-          </span>
-         </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-         <div class="species-gallery-placeholder h-100">
-          <i aria-hidden="true" class="bi bi-camera">
-          </i>
-          <strong data-en="Photo placeholder" data-eu="Argazkiaren leku-marka">
-           Photo placeholder
-          </strong>
-          <span data-en="Add a local Quercus robur photograph" data-eu="Gehitu Quercus robur espeziearen tokiko argazkia">
-           Add a local Quercus robur photograph
-          </span>
-         </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-         <div class="species-gallery-placeholder h-100">
-          <i aria-hidden="true" class="bi bi-camera">
-          </i>
-          <strong data-en="Photo placeholder" data-eu="Argazkiaren leku-marka">
-           Photo placeholder
-          </strong>
-          <span data-en="Add a local Quercus robur photograph" data-eu="Gehitu Quercus robur espeziearen tokiko argazkia">
-           Add a local Quercus robur photograph
-          </span>
-         </div>
-        </div>
-       </div>
-      </section>
-     </article>
-     <!-- DISCREET LINKS AT THE VERY BOTTOM OF THE CONTENT (Non-button links) -->
-     <div class="text-center mt-5 pt-3 border-top species-template-links">
-      <p class="small text-secondary mb-2" data-en="Quick species records access:" data-eu="Espezieen erregistroetarako sarbide azkarra:">
-       Quick species records access:
-      </p>
-      <div class="d-flex justify-content-center gap-3 flex-wrap">
-       <a class="text-muted small text-decoration-underline" data-en="European Robin (FAU-028)" data-eu="Txantxangorria (FAU-028)" href="species-detail.html?id=FAU-028">
-        European Robin (FAU-028)
-       </a>
-       <span aria-hidden="true" class="text-muted">
-        <span data-en="
-        &middot;
+                                                    L.
+                                                </span>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                    <p class="mb-0" data-en="The leaves are lobed and have very short stalks. The acorns are borne on conspicuously long stalks, which is the origin of the common name “pedunculate oak”." data-eu="Hostoak lobulatuak dira eta peziolo oso laburra dute. Ezkurrak zurtoin luze nabarmenetan hazten dira; hortik dator “haritz kanduduna” izena.">
+                                        The leaves are lobed and have very short stalks. The acorns are borne on conspicuously long stalks, which is the origin of the common name “pedunculate oak”.
+                                    </p>
+                                </section>
+                            </div>
+                            <div class="col-lg-6">
+                                <section class="species-info-block h-100">
+                                    <h3 class="h5" data-en="Habitat and distribution" data-eu="Habitata eta banaketa">
+                                        Habitat and distribution
+                                    </h3>
+                                    <p data-en="Pedunculate oak is native to much of Europe and extends eastwards into western Asia. It grows in temperate broadleaf woodland, fertile valleys and moist, deep soils, and is a hallmark of Atlantic Basque landscapes." data-eu="Haritz kanduduna Europako zati handi batekoa da. Baso hostozabal epeletan, haran emankorretan eta lurzoru sakon eta hezeetan hazten da.">
+                                        Pedunculate oak is native to much of Europe and extends eastwards into western Asia. It grows in temperate broadleaf woodland, fertile valleys and moist, deep soils, and is a hallmark of Atlantic Basque landscapes.
+                                    </p>
+                                    <h3 class="h5 mt-4" data-en="Flowering and fruiting" data-eu="Loraldia eta fruituak">
+                                        Flowering and fruiting
+                                    </h3>
+                                    <p class="mb-0" data-en="Male flowers are carried in hanging catkins and female flowers are small. Flowering occurs in April and May, pollinated by wind, producing acorns ripening in autumn." data-eu="Lore arrak amentu zintzilikarietan agertzen dira eta emeak txikiak dira. Loraldia apirilean eta maiatzean izaten da.">
+                                        Male flowers are carried in hanging catkins and female flowers are small. Flowering occurs in April and May, pollinated by wind, producing acorns ripening in autumn.
+                                    </p>
+                                </section>
+                            </div>
+                            <div class="col-lg-6">
+                                <section class="species-info-block h-100">
+                                    <h3 class="h5" data-en="Ecological importance" data-eu="Garrantzi ekologikoa">
+                                        Ecological importance
+                                    </h3>
+                                    <ul class="species-detail-bullets mb-0">
+                                        <li data-en="Acorns provide an essential seasonal food source for birds, jays, squirrels, and mammals." data-eu="Ezkurrek sasoiko elikagai garrantzitsua ematen diete hegaztiei, urtxintxei eta ugaztunei.">
+                                            Acorns provide an essential seasonal food source for birds, jays, squirrels, and mammals.
+                                        </li>
+                                        <li data-en="Mature trees provide nesting sites, protective shelter, and complex feeding habitats." data-eu="Zuhaitz helduek habia egiteko lekuak, babesa eta elikatzeko habitata eskaintzen dituzte.">
+                                            Mature trees provide nesting sites, protective shelter, and complex feeding habitats.
+                                        </li>
+                                        <li data-en="Old trunks and dead wood support specialized fungi, lichens, and diverse invertebrates." data-eu="Enbor zaharrek eta egur hilak onddoak, likenak eta ornogabe ugari sostengatzen dituzte.">
+                                            Old trunks and dead wood support specialized fungi, lichens, and diverse invertebrates.
+                                        </li>
+                                        <li data-en="Oak woodland contributes significantly to soil protection, water regulation, and carbon storage." data-eu="Hariztiek lurzoruaren babesa, uraren erregulazioa eta karbono-biltegiratzea laguntzen dituzte.">
+                                            Oak woodland contributes significantly to soil protection, water regulation, and carbon storage.
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-lg-6">
+                                <section class="species-info-block h-100">
+                                    <h3 class="h5" data-en="Toxicity and traditional uses" data-eu="Toxikotasuna eta erabilera tradizionalak">
+                                        Toxicity and traditional uses
+                                    </h3>
+                                    <p data-en="While marked non-toxic in basic lists, veterinary references note that substantial ingestion of oak foliage and acorns can be toxic to livestock due to high tannin content." data-eu="Kalkulu-orriak toxikoa ez dela dioen arren, albaitaritza-iturriek ohartarazten dute taninoengatik abereentzat toxikoak izan daitezkeela kantitate handietan.">
+                                        While marked non-toxic in basic lists, veterinary references note that substantial ingestion of oak foliage and acorns can be toxic to livestock due to high tannin content.
+                                    </p>
+                                    <p class="mb-0" data-en="Oak bark has a documented history in traditional herbal medicine and European Pharmacopoeia preparations for its astringent properties." data-eu="Haritz-azalak belar-medikuntzako erabilera tradizional dokumentatua du bere propietate astringenteengatik.">
+                                        Oak bark has a documented history in traditional herbal medicine and European Pharmacopoeia preparations for its astringent properties.
+                                    </p>
+                                </section>
+                            </div>
+                            <div class="col-12">
+                                <section class="species-info-block">
+                                    <h3 class="h5" data-en="Interesting facts" data-eu="Bitxikeriak">
+                                        Interesting facts
+                                    </h3>
+                                    <ul class="species-detail-bullets mb-0">
+                                        <li data-en="The long stalk of the acorn differentiates the pedunculate oak from other European oak varieties." data-eu="Ezkurraren zurtoin luzea da haritz kanduduna beste haritzetatik bereizten duen ezaugarria.">
+                                            The long stalk of the acorn differentiates the pedunculate oak from other European oak varieties.
+                                        </li>
+                                        <li data-en="Ancient monumental oaks can support entire ecosystems of wildlife for centuries." data-eu="Haritz handi eta zaharrak mendeetan zehar fauna eta ekosistema osoak sostengatu ditzakete.">
+                                            Ancient monumental oaks can support entire ecosystems of wildlife for centuries.
+                                        </li>
+                                        <li data-en="Acorn dispersal relies heavily on caching animals like Eurasian jays and squirrels." data-eu="Ezkurren sakabanaketa eskinoso eta eskinosoek biltegiratzeari esker gertatzen da nagusiki.">
+                                            Acorn dispersal relies heavily on caching animals like Eurasian jays and squirrels.
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <!-- BASQUE CULTURAL SIGNIFICANCE (Oak Specific - Added to match Robin's depth) -->
+                        <div class="content-card mt-4 mb-4 border-start border-4 border-success">
+                            <h2 class="h4 mb-3">
+                                <i class="bi bi-tree-fill text-success me-1">
+                                </i>
+                                <span data-en="Cultural Significance in the Basque Country" data-eu="Garrantzi kulturala Euskal Herrian">
+                                    Cultural Significance in the Basque Country
+                                </span>
+                            </h2>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <h3 class="h6 fw-bold" data-en="Symbol of Freedom and Law: The Oak of Gernika" data-eu="Askatasunaren eta Legearen Ikurra: Gernikako Arbola">
+                                        Symbol of Freedom and Law: The Oak of Gernika
+                                    </h3>
+                                    <p data-en="The oak tree holds paramount cultural and political significance in Biscay and the Basque Country. The Tree of Gernika (Gernikako Arbola) stands as the historic symbol of Basque freedoms, where ancient Lordship laws were sworn." data-eu="Haritzak garrantzi handia du Bizkaian eta Euskal Herrian. Gernikako Arbola euskal askatasunen ikur historikoa da, bertan Bizkaiko Foruak zin egiten zirelarik.">
+                                        The oak tree holds paramount cultural and political significance in Biscay and the Basque Country. The Tree of Gernika (
+                                        <em data-en="Gernikako Arbola" data-eu="Gernikako Arbola">
+                                            Gernikako Arbola
+                                        </em>
+                                        ) stands as the historic symbol of Basque freedoms, where ancient Lordship laws were sworn.
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h6 fw-bold" data-en="Traditional Basque Farmhouses and Timber" data-eu="Euskal Etxek eta Zurgintza Tradizionala">
+                                        Traditional Basque Farmhouses and Timber
+                                    </h3>
+                                    <p class="mb-0" data-en="Historically, sturdy oak timber formed the robust structural framing of traditional Basque farmhouses (baserriak). Oak forests provided charcoal, construction materials, and mast to feed the iconic Basque black pigs." data-eu="Historikoki, haritz-egur sendoak euskal baserrien egitura eraikitzen zuen. Hariztiek ikatza, materialak eta euskal zerriak elikatzeko ezkurrak eskaintzen zituzten.">
+                                        Historically, sturdy oak timber formed the robust structural framing of traditional Basque farmhouses (
+                                        <em data-en="baserriak" data-eu="baserriak">
+                                            baserriak
+                                        </em>
+                                        ). Oak forests provided charcoal, construction materials, and mast to feed the iconic Basque black pigs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="species-source-panel mt-4">
+                            <h3 class="h6 mb-2" data-en="Scientific references" data-eu="Erreferentzia zientifikoak">
+                                Scientific references
+                            </h3>
+                            <ul class="mb-0">
+                                <li>
+                                    <a data-en="Kew Science — Plants of the World Online: Quercus robur" data-eu="Kew Science — Plants of the World Online: Quercus robur" href="https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:304293-2/general-information" rel="noopener noreferrer" target="_blank">
+                                        Kew Science — Plants of the World Online:
+                                        <em data-en="Quercus robur" data-eu="Quercus robur">
+                                            Quercus robur
+                                        </em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-en="Woodland Trust — English Oak" data-eu="Woodland Trust — Haritz arrunta" href="https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/english-oak/" rel="noopener noreferrer" target="_blank">
+                                        Woodland Trust — English Oak
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-en="MSD Veterinary Manual — Oak toxicosis in animals" data-eu="MSD Albaitaritza Eskuliburua — Haritzaren toxikotasuna animalietan" href="https://www.msdvetmanual.com/toxicology/oak-toxicosis/oak-toxicosis-in-animals" rel="noopener noreferrer" target="_blank">
+                                        MSD Veterinary Manual — Oak toxicosis in animals
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-en="European Medicines Agency — Quercus cortex" data-eu="Sendagaien Europako Agentzia — Quercus cortex" href="https://www.ema.europa.eu/en/medicines/herbal/quercus-cortex" rel="noopener noreferrer" target="_blank">
+                                        European Medicines Agency — Quercus cortex
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                        <!-- OAK SIGHTINGS GALLERY -->
+                        <section class="species-sightings-section mt-5" id="FLO-052-sightings">
+                            <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-3">
+                                <div>
+                                    <p class="section-kicker mb-1" data-en="FLO-052 · Pedunculate Oak" data-eu="FLO-052 · Haritz arrunta">
+                                        FLO-052 · Pedunculate Oak
+                                    </p>
+                                    <h3 class="h3 mb-1" data-en="Sightings gallery" data-eu="Behaketen galeria">
+                                        Sightings gallery
+                                    </h3>
+                                    <p class="text-secondary mb-0" data-en="Gallery placeholders ready for future local oak photographs." data-eu="Galeria-leku-markak prest etorkizuneko tokiko haritz-argazkietarako.">
+                                        Gallery placeholders ready for future local oak photographs.
+                                    </p>
+                                </div>
+                                <a class="btn btn-outline-primary btn-sm" data-en="Return to catalogue" data-eu="Itzuli katalogora" href="catalog.html?type=flora">
+                                    Return to catalogue
+                                </a>
+                            </div>
+                            <div class="alert alert-light border species-gallery-note" data-en="Only one local oak photograph is currently available and is used above. The cards below are empty placeholders." data-eu="Une honetan tokiko haritz-argazki bakarra dago eskuragarri eta goian erabiltzen da." role="note">
+                                Only one local oak photograph is currently available and is used above. The cards below are empty placeholders.
+                            </div>
+                            <div class="row g-3 species-gallery-grid">
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="species-gallery-placeholder h-100">
+                                        <i aria-hidden="true" class="bi bi-camera">
+                                        </i>
+                                        <strong data-en="Photo placeholder" data-eu="Argazkiaren leku-marka">
+                                            Photo placeholder
+                                        </strong>
+                                        <span data-en="Add a local Quercus robur photograph" data-eu="Gehitu Quercus robur espeziearen tokiko argazkia">
+                                            Add a local Quercus robur photograph
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="species-gallery-placeholder h-100">
+                                        <i aria-hidden="true" class="bi bi-camera">
+                                        </i>
+                                        <strong data-en="Photo placeholder" data-eu="Argazkiaren leku-marka">
+                                            Photo placeholder
+                                        </strong>
+                                        <span data-en="Add a local Quercus robur photograph" data-eu="Gehitu Quercus robur espeziearen tokiko argazkia">
+                                            Add a local Quercus robur photograph
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <div class="species-gallery-placeholder h-100">
+                                        <i aria-hidden="true" class="bi bi-camera">
+                                        </i>
+                                        <strong data-en="Photo placeholder" data-eu="Argazkiaren leku-marka">
+                                            Photo placeholder
+                                        </strong>
+                                        <span data-en="Add a local Quercus robur photograph" data-eu="Gehitu Quercus robur espeziearen tokiko argazkia">
+                                            Add a local Quercus robur photograph
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    <!-- DISCREET LINKS AT THE VERY BOTTOM OF THE CONTENT (Non-button links) -->
+                    <div class="text-center mt-5 pt-3 border-top species-template-links">
+                        <p class="small text-secondary mb-2" data-en="Quick species records access:" data-eu="Espezieen erregistroetarako sarbide azkarra:">
+                            Quick species records access:
+                        </p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a class="text-muted small text-decoration-underline" data-en="European Robin (FAU-028)" data-eu="Txantxangorria (FAU-028)" href="species-detail.html?id=FAU-028">
+                                European Robin (FAU-028)
+                            </a>
+                            <span aria-hidden="true" class="text-muted">
+                                <span data-en="
+        ·
        " data-eu="
-        &middot;
+        ·
        ">
-         &middot;
-        </span>
-       </span>
-       <a class="text-muted small text-decoration-underline" data-en="Pedunculate Oak (FLO-052)" data-eu="Haritz arrunta (FLO-052)" href="species-detail.html?id=FLO-052">
-        Pedunculate Oak (FLO-052)
-       </a>
-      </div>
-     </div>
-    </div>
-   </section>
-  </main>
-  <!-- FOOTER -->
-  <footer class="main-footer">
-   <div aria-label="Collaborative Partners / Bazkide kolaboratzaileak" class="partner-footer" data-en-aria-label="Collaborative Partners / Bazkide kolaboratzaileak" data-eu-aria-label="Collaborative Partners / Bazkide kolaboratzaileak">
-    <div class="container">
-     <div aria-label="Collaborating entities" data-en-aria-label="Collaborating entities" data-eu-aria-label="Collaborating entities" id="partnerSlider" tabindex="0">
-      <div class="partner-track" id="partnerTrack">
-       <a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank">
-        <img alt="Biscay diputation/Bizkaiko Foru Aldundia" class="object-fit-contain" data-en-alt="Biscay diputation/Bizkaiko Foru Aldundia" data-eu-alt="Biscay diputation/Bizkaiko Foru Aldundia" src="img/partners/logo-diputacion-de-bizkaia.jpg"/>
-       </a>
-       <a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank">
-        <img alt="Urdaibai Bird Center" class="object-fit-contain" data-en-alt="Urdaibai Bird Center" data-eu-alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png"/>
-       </a>
-       <a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank">
-        <img alt="MITECO" class="object-fit-contain" data-en-alt="MITECO" data-eu-alt="MITECO" src="img/partners/logo-miteco-color.png"/>
-       </a>
-       <a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank">
-        <img alt="Basque Country University /Euskal Herriko Unibertsitatea" class="object-fit-contain" data-en-alt="Basque Country University /Euskal Herriko Unibertsitatea" data-eu-alt="Basque Country University /Euskal Herriko Unibertsitatea" src="img/partners/logo-upv-ehu-blanco-completo .png"/>
-       </a>
-       <a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank">
-        <img alt="Basque Government/Eusko Jaurlaritza" class="object-fit-contain" data-en-alt="Basque Government/Eusko Jaurlaritza" data-eu-alt="Basque Government/Eusko Jaurlaritza" src="img/partners/logo-gobierno-vasco.png"/>
-       </a>
-       <a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank">
-        <img alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" class="object-fit-contain" data-en-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" data-eu-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" src="img/partners/fundacion-biodiversidad.jpg"/>
-       </a>
-       <!-- Duplicated for infinite loop -->
-       <a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank">
-        <img alt="Biscay diputation/Bizkaiko Foru Aldundia" class="object-fit-contain" data-en-alt="Biscay diputation/Bizkaiko Foru Aldundia" data-eu-alt="Biscay diputation/Bizkaiko Foru Aldundia" src="img/partners/logo-diputacion-de-bizkaia.jpg"/>
-       </a>
-       <a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank">
-        <img alt="Urdaibai Bird Center" class="object-fit-contain" data-en-alt="Urdaibai Bird Center" data-eu-alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png"/>
-       </a>
-       <a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank">
-        <img alt="MITECO" class="object-fit-contain" data-en-alt="MITECO" data-eu-alt="MITECO" src="img/partners/logo-miteco-color.png"/>
-       </a>
-       <a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank">
-        <img alt="Basque Country University /Euskal Herriko Unibertsitatea" class="object-fit-contain" data-en-alt="Basque Country University /Euskal Herriko Unibertsitatea" data-eu-alt="Basque Country University /Euskal Herriko Unibertsitatea" src="img/partners/logo-upv-ehu-blanco-completo .png"/>
-       </a>
-       <a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank">
-        <img alt="Basque Government/Eusko Jaurlaritza" class="object-fit-contain" data-en-alt="Basque Government/Eusko Jaurlaritza" data-eu-alt="Basque Government/Eusko Jaurlaritza" src="img/partners/logo-gobierno-vasco.png"/>
-       </a>
-       <a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank">
-        <img alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" class="object-fit-contain" data-en-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" data-eu-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" src="img/partners/fundacion-biodiversidad.jpg"/>
-       </a>
-      </div>
-     </div>
-    </div>
-   </div>
-   <div class="container">
-    <div class="row g-4 py-4 px-4">
-     <div class="col-lg-3 col-md-6">
-      <a class="footer-brand d-inline-flex align-items-center gap-2" href="index.html">
-       <img alt="Logotipo Flora and Fauna of Biscay" data-en-alt="Logotipo Flora and Fauna of Biscay" data-eu-alt="Logotipo Flora and Fauna of Biscay" src="img/logo-web.svg"/>
-       <div class="d-flex flex-column lh-1">
-        <span data-en="Flora &amp; Fauna" data-eu="Bizkaiko">
-         Flora &amp; Fauna
-        </span>
-        <small data-en="of Biscay" data-eu="flora eta fauna">
-         of Biscay
-        </small>
-       </div>
-      </a>
-      <p class="footer-slogan" data-en="Discover &middot; Protect &middot; Share" data-eu="Ezagutu &middot; Babestu &middot; Partekatu">
-       Discover &middot; Protect &middot; Share
-      </p>
-      <p class="mt-3" data-en="Team: June Sillero, Eritz Gorriz, Kelea Rueda" data-eu="Taldea: June Sillero, Eritz Gorriz, Kelea Rueda">
-       <b data-en="Team:" data-eu="Taldea:">
-        Team:
-       </b>
-       June Sillero, Eritz Gorriz, Kelea Rueda
-      </p>
-      <p class="mt-3" data-en="Project: Challenge 1.2, DAMi 1&ordm;" data-eu="Proiektua: Challenge 1.2, DAMi 1. maila">
-       <b data-en="Project:" data-eu="Proiektua:">
-        Project:
-       </b>
-       Challenge 1.2, DAMi 1&ordm;
-      </p>
-      <div class="social-links d-flex flex-wrap gap-2">
-       <a aria-label="Instagram" data-en-aria-label="Instagram" data-eu-aria-label="Instagram" href="https://www.instagram.com/" rel="noopener" target="_blank">
-        <i class="bi bi-instagram">
-        </i>
-       </a>
-       <a aria-label="YouTube" data-en-aria-label="YouTube" data-eu-aria-label="YouTube" href="https://www.youtube.com/@urdaibaibirdcenter" rel="noopener" target="_blank">
-        <i class="bi bi-youtube">
-        </i>
-       </a>
-       <a aria-label="Facebook" data-en-aria-label="Facebook" data-eu-aria-label="Facebook" href="https://www.facebook.com/" rel="noopener" target="_blank">
-        <i class="bi bi-facebook">
-        </i>
-       </a>
-       <a aria-label="X" data-en-aria-label="X" data-eu-aria-label="X" href="https://x.com/" rel="noopener" target="_blank">
-        <i class="bi bi-twitter-x">
-        </i>
-       </a>
-       <a aria-label="Project repository" data-en-aria-label="Project repository" data-eu-aria-label="Project repository" href="https://github.com/keruka21/CHALLENGE-1-2-My-first-Application" rel="noopener" target="_blank">
-        <i class="bi bi-github">
-        </i>
-       </a>
-      </div>
-     </div>
-     <div class="col-lg-2 col-6">
-      <h2 class="footer-title" data-en="Explore" data-eu="Arakatu">
-       Explore
-      </h2>
-      <ul class="footer-links">
-       <li>
-        <a data-en="Home" data-eu="Hasiera" href="index.html">
-         Home
-        </a>
-       </li>
-       <li>
-        <a data-en="Flora" data-eu="Flora" href="catalog.html?type=flora">
-         Flora
-        </a>
-       </li>
-       <li>
-        <a data-en="Fauna" data-eu="Fauna" href="catalog.html?type=fauna">
-         Fauna
-        </a>
-       </li>
-       <li>
-        <a data-en="Blog" data-eu="Bloga" href="blog.html">
-         Blog
-        </a>
-       </li>
-       <li>
-        <a data-en="Gallery" data-eu="Galeria" href="gallery.html">
-         Gallery
-        </a>
-       </li>
-      </ul>
-     </div>
-     <div class="col-lg-3 col-6">
-      <h2 class="footer-title" data-en="Contact" data-eu="Kontaktua">
-       Contact
-      </h2>
-      <a class="footer-contact" href="tel:+34555555555">
-       <i class="bi bi-telephone-fill">
-       </i>
-       <span data-en="
+                                    ·
+                                </span>
+                            </span>
+                            <a class="text-muted small text-decoration-underline" data-en="Pedunculate Oak (FLO-052)" data-eu="Haritz arrunta (FLO-052)" href="species-detail.html?id=FLO-052">
+                                Pedunculate Oak (FLO-052)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer class="main-footer">
+            <div aria-label="Collaborative partners" class="partner-footer" data-en-aria-label="Collaborative partners" data-eu-aria-label="Bazkide kolaboratzaileak" role="group">
+                <div class="container">
+                    <div aria-label="Collaborating entities" data-en-aria-label="Collaborating entities" data-eu-aria-label="Erakunde laguntzaileak" id="partnerSlider" tabindex="0" role="group">
+                        <div class="partner-track" id="partnerTrack">
+                            <a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank">
+                                <img alt="Biscay diputation/Bizkaiko Foru Aldundia" class="object-fit-contain" data-en-alt="Biscay diputation/Bizkaiko Foru Aldundia" data-eu-alt="Biscay diputation/Bizkaiko Foru Aldundia" src="img/partners/logo-diputacion-de-bizkaia.jpg">
+                            </a>
+                            <a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank">
+                                <img alt="Urdaibai Bird Center" class="object-fit-contain" data-en-alt="Urdaibai Bird Center" data-eu-alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png">
+                            </a>
+                            <a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank">
+                                <img alt="MITECO" class="object-fit-contain" data-en-alt="MITECO" data-eu-alt="MITECO" src="img/partners/logo-miteco-color.png">
+                            </a>
+                            <a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank">
+                                <img alt="Basque Country University /Euskal Herriko Unibertsitatea" class="object-fit-contain" data-en-alt="Basque Country University /Euskal Herriko Unibertsitatea" data-eu-alt="Basque Country University /Euskal Herriko Unibertsitatea" src="img/partners/logo-upv-ehu-blanco-completo.png">
+                            </a>
+                            <a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank">
+                                <img alt="Basque Government/Eusko Jaurlaritza" class="object-fit-contain" data-en-alt="Basque Government/Eusko Jaurlaritza" data-eu-alt="Basque Government/Eusko Jaurlaritza" src="img/partners/logo-gobierno-vasco.png">
+                            </a>
+                            <a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank">
+                                <img alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" class="object-fit-contain" data-en-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" data-eu-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" src="img/partners/fundacion-biodiversidad.jpg">
+                            </a>
+                            <!-- Duplicated for infinite loop -->
+                            <a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank">
+                                <img alt="Biscay diputation/Bizkaiko Foru Aldundia" class="object-fit-contain" data-en-alt="Biscay diputation/Bizkaiko Foru Aldundia" data-eu-alt="Biscay diputation/Bizkaiko Foru Aldundia" src="img/partners/logo-diputacion-de-bizkaia.jpg">
+                            </a>
+                            <a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank">
+                                <img alt="Urdaibai Bird Center" class="object-fit-contain" data-en-alt="Urdaibai Bird Center" data-eu-alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png">
+                            </a>
+                            <a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank">
+                                <img alt="MITECO" class="object-fit-contain" data-en-alt="MITECO" data-eu-alt="MITECO" src="img/partners/logo-miteco-color.png">
+                            </a>
+                            <a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank">
+                                <img alt="Basque Country University /Euskal Herriko Unibertsitatea" class="object-fit-contain" data-en-alt="Basque Country University /Euskal Herriko Unibertsitatea" data-eu-alt="Basque Country University /Euskal Herriko Unibertsitatea" src="img/partners/logo-upv-ehu-blanco-completo.png">
+                            </a>
+                            <a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank">
+                                <img alt="Basque Government/Eusko Jaurlaritza" class="object-fit-contain" data-en-alt="Basque Government/Eusko Jaurlaritza" data-eu-alt="Basque Government/Eusko Jaurlaritza" src="img/partners/logo-gobierno-vasco.png">
+                            </a>
+                            <a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank">
+                                <img alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" class="object-fit-contain" data-en-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" data-eu-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" src="img/partners/fundacion-biodiversidad.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row g-4 py-4 px-4">
+                    <div class="col-lg-3 col-md-6">
+                        <a class="footer-brand d-inline-flex align-items-center gap-2" href="index.html">
+                            <img alt="Logotipo Flora and Fauna of Biscay" data-en-alt="Logotipo Flora and Fauna of Biscay" data-eu-alt="Logotipo Flora and Fauna of Biscay" src="img/logo-web.svg">
+                            <div class="d-flex flex-column lh-1">
+                                <span data-en="Flora &amp; Fauna" data-eu="Bizkaiko">
+                                    Flora &amp; Fauna
+                                </span>
+                                <small data-en="of Biscay" data-eu="flora eta fauna">
+                                    of Biscay
+                                </small>
+                            </div>
+                        </a>
+                        <p class="footer-slogan" data-en="Discover · Protect · Share" data-eu="Ezagutu · Babestu · Partekatu">
+                            Discover · Protect · Share
+                        </p>
+                        <p class="mt-3" data-en="Team: June Sillero, Eritz Gorriz, Kelea Rueda" data-eu="Taldea: June Sillero, Eritz Gorriz, Kelea Rueda">
+                            <b data-en="Team:" data-eu="Taldea:">
+                                Team:
+                            </b>
+                            June Sillero, Eritz Gorriz, Kelea Rueda
+                        </p>
+                        <p class="mt-3" data-en="Project: Challenge 1.2, DAMi 1º" data-eu="Proiektua: Challenge 1.2, DAMi 1. maila">
+                            <b data-en="Project:" data-eu="Proiektua:">
+                                Project:
+                            </b>
+                            Challenge 1.2, DAMi 1º
+                        </p>
+                        <div class="social-links d-flex flex-wrap gap-2">
+                            <a aria-label="Instagram" data-en-aria-label="Instagram" data-eu-aria-label="Instagram" href="https://www.instagram.com/" rel="noopener" target="_blank">
+                                <i class="bi bi-instagram">
+                                </i>
+                            </a>
+                            <a aria-label="YouTube" data-en-aria-label="YouTube" data-eu-aria-label="YouTube" href="https://www.youtube.com/@urdaibaibirdcenter" rel="noopener" target="_blank">
+                                <i class="bi bi-youtube">
+                                </i>
+                            </a>
+                            <a aria-label="Facebook" data-en-aria-label="Facebook" data-eu-aria-label="Facebook" href="https://www.facebook.com/" rel="noopener" target="_blank">
+                                <i class="bi bi-facebook">
+                                </i>
+                            </a>
+                            <a aria-label="X" data-en-aria-label="X" data-eu-aria-label="X" href="https://x.com/" rel="noopener" target="_blank">
+                                <i class="bi bi-twitter-x">
+                                </i>
+                            </a>
+                            <a aria-label="Project repository" data-en-aria-label="Project repository" data-eu-aria-label="Project repository" href="https://github.com/keruka21/CHALLENGE-1-2-My-first-Application" rel="noopener" target="_blank">
+                                <i class="bi bi-github">
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <h2 class="footer-title" data-en="Explore" data-eu="Arakatu">
+                            Explore
+                        </h2>
+                        <ul class="footer-links">
+                            <li>
+                                <a data-en="Home" data-eu="Hasiera" href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a data-en="Flora" data-eu="Flora" href="catalog.html?type=flora">
+                                    Flora
+                                </a>
+                            </li>
+                            <li>
+                                <a data-en="Fauna" data-eu="Fauna" href="catalog.html?type=fauna">
+                                    Fauna
+                                </a>
+                            </li>
+                            <li>
+                                <a data-en="Blog" data-eu="Bloga" href="blog.html">
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a data-en="Gallery" data-eu="Galeria" href="gallery.html">
+                                    Gallery
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <h2 class="footer-title" data-en="Contact" data-eu="Kontaktua">
+                            Contact
+                        </h2>
+                        <a class="footer-contact" href="tel:+34555555555">
+                            <i class="bi bi-telephone-fill">
+                            </i>
+                            <span data-en="
        +34 944 000 000
       " data-eu="
        +34 944 000 000
       ">
-        +34 944 000 000
-       </span>
-      </a>
-      <a class="footer-contact" href="https://wa.me/34555555555" rel="noopener" target="_blank">
-       <i class="bi bi-whatsapp">
-       </i>
-       <span data-en="
+                                +34 944 000 000
+                            </span>
+                        </a>
+                        <a class="footer-contact" href="https://wa.me/34555555555" rel="noopener" target="_blank">
+                            <i class="bi bi-whatsapp">
+                            </i>
+                            <span data-en="
        WhatsApp: +34 600 000 000
       " data-eu="
        WhatsApp: +34 600 000 000
       ">
-        WhatsApp: +34 600 000 000
-       </span>
-      </a>
-      <a class="footer-contact" href="mailto:faunaandflora@bizkaia.com">
-       <i class="bi bi-envelope">
-       </i>
-       <span data-en="
+                                WhatsApp: +34 600 000 000
+                            </span>
+                        </a>
+                        <a class="footer-contact" href="mailto:faunaandflora@bizkaia.com">
+                            <i class="bi bi-envelope">
+                            </i>
+                            <span data-en="
        faunaandflora@bizkaia.com
       " data-eu="
        faunaandflora@bizkaia.com
       ">
-        faunaandflora@bizkaia.com
-       </span>
-      </a>
-      <p class="mt-4" data-en="Monday to Friday" data-eu="Astelehenetik ostiralera">
-       <b data-en="Monday to Friday" data-eu="Astelehenetik ostiralera">
-        Monday to Friday
-       </b>
-      </p>
-      <p data-en="08:00 am - 14:25pm (Classroom 209)" data-eu="08:00 am - 14:25 pm (209 ikasgela)">
-       08:00 am - 14:25pm (Classroom 209)
-      </p>
-     </div>
-     <div class="col-lg-4">
-      <h2 class="footer-title" data-en="We are at CIFP TARTANGA LHII" data-eu="CIFP TARTANGA LHII-n gaude">
-       We are at CIFP TARTANGA LHII
-      </h2>
-      <p data-en="Tartanga Street, 15 &middot; Erandio, Biscay 48950" data-eu="Tartanga kalea, 15 &middot; Erandio, Bizkaia 48950">
-       Tartanga Street, 15 &middot; Erandio, Biscay 48950
-      </p>
-      <p data-en="Floor 1, Room 209" data-eu="1. solairua, 209. aretoa">
-       Floor 1, Room 209
-      </p>
-      <div class="footer-map">
-       <iframe data-en-title="CIFP TARTANGA LHII" data-eu-title="CIFP TARTANGA LHII" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Instituto%20Tartanga%20Erandio&amp;output=embed" title="CIFP TARTANGA LHII">
-       </iframe>
-      </div>
-     </div>
-    </div>
-    <p class="mb-2 audio-credit">
-     <span data-en="Robin Sound: Lawrence Shove / British Library &middot;" data-eu="Txantxangorriaren soinua: Lawrence Shove / British Library &middot;">
-      Robin Sound: Lawrence Shove / British Library &middot;
-     </span>
-     <a data-en="Wikimedia Commons" data-eu="Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:European_Robin_(Erithacus_rubecula)_(W1CDR0001425_BD16).ogg" rel="noopener" target="_blank">
-      Wikimedia Commons
-     </a>
-     <span data-en="
-     &middot;
+                                faunaandflora@bizkaia.com
+                            </span>
+                        </a>
+                        <p class="mt-4" data-en="Monday to Friday" data-eu="Astelehenetik ostiralera">
+                            <b data-en="Monday to Friday" data-eu="Astelehenetik ostiralera">
+                                Monday to Friday
+                            </b>
+                        </p>
+                        <p data-en="08:00 am - 14:25pm (Classroom 209)" data-eu="08:00 am - 14:25 pm (209 ikasgela)">
+                            08:00 am - 14:25pm (Classroom 209)
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 class="footer-title" data-en="We are at CIFP TARTANGA LHII" data-eu="CIFP TARTANGA LHII-n gaude">
+                            We are at CIFP TARTANGA LHII
+                        </h2>
+                        <p data-en="Tartanga Street, 15 · Erandio, Biscay 48950" data-eu="Tartanga kalea, 15 · Erandio, Bizkaia 48950">
+                            Tartanga Street, 15 · Erandio, Biscay 48950
+                        </p>
+                        <p data-en="Floor 1, Room 209" data-eu="1. solairua, 209. aretoa">
+                            Floor 1, Room 209
+                        </p>
+                        <div class="footer-map">
+                            <iframe data-en-title="CIFP TARTANGA LHII" data-eu-title="CIFP TARTANGA LHII" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Instituto%20Tartanga%20Erandio&amp;output=embed" title="CIFP TARTANGA LHII">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <p class="mb-2 audio-credit">
+                    <span data-en="Robin Sound: Lawrence Shove / British Library ·" data-eu="Txantxangorriaren soinua: Lawrence Shove / British Library ·">
+                        Robin Sound: Lawrence Shove / British Library ·
+                    </span>
+                    <a data-en="Wikimedia Commons" data-eu="Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:European_Robin_(Erithacus_rubecula)_(W1CDR0001425_BD16).ogg" rel="noopener" target="_blank">
+                        Wikimedia Commons
+                    </a>
+                    <span data-en="
+     ·
      " data-eu="
-     &middot;
+     ·
      ">
-      &middot;
-     </span>
-     <a data-en="CC BY-SA 4.0" data-eu="CC BY-SA 4.0" href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">
-      CC BY-SA 4.0
-     </a>
-     <span data-en="
+                        ·
+                    </span>
+                    <a data-en="CC BY-SA 4.0" data-eu="CC BY-SA 4.0" href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">
+                        CC BY-SA 4.0
+                    </a>
+                    <span data-en="
      .
     " data-eu="
      .
     ">
-      .
-     </span>
-    </p>
-    <div class="footer-bottom py-3 d-flex flex-wrap justify-content-between gap-2">
-     <span data-en="&copy; 2026 Flora &amp; Fauna of Biscay &middot; Educational project" data-eu="&copy; 2026 Bizkaiko Flora eta Fauna &middot; Hezkuntza-proiektua" data-translate-mode="html">
-      &copy; 2026 Flora &amp; Fauna of Biscay &middot; Educational project
-     </span>
-     <div class="d-flex gap-3 flex-wrap">
-      <a data-en="Privacy" data-eu="Pribatutasuna" href="privacy.html">
-       Privacy
-      </a>
-      <a data-en="Legal notice" data-eu="Lege-oharra" href="legal.html">
-       Legal notice
-      </a>
-      <a data-en="Cookies" data-eu="Cookie-ak" href="cookies.html">
-       Cookies
-      </a>
-      <a data-en="Back to home" data-eu="Itzuli hasierara" href="index.html">
-       Back to home
-      </a>
-     </div>
-    </div>
-   </div>
-  </footer>
-  <script src="bootstrap-5.3.8/js/bootstrap.bundle.min.js">
-  </script>
-  <script src="js/main.js">
-  </script>
- </body>
+                        .
+                    </span>
+                </p>
+                <div class="footer-bottom py-3 d-flex flex-wrap justify-content-between gap-2">
+                    <span data-en="© 2026 Flora &amp; Fauna of Biscay · Educational project" data-eu="© 2026 Bizkaiko Flora eta Fauna · Hezkuntza-proiektua" data-translate-mode="html">
+                        © 2026 Flora &amp; Fauna of Biscay · Educational project
+                    </span>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a data-en="Privacy" data-eu="Pribatutasuna" href="privacy.html">
+                            Privacy
+                        </a>
+                        <a data-en="Legal notice" data-eu="Lege-oharra" href="legal.html">
+                            Legal notice
+                        </a>
+                        <a data-en="Cookies" data-eu="Cookie-ak" href="cookies.html">
+                            Cookies
+                        </a>
+                        <a data-en="Back to home" data-eu="Itzuli hasierara" href="index.html">
+                            Back to home
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="bootstrap-5.3.8/js/bootstrap.bundle.min.js">
+        </script>
+        <script src="js/main.js">
+        </script>
+    </body>
 </html>

@@ -1,1325 +1,1325 @@
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width,initial-scale=1" name="viewport" />
-    <meta content="Collaborative platform to discover, consult and record the flora and fauna of Biscay" name="description" />
-    <title>Flora & Fauna of Biscay | Discover, Protect, Share</title>
-    <link href="img/logo-web.svg" rel="icon" />
-    <link href="bootstrap-5.3.8/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/bootstrap-icons.css" rel="stylesheet" type="text/css" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="Collaborative platform to discover, consult and record the flora and fauna of Biscay" name="description">
+    <title>Flora &amp; Fauna of Biscay | Discover, Protect, Share</title>
+    <link href="img/logo-web.svg" rel="icon">
+    <link href="bootstrap-5.3.8/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Flora & Fauna of Biscay">
+    <meta property="og:title" content="Flora &amp; Fauna of Biscay">
     <meta property="og:url" content="https://faunaandfloraofbiscay.com">
     <meta property="og:image" content="https://faunaandfloraofbiscay.com/img/logo-web.svg">
     <meta property="og:description" content="A collaborative space to discover the flora and fauna of our territory, explore their habitats and provide sightings that help conserve them.">
 </head>
- <body>
-  <!-- HEADER -->
-  <header>
-   <!-- USER BAR / LANGUAGES -->
-   <div class="user-bar">
-    <div class="container d-flex justify-content-between align-items-center gap-2">
-     <!--LANGUAGE SWITCHER-->
-     <div aria-label="Select Language" class="language-switch d-flex align-items-center gap-1" data-en-aria-label="Select Language" data-eu-aria-label="Select Language">
-      <button aria-pressed="true" class="btn btn-sm language-button active" data-en="EN" data-eu="EN" data-language="en" type="button">
-       EN
-      </button>
-      <span aria-hidden="true">
-       <span data-en="
+    <body>
+        <!-- HEADER -->
+        <header>
+            <!-- USER BAR / LANGUAGES -->
+            <div class="user-bar">
+                <div class="container d-flex justify-content-between align-items-center gap-2">
+                    <!--LANGUAGE SWITCHER-->
+                    <div aria-label="Select language" class="language-switch d-flex align-items-center gap-1" data-en-aria-label="Select language" data-eu-aria-label="Hizkuntza hautatu" role="group">
+                        <button aria-pressed="true" class="btn btn-sm language-button active" data-en="EN" data-eu="EN" data-language="en" type="button">
+                            EN
+                        </button>
+                        <span aria-hidden="true">
+                            <span data-en="
        |
       " data-eu="
        |
       ">
-        |
-       </span>
-      </span>
-      <button aria-pressed="false" class="btn btn-sm language-button" data-en="EUS" data-eu="EUS" data-language="eu" type="button">
-       EUS
-      </button>
-     </div>
-     <!-- USER BAR -->
-     <div class="position-relative">
-      <button aria-controls="userPanel" aria-expanded="false" aria-label="User Area" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" data-en-aria-label="User Area" data-eu-aria-label="User Area" type="button">
-       <i class="bi bi-person-circle fs-5">
-       </i>
-       <span class="d-none d-sm-inline ms-1" data-en="User Area" data-eu="Erabiltzaile eremua">
-        User Area
-       </span>
-      </button>
-      <div class="collapse user-panel-collapse" id="userPanel">
-       <div class="user-dropdown p-3">
-        <!-- NOT LOGGED IN -->
-        <div id="guestPanel">
-         <p class="fw-semibold text-primary" data-en="Welcome!" data-eu="Ongi etorri!">
-          Welcome!
-         </p>
-         <button class="btn btn-primary btn-sm w-100 mb-2" data-bs-target="#loginModal" data-bs-toggle="modal" type="button">
-          <span data-en="Log-in" data-eu="Saioa hasi">
-           Log-in
-          </span>
-         </button>
-         <a class="btn btn-outline-primary btn-sm w-100 mb-2" data-en="Sign-up" data-eu="Erregistratu" href="signup.html">
-          Sign-up
-         </a>
-         <a class="d-block text-center small mt-1 text-decoration-underline" data-en="demo user area" data-eu="demo erabiltzaile eremua" href="user-area.html">
-          demo user area
-         </a>
-        </div>
-        <!-- LOGGED IN -->
-        <div class="d-none" id="memberPanel">
-         <strong data-en="User" data-eu="Erabiltzailea" id="memberName">
-          User
-         </strong>
-         <p class="small text-secondary" id="memberEmail">
-         </p>
-         <a class="dropdown-item" data-en="My Profile" data-eu="Nire profila" href="user-area.html">
-          My Profile
-         </a>
-         <a class="dropdown-item" data-en="Settings" data-eu="Ezarpenak" href="user-area.html#privacySettingsForm">
-          Settings
-         </a>
-         <button class="btn btn-outline-secondary btn-sm w-100 mt-2" data-en="Log-out" data-eu="Saioa itxi" id="logoutButton">
-          Log-out
-         </button>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-   <!-- NAVBAR -->
-   <nav class="navbar navbar-expand-lg main-navbar" id="mainNavbar">
-    <div class="container">
-     <!-- LOGO -->
-     <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" id="logo-web">
-      <img alt="logo-web" data-en-alt="logo-web" data-eu-alt="logo-web" height="50" src="img/logo-web.svg"/>
-      <div class="d-flex flex-column lh-1">
-       <span data-en="Flora &amp; Fauna" data-eu="Bizkaiko">
-        Flora &amp; Fauna
-       </span>
-       <small data-en="of Biscay" data-eu="flora eta fauna">
-        of Biscay
-       </small>
-      </div>
-     </a>
-     <!-- TOGGLE BUTTON -->
-     <button aria-label="Open navigation" class="navbar-toggler" data-bs-target="#navbarContent" data-bs-toggle="collapse" data-en-aria-label="Open navigation" data-eu-aria-label="Open navigation" type="button">
-      <span class="navbar-toggler-icon">
-      </span>
-     </button>
-     <!-- NAVBAR LINKS -->
-     <div class="collapse navbar-collapse" id="navbarContent">
-      <ul class="navbar-nav ms-auto gap-lg-2">
-       <li class="nav-item">
-        <a class="nav-link" data-en="Home" data-eu="Hasiera" href="index.html">
-         Home
-        </a>
-       </li>
-       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Catalogue" data-eu="Katalogoa" href="catalog.html">
-         Catalogue
-        </a>
-        <ul class="dropdown-menu">
-         <li>
-          <a class="dropdown-item" data-en="Fauna" data-eu="Fauna" href="catalog.html?type=fauna">
-           Fauna
-          </a>
-         </li>
-         <li>
-          <a class="dropdown-item" data-en="Flora" data-eu="Flora" href="catalog.html?type=flora">
-           Flora
-          </a>
-         </li>
-         <li>
-          <a class="dropdown-item" data-en="Habitats" data-eu="Habitatak" href="habitats.html">
-           Habitats
-          </a>
-         </li>
-         <li>
-          <a class="dropdown-item" data-en="Parks, reserves and centers" data-eu="Parkeak, erreserbak eta zentroak" href="spaces.html">
-           Parks, reserves and centers
-          </a>
-         </li>
-         <li>
-          <a class="dropdown-item" data-en="Regions" data-eu="Eskualdeak" href="regions.html">
-           Regions
-          </a>
-         </li>
-        </ul>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link" data-en="Blog" data-eu="Bloga" href="blog.html">
-         Blog
-        </a>
-       </li>
-       <li class="nav-item dropdown">
-        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Participate" data-eu="Parte hartu" href="species-submit.html">
-         Participate
-        </a>
-        <ul class="dropdown-menu">
-         <li>
-          <a class="dropdown-item" data-en="Register a species" data-eu="Espezie bat erregistratu" href="species-submit.html">
-           Register a species
-          </a>
-         </li>
-         <li>
-          <a class="dropdown-item" data-en="Record a sighting" data-eu="Behaketa bat erregistratu" href="register-sighting.html">
-           Record a sighting
-          </a>
-         </li>
-        </ul>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link" data-en="Gallery" data-eu="Galeria" href="gallery.html">
-         Gallery
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link" data-en="Videos" data-eu="Bideoak" href="videos.html">
-         Videos
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link" data-en="Contact" data-eu="Kontaktua" href="contact.html">
-         Contact
-        </a>
-       </li>
-       <!-- THEME TOGGLE -->
-       <li class="nav-item d-flex align-items-center">
-        <button aria-label="Change theme" class="btn btn-sm theme-toggle" data-en-aria-label="Change theme" data-eu-aria-label="Change theme" id="themeToggle" type="button">
-         <i class="bi bi-moon-stars-fill" id="themeIcon">
-         </i>
+                                |
+                            </span>
+                        </span>
+                        <button aria-pressed="false" class="btn btn-sm language-button" data-en="EUS" data-eu="EUS" data-language="eu" type="button">
+                            EUS
+                        </button>
+                    </div>
+                    <!-- USER BAR -->
+                    <div class="position-relative">
+                        <button aria-controls="userPanel" aria-expanded="false" aria-label="User Area" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" data-en-aria-label="User Area" data-eu-aria-label="User Area" type="button">
+                            <i class="bi bi-person-circle fs-5">
+                            </i>
+                            <span class="d-none d-sm-inline ms-1" data-en="User Area" data-eu="Erabiltzaile eremua">
+                                User Area
+                            </span>
+                        </button>
+                        <div class="collapse user-panel-collapse" id="userPanel">
+                            <div class="user-dropdown p-3">
+                                <!-- NOT LOGGED IN -->
+                                <div id="guestPanel">
+                                    <p class="fw-semibold text-primary" data-en="Welcome!" data-eu="Ongi etorri!">
+                                        Welcome!
+                                    </p>
+                                    <button class="btn btn-primary btn-sm w-100 mb-2" data-bs-target="#loginModal" data-bs-toggle="modal" type="button">
+                                        <span data-en="Log-in" data-eu="Saioa hasi">
+                                            Log-in
+                                        </span>
+                                    </button>
+                                    <a class="btn btn-outline-primary btn-sm w-100 mb-2" data-en="Sign-up" data-eu="Erregistratu" href="signup.html">
+                                        Sign-up
+                                    </a>
+                                    <a class="d-block text-center small mt-1 text-decoration-underline" data-en="demo user area" data-eu="demo erabiltzaile eremua" href="user-area.html">
+                                        demo user area
+                                    </a>
+                                </div>
+                                <!-- LOGGED IN -->
+                                <div class="d-none" id="memberPanel">
+                                    <strong data-en="User" data-eu="Erabiltzailea" id="memberName">
+                                        User
+                                    </strong>
+                                    <p class="small text-secondary" id="memberEmail">
+                                    </p>
+                                    <a class="dropdown-item" data-en="My Profile" data-eu="Nire profila" href="user-area.html">
+                                        My Profile
+                                    </a>
+                                    <a class="dropdown-item" data-en="Settings" data-eu="Ezarpenak" href="user-area.html#privacySettingsForm">
+                                        Settings
+                                    </a>
+                                    <button class="btn btn-outline-secondary btn-sm w-100 mt-2" data-en="Log-out" data-eu="Saioa itxi" id="logoutButton" type="button">
+                                        Log-out
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg main-navbar" id="mainNavbar">
+                <div class="container">
+                    <!-- LOGO -->
+                    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" id="logo-web">
+                        <img alt="logo-web" data-en-alt="logo-web" data-eu-alt="logo-web" height="50" src="img/logo-web.svg">
+                        <div class="d-flex flex-column lh-1">
+                            <span data-en="Flora &amp; Fauna" data-eu="Bizkaiko">
+                                Flora &amp; Fauna
+                            </span>
+                            <small data-en="of Biscay" data-eu="flora eta fauna">
+                                of Biscay
+                            </small>
+                        </div>
+                    </a>
+                    <!-- TOGGLE BUTTON -->
+                    <button aria-label="Open navigation" class="navbar-toggler" data-bs-target="#navbarContent" data-bs-toggle="collapse" data-en-aria-label="Open navigation" data-eu-aria-label="Open navigation" type="button">
+                        <span class="navbar-toggler-icon">
+                        </span>
+                    </button>
+                    <!-- NAVBAR LINKS -->
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav ms-auto gap-lg-2">
+                            <li class="nav-item">
+                                <a class="nav-link" data-en="Home" data-eu="Hasiera" href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Catalogue" data-eu="Katalogoa" href="catalog.html">
+                                    Catalogue
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" data-en="Fauna" data-eu="Fauna" href="catalog.html?type=fauna">
+                                            Fauna
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" data-en="Flora" data-eu="Flora" href="catalog.html?type=flora">
+                                            Flora
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" data-en="Habitats" data-eu="Habitatak" href="habitats.html">
+                                            Habitats
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" data-en="Parks, reserves and centers" data-eu="Parkeak, erreserbak eta zentroak" href="spaces.html">
+                                            Parks, reserves and centers
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" data-en="Regions" data-eu="Eskualdeak" href="regions.html">
+                                            Regions
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-en="Blog" data-eu="Bloga" href="blog.html">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Participate" data-eu="Parte hartu" href="species-submit.html">
+                                    Participate
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" data-en="Register a species" data-eu="Espezie bat erregistratu" href="species-submit.html">
+                                            Register a species
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" data-en="Record a sighting" data-eu="Behaketa bat erregistratu" href="register-sighting.html">
+                                            Record a sighting
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-en="Gallery" data-eu="Galeria" href="gallery.html">
+                                    Gallery
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-en="Videos" data-eu="Bideoak" href="videos.html">
+                                    Videos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-en="Contact" data-eu="Kontaktua" href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+                            <!-- THEME TOGGLE -->
+                            <li class="nav-item d-flex align-items-center">
+                                <button aria-label="Change theme" class="btn btn-sm theme-toggle" data-en-aria-label="Change theme" data-eu-aria-label="Change theme" id="themeToggle" type="button">
+                                    <i class="bi bi-moon-stars-fill" id="themeIcon">
+                                    </i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- AUDIO & CONTROLS -->
+        <audio id="backgroundAudio" loop="" preload="none">
+            <source src="audio/European_Robin.mp3" type="audio/mpeg"></source>
+        </audio>
+        <button aria-label="Silence Sound" class="floating-control audio-control" data-en-aria-label="Silence Sound" data-en-title="Silence" data-eu-aria-label="Silence Sound" data-eu-title="Silence" id="audioToggle" title="Silence" type="button">
+            <i class="bi bi-volume-up-fill" id="audioIcon">
+            </i>
         </button>
-       </li>
-      </ul>
-     </div>
-    </div>
-   </nav>
-  </header>
-  <!-- AUDIO & CONTROLS -->
-  <audio id="backgroundAudio" loop="" preload="none">
-   <source src="audio/European_Robin.mp3" type="audio/mpeg"/>
-  </audio>
-  <button aria-label="Silence Sound" class="floating-control audio-control" data-en-aria-label="Silence Sound" data-en-title="Silence" data-eu-aria-label="Silence Sound" data-eu-title="Silence" id="audioToggle" title="Silence">
-   <i class="bi bi-volume-up-fill" id="audioIcon">
-   </i>
-  </button>
-  <button aria-label="Back to the top" class="floating-control top-control" data-en-aria-label="Back to the top" data-eu-aria-label="Back to the top" id="backToTop" type="button">
-   <i class="bi bi-chevron-up">
-   </i>
-  </button>
-  <!-- LOGIN MODAL -->
-  <div aria-hidden="true" aria-labelledby="loginModalLabel" class="modal fade" id="loginModal" tabindex="-1">
-   <div class="modal-dialog">
-    <div class="modal-content p-3">
-     <div class="modal-header border-0">
-      <h5 class="modal-title fw-bold" data-en="Log-in" data-eu="Saioa hasi" id="loginModalLabel">
-       Log-in
-      </h5>
-      <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" data-en-aria-label="Close" data-eu-aria-label="Close" type="button">
-      </button>
-     </div>
-     <div class="modal-body">
-      <form id="loginForm">
-       <div class="mb-3">
-        <label class="form-label" data-en="Email address" data-eu="Posta elektronikoa" for="loginEmail">
-         Email address
-        </label>
-        <input class="form-control" id="loginEmail" required="" type="email"/>
-       </div>
-       <div class="mb-3">
-        <label class="form-label" data-en="Password" data-eu="Pasahitza" for="loginPassword">
-         Password
-        </label>
-        <input class="form-control" id="loginPassword" required="" type="password"/>
-       </div>
-       <button class="btn btn-primary w-100" data-en="Sign in" data-eu="Hasi saioa" type="submit">
-        Sign in
-       </button>
-      </form>
-     </div>
-    </div>
-   </div>
-  </div>
-  <main id="mainContent">
-   <section class="inner-hero page-hero">
-    <div class="container">
-     <nav aria-label="breadcrumb" data-en-aria-label="breadcrumb" data-eu-aria-label="breadcrumb">
-      <ol class="breadcrumb mb-3">
-       <li class="breadcrumb-item">
-        <a data-en="Home" data-eu="Hasiera" href="index.html">
-         Home
-        </a>
-       </li>
-       <li class="breadcrumb-item">
-        <a data-en="Catalogue" data-eu="Katalogoa" href="catalog.html">
-         Catalogue
-        </a>
-       </li>
-       <li aria-current="page" class="breadcrumb-item active" data-en="Habitats of Bizkaia" data-eu="Bizkaiko habitatak">
-        Habitats of Bizkaia
-       </li>
-      </ol>
-     </nav>
-     <p class="section-kicker" data-en="Habitats of Bizkaia" data-eu="Bizkaiko habitatak">
-      Habitats of Bizkaia
-     </p>
-     <h1 data-en="Habitats of Bizkaia" data-eu="Bizkaiko habitatak">
-      Habitats of Bizkaia
-     </h1>
-     <p class="lead" data-en="Discover the natural environments of Bizkaia and the species that live in them." data-eu="Ezagutu Bizkaiko ingurune naturalak eta bertan bizi diren espezieak.">
-      Discover the natural environments of Bizkaia and the species that live in them.
-     </p>
-    </div>
-   </section>
-   <section class="content-section">
-    <div class="container">
-     <div class="content-card habitat-filter-card mb-4">
-      <div class="row g-3">
-       <div class="col-md-6">
-        <label class="form-label" data-en="Habitat type" data-eu="Habitat mota" for="habitatTypeFilter">
-         Habitat type
-        </label>
-        <select class="form-select" id="habitatTypeFilter">
-         <option data-en="All habitat types" data-eu="Habitat mota guztiak" value="">
-          All habitat types
-         </option>
-         <option data-en="Marine and littoral" data-eu="Itsasoa eta itsasertza" value="marine and littoral">
-          Marine and littoral
-         </option>
-         <option data-en="Rivers, estuaries and wetlands" data-eu="Ibaiak, estuarioak eta hezeguneak" value="rivers, estuaries and wetlands">
-          Rivers, estuaries and wetlands
-         </option>
-         <option data-en="Mountains and forests" data-eu="Mendiak eta basoak" value="mountains and forests">
-          Mountains and forests
-         </option>
-         <option data-en="Subterranean" data-eu="Lurpeko eremuak" value="subterranean">
-          Subterranean
-         </option>
-         <option data-en="Urban and agricultural" data-eu="Hiri- eta nekazaritza-eremuak" value="urban and agricultural">
-          Urban and agricultural
-         </option>
-        </select>
-       </div>
-       <div class="col-md-6">
-        <label class="form-label" data-en="Region" data-eu="Eskualdea" for="habitatRegionFilter">
-         Region
-        </label>
-        <select class="form-select" id="habitatRegionFilter">
-         <option data-en="All regions" data-eu="Eskualde guztiak" value="">
-          All regions
-         </option>
-         <option data-en="Arratia-Nervi&oacute;n" data-eu="Arratia-Nerbioi">
-          Arratia-Nervi&oacute;n
-         </option>
-         <option data-en="Busturia-Urdaibai" data-eu="Busturialdea">
-          Busturia-Urdaibai
-         </option>
-         <option data-en="Duranguesado" data-eu="Durangaldea">
-          Duranguesado
-         </option>
-         <option data-en="Encartaciones" data-eu="Enkarterri">
-          Encartaciones
-         </option>
-         <option data-en="Gran Bilbao" data-eu="Bilbo Handia">
-          Gran Bilbao
-         </option>
-         <option data-en="Lea-Artibay" data-eu="Lea-Artibai">
-          Lea-Artibay
-         </option>
-         <option data-en="Uribe" data-eu="Uribe">
-          Uribe
-         </option>
-        </select>
-       </div>
-      </div>
-     </div>
-     <div class="row g-4" id="habitatGrid">
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="marinos" data-habitat-type="marine and littoral" data-regions="uribe lea-artibai gran bilbao">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Marine" data-en-alt="Habitat: Marine" data-eu-alt="Habitat: Marine" loading="lazy" src="img/habitats/marine.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Marine and littoral" data-eu="Itsasoa eta litorala">
-          Marine and littoral
-         </span>
-         <h2 class="h5" data-en="Marine" data-eu="Itsaso">
-          Marine
-         </h2>
-         <p data-en="Saltwater ecosystems including seabeds, communities and transition zones of the marine environment." data-eu="Gatz-ur ekosistemak, itsaslabar, komunitateak eta ingurune itsasoko trantsizio-eremuak barne.">
-          Saltwater ecosystems including seabeds, communities and transition zones of the marine environment.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
-          Busturialdea-Urdaibai &middot; Uribe &middot; Lea-Artibai &middot; Gran Bilbao
-         " data-eu="
-          Busturialdea-Urdaibai &middot; Uribe &middot; Lea-Artibai &middot; Gran Bilbao
-         ">
-           Busturialdea-Urdaibai &middot; Uribe &middot; Lea-Artibai &middot; Gran Bilbao
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=marine">
-          View species in this habitat
-         </a>
+        <button aria-label="Back to the top" class="floating-control top-control" data-en-aria-label="Back to the top" data-eu-aria-label="Back to the top" id="backToTop" type="button">
+            <i class="bi bi-chevron-up">
+            </i>
+        </button>
+        <!-- LOGIN MODAL -->
+        <div aria-hidden="true" aria-labelledby="loginModalLabel" class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title fw-bold" data-en="Log-in" data-eu="Saioa hasi" id="loginModalLabel">
+                            Log-in
+                        </h5>
+                        <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" data-en-aria-label="Close" data-eu-aria-label="Close" type="button">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label class="form-label" data-en="Email address" data-eu="Posta elektronikoa" for="loginEmail">
+                                    Email address
+                                </label>
+                                <input class="form-control" id="loginEmail" required="" type="email">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" data-en="Password" data-eu="Pasahitza" for="loginPassword">
+                                    Password
+                                </label>
+                                <input class="form-control" id="loginPassword" required="" type="password">
+                            </div>
+                            <button class="btn btn-primary w-100" data-en="Sign in" data-eu="Hasi saioa" type="submit">
+                                Sign in
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="litorales" data-habitat-type="marine and littoral" data-regions="uribe lea-artibai gran bilbao">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Coastal" data-en-alt="Habitat: Coastal" data-eu-alt="Habitat: Coastal" loading="lazy" src="img/habitats/coastal areas.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Marine and littoral" data-eu="Itsasoa eta litorala">
-          Marine and littoral
-         </span>
-         <h2 class="h5" data-en="Coastal" data-eu="Litoralak">
-          Coastal
-         </h2>
-         <p data-en="The contact zone between land and sea, subject to waves, tides and wind." data-eu="Lurra eta itsasoa uztartzen dituen eremua, uhinak, ildasoa eta haizearen menpe.">
-          The contact zone between land and sea, subject to waves, tides and wind.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
-          Uribe &middot; Lea-Artibai &middot; Busturialdea-Urdaibai &middot; Gran Bilbao
+        <main id="mainContent">
+            <section class="inner-hero page-hero">
+                <div class="container">
+                    <nav aria-label="breadcrumb" data-en-aria-label="breadcrumb" data-eu-aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-3">
+                            <li class="breadcrumb-item">
+                                <a data-en="Home" data-eu="Hasiera" href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a data-en="Catalogue" data-eu="Katalogoa" href="catalog.html">
+                                    Catalogue
+                                </a>
+                            </li>
+                            <li aria-current="page" class="breadcrumb-item active" data-en="Habitats of Bizkaia" data-eu="Bizkaiko habitatak">
+                                Habitats of Bizkaia
+                            </li>
+                        </ol>
+                    </nav>
+                    <p class="section-kicker" data-en="Habitats of Bizkaia" data-eu="Bizkaiko habitatak">
+                        Habitats of Bizkaia
+                    </p>
+                    <h1 data-en="Habitats of Bizkaia" data-eu="Bizkaiko habitatak">
+                        Habitats of Bizkaia
+                    </h1>
+                    <p class="lead" data-en="Discover the natural environments of Bizkaia and the species that live in them." data-eu="Ezagutu Bizkaiko ingurune naturalak eta bertan bizi diren espezieak.">
+                        Discover the natural environments of Bizkaia and the species that live in them.
+                    </p>
+                </div>
+            </section>
+            <section class="content-section">
+                <div class="container">
+                    <div class="content-card habitat-filter-card mb-4">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label" data-en="Habitat type" data-eu="Habitat mota" for="habitatTypeFilter">
+                                    Habitat type
+                                </label>
+                                <select class="form-select" id="habitatTypeFilter">
+                                    <option data-en="All habitat types" data-eu="Habitat mota guztiak" value="">
+                                        All habitat types
+                                    </option>
+                                    <option data-en="Marine and littoral" data-eu="Itsasoa eta itsasertza" value="marine and littoral">
+                                        Marine and littoral
+                                    </option>
+                                    <option data-en="Rivers, estuaries and wetlands" data-eu="Ibaiak, estuarioak eta hezeguneak" value="rivers, estuaries and wetlands">
+                                        Rivers, estuaries and wetlands
+                                    </option>
+                                    <option data-en="Mountains and forests" data-eu="Mendiak eta basoak" value="mountains and forests">
+                                        Mountains and forests
+                                    </option>
+                                    <option data-en="Subterranean" data-eu="Lurpeko eremuak" value="subterranean">
+                                        Subterranean
+                                    </option>
+                                    <option data-en="Urban and agricultural" data-eu="Hiri- eta nekazaritza-eremuak" value="urban and agricultural">
+                                        Urban and agricultural
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" data-en="Region" data-eu="Eskualdea" for="habitatRegionFilter">
+                                    Region
+                                </label>
+                                <select class="form-select" id="habitatRegionFilter">
+                                    <option data-en="All regions" data-eu="Eskualde guztiak" value="">
+                                        All regions
+                                    </option>
+                                    <option data-en="Arratia-Nervión" data-eu="Arratia-Nerbioi">
+                                        Arratia-Nervión
+                                    </option>
+                                    <option data-en="Busturia-Urdaibai" data-eu="Busturialdea">
+                                        Busturia-Urdaibai
+                                    </option>
+                                    <option data-en="Duranguesado" data-eu="Durangaldea">
+                                        Duranguesado
+                                    </option>
+                                    <option data-en="Encartaciones" data-eu="Enkarterri">
+                                        Encartaciones
+                                    </option>
+                                    <option data-en="Gran Bilbao" data-eu="Bilbo Handia">
+                                        Gran Bilbao
+                                    </option>
+                                    <option data-en="Lea-Artibay" data-eu="Lea-Artibai">
+                                        Lea-Artibay
+                                    </option>
+                                    <option data-en="Uribe" data-eu="Uribe">
+                                        Uribe
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-4" id="habitatGrid">
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="marinos" data-habitat-type="marine and littoral" data-regions="uribe lea-artibai gran bilbao">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Marine" data-en-alt="Habitat: Marine" data-eu-alt="Habitat: Marine" loading="lazy" src="img/habitats/marine.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Marine and littoral" data-eu="Itsasoa eta litorala">
+                                        Marine and littoral
+                                    </span>
+                                    <h2 class="h5" data-en="Marine" data-eu="Itsaso">
+                                        Marine
+                                    </h2>
+                                    <p data-en="Saltwater ecosystems including seabeds, communities and transition zones of the marine environment." data-eu="Gatz-ur ekosistemak, itsaslabar, komunitateak eta ingurune itsasoko trantsizio-eremuak barne.">
+                                        Saltwater ecosystems including seabeds, communities and transition zones of the marine environment.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
+          Busturialdea-Urdaibai · Uribe · Lea-Artibai · Gran Bilbao
          " data-eu="
-          Uribe &middot; Lea-Artibai &middot; Busturialdea-Urdaibai &middot; Gran Bilbao
+          Busturialdea-Urdaibai · Uribe · Lea-Artibai · Gran Bilbao
          ">
-           Uribe &middot; Lea-Artibai &middot; Busturialdea-Urdaibai &middot; Gran Bilbao
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=coastal-areas">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="mar abierto" data-habitat-type="marine and littoral" data-regions="">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Open sea" data-en-alt="Habitat: Open sea" data-eu-alt="Habitat: Open sea" loading="lazy" src="img/habitats/open sea.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Marine and littoral" data-eu="Itsasoa eta litorala">
-          Marine and littoral
-         </span>
-         <h2 class="h5" data-en="Open sea" data-eu="Itsaso irekia">
-          Open sea
-         </h2>
-         <p data-en="Waters far from the coast, used by seabirds and cetaceans during their movements and feeding." data-eu="Kostaldetik urruneko urak, hegazi itsasoiak eta zetazeoak mugimendu eta elikaduran erabiltzen dituztenak.">
-          Waters far from the coast, used by seabirds and cetaceans during their movements and feeding.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
+                                            Busturialdea-Urdaibai · Uribe · Lea-Artibai · Gran Bilbao
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=marine">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="litorales" data-habitat-type="marine and littoral" data-regions="uribe lea-artibai gran bilbao">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Coastal" data-en-alt="Habitat: Coastal" data-eu-alt="Habitat: Coastal" loading="lazy" src="img/habitats/coastal%20areas.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Marine and littoral" data-eu="Itsasoa eta litorala">
+                                        Marine and littoral
+                                    </span>
+                                    <h2 class="h5" data-en="Coastal" data-eu="Litoralak">
+                                        Coastal
+                                    </h2>
+                                    <p data-en="The contact zone between land and sea, subject to waves, tides and wind." data-eu="Lurra eta itsasoa uztartzen dituen eremua, uhinak, ildasoa eta haizearen menpe.">
+                                        The contact zone between land and sea, subject to waves, tides and wind.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
+          Uribe · Lea-Artibai · Busturialdea-Urdaibai · Gran Bilbao
+         " data-eu="
+          Uribe · Lea-Artibai · Busturialdea-Urdaibai · Gran Bilbao
+         ">
+                                            Uribe · Lea-Artibai · Busturialdea-Urdaibai · Gran Bilbao
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=coastal-areas">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="mar abierto" data-habitat-type="marine and littoral" data-regions="">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Open sea" data-en-alt="Habitat: Open sea" data-eu-alt="Habitat: Open sea" loading="lazy" src="img/habitats/open%20sea.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Marine and littoral" data-eu="Itsasoa eta litorala">
+                                        Marine and littoral
+                                    </span>
+                                    <h2 class="h5" data-en="Open sea" data-eu="Itsaso irekia">
+                                        Open sea
+                                    </h2>
+                                    <p data-en="Waters far from the coast, used by seabirds and cetaceans during their movements and feeding." data-eu="Kostaldetik urruneko urak, hegazi itsasoiak eta zetazeoak mugimendu eta elikaduran erabiltzen dituztenak.">
+                                        Waters far from the coast, used by seabirds and cetaceans during their movements and feeding.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
           All coastal regions
          " data-eu="Kostaldeko eskualde guztiak">
-           All coastal regions
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=open-sea">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="acantilados costeros" data-habitat-type="marine and littoral" data-regions="uribe lea-artibai">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Coastal cliffs" data-en-alt="Habitat: Coastal cliffs" data-eu-alt="Habitat: Coastal cliffs" loading="lazy" src="img/habitats/cliffs.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Marine and littoral" data-eu="Itsasoa eta litorala">
-          Marine and littoral
-         </span>
-         <h2 class="h5" data-en="Coastal cliffs" data-eu="Itsas labar">
-          Coastal cliffs
-         </h2>
-         <p data-en="Rocky walls exposed to the sea, with vegetation adapted to wind, salinity and scarce soil." data-eu="Itsasoraino eskuhurtuta dauden pareta haritsuak, haizeari, gatzitasunari eta lurraren eskasiari egokitutako landarearekin.">
-          Rocky walls exposed to the sea, with vegetation adapted to wind, salinity and scarce soil.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
-          Uribe &middot; Lea-Artibai &middot; Busturialdea-Urdaibai
-         " data-eu="Uribealdea &middot; Lea-Artibai &middot; Busturialdea">
-           Uribe &middot; Lea-Artibai &middot; Busturialdea-Urdaibai
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=cliffs">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="islotes" data-habitat-type="marine and littoral" data-regions="uribe lea-artibai">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Islets" data-en-alt="Habitat: Islets" data-eu-alt="Habitat: Islets" loading="lazy" src="img/habitats/islets.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Marine and littoral" data-eu="Itsasoa eta litorala">
-          Marine and littoral
-         </span>
-         <h2 class="h5" data-en="Islets" data-eu="Ilotzak">
-          Islets
-         </h2>
-         <p data-en="Small isolated rocky elevations in the sea that provide shelter and breeding grounds for seabirds." data-eu="Itsasoan isolatutako igarotze haritsu txikiak, hegazi itsasoiei babes eta ugalketa-lekuak eskaintzen dietenak.">
-          Small isolated rocky elevations in the sea that provide shelter and breeding grounds for seabirds.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
-          Busturialdea-Urdaibai &middot; Uribe &middot; Lea-Artibai
+                                            All coastal regions
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=open-sea">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="acantilados costeros" data-habitat-type="marine and littoral" data-regions="uribe lea-artibai">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Coastal cliffs" data-en-alt="Habitat: Coastal cliffs" data-eu-alt="Habitat: Coastal cliffs" loading="lazy" src="img/habitats/cliffs.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Marine and littoral" data-eu="Itsasoa eta litorala">
+                                        Marine and littoral
+                                    </span>
+                                    <h2 class="h5" data-en="Coastal cliffs" data-eu="Itsas labar">
+                                        Coastal cliffs
+                                    </h2>
+                                    <p data-en="Rocky walls exposed to the sea, with vegetation adapted to wind, salinity and scarce soil." data-eu="Itsasoraino eskuhurtuta dauden pareta haritsuak, haizeari, gatzitasunari eta lurraren eskasiari egokitutako landarearekin.">
+                                        Rocky walls exposed to the sea, with vegetation adapted to wind, salinity and scarce soil.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
+          Uribe · Lea-Artibai · Busturialdea-Urdaibai
+         " data-eu="Uribealdea · Lea-Artibai · Busturialdea">
+                                            Uribe · Lea-Artibai · Busturialdea-Urdaibai
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=cliffs">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="islotes" data-habitat-type="marine and littoral" data-regions="uribe lea-artibai">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Islets" data-en-alt="Habitat: Islets" data-eu-alt="Habitat: Islets" loading="lazy" src="img/habitats/islets.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Marine and littoral" data-eu="Itsasoa eta litorala">
+                                        Marine and littoral
+                                    </span>
+                                    <h2 class="h5" data-en="Islets" data-eu="Ilotzak">
+                                        Islets
+                                    </h2>
+                                    <p data-en="Small isolated rocky elevations in the sea that provide shelter and breeding grounds for seabirds." data-eu="Itsasoan isolatutako igarotze haritsu txikiak, hegazi itsasoiei babes eta ugalketa-lekuak eskaintzen dietenak.">
+                                        Small isolated rocky elevations in the sea that provide shelter and breeding grounds for seabirds.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
+          Busturialdea-Urdaibai · Uribe · Lea-Artibai
          " data-eu="
-          Busturialdea-Urdaibai &middot; Uribe &middot; Lea-Artibai
+          Busturialdea-Urdaibai · Uribe · Lea-Artibai
          ">
-           Busturialdea-Urdaibai &middot; Uribe &middot; Lea-Artibai
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=islets">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="playa" data-habitat-type="marine and littoral" data-regions="uribe lea-artibai gran bilbao">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Beach" data-en-alt="Habitat: Beach" data-eu-alt="Habitat: Beach" loading="lazy" src="img/habitats/beaches.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Marine and littoral" data-eu="Itsasoa eta litorala">
-          Marine and littoral
-         </span>
-         <h2 class="h5" data-en="Beach" data-eu="Hondartza">
-          Beach
-         </h2>
-         <p data-en="Accumulations of sand or gravel shaped by waves and tides; they are dynamic and sensitive spaces." data-eu="Uhinak eta ildasoz eraldatutako harea edo harri-xake bilketa; espazio dinamiko eta sentikorrak dira.">
-          Accumulations of sand or gravel shaped by waves and tides; they are dynamic and sensitive spaces.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
-          Uribe &middot; Lea-Artibai &middot; Busturialdea-Urdaibai &middot; Gran Bilbao
+                                            Busturialdea-Urdaibai · Uribe · Lea-Artibai
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=islets">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="playa" data-habitat-type="marine and littoral" data-regions="uribe lea-artibai gran bilbao">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Beach" data-en-alt="Habitat: Beach" data-eu-alt="Habitat: Beach" loading="lazy" src="img/habitats/beaches.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Marine and littoral" data-eu="Itsasoa eta litorala">
+                                        Marine and littoral
+                                    </span>
+                                    <h2 class="h5" data-en="Beach" data-eu="Hondartza">
+                                        Beach
+                                    </h2>
+                                    <p data-en="Accumulations of sand or gravel shaped by waves and tides; they are dynamic and sensitive spaces." data-eu="Uhinak eta ildasoz eraldatutako harea edo harri-xake bilketa; espazio dinamiko eta sentikorrak dira.">
+                                        Accumulations of sand or gravel shaped by waves and tides; they are dynamic and sensitive spaces.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
+          Uribe · Lea-Artibai · Busturialdea-Urdaibai · Gran Bilbao
          " data-eu="
-          Uribe &middot; Lea-Artibai &middot; Busturialdea-Urdaibai &middot; Gran Bilbao
+          Uribe · Lea-Artibai · Busturialdea-Urdaibai · Gran Bilbao
          ">
-           Uribe &middot; Lea-Artibai &middot; Busturialdea-Urdaibai &middot; Gran Bilbao
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=beaches">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="dunas" data-habitat-type="marine and littoral" data-regions="uribe lea-artibai">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Dunes" data-en-alt="Habitat: Dunes" data-eu-alt="Habitat: Dunes" loading="lazy" src="img/habitats/dunes.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Marine and littoral" data-eu="Itsasoa eta litorala">
-          Marine and littoral
-         </span>
-         <h2 class="h5" data-en="Dunes" data-eu="Dunak">
-          Dunes
-         </h2>
-         <p data-en="Sand mounds formed by wind, with specialised plants that fix the substrate." data-eu="Haizeak eratzitako harea-munduak, substratua finkatzen duten landare espezializatuekin.">
-          Sand mounds formed by wind, with specialised plants that fix the substrate.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
-          Uribe &middot; Busturialdea-Urdaibai &middot; Lea-Artibai
-         " data-eu="Uribealdea &middot; Busturialdea &middot; Lea-Artibai">
-           Uribe &middot; Busturialdea-Urdaibai &middot; Lea-Artibai
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=dunes">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="estuarios" data-habitat-type="rivers, estuaries and wetlands" data-regions="gran bilbao lea-artibai">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Estuaries" data-en-alt="Habitat: Estuaries" data-eu-alt="Habitat: Estuaries" loading="lazy" src="img/habitats/estuaries.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Rivers, estuaries and wetlands" data-eu="Ibaiak, estuarioak eta hezeguneak">
-          Rivers, estuaries and wetlands
-         </span>
-         <h2 class="h5" data-en="Estuaries" data-eu="Estuarioak">
-          Estuaries
-         </h2>
-         <p data-en="Final stretches of rivers where fresh and salt water mix and ecological gradients form." data-eu="Ibaien azken zatiak, ur garbi eta gatzak nahasten diren lekuak, eta gradiente ekologikoak sortzen diren.">
-          Final stretches of rivers where fresh and salt water mix and ecological gradients form.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
-          Busturialdea-Urdaibai &middot; Gran Bilbao &middot; Lea-Artibai
-         " data-eu="Busturialdea &middot; Bilbo Handia &middot; Lea-Artibai">
-           Busturialdea-Urdaibai &middot; Gran Bilbao &middot; Lea-Artibai
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=estuaries">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="r&iacute;as" data-habitat-type="mountains and forests" data-regions="lea-artibai gran bilbao">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: R&iacute;as" data-en-alt="Habitat: R&iacute;as" data-eu-alt="Habitat: R&iacute;as" loading="lazy" src="img/habitats/tidal rivers.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Rivers, estuaries and wetlands" data-eu="Ibaiak, estuarioak eta hezeguneak">
-          Rivers, estuaries and wetlands
-         </span>
-         <h2 class="h5" data-en="R&iacute;as" data-eu="Riak">
-          R&iacute;as
-         </h2>
-         <p data-en="River valleys flooded by the sea, with channels, banks and communities of brackish waters." data-eu="Itsasok inundatutako ibaialdiak, kanal, ertzeak eta ur salobreako komunitate propioekin.">
-          River valleys flooded by the sea, with channels, banks and communities of brackish waters.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
-          Busturialdea-Urdaibai &middot; Lea-Artibai &middot; Gran Bilbao
-         " data-eu="Busturialdea &middot; Lea-Artibai &middot; Bilbo Handia">
-           Busturialdea-Urdaibai &middot; Lea-Artibai &middot; Gran Bilbao
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=tidal-rivers">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="zonas h&uacute;medas" data-habitat-type="rivers, estuaries and wetlands" data-regions="gran bilbao encartaciones arratia-nervi&oacute;n">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Wetlands" data-en-alt="Habitat: Wetlands" data-eu-alt="Habitat: Wetlands" loading="lazy" src="img/habitats/wetlands.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Rivers, estuaries and wetlands" data-eu="Ibaiak, estuarioak eta hezeguneak">
-          Rivers, estuaries and wetlands
-         </span>
-         <h2 class="h5" data-en="Wetlands" data-eu="Zona hezeak">
-          Wetlands
-         </h2>
-         <p data-en="Permanently or temporarily waterlogged areas that support a high diversity of life." data-eu="Irrati edo unean urpean dauden eremuak, bizitza aniztasun handia sostengatzen dutenak.">
-          Permanently or temporarily waterlogged areas that support a high diversity of life.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
-          Busturialdea-Urdaibai &middot; Gran Bilbao &middot; Encartaciones &middot; Arratia-Nervi&oacute;n
-         " data-eu="Busturialdea &middot; Bilbo Handia &middot; Enkarterri &middot; Arratia-Nerbioi">
-           Busturialdea-Urdaibai &middot; Gran Bilbao &middot; Encartaciones &middot; Arratia-Nervi&oacute;n
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=wetlands">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="marismas" data-habitat-type="rivers, estuaries and wetlands" data-regions="gran bilbao">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Marshes" data-en-alt="Habitat: Marshes" data-eu-alt="Habitat: Marshes" loading="lazy" src="img/habitats/marshes.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Rivers, estuaries and wetlands" data-eu="Ibaiak, estuarioak eta hezeguneak">
-          Rivers, estuaries and wetlands
-         </span>
-         <h2 class="h5" data-en="Marshes" data-eu="Mariskak">
-          Marshes
-         </h2>
-         <p data-en="Tidal wetlands with salt-tolerant vegetation, essential for bird feeding and resting." data-eu="Ildasoko hezeguneak, gatzari eusten dioten landarearekin, hegazien elikadura eta atsedenarako funtsezkoak.">
-          Tidal wetlands with salt-tolerant vegetation, essential for bird feeding and resting.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
-          Busturialdea-Urdaibai &middot; Gran Bilbao
-         " data-eu="Busturialdea &middot; Bilbo Handia">
-           Busturialdea-Urdaibai &middot; Gran Bilbao
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=marshes">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="r&iacute;os" data-habitat-type="rivers, estuaries and wetlands" data-regions="">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Rivers" data-en-alt="Habitat: Rivers" data-eu-alt="Habitat: Rivers" loading="lazy" src="img/habitats/rivers.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Rivers, estuaries and wetlands" data-eu="Ibaiak, estuarioak eta hezeguneak">
-          Rivers, estuaries and wetlands
-         </span>
-         <h2 class="h5" data-en="Rivers" data-eu="Ibaiak">
-          Rivers
-         </h2>
-         <p data-en="Natural freshwater courses connecting mountains, valleys and estuaries." data-eu="Mendiak, ibaialdiak eta estuarioak lotzen dituzten ur garbiako ibai naturalak.">
-          Natural freshwater courses connecting mountains, valleys and estuaries.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
+                                            Uribe · Lea-Artibai · Busturialdea-Urdaibai · Gran Bilbao
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=beaches">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="dunas" data-habitat-type="marine and littoral" data-regions="uribe lea-artibai">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Dunes" data-en-alt="Habitat: Dunes" data-eu-alt="Habitat: Dunes" loading="lazy" src="img/habitats/dunes.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Marine and littoral" data-eu="Itsasoa eta litorala">
+                                        Marine and littoral
+                                    </span>
+                                    <h2 class="h5" data-en="Dunes" data-eu="Dunak">
+                                        Dunes
+                                    </h2>
+                                    <p data-en="Sand mounds formed by wind, with specialised plants that fix the substrate." data-eu="Haizeak eratzitako harea-munduak, substratua finkatzen duten landare espezializatuekin.">
+                                        Sand mounds formed by wind, with specialised plants that fix the substrate.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
+          Uribe · Busturialdea-Urdaibai · Lea-Artibai
+         " data-eu="Uribealdea · Busturialdea · Lea-Artibai">
+                                            Uribe · Busturialdea-Urdaibai · Lea-Artibai
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=dunes">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="estuarios" data-habitat-type="rivers, estuaries and wetlands" data-regions="gran bilbao lea-artibai">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Estuaries" data-en-alt="Habitat: Estuaries" data-eu-alt="Habitat: Estuaries" loading="lazy" src="img/habitats/estuaries.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Rivers, estuaries and wetlands" data-eu="Ibaiak, estuarioak eta hezeguneak">
+                                        Rivers, estuaries and wetlands
+                                    </span>
+                                    <h2 class="h5" data-en="Estuaries" data-eu="Estuarioak">
+                                        Estuaries
+                                    </h2>
+                                    <p data-en="Final stretches of rivers where fresh and salt water mix and ecological gradients form." data-eu="Ibaien azken zatiak, ur garbi eta gatzak nahasten diren lekuak, eta gradiente ekologikoak sortzen diren.">
+                                        Final stretches of rivers where fresh and salt water mix and ecological gradients form.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
+          Busturialdea-Urdaibai · Gran Bilbao · Lea-Artibai
+         " data-eu="Busturialdea · Bilbo Handia · Lea-Artibai">
+                                            Busturialdea-Urdaibai · Gran Bilbao · Lea-Artibai
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=estuaries">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="rías" data-habitat-type="mountains and forests" data-regions="lea-artibai gran bilbao">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Rías" data-en-alt="Habitat: Rías" data-eu-alt="Habitat: Rías" loading="lazy" src="img/habitats/tidal%20rivers.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Rivers, estuaries and wetlands" data-eu="Ibaiak, estuarioak eta hezeguneak">
+                                        Rivers, estuaries and wetlands
+                                    </span>
+                                    <h2 class="h5" data-en="Rías" data-eu="Riak">
+                                        Rías
+                                    </h2>
+                                    <p data-en="River valleys flooded by the sea, with channels, banks and communities of brackish waters." data-eu="Itsasok inundatutako ibaialdiak, kanal, ertzeak eta ur salobreako komunitate propioekin.">
+                                        River valleys flooded by the sea, with channels, banks and communities of brackish waters.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
+          Busturialdea-Urdaibai · Lea-Artibai · Gran Bilbao
+         " data-eu="Busturialdea · Lea-Artibai · Bilbo Handia">
+                                            Busturialdea-Urdaibai · Lea-Artibai · Gran Bilbao
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=tidal-rivers">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="zonas húmedas" data-habitat-type="rivers, estuaries and wetlands" data-regions="gran bilbao encartaciones arratia-nervión">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Wetlands" data-en-alt="Habitat: Wetlands" data-eu-alt="Habitat: Wetlands" loading="lazy" src="img/habitats/wetlands.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Rivers, estuaries and wetlands" data-eu="Ibaiak, estuarioak eta hezeguneak">
+                                        Rivers, estuaries and wetlands
+                                    </span>
+                                    <h2 class="h5" data-en="Wetlands" data-eu="Zona hezeak">
+                                        Wetlands
+                                    </h2>
+                                    <p data-en="Permanently or temporarily waterlogged areas that support a high diversity of life." data-eu="Irrati edo unean urpean dauden eremuak, bizitza aniztasun handia sostengatzen dutenak.">
+                                        Permanently or temporarily waterlogged areas that support a high diversity of life.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
+          Busturialdea-Urdaibai · Gran Bilbao · Encartaciones · Arratia-Nervión
+         " data-eu="Busturialdea · Bilbo Handia · Enkarterri · Arratia-Nerbioi">
+                                            Busturialdea-Urdaibai · Gran Bilbao · Encartaciones · Arratia-Nervión
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=wetlands">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="marismas" data-habitat-type="rivers, estuaries and wetlands" data-regions="gran bilbao">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Marshes" data-en-alt="Habitat: Marshes" data-eu-alt="Habitat: Marshes" loading="lazy" src="img/habitats/marshes.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Rivers, estuaries and wetlands" data-eu="Ibaiak, estuarioak eta hezeguneak">
+                                        Rivers, estuaries and wetlands
+                                    </span>
+                                    <h2 class="h5" data-en="Marshes" data-eu="Mariskak">
+                                        Marshes
+                                    </h2>
+                                    <p data-en="Tidal wetlands with salt-tolerant vegetation, essential for bird feeding and resting." data-eu="Ildasoko hezeguneak, gatzari eusten dioten landarearekin, hegazien elikadura eta atsedenarako funtsezkoak.">
+                                        Tidal wetlands with salt-tolerant vegetation, essential for bird feeding and resting.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
+          Busturialdea-Urdaibai · Gran Bilbao
+         " data-eu="Busturialdea · Bilbo Handia">
+                                            Busturialdea-Urdaibai · Gran Bilbao
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=marshes">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="ríos" data-habitat-type="rivers, estuaries and wetlands" data-regions="">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Rivers" data-en-alt="Habitat: Rivers" data-eu-alt="Habitat: Rivers" loading="lazy" src="img/habitats/rivers.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Rivers, estuaries and wetlands" data-eu="Ibaiak, estuarioak eta hezeguneak">
+                                        Rivers, estuaries and wetlands
+                                    </span>
+                                    <h2 class="h5" data-en="Rivers" data-eu="Ibaiak">
+                                        Rivers
+                                    </h2>
+                                    <p data-en="Natural freshwater courses connecting mountains, valleys and estuaries." data-eu="Mendiak, ibaialdiak eta estuarioak lotzen dituzten ur garbiako ibai naturalak.">
+                                        Natural freshwater courses connecting mountains, valleys and estuaries.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
           All seven regions
          " data-eu="Zazpi eskualdeak">
-           All seven regions
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=rivers">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="arroyos" data-habitat-type="rivers, estuaries and wetlands" data-regions="">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Streams" data-en-alt="Habitat: Streams" data-eu-alt="Habitat: Streams" loading="lazy" src="img/habitats/streams.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Rivers, estuaries and wetlands" data-eu="Ibaiak, estuarioak eta hezeguneak">
-          Rivers, estuaries and wetlands
-         </span>
-         <h2 class="h5" data-en="Streams" data-eu="Bideak">
-          Streams
-         </h2>
-         <p data-en="Small water courses, often shaded, that provide connectivity and shelter to river species." data-eu="Ur-bide txikiak, askotan itzaltasunean, espezie ibaiari konektibitate eta babesak ematen dietenak.">
-          Small water courses, often shaded, that provide connectivity and shelter to river species.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
+                                            All seven regions
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=rivers">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="arroyos" data-habitat-type="rivers, estuaries and wetlands" data-regions="">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Streams" data-en-alt="Habitat: Streams" data-eu-alt="Habitat: Streams" loading="lazy" src="img/habitats/streams.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Rivers, estuaries and wetlands" data-eu="Ibaiak, estuarioak eta hezeguneak">
+                                        Rivers, estuaries and wetlands
+                                    </span>
+                                    <h2 class="h5" data-en="Streams" data-eu="Bideak">
+                                        Streams
+                                    </h2>
+                                    <p data-en="Small water courses, often shaded, that provide connectivity and shelter to river species." data-eu="Ur-bide txikiak, askotan itzaltasunean, espezie ibaiari konektibitate eta babesak ematen dietenak.">
+                                        Small water courses, often shaded, that provide connectivity and shelter to river species.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
           All seven regions
          " data-eu="Zazpi eskualdeak">
-           All seven regions
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=rivers">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="bosques de ribera" data-habitat-type="rivers, estuaries and wetlands" data-regions="">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Riparian forests" data-en-alt="Habitat: Riparian forests" data-eu-alt="Habitat: Riparian forests" loading="lazy" src="img/habitats/riparian forests.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Rivers, estuaries and wetlands" data-eu="Ibaiak, estuarioak eta hezeguneak">
-          Rivers, estuaries and wetlands
-         </span>
-         <h2 class="h5" data-en="Riparian forests" data-eu="Ibaizarrak">
-          Riparian forests
-         </h2>
-         <p data-en="Woodland formations accompanying rivers and streams, stabilising banks and providing shade." data-eu="Ibaiak eta bideak laguntzen dituzten zuhaitz-formazioak, ertzeak egonkortu eta itzala ematen dutenak.">
-          Woodland formations accompanying rivers and streams, stabilising banks and providing shade.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
+                                            All seven regions
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=rivers">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="bosques de ribera" data-habitat-type="rivers, estuaries and wetlands" data-regions="">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Riparian forests" data-en-alt="Habitat: Riparian forests" data-eu-alt="Habitat: Riparian forests" loading="lazy" src="img/habitats/riparian%20forests.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Rivers, estuaries and wetlands" data-eu="Ibaiak, estuarioak eta hezeguneak">
+                                        Rivers, estuaries and wetlands
+                                    </span>
+                                    <h2 class="h5" data-en="Riparian forests" data-eu="Ibaizarrak">
+                                        Riparian forests
+                                    </h2>
+                                    <p data-en="Woodland formations accompanying rivers and streams, stabilising banks and providing shade." data-eu="Ibaiak eta bideak laguntzen dituzten zuhaitz-formazioak, ertzeak egonkortu eta itzala ematen dutenak.">
+                                        Woodland formations accompanying rivers and streams, stabilising banks and providing shade.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
           All seven regions
          " data-eu="Zazpi eskualdeak">
-           All seven regions
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=riparian-forests">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="bosques y formaciones forestales" data-habitat-type="mountains and forests" data-regions="">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Forests and woodland" data-en-alt="Habitat: Forests and woodland" data-eu-alt="Habitat: Forests and woodland" loading="lazy" src="img/habitats/forests.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Mountains and forests" data-eu="Mendiak eta basoak">
-          Mountains and forests
-         </span>
-         <h2 class="h5" data-en="Forests and woodland" data-eu="Bosqueak eta formazio basoak">
-          Forests and woodland
-         </h2>
-         <p data-en="Oak woodlands, beech forests, holm oak groves and other natural or semi-natural forest formations." data-eu="Roble-bosqueak, haiz-bosqueak, hariztiak eta beste formazio baso natural edo semi-naturalak.">
-          Oak woodlands, beech forests, holm oak groves and other natural or semi-natural forest formations.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
+                                            All seven regions
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=riparian-forests">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="bosques y formaciones forestales" data-habitat-type="mountains and forests" data-regions="">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Forests and woodland" data-en-alt="Habitat: Forests and woodland" data-eu-alt="Habitat: Forests and woodland" loading="lazy" src="img/habitats/forests.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Mountains and forests" data-eu="Mendiak eta basoak">
+                                        Mountains and forests
+                                    </span>
+                                    <h2 class="h5" data-en="Forests and woodland" data-eu="Bosqueak eta formazio basoak">
+                                        Forests and woodland
+                                    </h2>
+                                    <p data-en="Oak woodlands, beech forests, holm oak groves and other natural or semi-natural forest formations." data-eu="Roble-bosqueak, haiz-bosqueak, hariztiak eta beste formazio baso natural edo semi-naturalak.">
+                                        Oak woodlands, beech forests, holm oak groves and other natural or semi-natural forest formations.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
           All seven regions
          " data-eu="Zazpi eskualdeak">
-           All seven regions
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=forests">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="monta&ntilde;a" data-habitat-type="mountains and forests" data-regions="durangaldea arratia-nervi&oacute;n encartaciones">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Mountain" data-en-alt="Habitat: Mountain" data-eu-alt="Habitat: Mountain" loading="lazy" src="img/habitats/mountains.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Mountains and forests" data-eu="Mendiak eta basoak">
-          Mountains and forests
-         </span>
-         <h2 class="h5" data-en="Mountain" data-eu="Mendia">
-          Mountain
-         </h2>
-         <p data-en="Mid and high mountain landscapes with mosaics of forest, scrub, rock and grassland." data-eu="Erdi eta goi mendiko paisaiak, baso, matorral, harri eta belar mosaikoekin.">
-          Mid and high mountain landscapes with mosaics of forest, scrub, rock and grassland.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
-          Durangaldea &middot; Arratia-Nervi&oacute;n &middot; Encartaciones
-         " data-eu="Durangaldea &middot; Arratia-Nerbioi &middot; Enkarterri">
-           Durangaldea &middot; Arratia-Nervi&oacute;n &middot; Encartaciones
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=mountains">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="roquedos" data-habitat-type="mountains and forests" data-regions="durangaldea arratia-nervi&oacute;n encartaciones">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Rocky areas" data-en-alt="Habitat: Rocky areas" data-eu-alt="Habitat: Rocky areas" loading="lazy" src="img/habitats/rocky outcrops.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Mountains and forests" data-eu="Mendiak eta basoak">
-          Mountains and forests
-         </span>
-         <h2 class="h5" data-en="Rocky areas" data-eu="Harri-eremuak">
-          Rocky areas
-         </h2>
-         <p data-en="Rock outcrops providing shelter, resting areas and specialised microhabitats." data-eu="Harri-aflokiak, babes, atseden-eremuak eta mikrohabitat espezializatuak eskaintzen dituztenak.">
-          Rock outcrops providing shelter, resting areas and specialised microhabitats.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
-          Durangaldea &middot; Arratia-Nervi&oacute;n &middot; Encartaciones
-         " data-eu="Durangaldea &middot; Arratia-Nerbioi &middot; Enkarterri">
-           Durangaldea &middot; Arratia-Nervi&oacute;n &middot; Encartaciones
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=rocky-outcrops">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="zonas de cumbre" data-habitat-type="mountains and forests" data-regions="durangaldea arratia-nervi&oacute;n encartaciones">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Summit zones" data-en-alt="Habitat: Summit zones" data-eu-alt="Habitat: Summit zones" loading="lazy" src="img/habitats/mountain peaks.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Mountains and forests" data-eu="Mendiak eta basoak">
-          Mountains and forests
-         </span>
-         <h2 class="h5" data-en="Summit zones" data-eu="Gailur-eremuak">
-          Summit zones
-         </h2>
-         <p data-en="Elevated areas exposed to wind and more extreme climatic conditions." data-eu="Haizeari eta ingurumen klimatiko extremuagoari eskuhurtuta dauden eremu garaiak.">
-          Elevated areas exposed to wind and more extreme climatic conditions.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
-          Durangaldea &middot; Arratia-Nervi&oacute;n &middot; Encartaciones
-         " data-eu="Durangaldea &middot; Arratia-Nerbioi &middot; Enkarterri">
-           Durangaldea &middot; Arratia-Nervi&oacute;n &middot; Encartaciones
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=mountain-peaks">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="pastizales" data-habitat-type="mountains and forests" data-regions="durangaldea arratia-nervi&oacute;n encartaciones lea-artibai">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Grasslands" data-en-alt="Habitat: Grasslands" data-eu-alt="Habitat: Grasslands" loading="lazy" src="img/habitats/grasslands.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Mountains and forests" data-eu="Mendiak eta basoak">
-          Mountains and forests
-         </span>
-         <h2 class="h5" data-en="Grasslands" data-eu="Larozaleak">
-          Grasslands
-         </h2>
-         <p data-en="Open spaces dominated by grasses, maintained by natural conditions or livestock use." data-eu="Laroz nagusiki dominatutako espazio irekiak, baldintza natural edo abeltzaintza erabilerak mantentzen dituztenak.">
-          Open spaces dominated by grasses, maintained by natural conditions or livestock use.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
-          Durangaldea &middot; Arratia-Nervi&oacute;n &middot; Encartaciones &middot; Lea-Artibai
+                                            All seven regions
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=forests">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="montaña" data-habitat-type="mountains and forests" data-regions="durangaldea arratia-nervión encartaciones">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Mountain" data-en-alt="Habitat: Mountain" data-eu-alt="Habitat: Mountain" loading="lazy" src="img/habitats/mountains.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Mountains and forests" data-eu="Mendiak eta basoak">
+                                        Mountains and forests
+                                    </span>
+                                    <h2 class="h5" data-en="Mountain" data-eu="Mendia">
+                                        Mountain
+                                    </h2>
+                                    <p data-en="Mid and high mountain landscapes with mosaics of forest, scrub, rock and grassland." data-eu="Erdi eta goi mendiko paisaiak, baso, matorral, harri eta belar mosaikoekin.">
+                                        Mid and high mountain landscapes with mosaics of forest, scrub, rock and grassland.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
+          Durangaldea · Arratia-Nervión · Encartaciones
+         " data-eu="Durangaldea · Arratia-Nerbioi · Enkarterri">
+                                            Durangaldea · Arratia-Nervión · Encartaciones
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=mountains">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="roquedos" data-habitat-type="mountains and forests" data-regions="durangaldea arratia-nervión encartaciones">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Rocky areas" data-en-alt="Habitat: Rocky areas" data-eu-alt="Habitat: Rocky areas" loading="lazy" src="img/habitats/rocky%20outcrops.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Mountains and forests" data-eu="Mendiak eta basoak">
+                                        Mountains and forests
+                                    </span>
+                                    <h2 class="h5" data-en="Rocky areas" data-eu="Harri-eremuak">
+                                        Rocky areas
+                                    </h2>
+                                    <p data-en="Rock outcrops providing shelter, resting areas and specialised microhabitats." data-eu="Harri-aflokiak, babes, atseden-eremuak eta mikrohabitat espezializatuak eskaintzen dituztenak.">
+                                        Rock outcrops providing shelter, resting areas and specialised microhabitats.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
+          Durangaldea · Arratia-Nervión · Encartaciones
+         " data-eu="Durangaldea · Arratia-Nerbioi · Enkarterri">
+                                            Durangaldea · Arratia-Nervión · Encartaciones
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=rocky-outcrops">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="zonas de cumbre" data-habitat-type="mountains and forests" data-regions="durangaldea arratia-nervión encartaciones">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Summit zones" data-en-alt="Habitat: Summit zones" data-eu-alt="Habitat: Summit zones" loading="lazy" src="img/habitats/mountain%20peaks.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Mountains and forests" data-eu="Mendiak eta basoak">
+                                        Mountains and forests
+                                    </span>
+                                    <h2 class="h5" data-en="Summit zones" data-eu="Gailur-eremuak">
+                                        Summit zones
+                                    </h2>
+                                    <p data-en="Elevated areas exposed to wind and more extreme climatic conditions." data-eu="Haizeari eta ingurumen klimatiko extremuagoari eskuhurtuta dauden eremu garaiak.">
+                                        Elevated areas exposed to wind and more extreme climatic conditions.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
+          Durangaldea · Arratia-Nervión · Encartaciones
+         " data-eu="Durangaldea · Arratia-Nerbioi · Enkarterri">
+                                            Durangaldea · Arratia-Nervión · Encartaciones
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=mountain-peaks">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="pastizales" data-habitat-type="mountains and forests" data-regions="durangaldea arratia-nervión encartaciones lea-artibai">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Grasslands" data-en-alt="Habitat: Grasslands" data-eu-alt="Habitat: Grasslands" loading="lazy" src="img/habitats/grasslands.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Mountains and forests" data-eu="Mendiak eta basoak">
+                                        Mountains and forests
+                                    </span>
+                                    <h2 class="h5" data-en="Grasslands" data-eu="Larozaleak">
+                                        Grasslands
+                                    </h2>
+                                    <p data-en="Open spaces dominated by grasses, maintained by natural conditions or livestock use." data-eu="Laroz nagusiki dominatutako espazio irekiak, baldintza natural edo abeltzaintza erabilerak mantentzen dituztenak.">
+                                        Open spaces dominated by grasses, maintained by natural conditions or livestock use.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
+          Durangaldea · Arratia-Nervión · Encartaciones · Lea-Artibai
          " data-eu="
-          Durangaldea &middot; Arratia-Nervi&oacute;n &middot; Encartaciones &middot; Lea-Artibai
+          Durangaldea · Arratia-Nervión · Encartaciones · Lea-Artibai
          ">
-           Durangaldea &middot; Arratia-Nervi&oacute;n &middot; Encartaciones &middot; Lea-Artibai
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=grasslands">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="matorrales de monta&ntilde;a" data-habitat-type="mountains and forests" data-regions="durangaldea arratia-nervi&oacute;n encartaciones">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Mountain scrubland" data-en-alt="Habitat: Mountain scrubland" data-eu-alt="Habitat: Mountain scrubland" loading="lazy" src="img/habitats/thickets.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Mountains and forests" data-eu="Mendiak eta basoak">
-          Mountains and forests
-         </span>
-         <h2 class="h5" data-en="Mountain scrubland" data-eu="Mendi-matorralak">
-          Mountain scrubland
-         </h2>
-         <p data-en="High-altitude scrub and heathlands forming transitions between grasslands, rocky areas and forests." data-eu="Garai-matorralak eta bregiak, larozaleen, harri-eremuen eta basoen arteko trantsizioak osatzen dituztenak.">
-          High-altitude scrub and heathlands forming transitions between grasslands, rocky areas and forests.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
-          Durangaldea &middot; Arratia-Nervi&oacute;n &middot; Encartaciones
-         " data-eu="Durangaldea &middot; Arratia-Nerbioi &middot; Enkarterri">
-           Durangaldea &middot; Arratia-Nervi&oacute;n &middot; Encartaciones
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=thickets">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="cortados calizos" data-habitat-type="mountains and forests" data-regions="durangaldea arratia-nervi&oacute;n encartaciones">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Limestone cliffs" data-en-alt="Habitat: Limestone cliffs" data-eu-alt="Habitat: Limestone cliffs" loading="lazy" src="img/habitats/limestone cliffs.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Mountains and forests" data-eu="Mendiak eta basoak">
-          Mountains and forests
-         </span>
-         <h2 class="h5" data-en="Limestone cliffs" data-eu="Kalkarri labar">
-          Limestone cliffs
-         </h2>
-         <p data-en="Limestone rock escarpments with cracks and ledges where communities adapted to rock develop." data-eu="Harri kalkerriko eskarpak, harriari egokitutako komunitateak garatzen diren zikin eta mailakekin.">
-          Limestone rock escarpments with cracks and ledges where communities adapted to rock develop.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
-          Durangaldea &middot; Arratia-Nervi&oacute;n &middot; Encartaciones
-         " data-eu="Durangaldea &middot; Arratia-Nerbioi &middot; Enkarterri">
-           Durangaldea &middot; Arratia-Nervi&oacute;n &middot; Encartaciones
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=limestone-cliffs">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="cuevas" data-habitat-type="subterranean" data-regions="durangaldea arratia-nervi&oacute;n encartaciones">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Caves" data-en-alt="Habitat: Caves" data-eu-alt="Habitat: Caves" loading="lazy" src="img/habitats/caves.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Subterranean" data-eu="Azpialdekoa">
-          Subterranean
-         </span>
-         <h2 class="h5" data-en="Caves" data-eu="Leizeak">
-          Caves
-         </h2>
-         <p data-en="Underground cavities and karst systems with specialised fauna and stable environmental conditions." data-eu="Azpialdeko zuloak eta karts-sistemak, fauna espezializatua eta baldintza ingurumen egonkorrak dituztenak.">
-          Underground cavities and karst systems with specialised fauna and stable environmental conditions.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
-          Durangaldea &middot; Arratia-Nervi&oacute;n &middot; Encartaciones
-         " data-eu="Durangaldea &middot; Arratia-Nerbioi &middot; Enkarterri">
-           Durangaldea &middot; Arratia-Nervi&oacute;n &middot; Encartaciones
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=caves">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="medios humano-agropecuarios" data-habitat-type="urban and agricultural" data-regions="">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Human-agricultural environments" data-en-alt="Habitat: Human-agricultural environments" data-eu-alt="Habitat: Human-agricultural environments" loading="lazy" src="img/habitats/agricultural and livestock.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Urban and agricultural" data-eu="Urbano eta nekazaritza">
-          Urban and agricultural
-         </span>
-         <h2 class="h5" data-en="Human-agricultural environments" data-eu="Ingurune humano-agropastoralak">
-          Human-agricultural environments
-         </h2>
-         <p data-en="Landscapes of farmsteads, crops, meadows and hedgerows combining human activity and biodiversity." data-eu="Etxeak, nekazaritza, larozaleak eta setoak dituzten paisaiak, jarduera humanoa eta biodibertsitatea konbinatzen dituztenak.">
-          Landscapes of farmsteads, crops, meadows and hedgerows combining human activity and biodiversity.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
+                                            Durangaldea · Arratia-Nervión · Encartaciones · Lea-Artibai
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=grasslands">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="matorrales de montaña" data-habitat-type="mountains and forests" data-regions="durangaldea arratia-nervión encartaciones">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Mountain scrubland" data-en-alt="Habitat: Mountain scrubland" data-eu-alt="Habitat: Mountain scrubland" loading="lazy" src="img/habitats/thickets.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Mountains and forests" data-eu="Mendiak eta basoak">
+                                        Mountains and forests
+                                    </span>
+                                    <h2 class="h5" data-en="Mountain scrubland" data-eu="Mendi-matorralak">
+                                        Mountain scrubland
+                                    </h2>
+                                    <p data-en="High-altitude scrub and heathlands forming transitions between grasslands, rocky areas and forests." data-eu="Garai-matorralak eta bregiak, larozaleen, harri-eremuen eta basoen arteko trantsizioak osatzen dituztenak.">
+                                        High-altitude scrub and heathlands forming transitions between grasslands, rocky areas and forests.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
+          Durangaldea · Arratia-Nervión · Encartaciones
+         " data-eu="Durangaldea · Arratia-Nerbioi · Enkarterri">
+                                            Durangaldea · Arratia-Nervión · Encartaciones
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=thickets">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="cortados calizos" data-habitat-type="mountains and forests" data-regions="durangaldea arratia-nervión encartaciones">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Limestone cliffs" data-en-alt="Habitat: Limestone cliffs" data-eu-alt="Habitat: Limestone cliffs" loading="lazy" src="img/habitats/limestone%20cliffs.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Mountains and forests" data-eu="Mendiak eta basoak">
+                                        Mountains and forests
+                                    </span>
+                                    <h2 class="h5" data-en="Limestone cliffs" data-eu="Kalkarri labar">
+                                        Limestone cliffs
+                                    </h2>
+                                    <p data-en="Limestone rock escarpments with cracks and ledges where communities adapted to rock develop." data-eu="Harri kalkerriko eskarpak, harriari egokitutako komunitateak garatzen diren zikin eta mailakekin.">
+                                        Limestone rock escarpments with cracks and ledges where communities adapted to rock develop.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
+          Durangaldea · Arratia-Nervión · Encartaciones
+         " data-eu="Durangaldea · Arratia-Nerbioi · Enkarterri">
+                                            Durangaldea · Arratia-Nervión · Encartaciones
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=limestone-cliffs">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="cuevas" data-habitat-type="subterranean" data-regions="durangaldea arratia-nervión encartaciones">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Caves" data-en-alt="Habitat: Caves" data-eu-alt="Habitat: Caves" loading="lazy" src="img/habitats/caves.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Subterranean" data-eu="Azpialdekoa">
+                                        Subterranean
+                                    </span>
+                                    <h2 class="h5" data-en="Caves" data-eu="Leizeak">
+                                        Caves
+                                    </h2>
+                                    <p data-en="Underground cavities and karst systems with specialised fauna and stable environmental conditions." data-eu="Azpialdeko zuloak eta karts-sistemak, fauna espezializatua eta baldintza ingurumen egonkorrak dituztenak.">
+                                        Underground cavities and karst systems with specialised fauna and stable environmental conditions.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
+          Durangaldea · Arratia-Nervión · Encartaciones
+         " data-eu="Durangaldea · Arratia-Nerbioi · Enkarterri">
+                                            Durangaldea · Arratia-Nervión · Encartaciones
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=caves">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="medios humano-agropecuarios" data-habitat-type="urban and agricultural" data-regions="">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Human-agricultural environments" data-en-alt="Habitat: Human-agricultural environments" data-eu-alt="Habitat: Human-agricultural environments" loading="lazy" src="img/habitats/agricultural%20and%20livestock.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Urban and agricultural" data-eu="Urbano eta nekazaritza">
+                                        Urban and agricultural
+                                    </span>
+                                    <h2 class="h5" data-en="Human-agricultural environments" data-eu="Ingurune humano-agropastoralak">
+                                        Human-agricultural environments
+                                    </h2>
+                                    <p data-en="Landscapes of farmsteads, crops, meadows and hedgerows combining human activity and biodiversity." data-eu="Etxeak, nekazaritza, larozaleak eta setoak dituzten paisaiak, jarduera humanoa eta biodibertsitatea konbinatzen dituztenak.">
+                                        Landscapes of farmsteads, crops, meadows and hedgerows combining human activity and biodiversity.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
           All seven regions
          " data-eu="Zazpi eskualdeak">
-           All seven regions
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=agricultural-and-livestock">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="valles" data-habitat-type="mountains and forests" data-regions="">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Valleys" data-en-alt="Habitat: Valleys" data-eu-alt="Habitat: Valleys" loading="lazy" src="img/habitats/valleys.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Mountains and forests" data-eu="Mendiak eta basoak">
-          Mountains and forests
-         </span>
-         <h2 class="h5" data-en="Valleys" data-eu="Ibaialdiak">
-          Valleys
-         </h2>
-         <p data-en="Landscape units integrating slopes, river courses, forests and settlements." data-eu="Lasterak, ibai-ibilbideak, basoak eta etxebizitzak integratzen dituzten paisai-unitateak.">
-          Landscape units integrating slopes, river courses, forests and settlements.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
+                                            All seven regions
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=agricultural-and-livestock">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="valles" data-habitat-type="mountains and forests" data-regions="">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Valleys" data-en-alt="Habitat: Valleys" data-eu-alt="Habitat: Valleys" loading="lazy" src="img/habitats/valleys.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Mountains and forests" data-eu="Mendiak eta basoak">
+                                        Mountains and forests
+                                    </span>
+                                    <h2 class="h5" data-en="Valleys" data-eu="Ibaialdiak">
+                                        Valleys
+                                    </h2>
+                                    <p data-en="Landscape units integrating slopes, river courses, forests and settlements." data-eu="Lasterak, ibai-ibilbideak, basoak eta etxebizitzak integratzen dituzten paisai-unitateak.">
+                                        Landscape units integrating slopes, river courses, forests and settlements.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
           All seven regions
          " data-eu="Zazpi eskualdeak">
-           All seven regions
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=valleys">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-      <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="urbes (ciudades y pueblos)" data-habitat-type="urban and agricultural" data-regions="gran bilbao durangaldea lea-artibai uribe encartaciones arratia-nervi&oacute;n">
-       <article class="catalog-card habitat-card h-100">
-        <img alt="Habitat: Urban areas" data-en-alt="Habitat: Urban areas" data-eu-alt="Habitat: Urban areas" loading="lazy" src="img/habitats/urban.jpg"/>
-        <div class="card-body d-flex flex-column">
-         <span class="blog-category" data-en="Urban and agricultural" data-eu="Urbano eta nekazaritza">
-          Urban and agricultural
-         </span>
-         <h2 class="h5" data-en="Urban areas (towns and cities)" data-eu="Eremu urbanoak (hiriak eta herriak)">
-          Urban areas (towns and cities)
-         </h2>
-         <p data-en="Urban environments with parks, gardens, trees, vacant lots and green corridors that can harbour fauna and flora." data-eu="Parkeak, lorategiak, zuhaitzak, solariek eta korridore berdeak dituzten ingurune urbanoak, fauna eta flora bara dezaketenak.">
-          Urban environments with parks, gardens, trees, vacant lots and green corridors that can harbour fauna and flora.
-         </p>
-         <p class="small mt-auto">
-          <strong data-en="Regions:" data-eu="Eskualdeak:">
-           Regions:
-          </strong>
-          <span data-en="
-          Gran Bilbao &middot; Durangaldea &middot; Lea-Artibai &middot; Busturialdea-Urdaibai &middot; Uribe &middot; Encartaciones &middot; Arratia-Nervi&oacute;n
+                                            All seven regions
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=valleys">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-xl-4 habitat-item" data-habitat-name="urbes (ciudades y pueblos)" data-habitat-type="urban and agricultural" data-regions="gran bilbao durangaldea lea-artibai uribe encartaciones arratia-nervión">
+                            <article class="catalog-card habitat-card h-100">
+                                <img alt="Habitat: Urban areas" data-en-alt="Habitat: Urban areas" data-eu-alt="Habitat: Urban areas" loading="lazy" src="img/habitats/urban.jpg">
+                                <div class="card-body d-flex flex-column">
+                                    <span class="blog-category" data-en="Urban and agricultural" data-eu="Urbano eta nekazaritza">
+                                        Urban and agricultural
+                                    </span>
+                                    <h2 class="h5" data-en="Urban areas (towns and cities)" data-eu="Eremu urbanoak (hiriak eta herriak)">
+                                        Urban areas (towns and cities)
+                                    </h2>
+                                    <p data-en="Urban environments with parks, gardens, trees, vacant lots and green corridors that can harbour fauna and flora." data-eu="Parkeak, lorategiak, zuhaitzak, solariek eta korridore berdeak dituzten ingurune urbanoak, fauna eta flora bara dezaketenak.">
+                                        Urban environments with parks, gardens, trees, vacant lots and green corridors that can harbour fauna and flora.
+                                    </p>
+                                    <p class="small mt-auto">
+                                        <strong data-en="Regions:" data-eu="Eskualdeak:">
+                                            Regions:
+                                        </strong>
+                                        <span data-en="
+          Gran Bilbao · Durangaldea · Lea-Artibai · Busturialdea-Urdaibai · Uribe · Encartaciones · Arratia-Nervión
          " data-eu="
-          Gran Bilbao &middot; Durangaldea &middot; Lea-Artibai &middot; Busturialdea-Urdaibai &middot; Uribe &middot; Encartaciones &middot; Arratia-Nervi&oacute;n
+          Gran Bilbao · Durangaldea · Lea-Artibai · Busturialdea-Urdaibai · Uribe · Encartaciones · Arratia-Nervión
          ">
-           Gran Bilbao &middot; Durangaldea &middot; Lea-Artibai &middot; Busturialdea-Urdaibai &middot; Uribe &middot; Encartaciones &middot; Arratia-Nervi&oacute;n
-          </span>
-         </p>
-         <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=urban">
-          View species in this habitat
-         </a>
-        </div>
-       </article>
-      </div>
-     </div>
-    </div>
-   </section>
-  </main>
-  <!-- FOOTER -->
-  <footer class="main-footer">
-   <div aria-label="Collaborative Partners / Bazkide kolaboratzaileak" class="partner-footer" data-en-aria-label="Collaborative Partners / Bazkide kolaboratzaileak" data-eu-aria-label="Collaborative Partners / Bazkide kolaboratzaileak">
-    <div class="container">
-     <div aria-label="Collaborating entities" data-en-aria-label="Collaborating entities" data-eu-aria-label="Collaborating entities" id="partnerSlider" tabindex="0">
-      <div class="partner-track" id="partnerTrack">
-       <a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank">
-        <img alt="Biscay diputation/Bizkaiko Foru Aldundia" class="object-fit-contain" data-en-alt="Biscay diputation/Bizkaiko Foru Aldundia" data-eu-alt="Biscay diputation/Bizkaiko Foru Aldundia" src="img/partners/logo-diputacion-de-bizkaia.jpg"/>
-       </a>
-       <a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank">
-        <img alt="Urdaibai Bird Center" class="object-fit-contain" data-en-alt="Urdaibai Bird Center" data-eu-alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png"/>
-       </a>
-       <a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank">
-        <img alt="MITECO" class="object-fit-contain" data-en-alt="MITECO" data-eu-alt="MITECO" src="img/partners/logo-miteco-color.png"/>
-       </a>
-       <a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank">
-        <img alt="Basque Country University /Euskal Herriko Unibertsitatea" class="object-fit-contain" data-en-alt="Basque Country University /Euskal Herriko Unibertsitatea" data-eu-alt="Basque Country University /Euskal Herriko Unibertsitatea" src="img/partners/logo-upv-ehu-blanco-completo .png"/>
-       </a>
-       <a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank">
-        <img alt="Basque Government/Eusko Jaurlaritza" class="object-fit-contain" data-en-alt="Basque Government/Eusko Jaurlaritza" data-eu-alt="Basque Government/Eusko Jaurlaritza" src="img/partners/logo-gobierno-vasco.png"/>
-       </a>
-       <a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank">
-        <img alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" class="object-fit-contain" data-en-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" data-eu-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" src="img/partners/fundacion-biodiversidad.jpg"/>
-       </a>
-       <a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank">
-        <img alt="Biscay diputation/Bizkaiko Foru Aldundia" class="object-fit-contain" data-en-alt="Biscay diputation/Bizkaiko Foru Aldundia" data-eu-alt="Biscay diputation/Bizkaiko Foru Aldundia" src="img/partners/logo-diputacion-de-bizkaia.jpg"/>
-       </a>
-       <a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank">
-        <img alt="Urdaibai Bird Center" class="object-fit-contain" data-en-alt="Urdaibai Bird Center" data-eu-alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png"/>
-       </a>
-       <a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank">
-        <img alt="MITECO" class="object-fit-contain" data-en-alt="MITECO" data-eu-alt="MITECO" src="img/partners/logo-miteco-color.png"/>
-       </a>
-       <a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank">
-        <img alt="Basque Country University /Euskal Herriko Unibertsitatea" class="object-fit-contain" data-en-alt="Basque Country University /Euskal Herriko Unibertsitatea" data-eu-alt="Basque Country University /Euskal Herriko Unibertsitatea" src="img/partners/logo-upv-ehu-blanco-completo .png"/>
-       </a>
-       <a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank">
-        <img alt="Basque Government/Eusko Jaurlaritza" class="object-fit-contain" data-en-alt="Basque Government/Eusko Jaurlaritza" data-eu-alt="Basque Government/Eusko Jaurlaritza" src="img/partners/logo-gobierno-vasco.png"/>
-       </a>
-       <a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank">
-        <img alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" class="object-fit-contain" data-en-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" data-eu-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" src="img/partners/fundacion-biodiversidad.jpg"/>
-       </a>
-      </div>
-     </div>
-    </div>
-   </div>
-   <div class="container">
-    <div class="row g-4 py-4 px-4">
-     <div class="col-lg-3 col-md-6">
-      <a class="footer-brand d-inline-flex align-items-center gap-2" href="index.html">
-       <img alt="Logotipo Flora and Fauna of Biscay" data-en-alt="Logotipo Flora and Fauna of Biscay" data-eu-alt="Logotipo Flora and Fauna of Biscay" src="img/logo-web.svg"/>
-       <div class="d-flex flex-column lh-1">
-        <span data-en="Flora &amp; Fauna" data-eu="Bizkaiko">
-         Flora &amp; Fauna
-        </span>
-        <small data-en="of Biscay" data-eu="flora eta fauna">
-         of Biscay
-        </small>
-       </div>
-      </a>
-      <p class="footer-slogan" data-en="Discover &middot; Protect &middot; Share" data-eu="Ezagutu &middot; Babestu &middot; Partekatu">
-       Discover &middot; Protect &middot; Share
-      </p>
-      <p class="mt-3" data-en="Team: June Sillero, Eritz Gorriz, Kelea Rueda" data-eu="Taldea: June Sillero, Eritz Gorriz, Kelea Rueda">
-       <b data-en="Team:" data-eu="Taldea:">
-        Team:
-       </b>
-       June Sillero, Eritz Gorriz, Kelea Rueda
-      </p>
-      <p class="mt-3" data-en="Project: Challenge 1.2, DAMi 1&ordm;" data-eu="Proiektua: Challenge 1.2, DAMi 1. maila">
-       <b data-en="Project:" data-eu="Proiektua:">
-        Project:
-       </b>
-       Challenge 1.2, DAMi 1&ordm;
-      </p>
-      <div class="social-links d-flex flex-wrap gap-2">
-       <a aria-label="Instagram" data-en-aria-label="Instagram" data-eu-aria-label="Instagram" href="https://www.instagram.com/" rel="noopener" target="_blank">
-        <i class="bi bi-instagram">
-        </i>
-       </a>
-       <a aria-label="YouTube" data-en-aria-label="YouTube" data-eu-aria-label="YouTube" href="https://www.youtube.com/@urdaibaibirdcenter" rel="noopener" target="_blank">
-        <i class="bi bi-youtube">
-        </i>
-       </a>
-       <a aria-label="Facebook" data-en-aria-label="Facebook" data-eu-aria-label="Facebook" href="https://www.facebook.com/" rel="noopener" target="_blank">
-        <i class="bi bi-facebook">
-        </i>
-       </a>
-       <a aria-label="X" data-en-aria-label="X" data-eu-aria-label="X" href="https://x.com/" rel="noopener" target="_blank">
-        <i class="bi bi-twitter-x">
-        </i>
-       </a>
-       <a aria-label="Project repository" data-en-aria-label="Project repository" data-eu-aria-label="Project repository" href="https://github.com/keruka21/CHALLENGE-1-2-My-first-Application" rel="noopener" target="_blank">
-        <i class="bi bi-github">
-        </i>
-       </a>
-      </div>
-     </div>
-     <div class="col-lg-2 col-6">
-      <h2 class="footer-title" data-en="Explore" data-eu="Arakatu">
-       Explore
-      </h2>
-      <ul class="footer-links">
-       <li>
-        <a data-en="Home" data-eu="Hasiera" href="index.html">
-         Home
-        </a>
-       </li>
-       <li>
-        <a data-en="Flora" data-eu="Flora" href="catalog.html?type=flora">
-         Flora
-        </a>
-       </li>
-       <li>
-        <a data-en="Fauna" data-eu="Fauna" href="catalog.html?type=fauna">
-         Fauna
-        </a>
-       </li>
-       <li>
-        <a data-en="Blog" data-eu="Bloga" href="blog.html">
-         Blog
-        </a>
-       </li>
-       <li>
-        <a data-en="Gallery" data-eu="Galeria" href="gallery.html">
-         Gallery
-        </a>
-       </li>
-      </ul>
-     </div>
-     <div class="col-lg-3 col-6">
-      <h2 class="footer-title" data-en="Contact" data-eu="Kontaktua">
-       Contact
-      </h2>
-      <a class="footer-contact" href="tel:+34555555555">
-       <i class="bi bi-telephone-fill">
-       </i>
-       <span data-en="
+                                            Gran Bilbao · Durangaldea · Lea-Artibai · Busturialdea-Urdaibai · Uribe · Encartaciones · Arratia-Nervión
+                                        </span>
+                                    </p>
+                                    <a class="btn btn-outline-primary btn-sm align-self-start" data-en="View species in this habitat" data-eu="Ikusi habitat honetako espezieak" href="catalog.html?habitat=urban">
+                                        View species in this habitat
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer class="main-footer">
+            <div aria-label="Collaborative partners" class="partner-footer" data-en-aria-label="Collaborative partners" data-eu-aria-label="Bazkide kolaboratzaileak" role="group">
+                <div class="container">
+                    <div aria-label="Collaborating entities" data-en-aria-label="Collaborating entities" data-eu-aria-label="Erakunde laguntzaileak" id="partnerSlider" tabindex="0" role="group">
+                        <div class="partner-track" id="partnerTrack">
+                            <a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank">
+                                <img alt="Biscay diputation/Bizkaiko Foru Aldundia" class="object-fit-contain" data-en-alt="Biscay diputation/Bizkaiko Foru Aldundia" data-eu-alt="Biscay diputation/Bizkaiko Foru Aldundia" src="img/partners/logo-diputacion-de-bizkaia.jpg">
+                            </a>
+                            <a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank">
+                                <img alt="Urdaibai Bird Center" class="object-fit-contain" data-en-alt="Urdaibai Bird Center" data-eu-alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png">
+                            </a>
+                            <a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank">
+                                <img alt="MITECO" class="object-fit-contain" data-en-alt="MITECO" data-eu-alt="MITECO" src="img/partners/logo-miteco-color.png">
+                            </a>
+                            <a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank">
+                                <img alt="Basque Country University /Euskal Herriko Unibertsitatea" class="object-fit-contain" data-en-alt="Basque Country University /Euskal Herriko Unibertsitatea" data-eu-alt="Basque Country University /Euskal Herriko Unibertsitatea" src="img/partners/logo-upv-ehu-blanco-completo.png">
+                            </a>
+                            <a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank">
+                                <img alt="Basque Government/Eusko Jaurlaritza" class="object-fit-contain" data-en-alt="Basque Government/Eusko Jaurlaritza" data-eu-alt="Basque Government/Eusko Jaurlaritza" src="img/partners/logo-gobierno-vasco.png">
+                            </a>
+                            <a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank">
+                                <img alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" class="object-fit-contain" data-en-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" data-eu-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" src="img/partners/fundacion-biodiversidad.jpg">
+                            </a>
+                            <a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank">
+                                <img alt="Biscay diputation/Bizkaiko Foru Aldundia" class="object-fit-contain" data-en-alt="Biscay diputation/Bizkaiko Foru Aldundia" data-eu-alt="Biscay diputation/Bizkaiko Foru Aldundia" src="img/partners/logo-diputacion-de-bizkaia.jpg">
+                            </a>
+                            <a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank">
+                                <img alt="Urdaibai Bird Center" class="object-fit-contain" data-en-alt="Urdaibai Bird Center" data-eu-alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png">
+                            </a>
+                            <a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank">
+                                <img alt="MITECO" class="object-fit-contain" data-en-alt="MITECO" data-eu-alt="MITECO" src="img/partners/logo-miteco-color.png">
+                            </a>
+                            <a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank">
+                                <img alt="Basque Country University /Euskal Herriko Unibertsitatea" class="object-fit-contain" data-en-alt="Basque Country University /Euskal Herriko Unibertsitatea" data-eu-alt="Basque Country University /Euskal Herriko Unibertsitatea" src="img/partners/logo-upv-ehu-blanco-completo.png">
+                            </a>
+                            <a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank">
+                                <img alt="Basque Government/Eusko Jaurlaritza" class="object-fit-contain" data-en-alt="Basque Government/Eusko Jaurlaritza" data-eu-alt="Basque Government/Eusko Jaurlaritza" src="img/partners/logo-gobierno-vasco.png">
+                            </a>
+                            <a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank">
+                                <img alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" class="object-fit-contain" data-en-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" data-eu-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" src="img/partners/fundacion-biodiversidad.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row g-4 py-4 px-4">
+                    <div class="col-lg-3 col-md-6">
+                        <a class="footer-brand d-inline-flex align-items-center gap-2" href="index.html">
+                            <img alt="Logotipo Flora and Fauna of Biscay" data-en-alt="Logotipo Flora and Fauna of Biscay" data-eu-alt="Logotipo Flora and Fauna of Biscay" src="img/logo-web.svg">
+                            <div class="d-flex flex-column lh-1">
+                                <span data-en="Flora &amp; Fauna" data-eu="Bizkaiko">
+                                    Flora &amp; Fauna
+                                </span>
+                                <small data-en="of Biscay" data-eu="flora eta fauna">
+                                    of Biscay
+                                </small>
+                            </div>
+                        </a>
+                        <p class="footer-slogan" data-en="Discover · Protect · Share" data-eu="Ezagutu · Babestu · Partekatu">
+                            Discover · Protect · Share
+                        </p>
+                        <p class="mt-3" data-en="Team: June Sillero, Eritz Gorriz, Kelea Rueda" data-eu="Taldea: June Sillero, Eritz Gorriz, Kelea Rueda">
+                            <b data-en="Team:" data-eu="Taldea:">
+                                Team:
+                            </b>
+                            June Sillero, Eritz Gorriz, Kelea Rueda
+                        </p>
+                        <p class="mt-3" data-en="Project: Challenge 1.2, DAMi 1º" data-eu="Proiektua: Challenge 1.2, DAMi 1. maila">
+                            <b data-en="Project:" data-eu="Proiektua:">
+                                Project:
+                            </b>
+                            Challenge 1.2, DAMi 1º
+                        </p>
+                        <div class="social-links d-flex flex-wrap gap-2">
+                            <a aria-label="Instagram" data-en-aria-label="Instagram" data-eu-aria-label="Instagram" href="https://www.instagram.com/" rel="noopener" target="_blank">
+                                <i class="bi bi-instagram">
+                                </i>
+                            </a>
+                            <a aria-label="YouTube" data-en-aria-label="YouTube" data-eu-aria-label="YouTube" href="https://www.youtube.com/@urdaibaibirdcenter" rel="noopener" target="_blank">
+                                <i class="bi bi-youtube">
+                                </i>
+                            </a>
+                            <a aria-label="Facebook" data-en-aria-label="Facebook" data-eu-aria-label="Facebook" href="https://www.facebook.com/" rel="noopener" target="_blank">
+                                <i class="bi bi-facebook">
+                                </i>
+                            </a>
+                            <a aria-label="X" data-en-aria-label="X" data-eu-aria-label="X" href="https://x.com/" rel="noopener" target="_blank">
+                                <i class="bi bi-twitter-x">
+                                </i>
+                            </a>
+                            <a aria-label="Project repository" data-en-aria-label="Project repository" data-eu-aria-label="Project repository" href="https://github.com/keruka21/CHALLENGE-1-2-My-first-Application" rel="noopener" target="_blank">
+                                <i class="bi bi-github">
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <h2 class="footer-title" data-en="Explore" data-eu="Arakatu">
+                            Explore
+                        </h2>
+                        <ul class="footer-links">
+                            <li>
+                                <a data-en="Home" data-eu="Hasiera" href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a data-en="Flora" data-eu="Flora" href="catalog.html?type=flora">
+                                    Flora
+                                </a>
+                            </li>
+                            <li>
+                                <a data-en="Fauna" data-eu="Fauna" href="catalog.html?type=fauna">
+                                    Fauna
+                                </a>
+                            </li>
+                            <li>
+                                <a data-en="Blog" data-eu="Bloga" href="blog.html">
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a data-en="Gallery" data-eu="Galeria" href="gallery.html">
+                                    Gallery
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <h2 class="footer-title" data-en="Contact" data-eu="Kontaktua">
+                            Contact
+                        </h2>
+                        <a class="footer-contact" href="tel:+34555555555">
+                            <i class="bi bi-telephone-fill">
+                            </i>
+                            <span data-en="
        +34 944 000 000
       " data-eu="
        +34 944 000 000
       ">
-        +34 944 000 000
-       </span>
-      </a>
-      <a class="footer-contact" href="https://wa.me/34555555555" rel="noopener" target="_blank">
-       <i class="bi bi-whatsapp">
-       </i>
-       <span data-en="
+                                +34 944 000 000
+                            </span>
+                        </a>
+                        <a class="footer-contact" href="https://wa.me/34555555555" rel="noopener" target="_blank">
+                            <i class="bi bi-whatsapp">
+                            </i>
+                            <span data-en="
        WhatsApp: +34 600 000 000
       " data-eu="
        WhatsApp: +34 600 000 000
       ">
-        WhatsApp: +34 600 000 000
-       </span>
-      </a>
-      <a class="footer-contact" href="mailto:faunaandflora@bizkaia.com">
-       <i class="bi bi-envelope">
-       </i>
-       <span data-en="
+                                WhatsApp: +34 600 000 000
+                            </span>
+                        </a>
+                        <a class="footer-contact" href="mailto:faunaandflora@bizkaia.com">
+                            <i class="bi bi-envelope">
+                            </i>
+                            <span data-en="
        faunaandflora@bizkaia.com
       " data-eu="
        faunaandflora@bizkaia.com
       ">
-        faunaandflora@bizkaia.com
-       </span>
-      </a>
-      <p class="mt-4" data-en="Monday to Friday" data-eu="Astelehenetik ostiralera">
-       <b data-en="Monday to Friday" data-eu="Astelehenetik ostiralera">
-        Monday to Friday
-       </b>
-      </p>
-      <p data-en="08:00 am - 14:25pm (Classroom 209)" data-eu="08:00 am - 14:25 pm (209 ikasgela)">
-       08:00 am - 14:25pm (Classroom 209)
-      </p>
-     </div>
-     <div class="col-lg-4">
-      <h2 class="footer-title" data-en="We are at CIFP TARTANGA LHII" data-eu="CIFP TARTANGA LHII-n gaude">
-       We are at CIFP TARTANGA LHII
-      </h2>
-      <p data-en="Tartanga Street, 15 &middot; Erandio, Biscay 48950" data-eu="Tartanga kalea, 15 &middot; Erandio, Bizkaia 48950">
-       Tartanga Street, 15 &middot; Erandio, Biscay 48950
-      </p>
-      <p data-en="Floor 1, Room 209" data-eu="1. solairua, 209. aretoa">
-       Floor 1, Room 209
-      </p>
-      <div class="footer-map">
-       <iframe data-en-title="CIFP TARTANGA LHII" data-eu-title="CIFP TARTANGA LHII" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Instituto%20Tartanga%20Erandio&amp;output=embed" title="CIFP TARTANGA LHII">
-       </iframe>
-      </div>
-     </div>
-    </div>
-    <p class="mb-2 audio-credit">
-     <span data-en="Robin Sound: Lawrence Shove / British Library &middot;" data-eu="Txantxangorriaren soinua: Lawrence Shove / British Library &middot;">
-      Robin Sound: Lawrence Shove / British Library &middot;
-     </span>
-     <a data-en="Wikimedia Commons" data-eu="Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:European_Robin_(Erithacus_rubecula)_(W1CDR0001425_BD16).ogg" rel="noopener" target="_blank">
-      Wikimedia Commons
-     </a>
-     <span data-en="
-     &middot;
+                                faunaandflora@bizkaia.com
+                            </span>
+                        </a>
+                        <p class="mt-4" data-en="Monday to Friday" data-eu="Astelehenetik ostiralera">
+                            <b data-en="Monday to Friday" data-eu="Astelehenetik ostiralera">
+                                Monday to Friday
+                            </b>
+                        </p>
+                        <p data-en="08:00 am - 14:25pm (Classroom 209)" data-eu="08:00 am - 14:25 pm (209 ikasgela)">
+                            08:00 am - 14:25pm (Classroom 209)
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 class="footer-title" data-en="We are at CIFP TARTANGA LHII" data-eu="CIFP TARTANGA LHII-n gaude">
+                            We are at CIFP TARTANGA LHII
+                        </h2>
+                        <p data-en="Tartanga Street, 15 · Erandio, Biscay 48950" data-eu="Tartanga kalea, 15 · Erandio, Bizkaia 48950">
+                            Tartanga Street, 15 · Erandio, Biscay 48950
+                        </p>
+                        <p data-en="Floor 1, Room 209" data-eu="1. solairua, 209. aretoa">
+                            Floor 1, Room 209
+                        </p>
+                        <div class="footer-map">
+                            <iframe data-en-title="CIFP TARTANGA LHII" data-eu-title="CIFP TARTANGA LHII" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Instituto%20Tartanga%20Erandio&amp;output=embed" title="CIFP TARTANGA LHII">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <p class="mb-2 audio-credit">
+                    <span data-en="Robin Sound: Lawrence Shove / British Library ·" data-eu="Txantxangorriaren soinua: Lawrence Shove / British Library ·">
+                        Robin Sound: Lawrence Shove / British Library ·
+                    </span>
+                    <a data-en="Wikimedia Commons" data-eu="Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:European_Robin_(Erithacus_rubecula)_(W1CDR0001425_BD16).ogg" rel="noopener" target="_blank">
+                        Wikimedia Commons
+                    </a>
+                    <span data-en="
+     ·
      " data-eu="
-     &middot;
+     ·
      ">
-      &middot;
-     </span>
-     <a data-en="CC BY-SA 4.0" data-eu="CC BY-SA 4.0" href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">
-      CC BY-SA 4.0
-     </a>
-     <span data-en="
+                        ·
+                    </span>
+                    <a data-en="CC BY-SA 4.0" data-eu="CC BY-SA 4.0" href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">
+                        CC BY-SA 4.0
+                    </a>
+                    <span data-en="
      .
     " data-eu="
      .
     ">
-      .
-     </span>
-    </p>
-    <div class="footer-bottom py-3 d-flex flex-wrap justify-content-between gap-2">
-     <span data-en="&copy; 2026 Flora &amp; Fauna of Biscay &middot; Educational project" data-eu="&copy; 2026 Bizkaiko Flora eta Fauna &middot; Hezkuntza-proiektua" data-translate-mode="html">
-      &copy; 2026 Flora &amp; Fauna of Biscay &middot; Educational project
-     </span>
-     <div class="d-flex gap-3 flex-wrap">
-      <a data-en="Privacy" data-eu="Pribatutasuna" href="privacy.html">
-       Privacy
-      </a>
-      <a data-en="Legal notice" data-eu="Lege-oharra" href="legal.html">
-       Legal notice
-      </a>
-      <a data-en="Cookies" data-eu="Cookie-ak" href="cookies.html">
-       Cookies
-      </a>
-      <a data-en="Back to home" data-eu="Itzuli hasierara" href="index.html">
-       Back to home
-      </a>
-     </div>
-    </div>
-   </div>
-  </footer>
-  <script src="bootstrap-5.3.8/js/bootstrap.bundle.min.js">
-  </script>
-  <script src="js/main.js">
-  </script>
- </body>
+                        .
+                    </span>
+                </p>
+                <div class="footer-bottom py-3 d-flex flex-wrap justify-content-between gap-2">
+                    <span data-en="© 2026 Flora &amp; Fauna of Biscay · Educational project" data-eu="© 2026 Bizkaiko Flora eta Fauna · Hezkuntza-proiektua" data-translate-mode="html">
+                        © 2026 Flora &amp; Fauna of Biscay · Educational project
+                    </span>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a data-en="Privacy" data-eu="Pribatutasuna" href="privacy.html">
+                            Privacy
+                        </a>
+                        <a data-en="Legal notice" data-eu="Lege-oharra" href="legal.html">
+                            Legal notice
+                        </a>
+                        <a data-en="Cookies" data-eu="Cookie-ak" href="cookies.html">
+                            Cookies
+                        </a>
+                        <a data-en="Back to home" data-eu="Itzuli hasierara" href="index.html">
+                            Back to home
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="bootstrap-5.3.8/js/bootstrap.bundle.min.js">
+        </script>
+        <script src="js/main.js">
+        </script>
+    </body>
 </html>
