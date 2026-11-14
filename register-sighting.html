@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="Collaborative platform to discover, consult and record the flora and fauna of Biscay" name="description" />
+    <title>Flora & Fauna of Biscay | Discover, Protect, Share</title>
+    <link href="img/logo-web.svg" rel="icon" />
+    <link href="bootstrap-5.3.8/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Flora & Fauna of Biscay">
+    <meta property="og:url" content="https://faunaandfloraofbiscay.com">
+    <meta property="og:image" content="https://faunaandfloraofbiscay.com/img/logo-web.svg">
+    <meta property="og:description" content="A collaborative space to discover the flora and fauna of our territory, explore their habitats and provide sightings that help conserve them.">
+</head>
+ <body>
+  <!--HEADER-->
+  <header>
+   <!--USER BAR / LANGUAGES-->
+   <div class="user-bar">
+    <div class="container d-flex justify-content-between align-items-center gap-2">
+     <!--LANGUAGE SWITCHER (kept fixed when the User Area panel opens)-->
+     <div aria-label="Select Language" class="language-switch d-flex align-items-center gap-1" data-en-aria-label="Select Language" data-eu-aria-label="Select Language">
+      <button aria-pressed="true" class="btn btn-sm language-button active" data-en="EN" data-eu="EN" data-language="en" type="button">
+       EN
+      </button>
+      <span aria-hidden="true">
+       <span data-en="
+       |
+      " data-eu="
+       |
+      ">
+        |
+       </span>
+      </span>
+      <button aria-pressed="false" class="btn btn-sm language-button" data-en="EUS" data-eu="EUS" data-language="eu" type="button">
+       EUS
+      </button>
+     </div>
+     <!--USER BAR-->
+     <div class="position-relative">
+      <button aria-controls="userPanel" aria-expanded="false" aria-label="User Area" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" data-en-aria-label="User Area" data-eu-aria-label="User Area" type="button">
+       <i class="bi bi-person-circle fs-5">
+       </i>
+       <span class="d-none d-sm-inline ms-1" data-en="User Area" data-eu="Erabiltzaile eremua">
+        User Area
+       </span>
+      </button>
+      <div class="collapse user-panel-collapse" id="userPanel">
+       <div class="user-dropdown p-3">
+        <!--NOT LOGGED IN-->
+        <div id="guestPanel">
+         <p class="fw-semibold text-primary" data-en="Welcome!" data-eu="Ongi etorri!">
+          Welcome!
+         </p>
+         <button class="btn btn-primary btn-sm w-100 mb-2" data-bs-target="#loginModal" data-bs-toggle="modal" type="button">
+          <span data-en="Log-in" data-eu="Saioa hasi">
+           Log-in
+          </span>
+         </button>
+         <a class="btn btn-outline-primary btn-sm w-100 mb-2" data-en="Sign-up" data-eu="Erregistratu" href="signup.html">
+          Sign-up
+         </a>
+         <a class="d-block text-center small mt-1 text-decoration-underline" data-en="demo user area" data-eu="demo erabiltzaile eremua" href="user-area.html">
+          demo user area
+         </a>
+        </div>
+        <!--LOGGED IN-->
+        <div class="d-none" id="memberPanel">
+         <strong data-en="User" data-eu="Erabiltzailea" id="memberName">
+          User
+         </strong>
+         <p class="small text-secondary" id="memberEmail">
+         </p>
+         <a class="dropdown-item" data-en="My Profile" data-eu="Nire profila" href="user-area.html">
+          My Profile
+         </a>
+         <a class="dropdown-item" data-en="Settings" data-eu="Ezarpenak" href="user-area.html#privacySettingsForm">
+          Settings
+         </a>
+         <button class="btn btn-outline-secondary btn-sm w-100 mt-2" data-en="Log-out" data-eu="Saioa itxi" id="logoutButton">
+          Log-out
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!--NAVBAR-->
+   <nav class="navbar navbar-expand-lg main-navbar" id="mainNavbar">
+    <div class="container">
+     <!--LOGO-->
+     <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" id="logo-web">
+      <img alt="logo-web" data-en-alt="logo-web" data-eu-alt="logo-web" height="50" src="img/logo-web.svg"/>
+      <div class="d-flex flex-column lh-1">
+       <span data-en="Flora &amp; Fauna" data-eu="Bizkaiko">
+        Flora &amp; Fauna
+       </span>
+       <small data-en="of Biscay" data-eu="flora eta fauna">
+        of Biscay
+       </small>
+      </div>
+     </a>
+     <!--TOGGLE BUTTON-->
+     <button aria-label="Open navigation" class="navbar-toggler" data-bs-target="#navbarContent" data-bs-toggle="collapse" data-en-aria-label="Open navigation" data-eu-aria-label="Open navigation" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <!--NAVBAR LINKS-->
+     <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto gap-lg-2">
+       <li class="nav-item">
+        <a class="nav-link" data-en="Home" data-eu="Hasiera" href="index.html">
+         Home
+        </a>
+       </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Catalogue" data-eu="Katalogoa" href="catalog.html">
+         Catalogue
+        </a>
+        <ul class="dropdown-menu">
+         <li>
+          <a class="dropdown-item" data-en="Fauna" data-eu="Fauna" href="catalog.html?type=fauna">
+           Fauna
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item" data-en="Flora" data-eu="Flora" href="catalog.html?type=flora">
+           Flora
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item" data-en="Habitats" data-eu="Habitatak" href="habitats.html">
+           Habitats
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item" data-en="Parks, reserves and centers" data-eu="Parkeak, erreserbak eta zentroak" href="spaces.html">
+           Parks, reserves and centers
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item" data-en="Regions" data-eu="Eskualdeak" href="regions.html">
+           Regions
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-en="Blog" data-eu="Bloga" href="blog.html">
+         Blog
+        </a>
+       </li>
+       <li class="nav-item dropdown">
+        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Participate" data-eu="Parte hartu" href="species-submit.html">
+         Participate
+        </a>
+        <ul class="dropdown-menu">
+         <li>
+          <a class="dropdown-item" data-en="Register a species" data-eu="Espezie bat erregistratu" href="species-submit.html">
+           Register a species
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item" data-en="Record a sighting" data-eu="Behaketa bat erregistratu" href="register-sighting.html">
+           Record a sighting
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-en="Gallery" data-eu="Galeria" href="gallery.html">
+         Gallery
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-en="Videos" data-eu="Bideoak" href="videos.html">
+         Videos
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-en="Contact" data-eu="Kontaktua" href="contact.html">
+         Contact
+        </a>
+       </li>
+       <!--THEME TOGGLE-->
+       <li class="nav-item d-flex align-items-center">
+        <button aria-label="Change theme" class="btn btn-sm theme-toggle" data-en-aria-label="Change theme" data-eu-aria-label="Change theme" id="themeToggle" type="button">
+         <i class="bi bi-moon-stars-fill" id="themeIcon">
+         </i>
+        </button>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <!--AUDIO & CONTROLS-->
+  <audio id="backgroundAudio" loop="" preload="none">
+   <source src="audio/European_Robin.mp3" type="audio/mpeg"/>
+  </audio>
+  <button aria-label="Silence Sound" class="floating-control audio-control" data-en-aria-label="Silence Sound" data-en-title="Silence" data-eu-aria-label="Silence Sound" data-eu-title="Silence" id="audioToggle" title="Silence">
+   <i class="bi bi-volume-up-fill" id="audioIcon">
+   </i>
+  </button>
+  <button aria-label="Back to the top" class="floating-control top-control" data-en-aria-label="Back to the top" data-eu-aria-label="Back to the top" id="backToTop" type="button">
+   <i class="bi bi-chevron-up">
+   </i>
+  </button>
+  <!-- LOGIN MODAL -->
+  <div aria-hidden="true" aria-labelledby="loginModalLabel" class="modal fade" id="loginModal" tabindex="-1">
+   <div class="modal-dialog">
+    <div class="modal-content p-3">
+     <div class="modal-header border-0">
+      <h5 class="modal-title fw-bold" data-en="Log-in" data-eu="Saioa hasi" id="loginModalLabel">
+       Log-in
+      </h5>
+      <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" data-en-aria-label="Close" data-eu-aria-label="Close" type="button">
+      </button>
+     </div>
+     <div class="modal-body">
+      <form id="loginForm">
+       <div class="mb-3">
+        <label class="form-label" data-en="Email address" data-eu="Posta elektronikoa" for="loginEmail">
+         Email address
+        </label>
+        <input class="form-control" id="loginEmail" required="" type="email"/>
+       </div>
+       <div class="mb-3">
+        <label class="form-label" data-en="Password" data-eu="Pasahitza" for="loginPassword">
+         Password
+        </label>
+        <input class="form-control" id="loginPassword" required="" type="password"/>
+       </div>
+       <button class="btn btn-primary w-100" data-en="Sign in" data-eu="Hasi saioa" type="submit">
+        Sign in
+       </button>
+      </form>
+     </div>
+    </div>
+   </div>
+  </div>
+  <main id="mainContent">
+   <section class="inner-hero page-hero">
+    <div class="container">
+     <nav aria-label="breadcrumb" data-en-aria-label="breadcrumb" data-eu-aria-label="breadcrumb">
+      <ol class="breadcrumb mb-3">
+       <li class="breadcrumb-item">
+        <a data-en="Home" data-eu="Hasiera" href="index.html">
+         Home
+        </a>
+       </li>
+       <li aria-current="page" class="breadcrumb-item active" data-en="Record a sighting" data-eu="Behaketa bat erregistratu">
+        Record a sighting
+       </li>
+      </ol>
+     </nav>
+     <p class="section-kicker" data-en="Sighting registration" data-eu="Behaketa erregistroa">
+      Sighting registration
+     </p>
+     <h1 data-en="Record a sighting" data-eu="Behaketa bat erregistratu">
+      Record a sighting
+     </h1>
+     <p class="lead" data-en="Share a species observation and help improve biodiversity knowledge." data-eu="Partekatu espezie behaketa bat eta lagundu biodibertsitatearen ezagutza hobetzen.">
+      Share a species observation and help improve biodiversity knowledge.
+     </p>
+    </div>
+   </section>
+   <section class="content-section">
+    <div class="container">
+     <div class="row g-4">
+      <div class="col-lg-8">
+       <div class="content-card">
+        <form action="#" enctype="multipart/form-data" id="sightingForm" method="post" novalidate="">
+         <div class="row g-3">
+          <div class="col-md-6">
+           <label class="form-label" data-en="Species *" data-eu="Espeziea *" for="sightingSpecies">
+            Species *
+           </label>
+           <select class="form-select" id="sightingSpecies" name="species_id" required="">
+            <option data-en="Select a species" data-eu="Hautatu espezie bat" value="">
+             Select a species
+            </option>
+            <optgroup label="Flora">
+             <option data-en="Acer campestre" data-eu="Acer campestre" value="Acer campestre">
+              Acer campestre
+             </option>
+             <option data-en="Allium victorialis" data-eu="Allium victorialis" value="Allium victorialis">
+              Allium victorialis
+             </option>
+             <option data-en="Alnus glutinosa" data-eu="Alnus glutinosa" value="Alnus glutinosa">
+              Alnus glutinosa
+             </option>
+             <option data-en="Ammophila arenaria" data-eu="Ammophila arenaria" value="Ammophila arenaria">
+              Ammophila arenaria
+             </option>
+             <option data-en="Arbutus unedo" data-eu="Arbutus unedo" value="Arbutus unedo">
+              Arbutus unedo
+             </option>
+             <option data-en="Armeria maritima" data-eu="Armeria maritima" value="Armeria maritima">
+              Armeria maritima
+             </option>
+             <option data-en="Arnica montana" data-eu="Arnica montana" value="Arnica montana">
+              Arnica montana
+             </option>
+             <option data-en="Asphodelus albus" data-eu="Asphodelus albus" value="Asphodelus albus">
+              Asphodelus albus
+             </option>
+             <option data-en="Asplenium scolopendrium" data-eu="Asplenium scolopendrium" value="Asplenium scolopendrium">
+              Asplenium scolopendrium
+             </option>
+             <option data-en="Betula celtiberica" data-eu="Betula celtiberica" value="Betula celtiberica">
+              Betula celtiberica
+             </option>
+             <option data-en="Cakile maritima" data-eu="Cakile maritima" value="Cakile maritima">
+              Cakile maritima
+             </option>
+             <option data-en="Calluna vulgaris" data-eu="Calluna vulgaris" value="Calluna vulgaris">
+              Calluna vulgaris
+             </option>
+             <option data-en="Calystegia soldanella" data-eu="Calystegia soldanella" value="Calystegia soldanella">
+              Calystegia soldanella
+             </option>
+             <option data-en="Carlina acaulis" data-eu="Carlina acaulis" value="Carlina acaulis">
+              Carlina acaulis
+             </option>
+             <option data-en="Castanea sativa" data-eu="Castanea sativa" value="Castanea sativa">
+              Castanea sativa
+             </option>
+             <option data-en="Clematis vitalba" data-eu="Clematis vitalba" value="Clematis vitalba">
+              Clematis vitalba
+             </option>
+             <option data-en="Cornus sanguinea" data-eu="Cornus sanguinea" value="Cornus sanguinea">
+              Cornus sanguinea
+             </option>
+             <option data-en="Corylus avellana" data-eu="Corylus avellana" value="Corylus avellana">
+              Corylus avellana
+             </option>
+             <option data-en="Crataegus monogyna" data-eu="Crataegus monogyna" value="Crataegus monogyna">
+              Crataegus monogyna
+             </option>
+             <option data-en="Crithmum maritimum" data-eu="Crithmum maritimum" value="Crithmum maritimum">
+              Crithmum maritimum
+             </option>
+             <option data-en="Culcita macrocarpa" data-eu="Culcita macrocarpa" value="Culcita macrocarpa">
+              Culcita macrocarpa
+             </option>
+             <option data-en="Daboecia cantabrica" data-eu="Daboecia cantabrica" value="Daboecia cantabrica">
+              Daboecia cantabrica
+             </option>
+             <option data-en="Drosera capensis" data-eu="Drosera capensis" value="Drosera capensis">
+              Drosera capensis
+             </option>
+             <option data-en="Drosera intermedia" data-eu="Drosera intermedia" value="Drosera intermedia">
+              Drosera intermedia
+             </option>
+             <option data-en="Drosera rotundifolia" data-eu="Drosera rotundifolia" value="Drosera rotundifolia">
+              Drosera rotundifolia
+             </option>
+             <option data-en="Erica tetralix" data-eu="Erica tetralix" value="Erica tetralix">
+              Erica tetralix
+             </option>
+             <option data-en="Erica vagans" data-eu="Erica vagans" value="Erica vagans">
+              Erica vagans
+             </option>
+             <option data-en="Eucalyptus globulus" data-eu="Eucalyptus globulus" value="Eucalyptus globulus">
+              Eucalyptus globulus
+             </option>
+             <option data-en="Euphorbia paralias" data-eu="Euphorbia paralias" value="Euphorbia paralias">
+              Euphorbia paralias
+             </option>
+             <option data-en="Fagus sylvatica" data-eu="Fagus sylvatica" value="Fagus sylvatica">
+              Fagus sylvatica
+             </option>
+             <option data-en="Frangula alnus" data-eu="Frangula alnus" value="Frangula alnus">
+              Frangula alnus
+             </option>
+             <option data-en="Fraxinus excelsior" data-eu="Fraxinus excelsior" value="Fraxinus excelsior">
+              Fraxinus excelsior
+             </option>
+             <option data-en="Gentiana lutea" data-eu="Gentiana lutea" value="Gentiana lutea">
+              Gentiana lutea
+             </option>
+             <option data-en="Ilex aquifolium" data-eu="Ilex aquifolium" value="Ilex aquifolium">
+              Ilex aquifolium
+             </option>
+             <option data-en="Juncus maritimus" data-eu="Juncus maritimus" value="Juncus maritimus">
+              Juncus maritimus
+             </option>
+             <option data-en="Juniperus communis subsp. alpina" data-eu="Juniperus communis subsp. alpina" value="Juniperus communis">
+              Juniperus communis subsp. alpina
+             </option>
+             <option data-en="Laurus nobilis" data-eu="Laurus nobilis" value="Laurus nobilis">
+              Laurus nobilis
+             </option>
+             <option data-en="Menyanthes trifoliata" data-eu="Menyanthes trifoliata" value="Menyanthes trifoliata">
+              Menyanthes trifoliata
+             </option>
+             <option data-en="Narcissus bulbocodium" data-eu="Narcissus bulbocodium" value="Narcissus bulbocodium">
+              Narcissus bulbocodium
+             </option>
+             <option data-en="Narcissus pseudonarcissus" data-eu="Narcissus pseudonarcissus" value="Narcissus pseudonarcissus">
+              Narcissus pseudonarcissus
+             </option>
+             <option data-en="Osmunda regalis" data-eu="Osmunda regalis" value="Osmunda regalis">
+              Osmunda regalis
+             </option>
+             <option data-en="Phragmites australis" data-eu="Phragmites australis" value="Phragmites australis">
+              Phragmites australis
+             </option>
+             <option data-en="Pinguicula lusitanica" data-eu="Pinguicula lusitanica" value="Pinguicula lusitanica">
+              Pinguicula lusitanica
+             </option>
+             <option data-en="Pinus radiata" data-eu="Pinus radiata" value="Pinus radiata">
+              Pinus radiata
+             </option>
+             <option data-en="Pistacia lentiscus" data-eu="Pistacia lentiscus" value="Pistacia lentiscus">
+              Pistacia lentiscus
+             </option>
+             <option data-en="Plantago maritima" data-eu="Plantago maritima" value="Plantago maritima">
+              Plantago maritima
+             </option>
+             <option data-en="Populus nigra" data-eu="Populus nigra" value="Populus nigra">
+              Populus nigra
+             </option>
+             <option data-en="Prunus spinosa" data-eu="Prunus spinosa" value="Prunus spinosa">
+              Prunus spinosa
+             </option>
+             <option data-en="Pteridium aquilinum" data-eu="Pteridium aquilinum" value="Pteridium aquilinum">
+              Pteridium aquilinum
+             </option>
+             <option data-en="Pulsatilla alpina subsp. cantabrica" data-eu="Pulsatilla alpina subsp. cantabrica" value="Pulsatilla alpina">
+              Pulsatilla alpina subsp. cantabrica
+             </option>
+             <option data-en="Quercus ilex" data-eu="Quercus ilex" value="Quercus ilex">
+              Quercus ilex
+             </option>
+             <option data-en="Quercus petraea" data-eu="Quercus petraea" value="Quercus petraea">
+              Quercus petraea
+             </option>
+             <option data-en="Quercus robur" data-eu="Quercus robur" value="Quercus robur">
+              Quercus robur
+             </option>
+             <option data-en="Quercus pyrenaica" data-eu="Quercus pyrenaica" value="Quercus pyrenaica">
+              Quercus pyrenaica
+             </option>
+             <option data-en="Rhamnus alaternus" data-eu="Rhamnus alaternus" value="Rhamnus alaternus">
+              Rhamnus alaternus
+             </option>
+             <option data-en="Salicornia ramosissima" data-eu="Salicornia ramosissima" value="Salicornia ramosissima">
+              Salicornia ramosissima
+             </option>
+             <option data-en="Salix alba" data-eu="Salix alba" value="Salix alba">
+              Salix alba
+             </option>
+             <option data-en="Sarcocornia fruticosa" data-eu="Sarcocornia fruticosa" value="Sarcocornia fruticosa">
+              Sarcocornia fruticosa
+             </option>
+             <option data-en="Saxifraga babiana" data-eu="Saxifraga babiana" value="Saxifraga babiana">
+              Saxifraga babiana
+             </option>
+             <option data-en="Saxifraga granulata" data-eu="Saxifraga granulata" value="Saxifraga granulata">
+              Saxifraga granulata
+             </option>
+             <option data-en="Smilax aspera" data-eu="Smilax aspera" value="Smilax aspera">
+              Smilax aspera
+             </option>
+             <option data-en="Taraxacum officinale" data-eu="Taraxacum officinale" value="Taraxacum officinale">
+              Taraxacum officinale
+             </option>
+             <option data-en="Taxus baccata" data-eu="Taxus baccata" value="Taxus baccata">
+              Taxus baccata
+             </option>
+             <option data-en="Trifolium repens" data-eu="Trifolium repens" value="Trifolium repens">
+              Trifolium repens
+             </option>
+             <option data-en="Ulex europaeus" data-eu="Ulex europaeus" value="Ulex europaeus">
+              Ulex europaeus
+             </option>
+             <option data-en="Ulex gallii" data-eu="Ulex gallii" value="Ulex gallii">
+              Ulex gallii
+             </option>
+             <option data-en="Urtica dioica" data-eu="Urtica dioica" value="Urtica dioica">
+              Urtica dioica
+             </option>
+             <option data-en="Vaccinium myrtillus" data-eu="Vaccinium myrtillus" value="Vaccinium myrtillus">
+              Vaccinium myrtillus
+             </option>
+             <option data-en="Zostera marina" data-eu="Zostera marina" value="Zostera marina">
+              Zostera marina
+             </option>
+             <option data-en="Zostera noltii" data-eu="Zostera noltii" value="Zostera noltii">
+              Zostera noltii
+             </option>
+            </optgroup>
+            <optgroup label="Fauna">
+             <option data-en="Accipiter nisus" data-eu="Accipiter nisus" value="Accipiter nisus">
+              Accipiter nisus
+             </option>
+             <option data-en="Aglais io" data-eu="Aglais io" value="Aglais io">
+              Aglais io
+             </option>
+             <option data-en="Alcedo atthis" data-eu="Alcedo atthis" value="Alcedo atthis">
+              Alcedo atthis
+             </option>
+             <option data-en="Alytes obstetricans" data-eu="Alytes obstetricans" value="Alytes obstetricans">
+              Alytes obstetricans
+             </option>
+             <option data-en="Anax imperator" data-eu="Anax imperator" value="Anax imperator">
+              Anax imperator
+             </option>
+             <option data-en="Anguilla anguilla" data-eu="Anguilla anguilla" value="Anguilla anguilla">
+              Anguilla anguilla
+             </option>
+             <option data-en="Anguis fragilis" data-eu="Anguis fragilis" value="Anguis fragilis">
+              Anguis fragilis
+             </option>
+             <option data-en="Anthus campestris" data-eu="Anthus campestris" value="Anthus campestris">
+              Anthus campestris
+             </option>
+             <option data-en="Apis mellifera" data-eu="Apis mellifera" value="Apis mellifera">
+              Apis mellifera
+             </option>
+             <option data-en="Ardea cinerea" data-eu="Ardea cinerea" value="Ardea cinerea">
+              Ardea cinerea
+             </option>
+             <option data-en="Equus asinus" data-eu="Equus asinus" value="Equus asinus">
+              Equus asinus
+             </option>
+             <option data-en="Astur gentilis" data-eu="Astur gentilis" value="Astur gentilis">
+              Astur gentilis
+             </option>
+             <option data-en="Bombus terrestris" data-eu="Bombus terrestris" value="Bombus terrestris">
+              Bombus terrestris
+             </option>
+             <option data-en="Bufo spinosus" data-eu="Bufo spinosus" value="Bufo spinosus">
+              Bufo spinosus
+             </option>
+             <option data-en="Calidris alpina" data-eu="Calidris alpina" value="Calidris alpina">
+              Calidris alpina
+             </option>
+             <option data-en="Capreolus capreolus" data-eu="Capreolus capreolus" value="Capreolus capreolus">
+              Capreolus capreolus
+             </option>
+             <option data-en="Carduelis carduelis" data-eu="Carduelis carduelis" value="Carduelis carduelis">
+              Carduelis carduelis
+             </option>
+             <option data-en="Charadrius hiaticula" data-eu="Charadrius hiaticula" value="Charadrius hiaticula">
+              Charadrius hiaticula
+             </option>
+             <option data-en="Chelon labrosus" data-eu="Chelon labrosus" value="Chelon labrosus">
+              Chelon labrosus
+             </option>
+             <option data-en="Cinclus cinclus" data-eu="Cinclus cinclus" value="Cinclus cinclus">
+              Cinclus cinclus
+             </option>
+             <option data-en="Coccinella septempunctata" data-eu="Coccinella septempunctata" value="Coccinella septempunctata">
+              Coccinella septempunctata
+             </option>
+             <option data-en="Columba livia" data-eu="Columba livia" value="Columba livia">
+              Columba livia
+             </option>
+             <option data-en="Cyanistes caeruleus" data-eu="Cyanistes caeruleus" value="Cyanistes caeruleus">
+              Cyanistes caeruleus
+             </option>
+             <option data-en="Delphinus delphis" data-eu="Delphinus delphis" value="Delphinus delphis">
+              Delphinus delphis
+             </option>
+             <option data-en="Dendrocopos major" data-eu="Dendrocopos major" value="Dendrocopos major">
+              Dendrocopos major
+             </option>
+             <option data-en="Dicentrarchus labrax" data-eu="Dicentrarchus labrax" value="Dicentrarchus labrax">
+              Dicentrarchus labrax
+             </option>
+             <option data-en="Erinaceus europaeus" data-eu="Erinaceus europaeus" value="Erinaceus europaeus">
+              Erinaceus europaeus
+             </option>
+             <option data-en="Erithacus rubecula" data-eu="Erithacus rubecula" value="Erithacus rubecula">
+              Erithacus rubecula
+             </option>
+             <option data-en="Euphydryas aurinia" data-eu="Euphydryas aurinia" value="Euphydryas aurinia">
+              Euphydryas aurinia
+             </option>
+             <option data-en="Canis lupus familiaris" data-eu="Canis lupus familiaris" value="Canis lupus familiaris">
+              Canis lupus familiaris
+             </option>
+             <option data-en="Falco peregrinus" data-eu="Falco peregrinus" value="Falco peregrinus">
+              Falco peregrinus
+             </option>
+             <option data-en="Felis silvestris" data-eu="Felis silvestris" value="Felis silvestris">
+              Felis silvestris
+             </option>
+             <option data-en="Fringilla coelebs" data-eu="Fringilla coelebs" value="Fringilla coelebs">
+              Fringilla coelebs
+             </option>
+             <option data-en="Galemys pyrenaicus" data-eu="Galemys pyrenaicus" value="Galemys pyrenaicus">
+              Galemys pyrenaicus
+             </option>
+             <option data-en="Garrulus glandarius" data-eu="Garrulus glandarius" value="Garrulus glandarius">
+              Garrulus glandarius
+             </option>
+             <option data-en="Genetta genetta" data-eu="Genetta genetta" value="Genetta genetta">
+              Genetta genetta
+             </option>
+             <option data-en="Glis glis" data-eu="Glis glis" value="Glis glis">
+              Glis glis
+             </option>
+             <option data-en="Globicephala melas" data-eu="Globicephala melas" value="Globicephala melas">
+              Globicephala melas
+             </option>
+             <option data-en="Gonepteryx rhamni" data-eu="Gonepteryx rhamni" value="Gonepteryx rhamni">
+              Gonepteryx rhamni
+             </option>
+             <option data-en="Gulosus aristotelis" data-eu="Gulosus aristotelis" value="Gulosus aristotelis">
+              Gulosus aristotelis
+             </option>
+             <option data-en="Gyps fulvus" data-eu="Gyps fulvus" value="Gyps fulvus">
+              Gyps fulvus
+             </option>
+             <option data-en="Hirundo rustica" data-eu="Hirundo rustica" value="Hirundo rustica">
+              Hirundo rustica
+             </option>
+             <option data-en="Hydrobates pelagicus" data-eu="Hydrobates pelagicus" value="Hydrobates pelagicus">
+              Hydrobates pelagicus
+             </option>
+             <option data-en="Hyla molleri" data-eu="Hyla molleri" value="Hyla molleri">
+              Hyla molleri
+             </option>
+             <option data-en="Lacerta schreiberi" data-eu="Lacerta schreiberi" value="Lacerta schreiberi">
+              Lacerta schreiberi
+             </option>
+             <option data-en="Larus michahellis" data-eu="Larus michahellis" value="Larus michahellis">
+              Larus michahellis
+             </option>
+             <option data-en="Limosa limosa" data-eu="Limosa limosa" value="Limosa limosa">
+              Limosa limosa
+             </option>
+             <option data-en="Lissotriton helveticus" data-eu="Lissotriton helveticus" value="Lissotriton helveticus">
+              Lissotriton helveticus
+             </option>
+             <option data-en="Lucanus cervus" data-eu="Lucanus cervus" value="Lucanus cervus">
+              Lucanus cervus
+             </option>
+             <option data-en="Lutra lutra" data-eu="Lutra lutra" value="Lutra lutra">
+              Lutra lutra
+             </option>
+             <option data-en="Martes martes" data-eu="Martes martes" value="Martes martes">
+              Martes martes
+             </option>
+             <option data-en="Meles meles" data-eu="Meles meles" value="Meles meles">
+              Meles meles
+             </option>
+             <option data-en="Motacilla alba" data-eu="Motacilla alba" value="Motacilla alba">
+              Motacilla alba
+             </option>
+             <option data-en="Mustela lutreola" data-eu="Mustela lutreola" value="Mustela lutreola">
+              Mustela lutreola
+             </option>
+             <option data-en="Mustela nivalis" data-eu="Mustela nivalis" value="Mustela nivalis">
+              Mustela nivalis
+             </option>
+             <option data-en="Natrix helvetica" data-eu="Natrix helvetica" value="Natrix helvetica">
+              Natrix helvetica
+             </option>
+             <option data-en="Natrix maura" data-eu="Natrix maura" value="Natrix maura">
+              Natrix maura
+             </option>
+             <option data-en="Neophron percnopterus" data-eu="Neophron percnopterus" value="Neophron percnopterus">
+              Neophron percnopterus
+             </option>
+             <option data-en="Numenius phaeopus" data-eu="Numenius phaeopus" value="Numenius phaeopus">
+              Numenius phaeopus
+             </option>
+             <option data-en="Ovis aries (carranzana)" data-eu="Ovis aries (carranzana)" value="Ovis aries carranzana">
+              Ovis aries (carranzana)
+             </option>
+             <option data-en="Ovis aries (latxa)" data-eu="Ovis aries (latxa)" value="Ovis aries latxa">
+              Ovis aries (latxa)
+             </option>
+             <option data-en="Pagellus bogaraveo" data-eu="Pagellus bogaraveo" value="Pagellus bogaraveo">
+              Pagellus bogaraveo
+             </option>
+             <option data-en="Pandion haliaetus" data-eu="Pandion haliaetus" value="Pandion haliaetus">
+              Pandion haliaetus
+             </option>
+             <option data-en="Papilio machaon" data-eu="Papilio machaon" value="Papilio machaon">
+              Papilio machaon
+             </option>
+             <option data-en="Parus major" data-eu="Parus major" value="Parus major">
+              Parus major
+             </option>
+             <option data-en="Passer domesticus" data-eu="Passer domesticus" value="Passer domesticus">
+              Passer domesticus
+             </option>
+             <option data-en="Pelophylax perezi" data-eu="Pelophylax perezi" value="Pelophylax perezi">
+              Pelophylax perezi
+             </option>
+             <option data-en="Phoxinus phoxinus" data-eu="Phoxinus phoxinus" value="Phoxinus phoxinus">
+              Phoxinus phoxinus
+             </option>
+             <option data-en="Pica pica" data-eu="Pica pica" value="Pica pica">
+              Pica pica
+             </option>
+             <option data-en="Platalea leucorodia" data-eu="Platalea leucorodia" value="Platalea leucorodia">
+              Platalea leucorodia
+             </option>
+             <option data-en="Podarcis muralis" data-eu="Podarcis muralis" value="Podarcis muralis">
+              Podarcis muralis
+             </option>
+             <option data-en="Equus caballus (pottoka)" data-eu="Equus caballus (pottoka)" value="Equus caballus pottoka">
+              Equus caballus (pottoka)
+             </option>
+             <option data-en="Prunella collaris" data-eu="Prunella collaris" value="Prunella collaris">
+              Prunella collaris
+             </option>
+             <option data-en="Pyrrhocorax pyrrhocorax" data-eu="Pyrrhocorax pyrrhocorax" value="Pyrrhocorax pyrrhocorax">
+              Pyrrhocorax pyrrhocorax
+             </option>
+             <option data-en="Rana temporaria" data-eu="Rana temporaria" value="Rana temporaria">
+              Rana temporaria
+             </option>
+             <option data-en="Rhinolophus ferrumequinum" data-eu="Rhinolophus ferrumequinum" value="Rhinolophus ferrumequinum">
+              Rhinolophus ferrumequinum
+             </option>
+             <option data-en="Salamandra salamandra" data-eu="Salamandra salamandra" value="Salamandra salamandra">
+              Salamandra salamandra
+             </option>
+             <option data-en="Salmo trutta" data-eu="Salmo trutta" value="Salmo trutta">
+              Salmo trutta
+             </option>
+             <option data-en="Sciurus vulgaris" data-eu="Sciurus vulgaris" value="Sciurus vulgaris">
+              Sciurus vulgaris
+             </option>
+             <option data-en="Strix aluco" data-eu="Strix aluco" value="Strix aluco">
+              Strix aluco
+             </option>
+             <option data-en="Sus scrofa" data-eu="Sus scrofa" value="Sus scrofa">
+              Sus scrofa
+             </option>
+             <option data-en="Sylvia atricapilla" data-eu="Sylvia atricapilla" value="Sylvia atricapilla">
+              Sylvia atricapilla
+             </option>
+             <option data-en="Trachurus trachurus" data-eu="Trachurus trachurus" value="Trachurus trachurus">
+              Trachurus trachurus
+             </option>
+             <option data-en="Triturus marmoratus" data-eu="Triturus marmoratus" value="Triturus marmoratus">
+              Triturus marmoratus
+             </option>
+             <option data-en="Turdus merula" data-eu="Turdus merula" value="Turdus merula">
+              Turdus merula
+             </option>
+             <option data-en="Tursiops truncatus" data-eu="Tursiops truncatus" value="Tursiops truncatus">
+              Tursiops truncatus
+             </option>
+             <option data-en="Tyto alba" data-eu="Tyto alba" value="Tyto alba">
+              Tyto alba
+             </option>
+             <option data-en="Bos taurus (betizu)" data-eu="Bos taurus (betizu)" value="Bos taurus betizu">
+              Bos taurus (betizu)
+             </option>
+             <option data-en="Bos taurus (monchina)" data-eu="Bos taurus (monchina)" value="Bos taurus monchina">
+              Bos taurus (monchina)
+             </option>
+             <option data-en="Vanessa atalanta" data-eu="Vanessa atalanta" value="Vanessa atalanta">
+              Vanessa atalanta
+             </option>
+             <option data-en="Vipera seoanei" data-eu="Vipera seoanei" value="Vipera seoanei">
+              Vipera seoanei
+             </option>
+             <option data-en="Vulpes vulpes" data-eu="Vulpes vulpes" value="Vulpes vulpes">
+              Vulpes vulpes
+             </option>
+            </optgroup>
+           </select>
+           <div class="invalid-feedback" data-en="Select a species." data-eu="Hautatu espezie bat.">
+            Select a species.
+           </div>
+          </div>
+          <div class="col-md-6">
+           <label class="form-label" data-en="Date and time *" data-eu="Data eta ordua *" for="sightingDate">
+            Date and time *
+           </label>
+           <input class="form-control" id="sightingDate" name="observed_at" required="" type="datetime-local"/>
+           <div class="invalid-feedback" data-en="Enter the date." data-eu="Idatzi data.">
+            Enter the date.
+           </div>
+          </div>
+          <div class="col-md-6">
+           <label class="form-label" data-en="Habitat *" data-eu="Habitata *" for="sightingHabitat">
+            Habitat *
+           </label>
+           <select class="form-select" id="sightingHabitat" name="habitat_id" required="">
+            <option data-en="Select a habitat" data-eu="Hautatu habitat bat" value="">
+             Select a habitat
+            </option>
+            <option data-en="Marine" data-eu="Itsasoa" value="Marinos">
+             Marine
+            </option>
+            <option data-en="Coastal" data-eu="Litoralak" value="Litorales">
+             Coastal
+            </option>
+            <option data-en="Open sea" data-eu="Itsas zabal" value="Mar abierto">
+             Open sea
+            </option>
+            <option data-en="Coastal cliffs" data-eu="Itsaslabar kostaldeak" value="Acantilados costeros">
+             Coastal cliffs
+            </option>
+            <option data-en="Islets" data-eu="Uharteak" value="Islotes">
+             Islets
+            </option>
+            <option data-en="Beach" data-eu="Hendaia" value="Playa">
+             Beach
+            </option>
+            <option data-en="Dunes" data-eu="Dunak" value="Dunas">
+             Dunes
+            </option>
+            <option data-en="Estuaries" data-eu="Estuarioak" value="Estuarios">
+             Estuaries
+            </option>
+            <option data-en="R&iacute;as" data-eu="R&iacute;aak" value="R&iacute;as">
+             R&iacute;as
+            </option>
+            <option data-en="Wetlands" data-eu="Lur hezeak" value="Zonas h&uacute;medas">
+             Wetlands
+            </option>
+            <option data-en="Marshes" data-eu="Mariskak" value="Marismas">
+             Marshes
+            </option>
+            <option data-en="Rivers" data-eu="Ibaiak" value="R&iacute;os">
+             Rivers
+            </option>
+            <option data-en="Streams" data-eu="Ibai txikiak" value="Arroyos">
+             Streams
+            </option>
+            <option data-en="Riparian forests" data-eu="Ibai-ertzeko basoak" value="Bosques de ribera">
+             Riparian forests
+            </option>
+            <option data-en="Forests and woodland" data-eu="Basoak eta basoztunak" value="Bosques y formaciones forestales">
+             Forests and woodland
+            </option>
+            <option data-en="Mountain" data-eu="Mendiak" value="Monta&ntilde;a">
+             Mountain
+            </option>
+            <option data-en="Rocky outcrops" data-eu="Harri-eremua" value="Roquedos">
+             Rocky outcrops
+            </option>
+            <option data-en="Summit areas" data-eu="Gailur-eremua" value="Zonas de cumbre">
+             Summit areas
+            </option>
+            <option data-en="Grasslands" data-eu="Belarretak" value="Pastizales">
+             Grasslands
+            </option>
+            <option data-en="Mountain shrubland" data-eu="Mendi-matorralak" value="Matorrales de monta&ntilde;a">
+             Mountain shrubland
+            </option>
+            <option data-en="Limestone cliffs" data-eu="Karst-labarrak" value="Cortados calizos">
+             Limestone cliffs
+            </option>
+            <option data-en="Caves" data-eu="Leizeak" value="Cuevas">
+             Caves
+            </option>
+            <option data-en="Human-agricultural environments" data-eu="Ingurune harrin-agrikola" value="Medios humano-agropecuarios">
+             Human-agricultural environments
+            </option>
+            <option data-en="Valleys" data-eu="Lurretak" value="Valles">
+             Valleys
+            </option>
+            <option data-en="Urban areas (towns and cities)" data-eu="Hiriak eta herriak" value="Urbes (ciudades y pueblos)">
+             Urban areas (towns and cities)
+            </option>
+           </select>
+           <div class="invalid-feedback" data-en="Select a habitat." data-eu="Hautatu habitat bat.">
+            Select a habitat.
+           </div>
+          </div>
+          <div class="col-md-6">
+           <label class="form-label" data-en="Region *" data-eu="Eskualdea *" for="sightingRegion">
+            Region *
+           </label>
+           <select class="form-select" id="sightingRegion" required="">
+            <option data-en="Select" data-eu="Hautatu" value="">
+             Select
+            </option>
+            <option data-en="Gran Bilbao" data-eu="Bilbo Handia">
+             Gran Bilbao
+            </option>
+            <option data-en="Encartaciones" data-eu="Enkarterri">
+             Encartaciones
+            </option>
+            <option data-en="Durangaldea" data-eu="Durangaldea">
+             Durangaldea
+            </option>
+            <option data-en="Arratia-Nerbioi" data-eu="Arratia-Nerbioi">
+             Arratia-Nerbioi
+            </option>
+            <option data-en="Lea-Artibai" data-eu="Lea-Artibai">
+             Lea-Artibai
+            </option>
+            <option data-en="Urdaibai-Busturialdea" data-eu="Urdaibai-Busturialdea">
+             Urdaibai-Busturialdea
+            </option>
+            <option data-en="Uribe Kosta" data-eu="Uribe Kosta">
+             Uribe Kosta
+            </option>
+           </select>
+          </div>
+          <div class="col-12">
+           <label class="form-label" data-en="Notes *" data-eu="Oharrak *" for="sightingNotes">
+            Notes *
+           </label>
+           <textarea class="form-control" id="sightingNotes" maxlength="1000" minlength="1" name="notes" required="" rows="4"></textarea>
+           <div class="form-text" data-en="Maximum 1,000 characters." data-eu="Gehienez 1.000 karaktere.">
+            Maximum 1,000 characters.
+           </div>
+          </div>
+          <div class="col-12">
+           <div class="form-check">
+            <input class="form-check-input" id="profileShowReal" name="privacy_option" type="radio" value="real_name"/>
+            <label class="form-check-label" data-en="Show my name" data-eu="Erakutsi nire izena" for="profileShowReal">
+             Show my name
+            </label>
+           </div>
+           <div class="form-check">
+            <input class="form-check-input" id="profileShowAlias" name="privacy_option" type="radio" value="alias"/>
+            <label class="form-check-label" data-en="Show my alias" data-eu="Erakutsi nire alea" for="profileShowAlias">
+             Show my alias
+            </label>
+           </div>
+           <div class="form-check">
+            <input checked="" class="form-check-input" id="profileAnonymous" name="privacy_option" type="radio" value="anonymous"/>
+            <label class="form-check-label" data-en="Show as anonymous" data-eu="Erakutsi anonimo gisa" for="profileAnonymous">
+             Show as anonymous
+            </label>
+           </div>
+          </div>
+          <div class="col-12">
+           <label class="form-label" data-en="Photograph (JPG, PNG or WEBP)" data-eu="Argazkia (JPG, PNG edo WEBP)" for="sightingPhoto">
+            Photograph (JPG, PNG or WEBP)
+           </label>
+           <input accept="image/jpeg,image/png,image/webp" class="form-control" id="sightingPhoto" name="photo" type="file"/>
+           <div class="form-text" data-en="Maximum 5 MB." data-eu="Gehienez 5 MB.">
+            Maximum 5 MB.
+           </div>
+          </div>
+          <div class="col-12">
+           <div class="form-check">
+            <input class="form-check-input" id="dataConsent" name="data_consent" required="" type="checkbox"/>
+            <label class="form-check-label" for="dataConsent">
+             <span data-en="I confirm the data is truthful and I accept the" data-eu="Berresten dut datuak egiazkoak direla eta onartzen dut">
+              I confirm the data is truthful and I accept the
+             </span>
+             <a href="privacy.html">
+              <span data-en="privacy policy" data-eu="pribatutasun politika">
+               privacy policy
+              </span>
+             </a>
+             <span data-en="
+             . *
+            " data-eu="
+             . *
+            ">
+              . *
+             </span>
+            </label>
+           </div>
+          </div>
+          <div class="col-12">
+           <button class="btn btn-primary btn-lg" type="submit">
+            <span data-en="Submit observation" data-eu="Bidali behaketa">
+             Submit observation
+            </span>
+           </button>
+           <p class="form-hint mt-2" data-en="The form validates fields in the browser. This version does not submit or store data." data-eu="Formularioak eremuak nabigatzailean balioztatzen ditu. Bertsio honek ez du datuak bidaltzen edo gordetzen.">
+            The form validates fields in the browser. This version does not submit or store data.
+           </p>
+          </div>
+         </div>
+        </form>
+       </div>
+      </div>
+      <div class="col-lg-4">
+       <aside class="content-card">
+        <h2 class="h5" data-en="Best practices" data-eu="Praktika onak">
+         Best practices
+        </h2>
+        <ol class="ps-3">
+         <li data-en="Keep your distance from animals." data-eu="Mantendu distantzia animaliekin.">
+          Keep your distance from animals.
+         </li>
+         <li data-en="Do not handle nests or remove plants." data-eu="Ez manipulatze nidoak ezta landareak kendu.">
+          Do not handle nests or remove plants.
+         </li>
+         <li data-en="Record the location precisely." data-eu="Idatzi kokapena zehaztasunez.">
+          Record the location precisely.
+         </li>
+         <li data-en="Avoid publishing sensitive locations." data-eu="Saia ez publikatzen kokapen sensibelek.">
+          Avoid publishing sensitive locations.
+         </li>
+         <li data-en="Attach photographs while respecting the environment." data-eu="Erantsi argazkiak ingurunea errespetatuz.">
+          Attach photographs while respecting the environment.
+         </li>
+        </ol>
+       </aside>
+      </div>
+     </div>
+     <div class="mt-5 text-center">
+      <p class="mb-2" data-en="Don't have an account yet?" data-eu="Oraindik ez duzu konturik?">
+       Don't have an account yet?
+      </p>
+      <a class="btn btn-outline-primary" data-en="Sign Up" data-eu="Eman Izena" href="signup.html">
+       Sign Up
+      </a>
+     </div>
+    </div>
+   </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="main-footer">
+   <div aria-label="Collaborative Partners / Bazkide kolaboratzaileak" class="partner-footer" data-en-aria-label="Collaborative Partners / Bazkide kolaboratzaileak" data-eu-aria-label="Collaborative Partners / Bazkide kolaboratzaileak">
+    <div class="container">
+     <div aria-label="Collaborating entities" data-en-aria-label="Collaborating entities" data-eu-aria-label="Collaborating entities" id="partnerSlider" tabindex="0">
+      <div class="partner-track" id="partnerTrack">
+       <a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank">
+        <img alt="Biscay diputation/Bizkaiko Foru Aldundia" class="object-fit-contain" data-en-alt="Biscay diputation/Bizkaiko Foru Aldundia" data-eu-alt="Biscay diputation/Bizkaiko Foru Aldundia" src="img/partners/logo-diputacion-de-bizkaia.jpg"/>
+       </a>
+       <a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank">
+        <img alt="Urdaibai Bird Center" class="object-fit-contain" data-en-alt="Urdaibai Bird Center" data-eu-alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png"/>
+       </a>
+       <a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank">
+        <img alt="MITECO" class="object-fit-contain" data-en-alt="MITECO" data-eu-alt="MITECO" src="img/partners/logo-miteco-color.png"/>
+       </a>
+       <a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank">
+        <img alt="Basque Country University /Euskal Herriko Unibertsitatea" class="object-fit-contain" data-en-alt="Basque Country University /Euskal Herriko Unibertsitatea" data-eu-alt="Basque Country University /Euskal Herriko Unibertsitatea" src="img/partners/logo-upv-ehu-blanco-completo .png"/>
+       </a>
+       <a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank">
+        <img alt="Basque Government/Eusko Jaurlaritza" class="object-fit-contain" data-en-alt="Basque Government/Eusko Jaurlaritza" data-eu-alt="Basque Government/Eusko Jaurlaritza" src="img/partners/logo-gobierno-vasco.png"/>
+       </a>
+       <a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank">
+        <img alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" class="object-fit-contain" data-en-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" data-eu-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" src="img/partners/fundacion-biodiversidad.jpg"/>
+       </a>
+       <a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank">
+        <img alt="Biscay diputation/Bizkaiko Foru Aldundia" class="object-fit-contain" data-en-alt="Biscay diputation/Bizkaiko Foru Aldundia" data-eu-alt="Biscay diputation/Bizkaiko Foru Aldundia" src="img/partners/logo-diputacion-de-bizkaia.jpg"/>
+       </a>
+       <a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank">
+        <img alt="Urdaibai Bird Center" class="object-fit-contain" data-en-alt="Urdaibai Bird Center" data-eu-alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png"/>
+       </a>
+       <a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank">
+        <img alt="MITECO" class="object-fit-contain" data-en-alt="MITECO" data-eu-alt="MITECO" src="img/partners/logo-miteco-color.png"/>
+       </a>
+       <a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank">
+        <img alt="Basque Country University /Euskal Herriko Unibertsitatea" class="object-fit-contain" data-en-alt="Basque Country University /Euskal Herriko Unibertsitatea" data-eu-alt="Basque Country University /Euskal Herriko Unibertsitatea" src="img/partners/logo-upv-ehu-blanco-completo .png"/>
+       </a>
+       <a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank">
+        <img alt="Basque Government/Eusko Jaurlaritza" class="object-fit-contain" data-en-alt="Basque Government/Eusko Jaurlaritza" data-eu-alt="Basque Government/Eusko Jaurlaritza" src="img/partners/logo-gobierno-vasco.png"/>
+       </a>
+       <a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank">
+        <img alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" class="object-fit-contain" data-en-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" data-eu-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" src="img/partners/fundacion-biodiversidad.jpg"/>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="container">
+    <div class="row g-4 py-4 px-4">
+     <div class="col-lg-3 col-md-6">
+      <a class="footer-brand d-inline-flex align-items-center gap-2" href="index.html">
+       <img alt="Logotipo Flora and Fauna of Biscay" data-en-alt="Logotipo Flora and Fauna of Biscay" data-eu-alt="Logotipo Flora and Fauna of Biscay" src="img/logo-web.svg"/>
+       <div class="d-flex flex-column lh-1">
+        <span data-en="Flora &amp; Fauna" data-eu="Bizkaiko">
+         Flora &amp; Fauna
+        </span>
+        <small data-en="of Biscay" data-eu="flora eta fauna">
+         of Biscay
+        </small>
+       </div>
+      </a>
+      <p class="footer-slogan" data-en="Discover &middot; Protect &middot; Share" data-eu="Ezagutu &middot; Babestu &middot; Partekatu">
+       Discover &middot; Protect &middot; Share
+      </p>
+      <p class="mt-3" data-en="Team: June Sillero, Eritz Gorriz, Kelea Rueda" data-eu="Taldea: June Sillero, Eritz Gorriz, Kelea Rueda">
+       <b data-en="Team:" data-eu="Taldea:">
+        Team:
+       </b>
+       June Sillero, Eritz Gorriz, Kelea Rueda
+      </p>
+      <p class="mt-3" data-en="Project: Challenge 1.2, DAMi 1&ordm;" data-eu="Proiektua: Challenge 1.2, DAMi 1. maila">
+       <b data-en="Project:" data-eu="Proiektua:">
+        Project:
+       </b>
+       Challenge 1.2, DAMi 1&ordm;
+      </p>
+      <div class="social-links d-flex flex-wrap gap-2">
+       <a aria-label="Instagram" data-en-aria-label="Instagram" data-eu-aria-label="Instagram" href="https://www.instagram.com/" rel="noopener" target="_blank">
+        <i class="bi bi-instagram">
+        </i>
+       </a>
+       <a aria-label="YouTube" data-en-aria-label="YouTube" data-eu-aria-label="YouTube" href="https://www.youtube.com/@urdaibaibirdcenter" rel="noopener" target="_blank">
+        <i class="bi bi-youtube">
+        </i>
+       </a>
+       <a aria-label="Facebook" data-en-aria-label="Facebook" data-eu-aria-label="Facebook" href="https://www.facebook.com/" rel="noopener" target="_blank">
+        <i class="bi bi-facebook">
+        </i>
+       </a>
+       <a aria-label="X" data-en-aria-label="X" data-eu-aria-label="X" href="https://x.com/" rel="noopener" target="_blank">
+        <i class="bi bi-twitter-x">
+        </i>
+       </a>
+       <a aria-label="Project repository" data-en-aria-label="Project repository" data-eu-aria-label="Project repository" href="https://github.com/keruka21/CHALLENGE-1-2-My-first-Application" rel="noopener" target="_blank">
+        <i class="bi bi-github">
+        </i>
+       </a>
+      </div>
+     </div>
+     <div class="col-lg-2 col-6">
+      <h2 class="footer-title" data-en="Explore" data-eu="Arakatu">
+       Explore
+      </h2>
+      <ul class="footer-links">
+       <li>
+        <a data-en="Home" data-eu="Hasiera" href="index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a data-en="Flora" data-eu="Flora" href="catalog.html?type=flora">
+         Flora
+        </a>
+       </li>
+       <li>
+        <a data-en="Fauna" data-eu="Fauna" href="catalog.html?type=fauna">
+         Fauna
+        </a>
+       </li>
+       <li>
+        <a data-en="Blog" data-eu="Bloga" href="blog.html">
+         Blog
+        </a>
+       </li>
+       <li>
+        <a data-en="Gallery" data-eu="Galeria" href="gallery.html">
+         Gallery
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col-lg-3 col-6">
+      <h2 class="footer-title" data-en="Contact" data-eu="Kontaktua">
+       Contact
+      </h2>
+      <a class="footer-contact" href="tel:+34555555555">
+       <i class="bi bi-telephone-fill">
+       </i>
+       <span data-en="
+       +34 944 000 000
+      " data-eu="
+       +34 944 000 000
+      ">
+        +34 944 000 000
+       </span>
+      </a>
+      <a class="footer-contact" href="https://wa.me/34555555555" rel="noopener" target="_blank">
+       <i class="bi bi-whatsapp">
+       </i>
+       <span data-en="
+       WhatsApp: +34 600 000 000
+      " data-eu="
+       WhatsApp: +34 600 000 000
+      ">
+        WhatsApp: +34 600 000 000
+       </span>
+      </a>
+      <a class="footer-contact" href="mailto:faunaandflora@bizkaia.com">
+       <i class="bi bi-envelope">
+       </i>
+       <span data-en="
+       faunaandflora@bizkaia.com
+      " data-eu="
+       faunaandflora@bizkaia.com
+      ">
+        faunaandflora@bizkaia.com
+       </span>
+      </a>
+      <p class="mt-4" data-en="Monday to Friday" data-eu="Astelehenetik ostiralera">
+       <b data-en="Monday to Friday" data-eu="Astelehenetik ostiralera">
+        Monday to Friday
+       </b>
+      </p>
+      <p data-en="08:00 am - 14:25pm (Classroom 209)" data-eu="08:00 am - 14:25 pm (209 ikasgela)">
+       08:00 am - 14:25pm (Classroom 209)
+      </p>
+     </div>
+     <div class="col-lg-4">
+      <h2 class="footer-title" data-en="We are at CIFP TARTANGA LHII" data-eu="CIFP TARTANGA LHII-n gaude">
+       We are at CIFP TARTANGA LHII
+      </h2>
+      <p data-en="Tartanga Street, 15 &middot; Erandio, Biscay 48950" data-eu="Tartanga kalea, 15 &middot; Erandio, Bizkaia 48950">
+       Tartanga Street, 15 &middot; Erandio, Biscay 48950
+      </p>
+      <p data-en="Floor 1, Room 209" data-eu="1. solairua, 209. aretoa">
+       Floor 1, Room 209
+      </p>
+      <div class="footer-map">
+       <iframe data-en-title="CIFP TARTANGA LHII" data-eu-title="CIFP TARTANGA LHII" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Instituto%20Tartanga%20Erandio&amp;output=embed" title="CIFP TARTANGA LHII">
+       </iframe>
+      </div>
+     </div>
+    </div>
+    <p class="mb-2 audio-credit">
+     <span data-en="Robin Sound: Lawrence Shove / British Library &middot;" data-eu="Txantxangorriaren soinua: Lawrence Shove / British Library &middot;">
+      Robin Sound: Lawrence Shove / British Library &middot;
+     </span>
+     <a data-en="Wikimedia Commons" data-eu="Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:European_Robin_(Erithacus_rubecula)_(W1CDR0001425_BD16).ogg" rel="noopener" target="_blank">
+      Wikimedia Commons
+     </a>
+     <span data-en="
+     &middot;
+     " data-eu="
+     &middot;
+     ">
+      &middot;
+     </span>
+     <a data-en="CC BY-SA 4.0" data-eu="CC BY-SA 4.0" href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">
+      CC BY-SA 4.0
+     </a>
+     <span data-en="
+     .
+    " data-eu="
+     .
+    ">
+      .
+     </span>
+    </p>
+    <div class="footer-bottom py-3 d-flex flex-wrap justify-content-between gap-2">
+     <span data-en="&copy; 2026 Flora &amp; Fauna of Biscay &middot; Educational project" data-eu="&copy; 2026 Bizkaiko Flora eta Fauna &middot; Hezkuntza-proiektua" data-translate-mode="html">
+      &copy; 2026 Flora &amp; Fauna of Biscay &middot; Educational project
+     </span>
+     <div class="d-flex gap-3 flex-wrap">
+      <a data-en="Privacy" data-eu="Pribatutasuna" href="privacy.html">
+       Privacy
+      </a>
+      <a data-en="Legal notice" data-eu="Lege-oharra" href="legal.html">
+       Legal notice
+      </a>
+      <a data-en="Cookies" data-eu="Cookie-ak" href="cookies.html">
+       Cookies
+      </a>
+      <a data-en="Back to home" data-eu="Itzuli hasierara" href="index.html">
+       Back to home
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script src="bootstrap-5.3.8/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="js/main.js">
+  </script>
+ </body>
+</html>

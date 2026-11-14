@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="Collaborative platform to discover, consult and record the flora and fauna of Biscay" name="description" />
+    <title>Flora & Fauna of Biscay | Discover, Protect, Share</title>
+    <link href="img/logo-web.svg" rel="icon" />
+    <link href="bootstrap-5.3.8/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Flora & Fauna of Biscay">
+    <meta property="og:url" content="https://faunaandfloraofbiscay.com">
+    <meta property="og:image" content="https://faunaandfloraofbiscay.com/img/logo-web.svg">
+    <meta property="og:description" content="A collaborative space to discover the flora and fauna of our territory, explore their habitats and provide sightings that help conserve them.">
+</head>
+ <body>
+  <!--HEADER-->
+  <header>
+   <!--USER BAR / LANGUAGES-->
+   <div class="user-bar">
+    <div class="container d-flex justify-content-between align-items-center gap-2">
+     <!--LANGUAGE SWITCHER (kept fixed when the User Area panel opens)-->
+     <div aria-label="Select Language" class="language-switch d-flex align-items-center gap-1" data-en-aria-label="Select Language" data-eu-aria-label="Select Language">
+      <button aria-pressed="true" class="btn btn-sm language-button active" data-en="EN" data-eu="EN" data-language="en" type="button">
+       EN
+      </button>
+      <span aria-hidden="true">
+       <span data-en="
+       |
+      " data-eu="
+       |
+      ">
+        |
+       </span>
+      </span>
+      <button aria-pressed="false" class="btn btn-sm language-button" data-en="EUS" data-eu="EUS" data-language="eu" type="button">
+       EUS
+      </button>
+     </div>
+     <!--USER BAR-->
+     <div class="position-relative">
+      <button aria-controls="userPanel" aria-expanded="false" aria-label="User Area" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" data-en-aria-label="User Area" data-eu-aria-label="User Area" type="button">
+       <i class="bi bi-person-circle fs-5">
+       </i>
+       <span class="d-none d-sm-inline ms-1" data-en="User Area" data-eu="Erabiltzaile eremua">
+        User Area
+       </span>
+      </button>
+      <div class="collapse user-panel-collapse" id="userPanel">
+       <div class="user-dropdown p-3">
+        <!--NOT LOGGED IN-->
+        <div id="guestPanel">
+         <p class="fw-semibold text-primary" data-en="Welcome!" data-eu="Ongi etorri!">
+          Welcome!
+         </p>
+         <button class="btn btn-primary btn-sm w-100 mb-2" data-bs-target="#loginModal" data-bs-toggle="modal" type="button">
+          <span data-en="Log-in" data-eu="Saioa hasi">
+           Log-in
+          </span>
+         </button>
+         <a class="btn btn-outline-primary btn-sm w-100 mb-2" data-en="Sign-up" data-eu="Erregistratu" href="signup.html">
+          Sign-up
+         </a>
+         <a class="d-block text-center small mt-1 text-decoration-underline" data-en="demo user area" data-eu="demo erabiltzaile eremua" href="user-area.html">
+          demo user area
+         </a>
+        </div>
+        <!--LOGGED IN-->
+        <div class="d-none" id="memberPanel">
+         <strong data-en="User" data-eu="Erabiltzailea" id="memberName">
+          User
+         </strong>
+         <p class="small text-secondary" id="memberEmail">
+         </p>
+         <a class="dropdown-item" data-en="My Profile" data-eu="Nire profila" href="user-area.html">
+          My Profile
+         </a>
+         <a class="dropdown-item" data-en="Settings" data-eu="Ezarpenak" href="user-area.html#privacySettingsForm">
+          Settings
+         </a>
+         <button class="btn btn-outline-secondary btn-sm w-100 mt-2" data-en="Log-out" data-eu="Saioa itxi" id="logoutButton">
+          Log-out
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!--NAVBAR-->
+   <nav class="navbar navbar-expand-lg main-navbar" id="mainNavbar">
+    <div class="container">
+     <!--LOGO-->
+     <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" id="logo-web">
+      <img alt="logo-web" data-en-alt="logo-web" data-eu-alt="logo-web" height="50" src="img/logo-web.svg"/>
+      <div class="d-flex flex-column lh-1">
+       <span data-en="Flora &amp; Fauna" data-eu="Bizkaiko">
+        Flora &amp; Fauna
+       </span>
+       <small data-en="of Biscay" data-eu="flora eta fauna">
+        of Biscay
+       </small>
+      </div>
+     </a>
+     <!--TOGGLE BUTTON-->
+     <button aria-label="Open navigation" class="navbar-toggler" data-bs-target="#navbarContent" data-bs-toggle="collapse" data-en-aria-label="Open navigation" data-eu-aria-label="Open navigation" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <!--NAVBAR LINKS-->
+     <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto gap-lg-2">
+       <li class="nav-item">
+        <a class="nav-link" data-en="Home" data-eu="Hasiera" href="index.html">
+         Home
+        </a>
+       </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Catalogue" data-eu="Katalogoa" href="catalog.html">
+         Catalogue
+        </a>
+        <ul class="dropdown-menu">
+         <li>
+          <a class="dropdown-item" data-en="Fauna" data-eu="Fauna" href="catalog.html?type=fauna">
+           Fauna
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item" data-en="Flora" data-eu="Flora" href="catalog.html?type=flora">
+           Flora
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item" data-en="Habitats" data-eu="Habitatak" href="habitats.html">
+           Habitats
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item" data-en="Parks, reserves and centers" data-eu="Parkeak, erreserbak eta zentroak" href="spaces.html">
+           Parks, reserves and centers
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item" data-en="Regions" data-eu="Eskualdeak" href="regions.html">
+           Regions
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-en="Blog" data-eu="Bloga" href="blog.html">
+         Blog
+        </a>
+       </li>
+       <li class="nav-item dropdown">
+        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Participate" data-eu="Parte hartu" href="species-submit.html">
+         Participate
+        </a>
+        <ul class="dropdown-menu">
+         <li>
+          <a class="dropdown-item" data-en="Register a species" data-eu="Espezie bat erregistratu" href="species-submit.html">
+           Register a species
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item" data-en="Record a sighting" data-eu="Behaketa bat erregistratu" href="register-sighting.html">
+           Record a sighting
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-en="Gallery" data-eu="Galeria" href="gallery.html">
+         Gallery
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-en="Videos" data-eu="Bideoak" href="videos.html">
+         Videos
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-en="Contact" data-eu="Kontaktua" href="contact.html">
+         Contact
+        </a>
+       </li>
+       <!--THEME TOGGLE-->
+       <li class="nav-item d-flex align-items-center">
+        <button aria-label="Change theme" class="btn btn-sm theme-toggle" data-en-aria-label="Change theme" data-eu-aria-label="Change theme" id="themeToggle" type="button">
+         <i class="bi bi-moon-stars-fill" id="themeIcon">
+         </i>
+        </button>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <!--AUDIO & CONTROLS-->
+  <audio id="backgroundAudio" loop="" preload="none">
+   <source src="audio/European_Robin.mp3" type="audio/mpeg"/>
+  </audio>
+  <button aria-label="Silence Sound" class="floating-control audio-control" data-en-aria-label="Silence Sound" data-en-title="Silence" data-eu-aria-label="Silence Sound" data-eu-title="Silence" id="audioToggle" title="Silence">
+   <i class="bi bi-volume-up-fill" id="audioIcon">
+   </i>
+  </button>
+  <button aria-label="Back to the top" class="floating-control top-control" data-en-aria-label="Back to the top" data-eu-aria-label="Back to the top" id="backToTop" type="button">
+   <i class="bi bi-chevron-up">
+   </i>
+  </button>
+  <!-- LOGIN MODAL -->
+  <div aria-hidden="true" aria-labelledby="loginModalLabel" class="modal fade" id="loginModal" tabindex="-1">
+   <div class="modal-dialog">
+    <div class="modal-content p-3">
+     <div class="modal-header border-0">
+      <h5 class="modal-title fw-bold" data-en="Log-in" data-eu="Saioa hasi" id="loginModalLabel">
+       Log-in
+      </h5>
+      <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" data-en-aria-label="Close" data-eu-aria-label="Close" type="button">
+      </button>
+     </div>
+     <div class="modal-body">
+      <form id="loginForm">
+       <div class="mb-3">
+        <label class="form-label" data-en="Email address" data-eu="Posta elektronikoa" for="loginEmail">
+         Email address
+        </label>
+        <input class="form-control" id="loginEmail" required="" type="email"/>
+       </div>
+       <div class="mb-3">
+        <label class="form-label" data-en="Password" data-eu="Pasahitza" for="loginPassword">
+         Password
+        </label>
+        <input class="form-control" id="loginPassword" required="" type="password"/>
+       </div>
+       <button class="btn btn-primary w-100" data-en="Sign in" data-eu="Hasi saioa" type="submit">
+        Sign in
+       </button>
+      </form>
+     </div>
+    </div>
+   </div>
+  </div>
+  <main id="mainContent">
+   <section class="inner-hero page-hero">
+    <div class="container">
+     <nav aria-label="breadcrumb" data-en-aria-label="breadcrumb" data-eu-aria-label="breadcrumb">
+      <ol class="breadcrumb mb-3">
+       <li class="breadcrumb-item">
+        <a data-en="Home" data-eu="Hasiera" href="index.html">
+         Home
+        </a>
+       </li>
+       <li aria-current="page" class="breadcrumb-item active" data-en="Submit a species" data-eu="Submit a species">
+        Submit a species
+       </li>
+      </ol>
+     </nav>
+     <p class="section-kicker" data-en="Species registration" data-eu="Espezieen erregistroa">
+      Species registration
+     </p>
+     <h1 data-en="Submit a species" data-eu="Espezie bat bidali">
+      Submit a species
+     </h1>
+     <p class="lead" data-en="Help improve the catalogue by suggesting a species for review." data-eu="Lagundu katalogoa hobetzen, aztertu beharreko espezie bat iradokiz.">
+      Help improve the catalogue by suggesting a species for review.
+     </p>
+    </div>
+   </section>
+   <section class="content-section">
+    <div class="container">
+     <div class="row g-4">
+      <div class="col-lg-8">
+       <div class="content-card">
+        <div class="alert alert-info" id="speciesAuthNotice">
+         <span data-en="To register a species, it is necessary to" data-eu="Espezie bat erregistratzeko">
+          To register a species, it is necessary to
+         </span>
+         <a data-bs-toggle="modal" data-en="login" data-eu="saioa hasi" href="#loginModal">
+          Login
+         </a>
+         <span data-en="
+         /
+         " data-eu="
+         /
+         ">
+          /
+         </span>
+         <a data-en="signup." data-eu="edo erregistratu behar da." href="signup.html">
+          Signup
+         </a>
+         <span data-en="
+         .
+        " data-eu="
+         .
+        ">
+          .
+         </span>
+        </div>
+        <form action="#" enctype="multipart/form-data" id="speciesForm" method="post" novalidate="">
+         <div class="row g-3">
+          <div class="col-md-6">
+           <label class="form-label" data-en="Common name *" data-eu="Izen arrunta*" for="commonName">
+            Common name *
+           </label>
+           <input class="form-control" id="commonName" maxlength="180" minlength="2" name="common_name" required=""/>
+           <div class="invalid-feedback">
+            <span data-en="
+            Enter the common name.
+           " data-eu="
+            Enter the common name.
+           ">
+             Enter the common name.
+            </span>
+           </div>
+          </div>
+          <div class="col-md-6">
+           <label class="form-label" data-en="Scientific name *" data-eu="Izen zientifikoa *" for="scientificName">
+            Scientific name *
+           </label>
+           <input class="form-control" data-en-placeholder="Genus species" data-eu-placeholder="Genus species" id="scientificName" maxlength="180" minlength="3" name="scientific_name" placeholder="Genus species" required=""/>
+           <div class="form-text">
+            <span data-en="Write the genus and species in binomial nomenclature." data-eu="Write the genus and species in binomial nomenclature." en="Write the genus and species in binomial nomenclature.">
+             Write the genus and species in binomial nomenclature.
+            </span>
+           </div>
+          </div>
+          <div class="col-md-6">
+           <label class="form-label" data-en="Type *" data-eu="Mota *" for="speciesKind">
+            Type *
+           </label>
+           <select class="form-select" id="speciesKind" name="type" required="">
+            <option value="">
+             <span data-en="Select" data-eu="Hautatu">
+              Select
+             </span>
+            </option>
+            <option value="Flora">
+             <span data-en="Flora" data-eu="Flora">
+              Flora
+             </span>
+            </option>
+            <option value="Fauna">
+             <span data-en="Fauna" data-eu="Fauna">
+              Fauna
+             </span>
+            </option>
+           </select>
+          </div>
+          <div class="col-md-6">
+           <label class="form-label" data-en="Is it a native species of Bizkaia? *" data-eu="Bizkaiko bertako espeziea al da? *" for="nativeSpecies">
+            Is it a native species of Bizkaia? *
+           </label>
+           <select class="form-select" id="nativeSpecies" name="native_species" required="">
+            <option value="">
+             <span data-en="Select an option" data-eu="Hautatu aukera bat">
+              Select an option
+             </span>
+            </option>
+            <option value="yes">
+             <span data-en="Yes" data-eu="bai">
+              Yes
+             </span>
+            </option>
+            <option value="no">
+             <span data-en="No" data-eu="Ez">
+              No
+             </span>
+            </option>
+            <option value="unknown">
+             <span data-en="I do not know" data-eu="Ez dakit">
+              I do not know
+             </span>
+            </option>
+           </select>
+           <div class="form-text">
+            <span data-en="If you are unsure, select &ldquo;I do not know&rdquo; rather than guessing." data-eu="Ziur ez bazaude, aukeratu &ldquo;Ez dakit&rdquo; asmatu beharrean.">
+             If you are unsure, select &ldquo;I do not know&rdquo; rather than guessing.
+            </span>
+           </div>
+          </div>
+          <div class="col-md-6">
+           <label class="form-label" for="conservationStatus">
+            <span data-en="Conservation status" data-eu="Kontserbazio egoera">
+             Conservation status
+            </span>
+           </label>
+           <select class="form-select" id="conservationStatus" name="conservation_status">
+            <option value="">
+             <span data-en="I don't know / undetermined" data-eu="Ez dakit / zehaztu gabe">
+              I don't know / undetermined
+             </span>
+            </option>
+            <option>
+             <span data-en="Least concern" data-eu="Kezka txikia">
+              Least concern
+             </span>
+            </option>
+            <option>
+             <span data-en="Almost threatened" data-eu="Ia mehatxatuta">
+              Almost threatened
+             </span>
+            </option>
+            <option>
+             <span data-en="Vulnerable" data-eu="Zaurgarria">
+              Vulnerable
+             </span>
+            </option>
+            <option>
+             <span data-en="Endangered" data-eu="Arriskuan">
+              Endangered
+             </span>
+            </option>
+            <option>
+             <span data-en="Critically endangered" data-eu="Arrisku larrian">
+              Critically endangered
+             </span>
+            </option>
+            <option>
+             <span data-en="Not evaluated" data-eu="Ez ebaluatu">
+              Not evaluated
+             </span>
+            </option>
+           </select>
+          </div>
+          <div class="col-12">
+           <label class="form-label" for="speciesDescription">
+            <span data-en="Description and identification *" data-eu="Deskribapena eta identifikazioa *">
+             Description and identification *
+            </span>
+           </label>
+           <textarea class="form-control" data-en-placeholder="Describe identifying features, habitat, and references consulted..." data-eu-placeholder="Describe identifying features, habitat, and references consulted..." id="speciesDescription" maxlength="2000" minlength="20" name="description" placeholder="Describe identifying features, habitat, and references consulted..." required="" rows="5">
+                    </textarea>
+           <div class="form-text">
+            <span data-en="Between 20 and 2,000 characters. Do not invent the conservation status if you are not aware of a reliable source." data-eu="20 eta 2.000 karaktere artean. Ez asmatu kontserbazio-egoera iturri fidagarririk ezagutzen ez baduzu.">
+             Between 20 and 2,000 characters. Do not invent the conservation status if you are not aware of a reliable source.
+            </span>
+           </div>
+          </div>
+          <div class="col-12">
+           <label class="form-label" for="speciesPhoto">
+            <span data-en="Reference photograph" data-eu="Erreferentziazko argazkia">
+             Reference photograph
+            </span>
+           </label>
+           <input accept="image/jpeg,image/png,image/webp" class="form-control" id="speciesPhoto" name="photo" type="file"/>
+           <div class="form-text">
+            <span data-en="JPG, PNG, or WEBP; maximum 5 MB. Use your own photographs or those for which you have permission to use." data-eu="JPG, PNG edo WEBP; gehienez 5 MB. Erabili zure argazkiak edo erabiltzeko baimena duten argazkiak.">
+             JPG, PNG, or WEBP; maximum 5 MB. Use your own photographs or those for which you have permission to use.
+            </span>
+           </div>
+          </div>
+          <div class="col-12">
+           <div class="form-check">
+            <input class="form-check-input" id="speciesConsent" name="data_consent" required="" type="checkbox"/>
+            <label class="form-check-label" for="speciesConsent">
+             <span data-en="I confirm that the information is truthful and that I have the right to provide the image. I accept the" data-eu="Informazioa egiazkoa dela eta irudia emateko eskubidea dudala berresten dut.">
+              I confirm that the information is truthful and that I have the right to provide the image. I accept the
+             </span>
+             <a href="privacy.html">
+              <span data-en=" privacy policy" data-eu="Pribatutasun politika onartzen dut">
+               privacy policy
+              </span>
+             </a>
+             <span data-en="
+             . *
+            " data-eu="
+             . *
+            ">
+              . *
+             </span>
+            </label>
+           </div>
+          </div>
+          <div class="col-12">
+           <button class="btn btn-primary btn-lg" type="submit">
+            <span data-en="Send specimen" data-eu="Bidali espezieak">
+             Send specimen
+            </span>
+            <i class="bi bi-send ms-2">
+            </i>
+           </button>
+           <p class="form-hint mt-2" data-en="This interface allows for reviewing the fields, but it does not submit or store proposals." data-eu="Interfaze honek eremuak berrikusteko aukera ematen dizu, baina ez ditu proposamenak bidaltzen edo gordetzen.">
+            This interface allows for reviewing the fields, but it does not submit or store proposals.
+           </p>
+          </div>
+         </div>
+        </form>
+       </div>
+      </div>
+      <div class="col-lg-4">
+       <aside class="content-card">
+        <h2 class="h5" data-en="Before sending" data-eu="Bidali aurretik">
+         Before sending
+        </h2>
+        <ol class="ps-3">
+         <li data-en="Check that the species is not already in the catalog." data-eu="Egiaztatu espeziea ez dagoela jada katalogoan.">
+          Check that the species is not already in the catalog.
+         </li>
+         <li data-en="Check the spelling of the scientific name." data-eu="Egiaztatu izen zientifikoaren ortografia.">
+          Check the spelling of the scientific name.
+         </li>
+         <li data-en="Consult reliable sources regarding the conservation status." data-eu="Kontserbazio-egoerari buruzko informazioa lortzeko iturri fidagarriak kontsultatu.">
+          Consult reliable sources regarding the conservation status.
+         </li>
+         <li data-en="Consult reliable sources regarding the conservation status." data-eu="Kontserbazio-egoerari buruzko informazioa lortzeko iturri fidagarriak kontsultatu.">
+          Consult reliable sources regarding the conservation status.
+         </li>
+         <li data-en="Upload an image of your own or one for which you have authorization." data-eu="Igo zure irudia edo baimendutako bat.">
+          Upload an image of your own or one for which you have authorization.
+         </li>
+        </ol>
+        <hr/>
+        <h3 class="h6" data-en="Do you want to record where you saw it?" data-eu="Non ikusi duzun grabatu nahi duzu?">
+         Do you want to record where you saw it?
+        </h3>
+        <a class="btn btn-outline-primary w-100" data-en="Record sighting" data-eu="Ikusketa erregistratua" href="register-sighting.html">
+         Record sighting
+        </a>
+       </aside>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <div aria-hidden="true" aria-labelledby="authRequiredTitle" class="modal fade" id="authRequiredModal" tabindex="-1">
+   <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h2 class="modal-title fs-5" data-en="You need an approved account" data-eu="Kontu onartu bat behar duzu" id="authRequiredTitle">
+       You need an approved account
+      </h2>
+      <button aria-label="Cerrar" class="btn-close" data-bs-dismiss="modal" data-en-aria-label="Cerrar" data-eu-aria-label="Cerrar" type="button">
+      </button>
+     </div>
+     <div class="modal-body" data-en="To submit proposals and comments, you must log in with an account validated by the administrative team." data-eu="Proposamenak eta iruzkinak bidaltzeko, administrazio taldeak balioztatutako kontu batekin saioa hasi behar duzu.">
+      To submit proposals and comments, you must log in with an account validated by the administrative team.
+     </div>
+     <div class="modal-footer">
+      <a class="btn btn-outline-primary" data-bs-toggle="modal" data-en="Sign in" data-eu="Hasi saioa" href="#loginModal">
+       Sign in
+      </a>
+      <a class="btn btn-primary" data-en="Sign up" data-eu="Izena eman" href="signup.html">
+       Sign up
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- FOOTER -->
+  <footer class="main-footer">
+   <div aria-label="Collaborative Partners / Bazkide kolaboratzaileak" class="partner-footer" data-en-aria-label="Collaborative Partners / Bazkide kolaboratzaileak" data-eu-aria-label="Collaborative Partners / Bazkide kolaboratzaileak">
+    <div class="container">
+     <div aria-label="Collaborating entities" data-en-aria-label="Collaborating entities" data-eu-aria-label="Collaborating entities" id="partnerSlider" tabindex="0">
+      <div class="partner-track" id="partnerTrack">
+       <a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank">
+        <img alt="Biscay diputation/Bizkaiko Foru Aldundia" class="object-fit-contain" data-en-alt="Biscay diputation/Bizkaiko Foru Aldundia" data-eu-alt="Biscay diputation/Bizkaiko Foru Aldundia" src="img/partners/logo-diputacion-de-bizkaia.jpg"/>
+       </a>
+       <a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank">
+        <img alt="Urdaibai Bird Center" class="object-fit-contain" data-en-alt="Urdaibai Bird Center" data-eu-alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png"/>
+       </a>
+       <a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank">
+        <img alt="MITECO" class="object-fit-contain" data-en-alt="MITECO" data-eu-alt="MITECO" src="img/partners/logo-miteco-color.png"/>
+       </a>
+       <a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank">
+        <img alt="Basque Country University /Euskal Herriko Unibertsitatea" class="object-fit-contain" data-en-alt="Basque Country University /Euskal Herriko Unibertsitatea" data-eu-alt="Basque Country University /Euskal Herriko Unibertsitatea" src="img/partners/logo-upv-ehu-blanco-completo .png"/>
+       </a>
+       <a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank">
+        <img alt="Basque Government/Eusko Jaurlaritza" class="object-fit-contain" data-en-alt="Basque Government/Eusko Jaurlaritza" data-eu-alt="Basque Government/Eusko Jaurlaritza" src="img/partners/logo-gobierno-vasco.png"/>
+       </a>
+       <a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank">
+        <img alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" class="object-fit-contain" data-en-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" data-eu-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" src="img/partners/fundacion-biodiversidad.jpg"/>
+       </a>
+       <a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank">
+        <img alt="Biscay diputation/Bizkaiko Foru Aldundia" class="object-fit-contain" data-en-alt="Biscay diputation/Bizkaiko Foru Aldundia" data-eu-alt="Biscay diputation/Bizkaiko Foru Aldundia" src="img/partners/logo-diputacion-de-bizkaia.jpg"/>
+       </a>
+       <a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank">
+        <img alt="Urdaibai Bird Center" class="object-fit-contain" data-en-alt="Urdaibai Bird Center" data-eu-alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png"/>
+       </a>
+       <a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank">
+        <img alt="MITECO" class="object-fit-contain" data-en-alt="MITECO" data-eu-alt="MITECO" src="img/partners/logo-miteco-color.png"/>
+       </a>
+       <a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank">
+        <img alt="Basque Country University /Euskal Herriko Unibertsitatea" class="object-fit-contain" data-en-alt="Basque Country University /Euskal Herriko Unibertsitatea" data-eu-alt="Basque Country University /Euskal Herriko Unibertsitatea" src="img/partners/logo-upv-ehu-blanco-completo .png"/>
+       </a>
+       <a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank">
+        <img alt="Basque Government/Eusko Jaurlaritza" class="object-fit-contain" data-en-alt="Basque Government/Eusko Jaurlaritza" data-eu-alt="Basque Government/Eusko Jaurlaritza" src="img/partners/logo-gobierno-vasco.png"/>
+       </a>
+       <a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank">
+        <img alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" class="object-fit-contain" data-en-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" data-eu-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" src="img/partners/fundacion-biodiversidad.jpg"/>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="container">
+    <div class="row g-4 py-4 px-4">
+     <div class="col-lg-3 col-md-6">
+      <a class="footer-brand d-inline-flex align-items-center gap-2" href="index.html">
+       <img alt="Logotipo Flora and Fauna of Biscay" data-en-alt="Logotipo Flora and Fauna of Biscay" data-eu-alt="Logotipo Flora and Fauna of Biscay" src="img/logo-web.svg"/>
+       <div class="d-flex flex-column lh-1">
+        <span data-en="Flora &amp; Fauna" data-eu="Bizkaiko">
+         Flora &amp; Fauna
+        </span>
+        <small data-en="of Biscay" data-eu="flora eta fauna">
+         of Biscay
+        </small>
+       </div>
+      </a>
+      <p class="footer-slogan" data-en="Discover &middot; Protect &middot; Share" data-eu="Ezagutu &middot; Babestu &middot; Partekatu">
+       Discover &middot; Protect &middot; Share
+      </p>
+      <p class="mt-3" data-en="Team: June Sillero, Eritz Gorriz, Kelea Rueda" data-eu="Taldea: June Sillero, Eritz Gorriz, Kelea Rueda">
+       <b data-en="Team:" data-eu="Taldea:">
+        Team:
+       </b>
+       June Sillero, Eritz Gorriz, Kelea Rueda
+      </p>
+      <p class="mt-3" data-en="Project: Challenge 1.2, DAMi 1&ordm;" data-eu="Proiektua: Challenge 1.2, DAMi 1. maila">
+       <b data-en="Project:" data-eu="Proiektua:">
+        Project:
+       </b>
+       Challenge 1.2, DAMi 1&ordm;
+      </p>
+      <div class="social-links d-flex flex-wrap gap-2">
+       <a aria-label="Instagram" data-en-aria-label="Instagram" data-eu-aria-label="Instagram" href="https://www.instagram.com/" rel="noopener" target="_blank">
+        <i class="bi bi-instagram">
+        </i>
+       </a>
+       <a aria-label="YouTube" data-en-aria-label="YouTube" data-eu-aria-label="YouTube" href="https://www.youtube.com/@urdaibaibirdcenter" rel="noopener" target="_blank">
+        <i class="bi bi-youtube">
+        </i>
+       </a>
+       <a aria-label="Facebook" data-en-aria-label="Facebook" data-eu-aria-label="Facebook" href="https://www.facebook.com/" rel="noopener" target="_blank">
+        <i class="bi bi-facebook">
+        </i>
+       </a>
+       <a aria-label="X" data-en-aria-label="X" data-eu-aria-label="X" href="https://x.com/" rel="noopener" target="_blank">
+        <i class="bi bi-twitter-x">
+        </i>
+       </a>
+       <a aria-label="Project repository" data-en-aria-label="Project repository" data-eu-aria-label="Project repository" href="https://github.com/keruka21/CHALLENGE-1-2-My-first-Application" rel="noopener" target="_blank">
+        <i class="bi bi-github">
+        </i>
+       </a>
+      </div>
+     </div>
+     <div class="col-lg-2 col-6">
+      <h2 class="footer-title" data-en="Explore" data-eu="Arakatu">
+       Explore
+      </h2>
+      <ul class="footer-links">
+       <li>
+        <a data-en="Home" data-eu="Hasiera" href="index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a data-en="Flora" data-eu="Flora" href="catalog.html?type=flora">
+         Flora
+        </a>
+       </li>
+       <li>
+        <a data-en="Fauna" data-eu="Fauna" href="catalog.html?type=fauna">
+         Fauna
+        </a>
+       </li>
+       <li>
+        <a data-en="Blog" data-eu="Bloga" href="blog.html">
+         Blog
+        </a>
+       </li>
+       <li>
+        <a data-en="Gallery" data-eu="Galeria" href="gallery.html">
+         Gallery
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col-lg-3 col-6">
+      <h2 class="footer-title" data-en="Contact" data-eu="Kontaktua">
+       Contact
+      </h2>
+      <a class="footer-contact" href="tel:+34555555555">
+       <i class="bi bi-telephone-fill">
+       </i>
+       <span data-en="
+       +34 944 000 000
+      " data-eu="
+       +34 944 000 000
+      ">
+        +34 944 000 000
+       </span>
+      </a>
+      <a class="footer-contact" href="https://wa.me/34555555555" rel="noopener" target="_blank">
+       <i class="bi bi-whatsapp">
+       </i>
+       <span data-en="
+       WhatsApp: +34 600 000 000
+      " data-eu="
+       WhatsApp: +34 600 000 000
+      ">
+        WhatsApp: +34 600 000 000
+       </span>
+      </a>
+      <a class="footer-contact" href="mailto:faunaandflora@bizkaia.com">
+       <i class="bi bi-envelope">
+       </i>
+       <span data-en="
+       faunaandflora@bizkaia.com
+      " data-eu="
+       faunaandflora@bizkaia.com
+      ">
+        faunaandflora@bizkaia.com
+       </span>
+      </a>
+      <p class="mt-4" data-en="Monday to Friday" data-eu="Astelehenetik ostiralera">
+       <b data-en="Monday to Friday" data-eu="Astelehenetik ostiralera">
+        Monday to Friday
+       </b>
+      </p>
+      <p data-en="08:00 am - 14:25pm (Classroom 209)" data-eu="08:00 am - 14:25 pm (209 ikasgela)">
+       08:00 am - 14:25pm (Classroom 209)
+      </p>
+     </div>
+     <div class="col-lg-4">
+      <h2 class="footer-title" data-en="We are at CIFP TARTANGA LHII" data-eu="CIFP TARTANGA LHII-n gaude">
+       We are at CIFP TARTANGA LHII
+      </h2>
+      <p data-en="Tartanga Street, 15 &middot; Erandio, Biscay 48950" data-eu="Tartanga kalea, 15 &middot; Erandio, Bizkaia 48950">
+       Tartanga Street, 15 &middot; Erandio, Biscay 48950
+      </p>
+      <p data-en="Floor 1, Room 209" data-eu="1. solairua, 209. aretoa">
+       Floor 1, Room 209
+      </p>
+      <div class="footer-map">
+       <iframe data-en-title="CIFP TARTANGA LHII" data-eu-title="CIFP TARTANGA LHII" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Instituto%20Tartanga%20Erandio&amp;output=embed" title="CIFP TARTANGA LHII">
+       </iframe>
+      </div>
+     </div>
+    </div>
+    <p class="mb-2 audio-credit">
+     <span data-en="Robin Sound: Lawrence Shove / British Library &middot;" data-eu="Txantxangorriaren soinua: Lawrence Shove / British Library &middot;">
+      Robin Sound: Lawrence Shove / British Library &middot;
+     </span>
+     <a data-en="Wikimedia Commons" data-eu="Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:European_Robin_(Erithacus_rubecula)_(W1CDR0001425_BD16).ogg" rel="noopener" target="_blank">
+      Wikimedia Commons
+     </a>
+     <span data-en="
+     &middot;
+     " data-eu="
+     &middot;
+     ">
+      &middot;
+     </span>
+     <a data-en="CC BY-SA 4.0" data-eu="CC BY-SA 4.0" href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">
+      CC BY-SA 4.0
+     </a>
+     <span data-en="
+     .
+    " data-eu="
+     .
+    ">
+      .
+     </span>
+    </p>
+    <div class="footer-bottom py-3 d-flex flex-wrap justify-content-between gap-2">
+     <span data-en="&copy; 2026 Flora &amp; Fauna of Biscay &middot; Educational project" data-eu="&copy; 2026 Bizkaiko Flora eta Fauna &middot; Hezkuntza-proiektua" data-translate-mode="html">
+      &copy; 2026 Flora &amp; Fauna of Biscay &middot; Educational project
+     </span>
+     <div class="d-flex gap-3 flex-wrap">
+      <a data-en="Privacy" data-eu="Pribatutasuna" href="privacy.html">
+       Privacy
+      </a>
+      <a data-en="Legal notice" data-eu="Lege-oharra" href="legal.html">
+       Legal notice
+      </a>
+      <a data-en="Cookies" data-eu="Cookie-ak" href="cookies.html">
+       Cookies
+      </a>
+      <a data-en="Back to home" data-eu="Itzuli hasierara" href="index.html">
+       Back to home
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script src="bootstrap-5.3.8/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="js/main.js">
+  </script>
+ </body>
+</html>

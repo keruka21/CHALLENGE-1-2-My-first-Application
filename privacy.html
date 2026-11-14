@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="Collaborative platform to discover, consult and record the flora and fauna of Biscay" name="description" />
+    <title>Flora & Fauna of Biscay | Discover, Protect, Share</title>
+    <link href="img/logo-web.svg" rel="icon" />
+    <link href="bootstrap-5.3.8/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Flora & Fauna of Biscay">
+    <meta property="og:url" content="https://faunaandfloraofbiscay.com">
+    <meta property="og:image" content="https://faunaandfloraofbiscay.com/img/logo-web.svg">
+    <meta property="og:description" content="A collaborative space to discover the flora and fauna of our territory, explore their habitats and provide sightings that help conserve them.">
+</head>
+ <body>
+  <!--HEADER-->
+  <header>
+   <!--USER BAR / LANGUAGES-->
+   <div class="user-bar">
+    <div class="container d-flex justify-content-between align-items-center gap-2">
+     <!--LANGUAGE SWITCHER (kept fixed when the User Area panel opens)-->
+     <div aria-label="Select Language" class="language-switch d-flex align-items-center gap-1" data-en-aria-label="Select Language" data-eu-aria-label="Select Language">
+      <button aria-pressed="true" class="btn btn-sm language-button active" data-en="EN" data-eu="EN" data-language="en" type="button">
+       EN
+      </button>
+      <span aria-hidden="true">
+       <span data-en="
+       |
+      " data-eu="
+       |
+      ">
+        |
+       </span>
+      </span>
+      <button aria-pressed="false" class="btn btn-sm language-button" data-en="EUS" data-eu="EUS" data-language="eu" type="button">
+       EUS
+      </button>
+     </div>
+     <!--USER BAR-->
+     <div class="position-relative">
+      <button aria-controls="userPanel" aria-expanded="false" aria-label="User Area" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" data-en-aria-label="User Area" data-eu-aria-label="User Area" type="button">
+       <i class="bi bi-person-circle fs-5">
+       </i>
+       <span class="d-none d-sm-inline ms-1" data-en="User Area" data-eu="Erabiltzaile eremua">
+        User Area
+       </span>
+      </button>
+      <div class="collapse user-panel-collapse" id="userPanel">
+       <div class="user-dropdown p-3">
+        <!--NOT LOGGED IN-->
+        <div id="guestPanel">
+         <p class="fw-semibold text-primary" data-en="Welcome!" data-eu="Ongi etorri!">
+          Welcome!
+         </p>
+         <button class="btn btn-primary btn-sm w-100 mb-2" data-bs-target="#loginModal" data-bs-toggle="modal" type="button">
+          <span data-en="Log-in" data-eu="Saioa hasi">
+           Log-in
+          </span>
+         </button>
+         <a class="btn btn-outline-primary btn-sm w-100 mb-2" data-en="Sign-up" data-eu="Erregistratu" href="signup.html">
+          Sign-up
+         </a>
+         <a class="d-block text-center small mt-1 text-decoration-underline" data-en="demo user area" data-eu="demo erabiltzaile eremua" href="user-area.html">
+          demo user area
+         </a>
+        </div>
+        <!--LOGGED IN-->
+        <div class="d-none" id="memberPanel">
+         <strong data-en="User" data-eu="Erabiltzailea" id="memberName">
+          User
+         </strong>
+         <p class="small text-secondary" id="memberEmail">
+         </p>
+         <a class="dropdown-item" data-en="My Profile" data-eu="Nire profila" href="user-area.html">
+          My Profile
+         </a>
+         <a class="dropdown-item" data-en="Settings" data-eu="Ezarpenak" href="user-area.html#privacySettingsForm">
+          Settings
+         </a>
+         <button class="btn btn-outline-secondary btn-sm w-100 mt-2" data-en="Log-out" data-eu="Saioa itxi" id="logoutButton">
+          Log-out
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!--NAVBAR-->
+   <nav class="navbar navbar-expand-lg main-navbar" id="mainNavbar">
+    <div class="container">
+     <!--LOGO-->
+     <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" id="logo-web">
+      <img alt="logo-web" data-en-alt="logo-web" data-eu-alt="logo-web" height="50" src="img/logo-web.svg"/>
+      <div class="d-flex flex-column lh-1">
+       <span data-en="Flora &amp; Fauna" data-eu="Bizkaiko">
+        Flora &amp; Fauna
+       </span>
+       <small data-en="of Biscay" data-eu="flora eta fauna">
+        of Biscay
+       </small>
+      </div>
+     </a>
+     <!--TOGGLE BUTTON-->
+     <button aria-label="Open navigation" class="navbar-toggler" data-bs-target="#navbarContent" data-bs-toggle="collapse" data-en-aria-label="Open navigation" data-eu-aria-label="Open navigation" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <!--NAVBAR LINKS-->
+     <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto gap-lg-2">
+       <li class="nav-item">
+        <a class="nav-link" data-en="Home" data-eu="Hasiera" href="index.html">
+         Home
+        </a>
+       </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Catalogue" data-eu="Katalogoa" href="catalog.html">
+         Catalogue
+        </a>
+        <ul class="dropdown-menu">
+         <li>
+          <a class="dropdown-item" data-en="Fauna" data-eu="Fauna" href="catalog.html?type=fauna">
+           Fauna
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item" data-en="Flora" data-eu="Flora" href="catalog.html?type=flora">
+           Flora
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item" data-en="Habitats" data-eu="Habitatak" href="habitats.html">
+           Habitats
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item" data-en="Parks, reserves and centers" data-eu="Parkeak, erreserbak eta zentroak" href="spaces.html">
+           Parks, reserves and centers
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item" data-en="Regions" data-eu="Eskualdeak" href="regions.html">
+           Regions
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-en="Blog" data-eu="Bloga" href="blog.html">
+         Blog
+        </a>
+       </li>
+       <li class="nav-item dropdown">
+        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-en="Participate" data-eu="Parte hartu" href="species-submit.html">
+         Participate
+        </a>
+        <ul class="dropdown-menu">
+         <li>
+          <a class="dropdown-item" data-en="Register a species" data-eu="Espezie bat erregistratu" href="species-submit.html">
+           Register a species
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item" data-en="Record a sighting" data-eu="Behaketa bat erregistratu" href="register-sighting.html">
+           Record a sighting
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-en="Gallery" data-eu="Galeria" href="gallery.html">
+         Gallery
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-en="Videos" data-eu="Bideoak" href="videos.html">
+         Videos
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-en="Contact" data-eu="Kontaktua" href="contact.html">
+         Contact
+        </a>
+       </li>
+       <!--THEME TOGGLE-->
+       <li class="nav-item d-flex align-items-center">
+        <button aria-label="Change theme" class="btn btn-sm theme-toggle" data-en-aria-label="Change theme" data-eu-aria-label="Change theme" id="themeToggle" type="button">
+         <i class="bi bi-moon-stars-fill" id="themeIcon">
+         </i>
+        </button>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <!--AUDIO & CONTROLS-->
+  <audio id="backgroundAudio" loop="" preload="none">
+   <source src="audio/European_Robin.mp3" type="audio/mpeg"/>
+  </audio>
+  <button aria-label="Silence Sound" class="floating-control audio-control" data-en-aria-label="Silence Sound" data-en-title="Silence" data-eu-aria-label="Silence Sound" data-eu-title="Silence" id="audioToggle" title="Silence">
+   <i class="bi bi-volume-up-fill" id="audioIcon">
+   </i>
+  </button>
+  <button aria-label="Back to the top" class="floating-control top-control" data-en-aria-label="Back to the top" data-eu-aria-label="Back to the top" id="backToTop" type="button">
+   <i class="bi bi-chevron-up">
+   </i>
+  </button>
+  <!-- LOGIN MODAL -->
+  <div aria-hidden="true" aria-labelledby="loginModalLabel" class="modal fade" id="loginModal" tabindex="-1">
+   <div class="modal-dialog">
+    <div class="modal-content p-3">
+     <div class="modal-header border-0">
+      <h5 class="modal-title fw-bold" data-en="Log-in" data-eu="Saioa hasi" id="loginModalLabel">
+       Log-in
+      </h5>
+      <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" data-en-aria-label="Close" data-eu-aria-label="Close" type="button">
+      </button>
+     </div>
+     <div class="modal-body">
+      <form id="loginForm">
+       <div class="mb-3">
+        <label class="form-label" data-en="Email address" data-eu="Posta elektronikoa" for="loginEmail">
+         Email address
+        </label>
+        <input class="form-control" id="loginEmail" required="" type="email"/>
+       </div>
+       <div class="mb-3">
+        <label class="form-label" data-en="Password" data-eu="Pasahitza" for="loginPassword">
+         Password
+        </label>
+        <input class="form-control" id="loginPassword" required="" type="password"/>
+       </div>
+       <button class="btn btn-primary w-100" data-en="Sign in" data-eu="Hasi saioa" type="submit">
+        Sign in
+       </button>
+      </form>
+     </div>
+    </div>
+   </div>
+  </div>
+  <main id="mainContent">
+   <section class="inner-hero page-hero">
+    <div class="container">
+     <nav aria-label="breadcrumb" data-en-aria-label="breadcrumb" data-eu-aria-label="breadcrumb">
+      <ol class="breadcrumb mb-3">
+       <li class="breadcrumb-item">
+        <a data-en="Home" data-eu="Hasiera" href="index.html">
+         Home
+        </a>
+       </li>
+       <li aria-current="page" class="breadcrumb-item active" data-en="Privacy policy" data-eu="Privacy policy">
+        Privacy policy
+       </li>
+      </ol>
+     </nav>
+     <p class="section-kicker" data-en="Privacy policy" data-eu="Privacy policy">
+      Privacy policy
+     </p>
+     <h1 data-en="Privacy policy" data-eu="Privacy policy">
+      Privacy policy
+     </h1>
+     <p class="lead" data-en="Learn how personal information is handled on this website." data-eu="Learn how personal information is handled on this website.">
+      Learn how personal information is handled on this website.
+     </p>
+    </div>
+   </section>
+   <section class="content-section">
+    <div class="container">
+     <div class="content-card">
+      <div class="privacy-container" id="privacy-policy">
+       <h1 data-en="PRIVACY POLICY" data-eu="PRIVACY POLICY">
+        PRIVACY POLICY
+       </h1>
+       <p class="subtitle">
+        <span data-en="
+        Last updated
+        " data-eu="
+        Last updated
+        ">
+         Last updated
+        </span>
+        <strong data-en="November 01, 2026" data-eu="November 01, 2026">
+         November 01, 2026
+        </strong>
+       </p>
+       <p class="body-text">
+        <span data-en="
+        This Privacy Notice for
+        " data-eu="
+        This Privacy Notice for
+        ">
+         This Privacy Notice for
+        </span>
+        <strong data-en="Flora &amp; Fauna of Biscay" data-eu="Bizkaiko Flora eta Fauna">
+         Flora &amp; Fauna of Biscay
+        </strong>
+        <span data-en='
+        ("we," "us," or "our") describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
+       ' data-eu='
+        ("we," "us," or "our") describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
+       '>
+         ("we," "us," or "our") describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
+        </span>
+       </p>
+       <ul class="privacy-list">
+        <li>
+         <span data-en="
+         Visit our website at
+         " data-eu="
+         Visit our website at
+         ">
+          Visit our website at
+         </span>
+         <a class="link" data-en="floraandfaunaofbiscay.com" data-eu="floraandfaunaofbiscay.com" href="https://floraandfaunaofbiscay.com" target="_blank">
+          floraandfaunaofbiscay.com
+         </a>
+         <span data-en="
+         or any website of ours that links to this Privacy Notice
+        " data-eu="
+         or any website of ours that links to this Privacy Notice
+        ">
+          or any website of ours that links to this Privacy Notice
+         </span>
+        </li>
+        <li data-en="Engage with us in other related ways, including any marketing or events" data-eu="Engage with us in other related ways, including any marketing or events">
+         Engage with us in other related ways, including any marketing or events
+        </li>
+       </ul>
+       <p class="body-text">
+        <strong data-en="Questions or concerns?" data-eu="Questions or concerns?">
+         Questions or concerns?
+        </strong>
+        <span data-en="
+        Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at
+        " data-eu="
+        Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at
+        ">
+         Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at
+        </span>
+        <a class="link" data-en="faunaandflora@bizkaia.com" data-eu="faunaandflora@bizkaia.com" href="mailto:faunaandflora@bizkaia.com">
+         faunaandflora@bizkaia.com
+        </a>
+        <span data-en="
+        .
+       " data-eu="
+        .
+       ">
+         .
+        </span>
+       </p>
+       <h2 data-en="SUMMARY OF KEY POINTS" data-eu="SUMMARY OF KEY POINTS">
+        SUMMARY OF KEY POINTS
+       </h2>
+       <p class="body-text">
+        <em>
+         <strong data-en="This summary provides key points from our Privacy Notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our" data-eu="This summary provides key points from our Privacy Notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our">
+          This summary provides key points from our Privacy Notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our
+         </strong>
+        </em>
+        <a class="link" href="#toc">
+         <strong>
+          <em data-en="table of contents" data-eu="table of contents">
+           table of contents
+          </em>
+         </strong>
+        </a>
+        <em>
+         <strong data-en="below to find the section you are looking for." data-eu="below to find the section you are looking for.">
+          below to find the section you are looking for.
+         </strong>
+        </em>
+       </p>
+       <p class="body-text">
+        <strong data-en="What personal information do we process?" data-eu="What personal information do we process?">
+         What personal information do we process?
+        </strong>
+        <span data-en="
+        When you visit, use, or navigate our Services, we may process personal information depending on how you interact with us and the Services, the choices you make, and the products and features you use. Learn more about
+        " data-eu="
+        When you visit, use, or navigate our Services, we may process personal information depending on how you interact with us and the Services, the choices you make, and the products and features you use. Learn more about
+        ">
+         When you visit, use, or navigate our Services, we may process personal information depending on how you interact with us and the Services, the choices you make, and the products and features you use. Learn more about
+        </span>
+        <a class="link" data-en="personal information you disclose to us" data-eu="personal information you disclose to us" href="#personalinfo">
+         personal information you disclose to us
+        </a>
+        <span data-en="
+        .
+       " data-eu="
+        .
+       ">
+         .
+        </span>
+       </p>
+       <p class="body-text">
+        <strong data-en="Do we process any sensitive personal information?" data-eu="Do we process any sensitive personal information?">
+         Do we process any sensitive personal information?
+        </strong>
+        <span data-en='
+        Some of the information may be considered "special" or "sensitive" in certain jurisdictions, for example your racial or ethnic origins, sexual orientation, and religious beliefs. We do not process sensitive personal information.
+       ' data-eu='
+        Some of the information may be considered "special" or "sensitive" in certain jurisdictions, for example your racial or ethnic origins, sexual orientation, and religious beliefs. We do not process sensitive personal information.
+       '>
+         Some of the information may be considered "special" or "sensitive" in certain jurisdictions, for example your racial or ethnic origins, sexual orientation, and religious beliefs. We do not process sensitive personal information.
+        </span>
+       </p>
+       <p class="body-text">
+        <strong data-en="Do we collect any information from third parties?" data-eu="Do we collect any information from third parties?">
+         Do we collect any information from third parties?
+        </strong>
+        <span data-en="
+        We do not collect any information from third parties.
+       " data-eu="
+        We do not collect any information from third parties.
+       ">
+         We do not collect any information from third parties.
+        </span>
+       </p>
+       <p class="body-text">
+        <strong data-en="How do we process your information?" data-eu="How do we process your information?">
+         How do we process your information?
+        </strong>
+        <span data-en="
+        We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. Learn more about
+        " data-eu="
+        We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. Learn more about
+        ">
+         We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. Learn more about
+        </span>
+        <a class="link" data-en="how we process your information" data-eu="how we process your information" href="#infouse">
+         how we process your information
+        </a>
+        <span data-en="
+        .
+       " data-eu="
+        .
+       ">
+         .
+        </span>
+       </p>
+       <p class="body-text">
+        <strong data-en="In what situations and with which parties do we share personal information?" data-eu="In what situations and with which parties do we share personal information?">
+         In what situations and with which parties do we share personal information?
+        </strong>
+        <span data-en="
+        We may share information in specific situations and with specific third parties. Learn more about
+        " data-eu="
+        We may share information in specific situations and with specific third parties. Learn more about
+        ">
+         We may share information in specific situations and with specific third parties. Learn more about
+        </span>
+        <a class="link" data-en="when and with whom we share your personal information" data-eu="when and with whom we share your personal information" href="#whoshare">
+         when and with whom we share your personal information
+        </a>
+        <span data-en="
+        .
+       " data-eu="
+        .
+       ">
+         .
+        </span>
+       </p>
+       <p class="body-text">
+        <strong data-en="What are your rights?" data-eu="What are your rights?">
+         What are your rights?
+        </strong>
+        <span data-en="
+        Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information. Learn more about
+        " data-eu="
+        Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information. Learn more about
+        ">
+         Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information. Learn more about
+        </span>
+        <a class="link" data-en="your privacy rights" data-eu="your privacy rights" href="#privacyrights">
+         your privacy rights
+        </a>
+        <span data-en="
+        .
+       " data-eu="
+        .
+       ">
+         .
+        </span>
+       </p>
+       <p class="body-text">
+        <strong data-en="How do you exercise your rights?" data-eu="How do you exercise your rights?">
+         How do you exercise your rights?
+        </strong>
+        <span data-en="
+        The easiest way to exercise your rights is by submitting a
+        " data-eu="
+        The easiest way to exercise your rights is by submitting a
+        ">
+         The easiest way to exercise your rights is by submitting a
+        </span>
+        <a class="link" data-en="data subject access request" data-eu="data subject access request" href="https://app.termly.io/dsar/9db29cff-4438-4a8d-b4e6-6c881b2dbb77" rel="noopener noreferrer" target="_blank">
+         data subject access request
+        </a>
+        <span data-en="
+        , or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.
+       " data-eu="
+        , or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.
+       ">
+         , or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.
+        </span>
+       </p>
+       <p class="body-text">
+        <span data-en="
+        Want to learn more about what we do with any information we collect?
+        " data-eu="
+        Want to learn more about what we do with any information we collect?
+        ">
+         Want to learn more about what we do with any information we collect?
+        </span>
+        <a class="link" data-en="Review the Privacy Notice in full" data-eu="Review the Privacy Notice in full" href="#toc">
+         Review the Privacy Notice in full
+        </a>
+        <span data-en="
+        .
+       " data-eu="
+        .
+       ">
+         .
+        </span>
+       </p>
+       <h2 data-en="TABLE OF CONTENTS" data-eu="TABLE OF CONTENTS" id="toc">
+        TABLE OF CONTENTS
+       </h2>
+       <ul class="toc-list">
+        <li>
+         <a class="link" data-en="1. WHAT INFORMATION DO WE COLLECT?" data-eu="1. WHAT INFORMATION DO WE COLLECT?" href="#infocollect">
+          1. WHAT INFORMATION DO WE COLLECT?
+         </a>
+        </li>
+        <li>
+         <a class="link" data-en="2. HOW DO WE PROCESS YOUR INFORMATION?" data-eu="2. HOW DO WE PROCESS YOUR INFORMATION?" href="#infouse">
+          2. HOW DO WE PROCESS YOUR INFORMATION?
+         </a>
+        </li>
+        <li>
+         <a class="link" data-en="3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?" data-eu="3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?" href="#legalbases">
+          3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?
+         </a>
+        </li>
+        <li>
+         <a class="link" data-en="4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?" data-eu="4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?" href="#whoshare">
+          4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?
+         </a>
+        </li>
+        <li>
+         <a class="link" data-en="5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?" data-eu="5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?" href="#cookies">
+          5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?
+         </a>
+        </li>
+        <li>
+         <a class="link" data-en="6. HOW LONG DO WE KEEP YOUR INFORMATION?" data-eu="6. HOW LONG DO WE KEEP YOUR INFORMATION?" href="#inforetain">
+          6. HOW LONG DO WE KEEP YOUR INFORMATION?
+         </a>
+        </li>
+        <li>
+         <a class="link" data-en="7. DO WE COLLECT INFORMATION FROM MINORS?" data-eu="7. DO WE COLLECT INFORMATION FROM MINORS?" href="#infominors">
+          7. DO WE COLLECT INFORMATION FROM MINORS?
+         </a>
+        </li>
+        <li>
+         <a class="link" data-en="8. WHAT ARE YOUR PRIVACY RIGHTS?" data-eu="8. WHAT ARE YOUR PRIVACY RIGHTS?" href="#privacyrights">
+          8. WHAT ARE YOUR PRIVACY RIGHTS?
+         </a>
+        </li>
+        <li>
+         <a class="link" data-en="9. CONTROLS FOR DO-NOT-TRACK FEATURES" data-eu="9. CONTROLS FOR DO-NOT-TRACK FEATURES" href="#DNT">
+          9. CONTROLS FOR DO-NOT-TRACK FEATURES
+         </a>
+        </li>
+        <li>
+         <a class="link" data-en="10. DO WE MAKE UPDATES TO THIS NOTICE?" data-eu="10. DO WE MAKE UPDATES TO THIS NOTICE?" href="#policyupdates">
+          10. DO WE MAKE UPDATES TO THIS NOTICE?
+         </a>
+        </li>
+        <li>
+         <a class="link" data-en="11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?" data-eu="11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?" href="#contact">
+          11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
+         </a>
+        </li>
+        <li>
+         <a class="link" data-en="12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?" data-eu="12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?" href="#request">
+          12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
+         </a>
+        </li>
+       </ul>
+       <section id="infocollect">
+        <h2 data-en="1. WHAT INFORMATION DO WE COLLECT?" data-eu="1. WHAT INFORMATION DO WE COLLECT?">
+         1. WHAT INFORMATION DO WE COLLECT?
+        </h2>
+        <h3 data-en="Personal information you disclose to us" data-eu="Personal information you disclose to us">
+         Personal information you disclose to us
+        </h3>
+        <p class="body-text">
+         <strong>
+          <em data-en="In Short:" data-eu="Laburbilduz:">
+           In Short:
+          </em>
+         </strong>
+         <em data-en="We collect personal information that you provide to us." data-eu="We collect personal information that you provide to us.">
+          We collect personal information that you provide to us.
+         </em>
+        </p>
+        <p class="body-text" data-en="We collect personal information that you voluntarily provide to us when you register on the Services, express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us." data-eu="We collect personal information that you voluntarily provide to us when you register on the Services, express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.">
+         We collect personal information that you voluntarily provide to us when you register on the Services, express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.
+        </p>
+        <p class="body-text">
+         <strong data-en="Personal Information Provided by You." data-eu="Personal Information Provided by You." id="personalinfo">
+          Personal Information Provided by You.
+         </strong>
+         <span data-en="
+         The personal information we collect may include the following:
+        " data-eu="
+         The personal information we collect may include the following:
+        ">
+          The personal information we collect may include the following:
+         </span>
+        </p>
+        <ul class="privacy-list">
+         <li data-en="names" data-eu="names">
+          names
+         </li>
+         <li data-en="email addresses" data-eu="email addresses">
+          email addresses
+         </li>
+         <li data-en="usernames" data-eu="usernames">
+          usernames
+         </li>
+         <li data-en="passwords" data-eu="passwords">
+          passwords
+         </li>
+        </ul>
+        <p class="body-text">
+         <strong data-en="Sensitive Information." data-eu="Sensitive Information.">
+          Sensitive Information.
+         </strong>
+         <span data-en="
+         We do not process sensitive information.
+        " data-eu="
+         We do not process sensitive information.
+        ">
+          We do not process sensitive information.
+         </span>
+        </p>
+        <p class="body-text" data-en="All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information." data-eu="All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.">
+         All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.
+        </p>
+       </section>
+       <section id="infouse">
+        <h2 data-en="2. HOW DO WE PROCESS YOUR INFORMATION?" data-eu="2. HOW DO WE PROCESS YOUR INFORMATION?">
+         2. HOW DO WE PROCESS YOUR INFORMATION?
+        </h2>
+        <p class="body-text">
+         <strong>
+          <em data-en="In Short:" data-eu="Laburbilduz:">
+           In Short:
+          </em>
+         </strong>
+         <em data-en="We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent." data-eu="We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent.">
+          We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent.
+         </em>
+        </p>
+        <p class="body-text">
+         <strong data-en="We process your personal information for a variety of reasons, depending on how you interact with our Services, including:" data-eu="We process your personal information for a variety of reasons, depending on how you interact with our Services, including:">
+          We process your personal information for a variety of reasons, depending on how you interact with our Services, including:
+         </strong>
+        </p>
+        <ul class="privacy-list">
+         <li>
+          <strong data-en="To facilitate account creation and authentication and otherwise manage user accounts." data-eu="To facilitate account creation and authentication and otherwise manage user accounts.">
+           To facilitate account creation and authentication and otherwise manage user accounts.
+          </strong>
+          <span data-en="
+          We may process your information so you can create and log in to your account, as well as keep your account in working order.
+         " data-eu="
+          We may process your information so you can create and log in to your account, as well as keep your account in working order.
+         ">
+           We may process your information so you can create and log in to your account, as well as keep your account in working order.
+          </span>
+         </li>
+         <li>
+          <strong data-en="To respond to user inquiries/offer support to users." data-eu="To respond to user inquiries/offer support to users.">
+           To respond to user inquiries/offer support to users.
+          </strong>
+          <span data-en="
+          We may process your information to respond to your inquiries and solve any potential issues you might have with the requested service.
+         " data-eu="
+          We may process your information to respond to your inquiries and solve any potential issues you might have with the requested service.
+         ">
+           We may process your information to respond to your inquiries and solve any potential issues you might have with the requested service.
+          </span>
+         </li>
+         <li>
+          <strong data-en="To send administrative information to you." data-eu="To send administrative information to you.">
+           To send administrative information to you.
+          </strong>
+          <span data-en="
+          We may process your information to send you details about our products and services, changes to our terms and policies, and other similar information.
+         " data-eu="
+          We may process your information to send you details about our products and services, changes to our terms and policies, and other similar information.
+         ">
+           We may process your information to send you details about our products and services, changes to our terms and policies, and other similar information.
+          </span>
+         </li>
+         <li>
+          <strong data-en="To save or protect an individual's vital interest." data-eu="To save or protect an individual's vital interest.">
+           To save or protect an individual's vital interest.
+          </strong>
+          <span data-en="
+          We may process your information when necessary to save or protect an individual&rsquo;s vital interest, such as to prevent harm.
+         " data-eu="
+          We may process your information when necessary to save or protect an individual&rsquo;s vital interest, such as to prevent harm.
+         ">
+           We may process your information when necessary to save or protect an individual&rsquo;s vital interest, such as to prevent harm.
+          </span>
+         </li>
+        </ul>
+       </section>
+       <section id="legalbases">
+        <h2 data-en="3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?" data-eu="3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?">
+         3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?
+        </h2>
+        <p class="body-text">
+         <em>
+          <strong data-en="In Short:" data-eu="Laburbilduz:">
+           In Short:
+          </strong>
+          <span data-en="
+          We only process your personal information when we believe it is necessary and we have a valid legal reason under applicable law...
+         " data-eu="
+          We only process your personal information when we believe it is necessary and we have a valid legal reason under applicable law...
+         ">
+           We only process your personal information when we believe it is necessary and we have a valid legal reason under applicable law...
+          </span>
+         </em>
+        </p>
+        <p class="body-text" data-en="The General Data Protection Regulation (GDPR) and UK GDPR require us to explain the valid legal bases we rely on in order to process your personal information. As such, we may rely on the following legal bases:" data-eu="The General Data Protection Regulation (GDPR) and UK GDPR require us to explain the valid legal bases we rely on in order to process your personal information. As such, we may rely on the following legal bases:">
+         The General Data Protection Regulation (GDPR) and UK GDPR require us to explain the valid legal bases we rely on in order to process your personal information. As such, we may rely on the following legal bases:
+        </p>
+        <ul class="privacy-list">
+         <li>
+          <strong data-en="Consent." data-eu="Consent.">
+           Consent.
+          </strong>
+          <span data-en="
+          We may process your information if you have given us permission for a specific purpose.
+         " data-eu="
+          We may process your information if you have given us permission for a specific purpose.
+         ">
+           We may process your information if you have given us permission for a specific purpose.
+          </span>
+         </li>
+         <li>
+          <strong data-en="Performance of a Contract." data-eu="Performance of a Contract.">
+           Performance of a Contract.
+          </strong>
+          <span data-en="
+          We may process your personal information when we believe it is necessary to fulfill our contractual obligations to you.
+         " data-eu="
+          We may process your personal information when we believe it is necessary to fulfill our contractual obligations to you.
+         ">
+           We may process your personal information when we believe it is necessary to fulfill our contractual obligations to you.
+          </span>
+         </li>
+         <li>
+          <strong data-en="Legal Obligations." data-eu="Legal Obligations.">
+           Legal Obligations.
+          </strong>
+          <span data-en="
+          We may process your information where we believe it is necessary for compliance with our legal obligations.
+         " data-eu="
+          We may process your information where we believe it is necessary for compliance with our legal obligations.
+         ">
+           We may process your information where we believe it is necessary for compliance with our legal obligations.
+          </span>
+         </li>
+         <li>
+          <strong data-en="Vital Interests." data-eu="Vital Interests.">
+           Vital Interests.
+          </strong>
+          <span data-en="
+          We may process your information where we believe it is necessary to protect your vital interests or those of a third party.
+         " data-eu="
+          We may process your information where we believe it is necessary to protect your vital interests or those of a third party.
+         ">
+           We may process your information where we believe it is necessary to protect your vital interests or those of a third party.
+          </span>
+         </li>
+        </ul>
+       </section>
+       <section id="whoshare">
+        <h2 data-en="4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?" data-eu="4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?">
+         4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?
+        </h2>
+        <p class="body-text">
+         <strong>
+          <em data-en="In Short:" data-eu="Laburbilduz:">
+           In Short:
+          </em>
+         </strong>
+         <em data-en="We may share information in specific situations described in this section and/or with the following third parties." data-eu="We may share information in specific situations described in this section and/or with the following third parties.">
+          We may share information in specific situations described in this section and/or with the following third parties.
+         </em>
+        </p>
+        <p class="body-text" data-en="We may need to share your personal information in the following situations:" data-eu="We may need to share your personal information in the following situations:">
+         We may need to share your personal information in the following situations:
+        </p>
+        <ul class="privacy-list">
+         <li>
+          <strong data-en="Business Transfers." data-eu="Business Transfers.">
+           Business Transfers.
+          </strong>
+          <span data-en="
+          We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
+         " data-eu="
+          We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
+         ">
+           We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
+          </span>
+         </li>
+        </ul>
+       </section>
+       <section id="cookies">
+        <h2 data-en="5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?" data-eu="5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?">
+         5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?
+        </h2>
+        <p class="body-text">
+         <strong>
+          <em data-en="In Short:" data-eu="Laburbilduz:">
+           In Short:
+          </em>
+         </strong>
+         <em data-en="We may use cookies and other tracking technologies to collect and store your information." data-eu="We may use cookies and other tracking technologies to collect and store your information.">
+          We may use cookies and other tracking technologies to collect and store your information.
+         </em>
+        </p>
+        <p class="body-text" data-en="We may use cookies and similar tracking technologies (like web beacons and pixels) to gather information when you interact with our Services. Specific information about how we use such technologies is set out in our Cookie Notice." data-eu="We may use cookies and similar tracking technologies (like web beacons and pixels) to gather information when you interact with our Services. Specific information about how we use such technologies is set out in our Cookie Notice.">
+         We may use cookies and similar tracking technologies (like web beacons and pixels) to gather information when you interact with our Services. Specific information about how we use such technologies is set out in our Cookie Notice.
+        </p>
+       </section>
+       <section id="inforetain">
+        <h2 data-en="6. HOW LONG DO WE KEEP YOUR INFORMATION?" data-eu="6. HOW LONG DO WE KEEP YOUR INFORMATION?">
+         6. HOW LONG DO WE KEEP YOUR INFORMATION?
+        </h2>
+        <p class="body-text">
+         <strong>
+          <em data-en="In Short:" data-eu="Laburbilduz:">
+           In Short:
+          </em>
+         </strong>
+         <em data-en="We keep your information for as long as necessary to fulfill the purposes outlined in this Privacy Notice unless otherwise required by law." data-eu="We keep your information for as long as necessary to fulfill the purposes outlined in this Privacy Notice unless otherwise required by law.">
+          We keep your information for as long as necessary to fulfill the purposes outlined in this Privacy Notice unless otherwise required by law.
+         </em>
+        </p>
+        <p class="body-text" data-en="When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information..." data-eu="When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information...">
+         When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information...
+        </p>
+       </section>
+       <section id="infominors">
+        <h2 data-en="7. DO WE COLLECT INFORMATION FROM MINORS?" data-eu="7. DO WE COLLECT INFORMATION FROM MINORS?">
+         7. DO WE COLLECT INFORMATION FROM MINORS?
+        </h2>
+        <p class="body-text">
+         <strong>
+          <em data-en="In Short:" data-eu="Laburbilduz:">
+           In Short:
+          </em>
+         </strong>
+         <em data-en="We do not knowingly collect data from or market to children under 18 years of age." data-eu="We do not knowingly collect data from or market to children under 18 years of age.">
+          We do not knowingly collect data from or market to children under 18 years of age.
+         </em>
+        </p>
+        <p class="body-text">
+         <span data-en="
+         We do not knowingly collect, solicit data from, or market to children under 18 years of age. If you become aware of any data we may have collected from children under age 18, please contact us at
+         " data-eu="
+         We do not knowingly collect, solicit data from, or market to children under 18 years of age. If you become aware of any data we may have collected from children under age 18, please contact us at
+         ">
+          We do not knowingly collect, solicit data from, or market to children under 18 years of age. If you become aware of any data we may have collected from children under age 18, please contact us at
+         </span>
+         <a class="link" data-en="faunaandflora@bizkaia.com" data-eu="faunaandflora@bizkaia.com" href="mailto:faunaandflora@bizkaia.com">
+          faunaandflora@bizkaia.com
+         </a>
+         <span data-en="
+         .
+        " data-eu="
+         .
+        ">
+          .
+         </span>
+        </p>
+       </section>
+       <section id="privacyrights">
+        <h2 data-en="8. WHAT ARE YOUR PRIVACY RIGHTS?" data-eu="8. WHAT ARE YOUR PRIVACY RIGHTS?">
+         8. WHAT ARE YOUR PRIVACY RIGHTS?
+        </h2>
+        <p class="body-text">
+         <strong>
+          <em data-en="In Short:" data-eu="Laburbilduz:">
+           In Short:
+          </em>
+         </strong>
+         <em data-en="In some regions, such as the European Economic Area (EEA), United Kingdom (UK), and Switzerland, you have rights that allow you greater access to and control over your personal information." data-eu="In some regions, such as the European Economic Area (EEA), United Kingdom (UK), and Switzerland, you have rights that allow you greater access to and control over your personal information.">
+          In some regions, such as the European Economic Area (EEA), United Kingdom (UK), and Switzerland, you have rights that allow you greater access to and control over your personal information.
+         </em>
+        </p>
+        <p class="body-text">
+         <span data-en="
+         These may include the right to request access, rectification, erasure, data portability, and restriction of processing. You can make such a request by contacting us or visiting
+         " data-eu="
+         These may include the right to request access, rectification, erasure, data portability, and restriction of processing. You can make such a request by contacting us or visiting
+         ">
+          These may include the right to request access, rectification, erasure, data portability, and restriction of processing. You can make such a request by contacting us or visiting
+         </span>
+         <a class="link" data-en="HOW CAN YOU CONTACT US ABOUT THIS NOTICE?" data-eu="HOW CAN YOU CONTACT US ABOUT THIS NOTICE?" href="#contact">
+          HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
+         </a>
+        </p>
+        <p class="body-text">
+         <strong>
+          <u>
+           <span data-en="
+           Withdrawing your consent:
+          " data-eu="
+           Withdrawing your consent:
+          ">
+            Withdrawing your consent:
+           </span>
+          </u>
+         </strong>
+         <span data-en="
+         If we are relying on your consent to process your personal information, you have the right to withdraw your consent at any time.
+        " data-eu="
+         If we are relying on your consent to process your personal information, you have the right to withdraw your consent at any time.
+        ">
+          If we are relying on your consent to process your personal information, you have the right to withdraw your consent at any time.
+         </span>
+        </p>
+       </section>
+       <section id="DNT">
+        <h2 data-en="9. CONTROLS FOR DO-NOT-TRACK FEATURES" data-eu="9. CONTROLS FOR DO-NOT-TRACK FEATURES">
+         9. CONTROLS FOR DO-NOT-TRACK FEATURES
+        </h2>
+        <p class="body-text" data-en='Most web browsers and some mobile operating systems include a Do-Not-Track ("DNT") feature or setting you can activate... At this stage, no uniform technology standard for recognizing and implementing DNT signals has been finalized.' data-eu='Most web browsers and some mobile operating systems include a Do-Not-Track ("DNT") feature or setting you can activate... At this stage, no uniform technology standard for recognizing and implementing DNT signals has been finalized.'>
+         Most web browsers and some mobile operating systems include a Do-Not-Track ("DNT") feature or setting you can activate... At this stage, no uniform technology standard for recognizing and implementing DNT signals has been finalized.
+        </p>
+       </section>
+       <section id="policyupdates">
+        <h2 data-en="10. DO WE MAKE UPDATES TO THIS NOTICE?" data-eu="10. DO WE MAKE UPDATES TO THIS NOTICE?">
+         10. DO WE MAKE UPDATES TO THIS NOTICE?
+        </h2>
+        <p class="body-text">
+         <strong>
+          <em data-en="In Short:" data-eu="Laburbilduz:">
+           In Short:
+          </em>
+         </strong>
+         <em data-en="Yes, we will update this notice as necessary to stay compliant with relevant laws." data-eu="Yes, we will update this notice as necessary to stay compliant with relevant laws.">
+          Yes, we will update this notice as necessary to stay compliant with relevant laws.
+         </em>
+        </p>
+       </section>
+       <section id="contact">
+        <h2 data-en="11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?" data-eu="11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?">
+         11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
+        </h2>
+        <p class="body-text">
+         <span data-en="
+         If you have questions or comments about this notice, you may email us at
+         " data-eu="
+         If you have questions or comments about this notice, you may email us at
+         ">
+          If you have questions or comments about this notice, you may email us at
+         </span>
+         <a class="link" data-en="faunaandflora@bizkaia.com" data-eu="faunaandflora@bizkaia.com" href="mailto:faunaandflora@bizkaia.com">
+          faunaandflora@bizkaia.com
+         </a>
+         <span data-en="
+         or contact us by post at:
+        " data-eu="
+         or contact us by post at:
+        ">
+          or contact us by post at:
+         </span>
+        </p>
+        <p class="body-text">
+         <span data-en="
+         Flora &amp; Fauna of Biscay
+         " data-eu="
+         Flora &amp; Fauna of Biscay
+         ">
+          Flora &amp; Fauna of Biscay
+         </span>
+         <br/>
+         <span data-en="
+         CIFP TARTANGA LHII
+         " data-eu="
+         CIFP TARTANGA LHII
+         ">
+          CIFP TARTANGA LHII
+         </span>
+         <br/>
+         <span data-en="
+         Tartanga Street, 15
+         " data-eu="
+         Tartanga Street, 15
+         ">
+          Tartanga Street, 15
+         </span>
+         <br/>
+         <span data-en="
+         Erandio, Biscay 48950
+         " data-eu="
+         Erandio, Biscay 48950
+         ">
+          Erandio, Biscay 48950
+         </span>
+         <br/>
+         <span data-en="
+         Spain
+        " data-eu="
+         Spain
+        ">
+          Spain
+         </span>
+        </p>
+       </section>
+       <section id="request">
+        <h2 data-en="12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?" data-eu="12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?">
+         12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
+        </h2>
+        <p class="body-text">
+         <span data-en="
+         Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. To request this, please
+         " data-eu="
+         Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. To request this, please
+         ">
+          Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. To request this, please
+         </span>
+         <a class="link" data-en="fill out and submit a data subject access request" data-eu="fill out and submit a data subject access request" href="https://app.termly.io/dsar/9db29cff-4438-4a8d-b4e6-6c881b2dbb77" target="_blank">
+          fill out and submit a data subject access request
+         </a>
+         <span data-en="
+         .
+        " data-eu="
+         .
+        ">
+          .
+         </span>
+        </p>
+       </section>
+       <div class="privacy-footer">
+        <p class="body-text">
+         <span data-en="
+         This Privacy Policy was created using Termly's
+         " data-eu="Pribatutasun-politika hau Termly-ren bidez sortu da">
+          This Privacy Policy was created using Termly's
+         </span>
+         <a class="link" data-en="Privacy Policy Generator" data-eu="Privacy Policy Generator" href="https://termly.io/products/privacy-policy-generator/" rel="noopener external" target="_blank">
+          Privacy Policy Generator
+         </a>
+         <span data-en="
+         .
+        " data-eu="
+         .
+        ">
+          .
+         </span>
+        </p>
+       </div>
+      </div>
+      <a class="btn btn-primary mt-3" data-en="Back to home" data-eu="Itzuli hasierara" href="index.html">
+       Back to home
+      </a>
+     </div>
+    </div>
+   </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="main-footer">
+   <div aria-label="Collaborative Partners / Bazkide kolaboratzaileak" class="partner-footer" data-en-aria-label="Collaborative Partners / Bazkide kolaboratzaileak" data-eu-aria-label="Collaborative Partners / Bazkide kolaboratzaileak">
+    <div class="container">
+     <div aria-label="Collaborating entities" data-en-aria-label="Collaborating entities" data-eu-aria-label="Collaborating entities" id="partnerSlider" tabindex="0">
+      <div class="partner-track" id="partnerTrack">
+       <a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank">
+        <img alt="Biscay diputation/Bizkaiko Foru Aldundia" class="object-fit-contain" data-en-alt="Biscay diputation/Bizkaiko Foru Aldundia" data-eu-alt="Biscay diputation/Bizkaiko Foru Aldundia" src="img/partners/logo-diputacion-de-bizkaia.jpg"/>
+       </a>
+       <a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank">
+        <img alt="Urdaibai Bird Center" class="object-fit-contain" data-en-alt="Urdaibai Bird Center" data-eu-alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png"/>
+       </a>
+       <a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank">
+        <img alt="MITECO" class="object-fit-contain" data-en-alt="MITECO" data-eu-alt="MITECO" src="img/partners/logo-miteco-color.png"/>
+       </a>
+       <a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank">
+        <img alt="Basque Country University /Euskal Herriko Unibertsitatea" class="object-fit-contain" data-en-alt="Basque Country University /Euskal Herriko Unibertsitatea" data-eu-alt="Basque Country University /Euskal Herriko Unibertsitatea" src="img/partners/logo-upv-ehu-blanco-completo .png"/>
+       </a>
+       <a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank">
+        <img alt="Basque Government/Eusko Jaurlaritza" class="object-fit-contain" data-en-alt="Basque Government/Eusko Jaurlaritza" data-eu-alt="Basque Government/Eusko Jaurlaritza" src="img/partners/logo-gobierno-vasco.png"/>
+       </a>
+       <a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank">
+        <img alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" class="object-fit-contain" data-en-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" data-eu-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" src="img/partners/fundacion-biodiversidad.jpg"/>
+       </a>
+       <a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank">
+        <img alt="Biscay diputation/Bizkaiko Foru Aldundia" class="object-fit-contain" data-en-alt="Biscay diputation/Bizkaiko Foru Aldundia" data-eu-alt="Biscay diputation/Bizkaiko Foru Aldundia" src="img/partners/logo-diputacion-de-bizkaia.jpg"/>
+       </a>
+       <a class="partner-item" href="https://www.birdcenter.org/es/aves" rel="noopener" target="_blank">
+        <img alt="Urdaibai Bird Center" class="object-fit-contain" data-en-alt="Urdaibai Bird Center" data-eu-alt="Urdaibai Bird Center" src="img/partners/logo-urdaibai.png"/>
+       </a>
+       <a class="partner-item" href="https://www.miteco.gob.es/" rel="noopener" target="_blank">
+        <img alt="MITECO" class="object-fit-contain" data-en-alt="MITECO" data-eu-alt="MITECO" src="img/partners/logo-miteco-color.png"/>
+       </a>
+       <a class="partner-item" href="https://www.ehu.eus/" rel="noopener" target="_blank">
+        <img alt="Basque Country University /Euskal Herriko Unibertsitatea" class="object-fit-contain" data-en-alt="Basque Country University /Euskal Herriko Unibertsitatea" data-eu-alt="Basque Country University /Euskal Herriko Unibertsitatea" src="img/partners/logo-upv-ehu-blanco-completo .png"/>
+       </a>
+       <a class="partner-item" href="https://www.euskadi.eus/" rel="noopener" target="_blank">
+        <img alt="Basque Government/Eusko Jaurlaritza" class="object-fit-contain" data-en-alt="Basque Government/Eusko Jaurlaritza" data-eu-alt="Basque Government/Eusko Jaurlaritza" src="img/partners/logo-gobierno-vasco.png"/>
+       </a>
+       <a class="partner-item" href="https://fundacion-biodiversidad.es/" rel="noopener" target="_blank">
+        <img alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" class="object-fit-contain" data-en-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" data-eu-alt="Biodiversity Fundation/Biodibertsitatearen Fundazioa" src="img/partners/fundacion-biodiversidad.jpg"/>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="container">
+    <div class="row g-4 py-4 px-4">
+     <div class="col-lg-3 col-md-6">
+      <a class="footer-brand d-inline-flex align-items-center gap-2" href="index.html">
+       <img alt="Logotipo Flora and Fauna of Biscay" data-en-alt="Logotipo Flora and Fauna of Biscay" data-eu-alt="Logotipo Flora and Fauna of Biscay" src="img/logo-web.svg"/>
+       <div class="d-flex flex-column lh-1">
+        <span data-en="Flora &amp; Fauna" data-eu="Bizkaiko">
+         Flora &amp; Fauna
+        </span>
+        <small data-en="of Biscay" data-eu="flora eta fauna">
+         of Biscay
+        </small>
+       </div>
+      </a>
+      <p class="footer-slogan" data-en="Discover &middot; Protect &middot; Share" data-eu="Ezagutu &middot; Babestu &middot; Partekatu">
+       Discover &middot; Protect &middot; Share
+      </p>
+      <p class="mt-3" data-en="Team: June Sillero, Eritz Gorriz, Kelea Rueda" data-eu="Taldea: June Sillero, Eritz Gorriz, Kelea Rueda">
+       <b data-en="Team:" data-eu="Taldea:">
+        Team:
+       </b>
+       June Sillero, Eritz Gorriz, Kelea Rueda
+      </p>
+      <p class="mt-3" data-en="Project: Challenge 1.2, DAMi 1&ordm;" data-eu="Proiektua: Challenge 1.2, DAMi 1. maila">
+       <b data-en="Project:" data-eu="Proiektua:">
+        Project:
+       </b>
+       Challenge 1.2, DAMi 1&ordm;
+      </p>
+      <div class="social-links d-flex flex-wrap gap-2">
+       <a aria-label="Instagram" data-en-aria-label="Instagram" data-eu-aria-label="Instagram" href="https://www.instagram.com/" rel="noopener" target="_blank">
+        <i class="bi bi-instagram">
+        </i>
+       </a>
+       <a aria-label="YouTube" data-en-aria-label="YouTube" data-eu-aria-label="YouTube" href="https://www.youtube.com/@urdaibaibirdcenter" rel="noopener" target="_blank">
+        <i class="bi bi-youtube">
+        </i>
+       </a>
+       <a aria-label="Facebook" data-en-aria-label="Facebook" data-eu-aria-label="Facebook" href="https://www.facebook.com/" rel="noopener" target="_blank">
+        <i class="bi bi-facebook">
+        </i>
+       </a>
+       <a aria-label="X" data-en-aria-label="X" data-eu-aria-label="X" href="https://x.com/" rel="noopener" target="_blank">
+        <i class="bi bi-twitter-x">
+        </i>
+       </a>
+       <a aria-label="Project repository" data-en-aria-label="Project repository" data-eu-aria-label="Project repository" href="https://github.com/keruka21/CHALLENGE-1-2-My-first-Application" rel="noopener" target="_blank">
+        <i class="bi bi-github">
+        </i>
+       </a>
+      </div>
+     </div>
+     <div class="col-lg-2 col-6">
+      <h2 class="footer-title" data-en="Explore" data-eu="Arakatu">
+       Explore
+      </h2>
+      <ul class="footer-links">
+       <li>
+        <a data-en="Home" data-eu="Hasiera" href="index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a data-en="Flora" data-eu="Flora" href="catalog.html?type=flora">
+         Flora
+        </a>
+       </li>
+       <li>
+        <a data-en="Fauna" data-eu="Fauna" href="catalog.html?type=fauna">
+         Fauna
+        </a>
+       </li>
+       <li>
+        <a data-en="Blog" data-eu="Bloga" href="blog.html">
+         Blog
+        </a>
+       </li>
+       <li>
+        <a data-en="Gallery" data-eu="Galeria" href="gallery.html">
+         Gallery
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col-lg-3 col-6">
+      <h2 class="footer-title" data-en="Contact" data-eu="Kontaktua">
+       Contact
+      </h2>
+      <a class="footer-contact" href="tel:+34555555555">
+       <i class="bi bi-telephone-fill">
+       </i>
+       <span data-en="
+       +34 944 000 000
+      " data-eu="
+       +34 944 000 000
+      ">
+        +34 944 000 000
+       </span>
+      </a>
+      <a class="footer-contact" href="https://wa.me/34555555555" rel="noopener" target="_blank">
+       <i class="bi bi-whatsapp">
+       </i>
+       <span data-en="
+       WhatsApp: +34 600 000 000
+      " data-eu="
+       WhatsApp: +34 600 000 000
+      ">
+        WhatsApp: +34 600 000 000
+       </span>
+      </a>
+      <a class="footer-contact" href="mailto:faunaandflora@bizkaia.com">
+       <i class="bi bi-envelope">
+       </i>
+       <span data-en="
+       faunaandflora@bizkaia.com
+      " data-eu="
+       faunaandflora@bizkaia.com
+      ">
+        faunaandflora@bizkaia.com
+       </span>
+      </a>
+      <p class="mt-4" data-en="Monday to Friday" data-eu="Astelehenetik ostiralera">
+       <b data-en="Monday to Friday" data-eu="Astelehenetik ostiralera">
+        Monday to Friday
+       </b>
+      </p>
+      <p data-en="08:00 am - 14:25pm (Classroom 209)" data-eu="08:00 am - 14:25 pm (209 ikasgela)">
+       08:00 am - 14:25pm (Classroom 209)
+      </p>
+     </div>
+     <div class="col-lg-4">
+      <h2 class="footer-title" data-en="We are at CIFP TARTANGA LHII" data-eu="CIFP TARTANGA LHII-n gaude">
+       We are at CIFP TARTANGA LHII
+      </h2>
+      <p data-en="Tartanga Street, 15 &middot; Erandio, Biscay 48950" data-eu="Tartanga kalea, 15 &middot; Erandio, Bizkaia 48950">
+       Tartanga Street, 15 &middot; Erandio, Biscay 48950
+      </p>
+      <p data-en="Floor 1, Room 209" data-eu="1. solairua, 209. aretoa">
+       Floor 1, Room 209
+      </p>
+      <div class="footer-map">
+       <iframe data-en-title="CIFP TARTANGA LHII" data-eu-title="CIFP TARTANGA LHII" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Instituto%20Tartanga%20Erandio&amp;output=embed" title="CIFP TARTANGA LHII">
+       </iframe>
+      </div>
+     </div>
+    </div>
+    <p class="mb-2 audio-credit">
+     <span data-en="Robin Sound: Lawrence Shove / British Library &middot;" data-eu="Txantxangorriaren soinua: Lawrence Shove / British Library &middot;">
+      Robin Sound: Lawrence Shove / British Library &middot;
+     </span>
+     <a data-en="Wikimedia Commons" data-eu="Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:European_Robin_(Erithacus_rubecula)_(W1CDR0001425_BD16).ogg" rel="noopener" target="_blank">
+      Wikimedia Commons
+     </a>
+     <span data-en="
+     &middot;
+     " data-eu="
+     &middot;
+     ">
+      &middot;
+     </span>
+     <a data-en="CC BY-SA 4.0" data-eu="CC BY-SA 4.0" href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">
+      CC BY-SA 4.0
+     </a>
+     <span data-en="
+     .
+    " data-eu="
+     .
+    ">
+      .
+     </span>
+    </p>
+    <div class="footer-bottom py-3 d-flex flex-wrap justify-content-between gap-2">
+     <span data-en="&copy; 2026 Flora &amp; Fauna of Biscay &middot; Educational project" data-eu="&copy; 2026 Bizkaiko Flora eta Fauna &middot; Hezkuntza-proiektua" data-translate-mode="html">
+      &copy; 2026 Flora &amp; Fauna of Biscay &middot; Educational project
+     </span>
+     <div class="d-flex gap-3 flex-wrap">
+      <a data-en="Privacy" data-eu="Pribatutasuna" href="privacy.html">
+       Privacy
+      </a>
+      <a data-en="Legal notice" data-eu="Lege-oharra" href="legal.html">
+       Legal notice
+      </a>
+      <a data-en="Cookies" data-eu="Cookie-ak" href="cookies.html">
+       Cookies
+      </a>
+      <a data-en="Back to home" data-eu="Itzuli hasierara" href="index.html">
+       Back to home
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script src="bootstrap-5.3.8/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="js/main.js">
+  </script>
+ </body>
+</html>
