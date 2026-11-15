@@ -114,12 +114,7 @@ body {
     overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+h1, h2, h3, h4, h5, h6,
 .section-title,
 .hero-content h1 {
     font-family: var(--font-heading);
@@ -138,8 +133,7 @@ h3 {
     font-size: 1.25rem;
 }
 
-p,
-li,
+p, li,
 .form-control,
 .form-select,
 .btn {
@@ -150,7 +144,7 @@ a {
     color: var(--color-primary);
     text-decoration: none;
 }
-
+/*keeps logo from hader and footer the same color even whn visited*/
 a:visited:not(.nav-link):not(.footer-brand):not(.btn) {
     color: #557b66;
 }
@@ -1237,13 +1231,13 @@ REGIONS MAP & LIST — HOVER AND SELECTION STATES
     cursor: pointer;
 }
 
-/* Map hover state (temporary accent color) */
+/* Map hover state*/
 #regionMapVisual svg [tabindex="0"]:hover,
 #regionMapVisual svg [tabindex="0"].is-hovered {
     fill: var(--color-primary-soft, #baccac) !important;
 }
 
-/* Selected map state (brand accent color) */
+/* Selected map state*/
 #regionMapVisual svg [tabindex="0"].is-active,
 #regionMapVisual svg [tabindex="0"].is-selected {
     fill: var(--color-accent, #ff9e01) !important;
@@ -1265,7 +1259,7 @@ REGIONS MAP & LIST — HOVER AND SELECTION STATES
     transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 
-/* Region list hover state (soft primary color) */
+/* Region list hover*/
 .region-select-btn:hover,
 .region-select-btn:focus,
 .region-select-btn.is-hovered {
@@ -1274,7 +1268,7 @@ REGIONS MAP & LIST — HOVER AND SELECTION STATES
     border-left-color: var(--color-primary) !important;
 }
 
-/* Selected region list state (brand accent color) */
+/* Selected region list state*/
 .region-select-btn.is-selected {
     background-color: rgba(255, 158, 1, 0.18) !important;
     color: var(--color-accent-dark, #89612F) !important;
@@ -1329,7 +1323,7 @@ USER AREA
 }
 
 /* ==========================================================
-FLOATING CONTROLS
+FLOATING CONTROLS AUDIO & BACK TO TOP
 ========================================================== */
 .floating-control {
     position: fixed;
@@ -1569,7 +1563,7 @@ FOOTER
 }
 
 /* ==========================================================
-   CATALOGUE TABLES — shared visual system for fauna and flora
+   CATALOGUE TABLES
    ========================================================== */
 
 .catalog-section {
@@ -1824,7 +1818,7 @@ FOOTER
 }
 
 /* ==========================================================
-   SPECIES DETAIL — matching cards and image galleries
+   SPECIES DETAIL
    ========================================================== */
 
 .species-detail-section {
@@ -2092,6 +2086,7 @@ FOOTER
             var(--color-surface) 12px,
             var(--color-surface) 24px
         );
+    /*striped background for placeholder pictures*/
     border: 1px dashed var(--color-primary-soft);
     border-radius: 1rem;
 }
