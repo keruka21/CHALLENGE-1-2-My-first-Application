@@ -1980,10 +1980,12 @@ FOOTER
 
 .species-gallery-card img {
     display: block;
+    border-radius: var(--radius-card);
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
     transition: transform .25s ease;
+    
 }
 
 .species-gallery-card a:hover img {
@@ -2026,7 +2028,7 @@ FOOTER
             var(--color-surface) 24px
         );
     border: 1px dashed var(--color-primary-soft);
-    border-radius: .9rem;
+    border-radius: var(--radius-card);
 }
 
 .species-gallery-placeholder i {
