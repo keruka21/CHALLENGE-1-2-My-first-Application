@@ -18,8 +18,8 @@ VARIABLES
     --overlay-light: rgba(29, 47, 30, 0.72);
     --shadow-soft: 0 18px 55px rgba(48, 67, 39, 0.10);
     --radius-card: 1.25rem;
-    --font-body: "Fauna_One", Georgia, serif;
-    --font-heading: "Montserrat", Arial, sans-serif;
+    --font-body: "Montserrat", Arial, sans-serif;
+    --font-heading: "Fauna_One", Georgia, serif;
     --header-height: 112px;
     --font-size-base: 1rem;
     --page-gutter: clamp(1rem, 3vw, 2rem);
@@ -108,10 +108,14 @@ body {
     font-family: var(--font-body);
     font-size: var(--font-size-base);
     color: var(--color-ink);
-    background: var(--color-background-light);
+    background-color: var(--color-background-light);
     line-height: 1.6;
     min-height: 100vh;
     overflow-x: hidden;
+    background-image: url("../img/Grass2.png");
+    background-repeat: no-repeat;
+    background-position: center calc(100% - 300px);
+    background-size: 100% auto; 
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -249,7 +253,6 @@ HEADER, USER BAR AND NAVBAR
     background: transparent;
     transition: background .3s, box-shadow .3s, padding .3s;
 }
-
 .main-navbar.scrolled {
     top: 0;
     background: var(--color-primary);
@@ -313,7 +316,7 @@ HEADER, USER BAR AND NAVBAR
 }
 
 .navbar-toggler {
-    border-color: #ffffff80;
+    border-color: var(--color-accent);
 }
 
 .navbar-toggler-icon {
@@ -1680,7 +1683,7 @@ FOOTER
     color: var(--color-primary-dark);
     background: var(--color-background-light);
     border-bottom: 1px solid var(--color-border);
-    font-size: .78rem;
+    font-size: 1rem;
     font-weight: 750;
     letter-spacing: .025em;
     vertical-align: middle;
@@ -1691,7 +1694,7 @@ FOOTER
     height: 76px;
     padding: .65rem .75rem;
     border-color: var(--color-border);
-    font-size: .86rem;
+    font-size: 0.9rem;
     line-height: 1.35;
     vertical-align: middle;
     overflow-wrap: anywhere;
@@ -1703,7 +1706,7 @@ FOOTER
 
 .catalog-table .catalog-id {
     color: var(--color-muted);
-    font-size: .8rem;
+    font-size: 1.1rem;
     font-variant-numeric: tabular-nums;
     white-space: nowrap;
 }
@@ -1741,12 +1744,12 @@ FOOTER
 
 .catalog-table .catalog-scientific {
     color: var(--color-muted);
-    font-size: .83rem;
+    font-size: .9rem;
 }
 
 .catalog-table .catalog-group,
 .catalog-table .catalog-habitat {
-    font-size: .82rem;
+    font-size: .9rem;
 }
 
 .catalog-table .catalog-profile {
@@ -2120,6 +2123,13 @@ FOOTER
     }
 }
 @media (max-width: 991.98px) {
+    #mainNavbar.main-navbar {
+        position: absolute !important;
+        width: 100% !important;
+        left: 0 !important;
+        right: auto !important;
+        box-sizing: border-box !important;
+    }
     .container {
         --bs-gutter-x: 1.5rem;
     }
@@ -2136,6 +2146,7 @@ FOOTER
         border-radius: .7rem;
         box-shadow: var(--shadow-soft);
     }
+
     .hero-section {
         height: min(780px, 92svh);
         min-height: 650px;
@@ -2148,6 +2159,15 @@ FOOTER
     }
 }
 @media (max-width: 767.98px) {
+
+    #mainNavbar.main-navbar {
+        position: absolute !important;
+        width: 100% !important;
+        left: 0 !important;
+        right: auto !important;
+        box-sizing: border-box !important;
+    }
+
     .inner-hero,
     .page-hero {
         padding-top: 6.5rem;

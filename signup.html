@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <meta content="Collaborative platform to discover, consult and record the flora and fauna of Biscay" name="description">
-    <title>Flora &amp; Fauna of Biscay | Discover, Protect, Share</title>
+    <title>Flora & Fauna of Biscay | Discover, Protect, Share</title>
     <link href="img/logo-web.svg" rel="icon">
     <link href="bootstrap-5.3.8/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-icons.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Flora &amp; Fauna of Biscay">
+    <meta property="og:title" content="Flora & Fauna of Biscay">
     <meta property="og:url" content="https://faunaandfloraofbiscay.com">
     <meta property="og:image" content="https://faunaandfloraofbiscay.com/img/logo-web.svg">
     <meta property="og:description" content="A collaborative space to discover the flora and fauna of our territory, explore their habitats and provide sightings that help conserve them.">
@@ -22,29 +22,20 @@
             <!--USER BAR / LANGUAGES-->
             <div class="user-bar">
                 <div class="container d-flex justify-content-between align-items-center gap-2">
-                    <!--LANGUAGE SWITCHER (kept fixed when the User Area panel opens)-->
-                    <div aria-label="Select language" class="language-switch d-flex align-items-center gap-1" data-en-aria-label="Select language" data-eu-aria-label="Hizkuntza hautatu" role="group">
+                    <!--LANGUAGE SWITCHER-->
+                    <div aria-label="Select language" class="language-switch d-flex align-items-center gap-1" role="group">
                         <button aria-pressed="true" class="btn btn-sm language-button active" data-en="EN" data-eu="EN" data-language="en" type="button">
                             EN
                         </button>
-                        <span aria-hidden="true">
-                            <span data-en="
-       |
-      " data-eu="
-       |
-      ">
-                                |
-                            </span>
-                        </span>
+                        <span>|</span>
                         <button aria-pressed="false" class="btn btn-sm language-button" data-en="EUS" data-eu="EUS" data-language="eu" type="button">
                             EUS
                         </button>
                     </div>
                     <!--USER BAR-->
                     <div class="position-relative">
-                        <button aria-controls="userPanel" aria-expanded="false" aria-label="User Area" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" data-en-aria-label="User Area" data-eu-aria-label="User Area" type="button">
-                            <i class="bi bi-person-circle fs-5">
-                            </i>
+                        <button aria-controls="userPanel" aria-expanded="false" aria-label="User Area" class="btn btn-sm user-menu-trigger" data-bs-target="#userPanel" data-bs-toggle="collapse" type="button">
+                            <i class="bi bi-person-circle fs-5"></i>
                             <span class="d-none d-sm-inline ms-1" data-en="User Area" data-eu="Erabiltzaile eremua">
                                 User Area
                             </span>
@@ -69,22 +60,7 @@
                                     </a>
                                 </div>
                                 <!--LOGGED IN-->
-                                <div class="d-none" id="memberPanel">
-                                    <strong data-en="User" data-eu="Erabiltzailea" id="memberName">
-                                        User
-                                    </strong>
-                                    <p class="small text-secondary" id="memberEmail">
-                                    </p>
-                                    <a class="dropdown-item" data-en="My Profile" data-eu="Nire profila" href="user-area.html">
-                                        My Profile
-                                    </a>
-                                    <a class="dropdown-item" data-en="Settings" data-eu="Ezarpenak" href="user-area.html#privacySettingsForm">
-                                        Settings
-                                    </a>
-                                    <button class="btn btn-outline-secondary btn-sm w-100 mt-2" data-en="Log-out" data-eu="Saioa itxi" id="logoutButton" type="button">
-                                        Log-out
-                                    </button>
-                                </div>
+                                <!--not needed-->
                             </div>
                         </div>
                     </div>
@@ -95,10 +71,10 @@
                 <div class="container">
                     <!--LOGO-->
                     <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" id="logo-web">
-                        <img alt="logo-web" data-en-alt="logo-web" data-eu-alt="logo-web" height="50" src="img/logo-web.svg">
+                        <img alt="logo-web" height="50" src="img/logo-web.svg">
                         <div class="d-flex flex-column lh-1">
-                            <span data-en="Flora &amp; Fauna" data-eu="Bizkaiko">
-                                Flora &amp; Fauna
+                            <span data-en="Flora & Fauna" data-eu="Bizkaiko">
+                                Flora & Fauna
                             </span>
                             <small data-en="of Biscay" data-eu="flora eta fauna">
                                 of Biscay
@@ -106,7 +82,7 @@
                         </div>
                     </a>
                     <!--TOGGLE BUTTON-->
-                    <button aria-label="Open navigation" class="navbar-toggler" data-bs-target="#navbarContent" data-bs-toggle="collapse" data-en-aria-label="Open navigation" data-eu-aria-label="Open navigation" type="button">
+                    <button aria-label="Open navigation" class="navbar-toggler" data-bs-target="#navbarContent" data-bs-toggle="collapse" type="button">
                         <span class="navbar-toggler-icon">
                         </span>
                     </button>
@@ -139,13 +115,13 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" data-en="Parks, reserves and centers" data-eu="Parkeak, erreserbak eta zentroak" href="spaces.html">
-                                            Parks, reserves and centers
+                                        <a class="dropdown-item" data-en="Regions" data-eu="Eskualdeak" href="regions.html">
+                                            Regions
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" data-en="Regions" data-eu="Eskualdeak" href="regions.html">
-                                            Regions
+                                        <a class="dropdown-item" data-en="Parks, reserves and centers" data-eu="Parkeak, erreserbak eta zentroak" href="spaces.html">
+                                            Parks, reserves and centers
                                         </a>
                                     </li>
                                 </ul>
@@ -189,9 +165,8 @@
                             </li>
                             <!--THEME TOGGLE-->
                             <li class="nav-item d-flex align-items-center">
-                                <button aria-label="Change theme" class="btn btn-sm theme-toggle" data-en-aria-label="Change theme" data-eu-aria-label="Change theme" id="themeToggle" type="button">
-                                    <i class="bi bi-moon-stars-fill" id="themeIcon">
-                                    </i>
+                                <button aria-label="Change theme" class="btn btn-sm theme-toggle" id="themeToggle" type="button">
+                                    <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
                                 </button>
                             </li>
                         </ul>
@@ -199,19 +174,19 @@
                 </div>
             </nav>
         </header>
+
         <!--AUDIO & CONTROLS-->
         <audio id="backgroundAudio" loop="" preload="none">
-            <source src="audio/European_Robin.mp3" type="audio/mpeg"></source>
+            <source src="audio/European_Robin.mp3" type="audio/mpeg">
         </audio>
-        <button aria-label="Silence Sound" class="floating-control audio-control" data-en-aria-label="Silence Sound" data-en-title="Silence" data-eu-aria-label="Silence Sound" data-eu-title="Silence" id="audioToggle" title="Silence" type="button">
-            <i class="bi bi-volume-up-fill" id="audioIcon">
-            </i>
+
+        <button aria-label="Silence Sound" class="floating-control audio-control"  id="audioToggle" title="Silence" type="button">
+            <i class="bi bi-volume-up-fill" id="audioIcon"></i>
         </button>
-        <button aria-label="Back to the top" class="floating-control top-control" data-en-aria-label="Back to the top" data-eu-aria-label="Back to the top" id="backToTop" type="button">
-            <i class="bi bi-chevron-up">
-            </i>
+        <button aria-label="Back to the top" class="floating-control top-control" id="backToTop" type="button">
+            <i class="bi bi-chevron-up"></i>
         </button>
-        <!-- MODAL LOGIN -->
+        <!-- LOGIN MODAL -->
         <div aria-hidden="true" aria-labelledby="loginModalLabel" class="modal fade" id="loginModal" tabindex="-1" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content p-3">
@@ -219,8 +194,6 @@
                         <h5 class="modal-title fw-bold" data-en="Log-in" data-eu="Saioa hasi" id="loginModalLabel">
                             Log-in
                         </h5>
-                        <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" data-en-aria-label="Close" data-eu-aria-label="Close" type="button">
-                        </button>
                     </div>
                     <div class="modal-body">
                         <form id="loginForm">
@@ -228,22 +201,23 @@
                                 <label class="form-label" data-en="Email address" data-eu="Posta elektronikoa" for="loginEmail">
                                     Email address
                                 </label>
-                                <input class="form-control" id="loginEmail" required="" type="email">
+                                <input class="form-control" id="loginEmail" required type="email">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label" data-en="Password" data-eu="Pasahitza" for="loginPassword">
                                     Password
                                 </label>
-                                <input class="form-control" id="loginPassword" required="" type="password">
+                                <input class="form-control" id="loginPassword" required type="password">
                             </div>
-                            <button class="btn btn-primary w-100" data-en="Log-in" data-eu="Hasi saioa" type="submit">
-                                Log-in
+                            <button class="btn btn-primary w-100" data-en="Sign in" data-eu="Hasi saioa" type="submit">
+                                Sign in
                             </button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+
         <main id="mainContent">
             <section class="inner-hero page-hero">
                 <div class="container">
@@ -337,11 +311,11 @@
                 </div>
             </section>
         </main>
-        <!-- FOOTER -->
+<!-- FOOTER -->
         <footer class="main-footer">
-            <div aria-label="Collaborative partners" class="partner-footer" data-en-aria-label="Collaborative partners" data-eu-aria-label="Bazkide kolaboratzaileak" role="group">
+            <div aria-label="Collaborative partners" class="partner-footer" role="group">
                 <div class="container">
-                    <div aria-label="Collaborating entities" data-en-aria-label="Collaborating entities" data-eu-aria-label="Erakunde laguntzaileak" id="partnerSlider" tabindex="0" role="group">
+                    <div aria-label="Collaborating entities" id="partnerSlider" tabindex="0" role="group">
                         <div class="partner-track" id="partnerTrack">
                             <a class="partner-item" href="https://www.bizkaia.eus/es/medio-natural" rel="noopener" target="_blank">
                                 <img alt="Biscay diputation/Bizkaiko Foru Aldundia" class="object-fit-contain" data-en-alt="Biscay diputation/Bizkaiko Foru Aldundia" data-eu-alt="Biscay diputation/Bizkaiko Foru Aldundia" src="img/partners/logo-diputacion-de-bizkaia.jpg">
@@ -389,8 +363,8 @@
                         <a class="footer-brand d-inline-flex align-items-center gap-2" href="index.html">
                             <img alt="Logotipo Flora and Fauna of Biscay" data-en-alt="Logotipo Flora and Fauna of Biscay" data-eu-alt="Logotipo Flora and Fauna of Biscay" src="img/logo-web.svg">
                             <div class="d-flex flex-column lh-1">
-                                <span data-en="Flora &amp; Fauna" data-eu="Bizkaiko">
-                                    Flora &amp; Fauna
+                                <span data-en="Flora & Fauna" data-eu="Bizkaiko">
+                                    Flora & Fauna
                                 </span>
                                 <small data-en="of Biscay" data-eu="flora eta fauna">
                                     of Biscay
@@ -400,38 +374,37 @@
                         <p class="footer-slogan" data-en="Discover · Protect · Share" data-eu="Ezagutu · Babestu · Partekatu">
                             Discover · Protect · Share
                         </p>
-                        <p class="mt-3" data-en="Team: June Sillero, Eritz Gorriz, Kelea Rueda" data-eu="Taldea: June Sillero, Eritz Gorriz, Kelea Rueda">
+                        <p class="mt-3">
                             <b data-en="Team:" data-eu="Taldea:">
                                 Team:
                             </b>
-                            June Sillero, Eritz Gorriz, Kelea Rueda
+                            <span data-en="June Sillero, Eritz Gorriz, Kelea Rueda" data-eu="June Sillero, Eritz Gorriz, Kelea Rueda">
+                                June Sillero, Eritz Gorriz, Kelea Rueda
+                            </span>
                         </p>
-                        <p class="mt-3" data-en="Project: Challenge 1.2, DAMi 1º" data-eu="Proiektua: Challenge 1.2, DAMi 1. maila">
+                        <p class="mt-3">
                             <b data-en="Project:" data-eu="Proiektua:">
                                 Project:
                             </b>
-                            Challenge 1.2, DAMi 1º
+                            <span data-en="Challenge 1.2, DAMi 1º" data-eu="Challenge 1.2, DAMi 1. maila">
+                                Challenge 1.2, DAMi 1º
+                            </span> 
                         </p>
                         <div class="social-links d-flex flex-wrap gap-2">
-                            <a aria-label="Instagram" data-en-aria-label="Instagram" data-eu-aria-label="Instagram" href="https://www.instagram.com/" rel="noopener" target="_blank">
-                                <i class="bi bi-instagram">
-                                </i>
+                            <a aria-label="Instagram" href="https://www.instagram.com/" rel="noopener" target="_blank">
+                                <i class="bi bi-instagram"></i>
                             </a>
-                            <a aria-label="YouTube" data-en-aria-label="YouTube" data-eu-aria-label="YouTube" href="https://www.youtube.com/@urdaibaibirdcenter" rel="noopener" target="_blank">
-                                <i class="bi bi-youtube">
-                                </i>
+                            <a aria-label="YouTube" href="https://www.youtube.com/@urdaibaibirdcenter" rel="noopener" target="_blank">
+                                <i class="bi bi-youtube"></i>
                             </a>
-                            <a aria-label="Facebook" data-en-aria-label="Facebook" data-eu-aria-label="Facebook" href="https://www.facebook.com/" rel="noopener" target="_blank">
-                                <i class="bi bi-facebook">
-                                </i>
+                            <a aria-label="Facebook" href="https://www.facebook.com/" rel="noopener" target="_blank">
+                                <i class="bi bi-facebook"></i>
                             </a>
-                            <a aria-label="X" data-en-aria-label="X" data-eu-aria-label="X" href="https://x.com/" rel="noopener" target="_blank">
-                                <i class="bi bi-twitter-x">
-                                </i>
+                            <a aria-label="X" href="https://x.com/" rel="noopener" target="_blank">
+                                <i class="bi bi-twitter-x"></i>
                             </a>
-                            <a aria-label="Project repository" data-en-aria-label="Project repository" data-eu-aria-label="Project repository" href="https://github.com/keruka21/CHALLENGE-1-2-My-first-Application" rel="noopener" target="_blank">
-                                <i class="bi bi-github">
-                                </i>
+                            <a aria-label="Project repository" href="https://github.com/keruka21/CHALLENGE-1-2-My-first-Application" rel="noopener" target="_blank">
+                                <i class="bi bi-github"></i>
                             </a>
                         </div>
                     </div>
@@ -471,40 +444,25 @@
                         <h2 class="footer-title" data-en="Contact" data-eu="Kontaktua">
                             Contact
                         </h2>
-                        <a class="footer-contact" href="tel:+34555555555">
-                            <i class="bi bi-telephone-fill">
-                            </i>
-                            <span data-en="
-       +34 944 000 000
-      " data-eu="
-       +34 944 000 000
-      ">
+                        <a class="footer-contact" href="tel:+34944000000">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>
                                 +34 944 000 000
                             </span>
                         </a>
-                        <a class="footer-contact" href="https://wa.me/34555555555" rel="noopener" target="_blank">
-                            <i class="bi bi-whatsapp">
-                            </i>
-                            <span data-en="
-       WhatsApp: +34 600 000 000
-      " data-eu="
-       WhatsApp: +34 600 000 000
-      ">
+                        <a class="footer-contact" href="https://wa.me/34600000000" rel="noopener" target="_blank">
+                            <i class="bi bi-whatsapp"></i>
+                            <span>
                                 WhatsApp: +34 600 000 000
                             </span>
                         </a>
                         <a class="footer-contact" href="mailto:faunaandflora@bizkaia.com">
-                            <i class="bi bi-envelope">
-                            </i>
-                            <span data-en="
-       faunaandflora@bizkaia.com
-      " data-eu="
-       faunaandflora@bizkaia.com
-      ">
+                            <i class="bi bi-envelope"></i>
+                            <span>
                                 faunaandflora@bizkaia.com
                             </span>
                         </a>
-                        <p class="mt-4" data-en="Monday to Friday" data-eu="Astelehenetik ostiralera">
+                        <p class="mt-4">
                             <b data-en="Monday to Friday" data-eu="Astelehenetik ostiralera">
                                 Monday to Friday
                             </b>
@@ -536,27 +494,15 @@
                     <a data-en="Wikimedia Commons" data-eu="Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:European_Robin_(Erithacus_rubecula)_(W1CDR0001425_BD16).ogg" rel="noopener" target="_blank">
                         Wikimedia Commons
                     </a>
-                    <span data-en="
-     ·
-     " data-eu="
-     ·
-     ">
-                        ·
-                    </span>
+                    <span> · </span>
                     <a data-en="CC BY-SA 4.0" data-eu="CC BY-SA 4.0" href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">
                         CC BY-SA 4.0
                     </a>
-                    <span data-en="
-     .
-    " data-eu="
-     .
-    ">
-                        .
-                    </span>
+                    <span> · </span>
                 </p>
                 <div class="footer-bottom py-3 d-flex flex-wrap justify-content-between gap-2">
-                    <span data-en="© 2026 Flora &amp; Fauna of Biscay · Educational project" data-eu="© 2026 Bizkaiko Flora eta Fauna · Hezkuntza-proiektua" data-translate-mode="html">
-                        © 2026 Flora &amp; Fauna of Biscay · Educational project
+                    <span data-en="© 2026 Flora & Fauna of Biscay · Educational project" data-eu="© 2026 Bizkaiko Flora eta Fauna · Hezkuntza-proiektua" data-translate-mode="html">
+                        © 2026 Flora & Fauna of Biscay · Educational project
                     </span>
                     <div class="d-flex gap-3 flex-wrap">
                         <a data-en="Privacy" data-eu="Pribatutasuna" href="privacy.html">
@@ -575,9 +521,8 @@
                 </div>
             </div>
         </footer>
-        <script src="bootstrap-5.3.8/js/bootstrap.bundle.min.js">
-        </script>
-        <script src="js/main.js">
-        </script>
+        <script src="bootstrap-5.3.8/js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
+
