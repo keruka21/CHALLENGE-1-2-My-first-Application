@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initHabitatFilter();
     initSpeciesRoute();
     initGallery();
+    initVideoEmbeds();
 });
 
 /* Theme toggle */
@@ -763,4 +764,20 @@ function initGallery() {
     });
 
     filter();
+}
+
+
+/* Load external video and webcam embeds only after the visitor requests them. */
+function initVideoEmbeds() {
+    const placeholders = document.querySelectorAll(".video-embed-placeholder");
+    placeholders.forEach(button => {
+        button.addEventListener("click", () => {
+            const wrapper = button.parentElement;
+            const frame = wrapper ? wrapper.querySelector("iframe[data-src]") : null;
+            if (!frame) return;
+            frame.src = frame.dataset.src;
+            frame.setAttribute("tabindex", "0");
+            button.remove();
+        }, { once: true });
+    });
 }
