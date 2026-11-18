@@ -1,7 +1,7 @@
-/* Flora and Fauna of Bizkaia — shared interactions and accessible controls. */
+
 "use strict";
 
-/* Entry point: initialize only the components present on the current page. */
+/*initialize only the components present on the current page*/
 document.addEventListener("DOMContentLoaded", () => {
     initLanguage();
     initTheme();
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initVideoEmbeds();
 });
 
-/* Theme toggle */
+/*theme toggle */
 function initTheme() {
     const button = document.getElementById("themeToggle"), icon = document.getElementById("themeIcon");
     if (!button) return;
@@ -33,7 +33,7 @@ function initTheme() {
     button.addEventListener("click", () => set(document.documentElement.dataset.bsTheme === "dark" ? "light" : "dark"));
 }
 
-/* Keep the navbar transparent at the top and apply the primary color on scroll*/
+/*keep the navbar transparent at the top and apply the primary color on scroll*/
 function initNavbar() {
     const nav = document.getElementById("mainNavbar");
     if (!nav) return;
@@ -43,7 +43,7 @@ function initNavbar() {
     addEventListener("resize", update);
 }
 
-/* Background audio*/
+/*background audio*/
 function initAudio() {
     const audio = document.getElementById("backgroundAudio"),
           button = document.getElementById("audioToggle"),
@@ -68,7 +68,7 @@ function initAudio() {
     });
 }
 
-/* Back-to-top*/
+/*back-to-top button*/
 function initBackToTop() {
     const button = document.getElementById("backToTop");
     if (!button) return;
@@ -79,7 +79,7 @@ function initBackToTop() {
     button.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 }
 
-/** Region map, list and table interactions. */
+/*region map, list and table interactions*/
 function initInteractiveRegionMap() {
     const svg = document.querySelector("#regionMapVisual svg");
     const list = document.querySelector(".region-selector");
@@ -180,7 +180,7 @@ function initInteractiveRegionMap() {
     });
 }
 
-/* Shared catalogue filters, sorting and pagination. */
+/*shared catalogue filters, sorting and pagination*/
 function initCatalogTables() {
     const filterForm = document.getElementById("catalogFilter");
     const searchInput = document.getElementById("speciesSearch");
@@ -439,7 +439,7 @@ function initCatalogTables() {
     updateGroupOptions();
     renderActiveTable();
 }
-
+/*forms*/ 
 function initForms() {
     const frontEndOnlyForms = new Set(["signupForm", "sightingForm", "accountRegisterForm", "speciesForm", "profileForm", "privacySettingsForm"]);
     document.querySelectorAll("form").forEach(form => {
@@ -468,7 +468,7 @@ function initForms() {
         });
     });
 }
-
+/*prepare email, form on contact page*/ 
 function initContact() {
     document.getElementById("contactForm")?.addEventListener("submit", e => {
         e.preventDefault();
@@ -482,7 +482,7 @@ function initContact() {
 }
 
 
-/*Apply the selected language to all translatable interface elements. */
+/*translation*/
 function initLanguage() {
     const languageButtons = document.querySelectorAll(".language-button");
     if (!languageButtons.length) return;
@@ -546,7 +546,7 @@ function initLanguage() {
     setLanguage("en");
 }
 
-/*Blog slider navigation arrows*/
+/*blog slider navigation arrows index*/
 function initBlogSlider() {
     const track = document.getElementById("blogTrack");
     if (!track) return;
@@ -556,7 +556,7 @@ function initBlogSlider() {
     if (nextBtn) nextBtn.addEventListener("click", () => track.scrollBy({ left: 340, behavior: "smooth" }));
 }
 
-/* Habitat card filtering. */
+/*habitat card filtering */
 function initHabitatFilter() {
     const t = document.getElementById("habitatTypeFilter"), r = document.getElementById("habitatRegionFilter");
     if (!t || !r) return;
@@ -571,7 +571,7 @@ function initHabitatFilter() {
     r.addEventListener("change", run);
 }
 
-/*Route the species detail page to the selected featured profile.*/
+/*route the species detail page to the selected featured profile*/
 function initSpeciesRoute() {
     const params = new URLSearchParams(window.location.search);
     const speciesId = (params.get("id") || "").toUpperCase();
@@ -644,7 +644,7 @@ function initSpeciesRoute() {
 }
 
 
-/* Gallery filtering, photo viewer and species-profile navigation. */
+/*gallery filtering, photo viewer and species-profile navigation*/
 function initGallery() {
     const grid = document.getElementById("galleryGrid");
     if (!grid) return;
@@ -657,7 +657,7 @@ function initGallery() {
     const count = document.getElementById("galleryCount");
     const empty = document.getElementById("galleryEmpty");
 
-    // Gallery modal elements
+    //gallery modal
     const modalImage = document.getElementById("galleryModalImage");
     const modalCode = document.getElementById("galleryModalCode");
     const modalDate = document.getElementById("galleryModalDate");
@@ -767,7 +767,7 @@ function initGallery() {
 }
 
 
-/* Load external video and webcam embeds only after the visitor requests them. */
+/*load external video and webcam embeds only after the visitor requests them*/
 function initVideoEmbeds() {
     const placeholders = document.querySelectorAll(".video-embed-placeholder");
     placeholders.forEach(button => {
