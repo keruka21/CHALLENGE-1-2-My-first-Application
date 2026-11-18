@@ -220,8 +220,10 @@
 
         <!--MAIN CONTENT-->
         <main id="mainContent">
+            <!--PAGE HERO/HEADER-->
             <section class="inner-hero page-hero">
                 <div class="container">
+                    <!--BREADCRUMB--> 
                     <nav aria-label="breadcrumb" data-en-aria-label="breadcrumb" data-eu-aria-label="breadcrumb">
                         <ol class="breadcrumb mb-3">
                             <li class="breadcrumb-item">
@@ -340,23 +342,22 @@
                                         <defs>
                                             <style>
                                                 .region-shape {
-                                                                                                fill: var(--color-primary, #527A46);
-                                                                                                stroke: var(--color-background-dark);
-                                                                                                stroke-width: 1px;
-                                                                                                stroke-linecap: round;
-                                                                                                stroke-miterlimit: 6.27;
-                                                                                                transition: fill 0.2s ease, opacity 0.2s ease;
-                                                                                                cursor: pointer;
-                                                                                        }
-                                                                                        .region-shape:hover,
-                                                                                        .region-shape.is-active {
-                                                                                                fill: var(--color-accent, #ff9e01) !important;
-                                                                                                opacity: 1;
-                                                                                        }
-                                                                                        .region-shape:focus-visible {
-                                                                                                outline: 3px solid var(--color-accent, #ff9e01);
-                                                                                                outline-offset: 2px;
-                                                                                        }
+                                                    fill: var(--color-primary, #527A46);
+                                                    stroke: var(--color-background-dark);
+                                                    stroke-width: 1px;
+                                                    stroke-linecap: round;
+                                                    stroke-miterlimit: 6.27;
+                                                    transition: fill 0.2s ease, opacity 0.2s ease;
+                                                    cursor: pointer;
+                                                }
+                                                .region-shape:hover, .region-shape.is-active {
+                                                    fill: var(--color-accent, #ff9e01) !important;
+                                                    opacity: 1;
+                                                }
+                                                .region-shape:focus-visible {
+                                                    outline: 3px solid var(--color-accent, #ff9e01);
+                                                    outline-offset: 2px;
+                                                }
                                             </style>
                                         </defs>
                                         <path class="region-shape" d="M400.45,258.86l-3.2,1.74-.3,9.12-3.16,3.21.02,1.04,1.76.91-.19,2.91-.98,3.12-2.75,1.22,2.14,4.8-5.3,3.13-.36-1.36-2.22,1.31-3.34-3.43-1.73-.58-.92-2.17-2.17.78-3.54-.56-7.3,4.47-2.01-.91-.63-2.5-2.49-3.28-2.91.46-1.74,4.04-1.06.51-3.37-1.15-6.01.92-2.11-1.45-.4-1.37-3.26-1.86-4.26-.33-16.34-.36-7.47-4.54-5.76-1.7-7.91-4.87-10.1.99-2.23,1.04-1.05,1.98-1.96-.38-6.29-5.79-6.14-3.34-5.79-8.44-6.22-2.2.79-1.56-10.02-9.32-6.13-1.56-1.29-2.64,5.35-3.17,3.63-7.16.83.02,3.79-6.31,2.92-2.72.75-2.45,2.77-2.35-1.7-1.67.83-2.57-.66-1.72-.49-.62-4.95-7.11-2.3-1.74,3.93-7.33-7.65-3.6-5.81-6.53-3.54-10.24-.69.02-.23-.23,11.78-3.61.82-3.28,2.14,3.53,6.51,6.38,2.77.75-1.51-1.94,3.94-1.4,4.36,3.71-3.35,4.45,1.88,1.44h0l3.95-2.68,4.65,2.94,3.43.54.49,1.56,1.07.25,1.13-3.23-2.5-2.35,2.25.49,2.26-.89,4.78,2.84,1.55-.64-.11-1.59,4.77,4.26,1.97-.2,2.31-2.78,3.14,1.24.99,2.8-3.15,5.21,8.26,4.11-3.3-4.73-1.1-4.42,2.4-4.18,4.48-3.99,2.28-9.08,2.34-2.57,5.46-2.03,1.38.45-.32-1.4,3-.67,3.75-5.43,2.64,1.61,3.34-4.01,4.86.65.94-.62,1.21-.03.96,1.33-.4,1.08,2.37,2.14,9.94,3.37,1.3,2.51.72,8.97,2.49,2.31,3.03,9.18-.5.61,7.85,6.6,5.03,2.16,7.41,8.43,1.85,5.28-.39,9.76,5.42,4.17,1.34,2.23.3,3.38-1.8,5.13,2.14,5.64,2.45,1.93,2.33,5.72-.37,8.5,3.5,5.54ZM247.24,304.47l-2.32,1.79-7.4,3.07-2.94-5.19,3.68-5.28-.83-2.55-5.63-1.43-5.05.54-6.36-3.2-4.91-.23-1.74-1.08-.1-2.02,6.09-5.79,1.26-3.58-5.35.48.27-6.34-7.11,1.62-.8-1.12-1.79.93-.97-1.85-6.38,7.41-1.63,8.42-12.57,8.92.75,5.19,5.68.92,4.07-3.34,4.07,3.74.6,2.59,3.36,1.04,8.51,7.81,2.77-.91,11.33,1.14,2.52-.66.36-2.94,1.41-1.5,2.42.79,9.3-.13,9.72-3.82,1.22-2.89-5.33-1.78-.18,1.23Z" id="arratia-nervion">
@@ -389,7 +390,7 @@
                                 Reset region selection
                             </button>
                         </div>
-                        <!-- SIGHTINGS TABLES (one tbody per region) -->
+                        <!-- SIGHTINGS TABLES -->
                         <div class="table-responsive region-sightings-wrap mt-4">
                             <table class="table align-middle" id="regionSightingsTable">
                                 <thead>
@@ -834,15 +835,7 @@
                                             FAU-011
                                         </td>
                                         <td>
-                                            <span class="text-secondary small">
-                                                <span data-en="
-            —
-           " data-eu="
-            —
-           ">
-                                                    —
-                                                </span>
-                                            </span>
+                                            <img alt="Equus asinus" class="rounded object-fit-cover"  height="48" loading="lazy" src="img/fauna/asno%20de%20las%20Encartaciones.jpg" width="48">
                                         </td>
                                         <td>
                                             <em data-en="Equus asinus" data-eu="Equus asinus">
@@ -1006,15 +999,7 @@
                                             FAU-022
                                         </td>
                                         <td>
-                                            <span class="text-secondary small">
-                                                <span data-en="
-            —
-           " data-eu="
-            —
-           ">
-                                                    —
-                                                </span>
-                                            </span>
+                                            <img alt="Columba livia" class="rounded object-fit-cover" height="48" loading="lazy" src="img/fauna/Columbia_livia.jpg" width="48">
                                         </td>
                                         <td>
                                             <em data-en="Columba livia" data-eu="Columba livia">
@@ -1041,15 +1026,7 @@
                                             FAU-023
                                         </td>
                                         <td>
-                                            <span class="text-secondary small">
-                                                <span data-en="
-            —
-           " data-eu="
-            —
-           ">
-                                                    —
-                                                </span>
-                                            </span>
+                                            <img alt="Cyanistes caeruleus" class="rounded object-fit-cover" height="48" loading="lazy" src="img/fauna/Columbia_livia.jpg" width="48">
                                         </td>
                                         <td>
                                             <em data-en="Cyanistes caeruleus" data-eu="Cyanistes caeruleus">
@@ -1400,7 +1377,8 @@
                                         </td>
                                     </tr>
                                 </tbody>
-                                <!--NEUTRAL STATE (visible on initial load)-->
+
+                                <!--NEUTRAL STATE -->
                                 <tbody id="regionSightingsEmpty">
                                     <tr>
                                         <td class="text-center text-secondary py-3" colspan="7" data-en="No region selected yet." data-eu="Oraindik ez da eskualderik hautatu.">
@@ -1417,6 +1395,7 @@
                 </div>
             </section>
         </main>
+
 <!-- FOOTER -->
         <footer class="main-footer">
             <div aria-label="Collaborative partners" class="partner-footer" role="group">
